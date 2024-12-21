@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clasificación Torneo de Tenis</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Torneo de Tenis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Clasificación Torneo de Tenis</h1>
-  </header>
-  <main>
-    <section id="upload">
-      <p>Carga tu archivo Excel para ver la clasificación:</p>
-      <input type="file" id="fileInput" accept=".xlsx" />
-    </section>
-    <section id="classification">
-      <h2>Clasificación</h2>
-      <table id="table">
-        <thead>
-          <tr>
-            <th>Jugador</th>
-            <th>Puntos</th>
-            <th>Sets Ganados</th>
-            <th>Puntaje Total</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </section>
-  </main>
-  <footer>
-    <p>Creado por cervellosocial</p>
-  </footer>
+    <header id="inicio">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#clasificacion">Clasificación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero" data-aos="fade-up">
+            <h1>¡Bienvenidos al Torneo de Tenis!</h1>
+            <p>Consulta la clasificación y resultados actualizados en tiempo real.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="clasificacion" data-aos="fade-up">
+            <h2>Clasificación</h2>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Puntos</th>
+                        <th>Sets Ganados</th>
+                        <th>Puntaje Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos cargados dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" data-aos="fade-up">
+            <h2>Contacto</h2>
+            <p>Si tienes dudas o comentarios, no dudes en escribirnos a <a href="mailto:contacto@torneotenis.com">contacto@torneotenis.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Torneo de Tenis. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
