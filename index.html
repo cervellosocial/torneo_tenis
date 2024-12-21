@@ -1,60 +1,74 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clasificación Torneo de Tenis</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header id="inicio">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#clasificacion">Clasificación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero" data-aos="fade-up">
-            <h1>¡Bienvenidos al Torneo de Tenis!</h1>
-            <p>Consulta la clasificación y resultados actualizados en tiempo real.</p>
-        </div>
-    </header>
+async function loadExcel() {
+    try {
+        const response = await fetch('data/resultados.xlsx'); // Asegúrate de que la ruta es correcta
+        const data = await response.arrayBuffer();
+        const workbook = XLSX.read(data, { type: 'array' });
 
-    <main>
-        <section id="clasificacion" data-aos="fade-up">
-            <h2>Clasificación</h2>
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th>Jugador</th>
-                        <th>Puntos</th>
-                        <th>Sets Ganados</th>
-                        <th>Puntaje Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Datos cargados dinámicamente -->
-                </tbody>
-            </table>
-        </section>
+        // Leer todas las hojas del Excel
+        const sheets = workbook.SheetNames;
+        const tables = [];
 
-        <section id="contacto" data-aos="fade-up">
-            <h2>Contacto</h2>
-            <p>Si tienes dudas o comentarios, no dudes en escribirnos a <a href="mailto:contacto@torneotenis.com">contacto@torneotenis.com</a>.</p>
-        </section>
-    </main>
+        sheets.forEach(sheetName => {
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 }); // Leer como matriz
 
-    <footer>
-        <p>&copy; 2024 Torneo de Tenis. Todos los derechos reservados.</p>
-    </footer>
+            // Detectar si la hoja contiene la estructura de clasificación
+            const headers = jsonData[0] || [];
+            const expectedHeaders = ["Posición", "Jugador", "Puntos", "P.J", "P.G", "P.P", "S.G", "S.P", "J.G", "J.P", "D.J"];
+            const isClassificationTable = expectedHeaders.every(header => headers.includes(header));
 
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+            if (isClassificationTable) {
+                tables.push({ name: sheetName, data: jsonData });
+            }
+        });
+
+        renderTables(tables);
+    } catch (error) {
+        console.error('Error al cargar el archivo Excel:', error);
+    }
+}
+
+function renderTables(tables) {
+    const container = document.querySelector('#table-container');
+    container.innerHTML = ''; // Limpiar contenido previo
+
+    tables.forEach(table => {
+        const section = document.createElement('div');
+        section.className = 'classification-section';
+
+        const title = document.createElement('h3');
+        title.textContent = `Clasificación: ${table.name}`;
+        section.appendChild(title);
+
+        const tableElement = document.createElement('table');
+        tableElement.className = 'classification-table';
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        table.data[0].forEach(header => {
+            const th = document.createElement('th');
+            th.textContent = header;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        tableElement.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        table.data.slice(1).forEach(row => {
+            const tr = document.createElement('tr');
+            row.forEach(cell => {
+                const td = document.createElement('td');
+                td.textContent = cell !== undefined ? cell : ''; // Asegurar contenido válido
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        tableElement.appendChild(tbody);
+
+        section.appendChild(tableElement);
+        container.appendChild(section);
+    });
+}
+
+// Ejecutar la función al cargar la página
+loadExcel();
