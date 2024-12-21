@@ -1,46 +1,104 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 2rem auto;
     padding: 1rem;
+    max-width: 900px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
     text-align: center;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  #upload {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  #table {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+/* Estilo de la tabla */
+#table {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
-  }
-  
-  #table th, #table td {
-    border: 1px solid #ddd;
-    padding: 8px;
     text-align: center;
-  }
-  
-  #table th {
-    background-color: #007bff;
+}
+
+#table thead {
+    background: #007bff;
     color: white;
-  }
-  
-  footer {
+}
+
+#table th, #table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contacto */
+#contacto p {
     text-align: center;
+    font-size: 1rem;
+}
+
+#contacto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
     margin-top: 2rem;
-    color: #555;
-  }
-  
+}
