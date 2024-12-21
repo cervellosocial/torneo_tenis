@@ -1,8 +1,6 @@
-// script.js
-
 async function loadExcel() {
     try {
-        const response = await fetch('data/resultados.xlsx');
+        const response = await fetch('data/resultados.xlsx'); // Asegúrate de que la ruta es correcta
         const data = await response.arrayBuffer();
         const workbook = XLSX.read(data, { type: 'array' });
 
@@ -35,7 +33,7 @@ function renderTables(tables) {
     container.innerHTML = ''; // Limpiar contenido previo
 
     tables.forEach(table => {
-        const section = document.createElement('section');
+        const section = document.createElement('div');
         section.className = 'classification-section';
 
         const title = document.createElement('h3');
@@ -60,7 +58,7 @@ function renderTables(tables) {
             const tr = document.createElement('tr');
             row.forEach(cell => {
                 const td = document.createElement('td');
-                td.textContent = cell;
+                td.textContent = cell !== undefined ? cell : ''; // Asegurar contenido válido
                 tr.appendChild(td);
             });
             tbody.appendChild(tr);
