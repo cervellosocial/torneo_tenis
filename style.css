@@ -53,29 +53,39 @@ section h2 {
     color: #007bff;
 }
 
-/* Estilo de la tabla */
-#table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: center;
+/* Estilo para el contenedor de tablas */
+#table-container {
+    margin: 2rem auto;
+    max-width: 90%;
 }
 
-#table thead {
-    background: #007bff;
+.classification-section {
+    margin-bottom: 2rem;
+}
+
+.classification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.classification-table th, .classification-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.classification-table th {
+    background-color: #007bff;
     color: white;
 }
 
-#table th, #table td {
-    border: 1px solid #ddd;
-    padding: 0.8rem;
-}
-
-#table tr:nth-child(even) {
+.classification-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-#table tr:hover {
+.classification-table tr:hover {
     background-color: #f1f1f1;
 }
 
