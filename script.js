@@ -1,74 +1,96 @@
-async function loadExcel() {
-    try {
-        const response = await fetch('data/resultados.xlsx'); // Asegúrate de que la ruta es correcta
-        const data = await response.arrayBuffer();
-        const workbook = XLSX.read(data, { type: 'array' });
+// Ruta del archivo Excel en la carpeta data
+const excelPath = './data/resultados.xlsx';
 
-        // Leer todas las hojas del Excel
-        const sheets = workbook.SheetNames;
-        const tables = [];
+fetch(excelPath)
+  .then(response => response.arrayBuffer())
+  .then(data => {
+    const workbook = XLSX.read(data, { type: 'array' });
 
-        sheets.forEach(sheetName => {
-            const sheet = workbook.Sheets[sheetName];
-            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 }); // Leer como matriz
+    // Hojas específicas a procesar
+    const sheetsToRead = [
+      'Sumario 1A', 
+      'Sumario 2A', 
+      'Sumario 3A', 
+      'Sumario Infantil', 
+      '2a', 
+      '3a', 
+      'infantil'
+    ];
 
-            // Detectar si la hoja contiene la estructura de clasificación
-            const headers = jsonData[0] || [];
-            const expectedHeaders = ["Posición", "Jugador", "Puntos", "P.J", "P.G", "P.P", "S.G", "S.P", "J.G", "J.P", "D.J"];
-            const isClassificationTable = expectedHeaders.every(header => headers.includes(header));
+    sheetsToRead.forEach(sheetName => {
+      const sheet = workbook.Sheets[sheetName];
+      if (sheet) {
+        // Leer todas las filas como matriz
+        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
-            if (isClassificationTable) {
-                tables.push({ name: sheetName, data: jsonData });
-            }
-        });
+        // Detectar la fila con los encabezados correctos
+        const headerIndex = jsonData.findIndex(row =>
+          row.some(cell => String(cell).trim().toLowerCase() === 'posición') &&
+          row.some(cell => String(cell).trim().toLowerCase() === 'jugador')
+        );
 
-        renderTables(tables);
-    } catch (error) {
-        console.error('Error al cargar el archivo Excel:', error);
-    }
-}
+        if (headerIndex !== -1) {
+          // Obtener un rango limitado después de los encabezados
+          const rowsToRead = 10; // Cambia este valor según el tamaño de la tabla que deseas
+          const tableData = jsonData.slice(headerIndex, headerIndex + rowsToRead);
 
-function renderTables(tables) {
-    const container = document.querySelector('#table-container');
-    container.innerHTML = ''; // Limpiar contenido previo
-
-    tables.forEach(table => {
-        const section = document.createElement('div');
-        section.className = 'classification-section';
-
-        const title = document.createElement('h3');
-        title.textContent = `Clasificación: ${table.name}`;
-        section.appendChild(title);
-
-        const tableElement = document.createElement('table');
-        tableElement.className = 'classification-table';
-
-        const thead = document.createElement('thead');
-        const headerRow = document.createElement('tr');
-        table.data[0].forEach(header => {
-            const th = document.createElement('th');
-            th.textContent = header;
-            headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        tableElement.appendChild(thead);
-
-        const tbody = document.createElement('tbody');
-        table.data.slice(1).forEach(row => {
-            const tr = document.createElement('tr');
-            row.forEach(cell => {
-                const td = document.createElement('td');
-                td.textContent = cell !== undefined ? cell : ''; // Asegurar contenido válido
-                tr.appendChild(td);
-            });
-            tbody.appendChild(tr);
-        });
-        tableElement.appendChild(tbody);
-
-        section.appendChild(tableElement);
-        container.appendChild(section);
+          // Convertir los datos en formato JSON con encabezados
+          const dataWithHeaders = XLSX.utils.sheet_to_json(XLSX.utils.aoa_to_sheet(tableData));
+          renderTable(dataWithHeaders, sheetName);
+        } else {
+          console.warn(`Encabezados no encontrados en la hoja ${sheetName}`);
+        }
+      } else {
+        console.warn(`La hoja ${sheetName} no existe en el archivo.`);
+      }
     });
-}
+  })
+  .catch(error => console.error('Error al cargar el archivo Excel:', error));
 
-// Ejecutar la función al cargar la página
-loadExcel();
+// Función para renderizar la tabla
+function renderTable(data, sheetName) {
+  const tableSection = document.createElement('section');
+  tableSection.innerHTML = `<h2>Clasificación - ${sheetName}</h2>`;
+  const table = document.createElement('table');
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Posición</th>
+        <th>Jugador</th>
+        <th>Puntos</th>
+        <th>P.J</th>
+        <th>P.G</th>
+        <th>P.P</th>
+        <th>S.G</th>
+        <th>S.P</th>
+        <th>J.G</th>
+        <th>J.P</th>
+        <th>D.J</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  `;
+
+  const tableBody = table.querySelector('tbody');
+
+  data.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row['Posición'] || '-'}</td>
+      <td>${row['Jugador'] || '-'}</td>
+      <td>${row['Puntos'] || '-'}</td>
+      <td>${row['P.J'] || '-'}</td>
+      <td>${row['P.G'] || '-'}</td>
+      <td>${row['P.P'] || '-'}</td>
+      <td>${row['S.G'] || '-'}</td>
+      <td>${row['S.P'] || '-'}</td>
+      <td>${row['J.G'] || '-'}</td>
+      <td>${row['J.P'] || '-'}</td>
+      <td>${row['D.J'] || '-'}</td>
+    `;
+    tableBody.appendChild(tr);
+  });
+
+  tableSection.appendChild(table);
+  document.querySelector('main').appendChild(tableSection);
+}
