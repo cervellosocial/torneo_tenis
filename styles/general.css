@@ -1,37 +1,148 @@
-/* Estilos Generales */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contenedor de tabla para scroll horizontal */
+.table-container {
+  overflow-x: auto; /* Habilita scroll horizontal */
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  width: 100%; /* Se ajusta al contenedor */
+  border-collapse: collapse;
+  margin: 1rem auto;
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Mantener proporciones */
+  border: 2px solid #000;
+}
+
+table thead th {
+  background-color: #fef7dc;
+  color: #333;
+  font-weight: bold;
+  padding: 0.6rem;
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 0.85rem;
+}
+
+table tbody td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 2px solid #000;
+  color: #333;
+}
+
+/* Estilo para celdas específicas */
+table.classification tbody td:first-child {
+  background-color: #f8d7da;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+table.matches tbody td.diagonal {
+  background-color: #0056b3; /* Azul oscuro */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Alternancia de colores */
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Resaltado al pasar el mouse */
+table tbody tr:hover {
+  background-color: #e2e3e5;
+  cursor: pointer;
+}
+
+/* Leyenda */
+section.legend {
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  background-color: #fef7dc;
+  width: 90%;
+}
+
+section.legend h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+section.legend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section.legend li {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.8rem; /* Reduce tamaño de fuente */
   }
-  
-  header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+
+  table thead th, table tbody td {
+    padding: 0.4rem; /* Ajusta el padding */
   }
-  
-  main {
-    padding: 2rem;
+
+  .table-container {
+    padding: 0 1rem; /* Ajusta márgenes para móviles */
   }
-  
-  h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+
+  section.legend {
+    width: 100%; /* Ocupa todo el ancho */
+    font-size: 0.8rem;
   }
-  
-  section {
-    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 0.7rem; /* Fuente más pequeña */
   }
-  
-  footer {
-    text-align: center;
-    margin-top: 2rem;
-    color: #555;
-    font-size: 0.9rem;
+
+  table thead th, table tbody td {
+    padding: 0.3rem; /* Reduce aún más el padding */
   }
-  
+
+  section.legend {
+    font-size: 0.7rem; /* Fuente más pequeña para la leyenda */
+  }
+}
