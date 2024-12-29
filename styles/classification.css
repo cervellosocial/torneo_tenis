@@ -1,0 +1,124 @@
+/* Estilos Generales para las Tablas */
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  table-layout: fixed;
+  border: 2px solid #000; /* Borde principal de la tabla */
+}
+
+/* Encabezados */
+table thead th {
+  background-color: #fef7dc; /* Amarillo claro */
+  color: #333; /* Texto oscuro */
+  font-weight: bold;
+  padding: 0.6rem;
+  text-align: center;
+  border: 2px solid #000; /* Bordes oscuros */
+  font-size: 0.85rem;
+}
+
+/* Celdas de Datos */
+table tbody td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 2px solid #000; /* Bordes oscuros */
+  color: #333;
+  font-size: 0.9rem; /* Tamaño del texto */
+  word-wrap: break-word; /* Ajustar texto largo */
+}
+
+/* Estilo Específico para Clasificación */
+table.classification tbody td:first-child {
+  background-color: #f8d7da; /* Fondo rojo claro */
+  color: #d9534f; /* Texto rojo */
+  font-weight: bold;
+}
+
+table.classification thead th:first-child {
+  background-color: #fef7dc; /* Amarillo claro para encabezado */
+}
+
+table.classification th.header-cell {
+  background-color: #fef7dc; /* Amarillo claro */
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+table.classification tbody td:nth-child(2) {
+  font-weight: bold; /* Negrita para jugadores */
+  color: #000; /* Texto negro */
+}
+
+table.classification tbody td:nth-child(3) {
+  background-color: #f8d7da; /* Fondo rojo claro */
+  color: #d9534f; /* Texto rojo */
+  font-weight: bold;
+}
+
+/* Alternancia de Colores */
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Resaltar Fila al Pasar el Ratón */
+table tbody tr:hover {
+  background-color: #e2e3e5;
+  cursor: pointer;
+}
+
+/* Diagonal (Tabla de Encuentros Cruzados) */
+table.matches tbody td.diagonal {
+  background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Encabezado de la Sección */
+section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+/* Leyenda */
+section.legend {
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  background-color: #fef7dc; /* Amarillo claro */
+  width: 90%;
+}
+
+section.legend h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+section.legend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section.legend li {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
