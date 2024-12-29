@@ -1,100 +1,128 @@
 /* Contenedor con scroll horizontal */
 .table-container {
-  overflow-x: auto;
-  margin: 0 auto;
-  width: 100%;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem auto;
-  font-size: 0.9rem;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  table-layout: fixed; /* Proporciones de columnas */
-  border: 2px solid #000;
-}
-
-/* Estilos generales de tablas */
-table thead th {
-  background-color: #fef7dc;
-  color: #333;
-  font-weight: bold;
-  padding: 0.6rem;
-  text-align: center;
-  border: 2px solid #000;
-}
-
-table tbody td {
-  padding: 0.5rem;
-  text-align: center;
-  border: 2px solid #000;
-  color: #333;
-}
-
-/* Estilo específico para filas */
-table.classification tbody td:first-child {
-  background-color: #f8d7da;
-  color: #d9534f;
-  font-weight: bold;
-}
-
-table.matches tbody td.diagonal {
-  background-color: #0056b3; /* Azul oscuro */
-  color: #fff;
-}
-
-/* Alternancia de colores */
-table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-/* Resaltado de fila al pasar el mouse */
-table tbody tr:hover {
-  background-color: #e2e3e5;
-  cursor: pointer;
-}
-
-/* Leyenda */
-section.legend {
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 2px solid #ccc;
-  background-color: #fef7dc;
-  width: 90%;
-}
-
-/* Estilo responsive */
-@media screen and (max-width: 768px) {
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
   table {
-    font-size: 0.8rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    table-layout: fixed; /* Proporciones de columnas */
+    border: 2px solid #000;
   }
-
-  table thead th, table tbody td {
-    padding: 0.4rem;
+  
+  /* Estilos generales de tablas */
+  table thead th {
+    background-color: #fef7dc;
+    color: #333;
+    font-weight: bold;
+    padding: 0.6rem;
+    text-align: center;
+    border: 2px solid #000;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .table-container {
-    overflow-x: auto; /* Habilita scroll horizontal */
+  
+  table tbody td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid #000;
+    color: #333;
   }
-
-  table {
-    font-size: 0.7rem;
-    width: 1000px; /* Ancho fijo para permitir desplazamiento horizontal */
+  
+  /* Estilo específico para filas */
+  table.classification tbody td:first-child {
+    background-color: #f8d7da;
+    color: #d9534f;
+    font-weight: bold;
   }
-
-  table thead th, table tbody td {
-    padding: 0.3rem;
+  
+  table.matches tbody td.diagonal {
+    background-color: #0056b3; /* Azul oscuro */
+    color: #fff;
   }
-
+  
+  /* Alternancia de colores */
+  table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Resaltado de fila al pasar el mouse */
+  table tbody tr:hover {
+    background-color: #e2e3e5;
+    cursor: pointer;
+  }
+  
+  /* Leyenda */
   section.legend {
-    font-size: 0.7rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    background-color: #fef7dc;
+    width: 90%;
   }
-}
+  
+  /* Estilo responsive */
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 0.8rem;
+    }
+  
+    table thead th, table tbody td {
+      padding: 0.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .table-container {
+      overflow-x: auto; /* Habilita scroll horizontal */
+    }
+  
+    table {
+      font-size: 0.7rem;
+      width: 1000px; /* Ancho fijo para permitir desplazamiento horizontal */
+    }
+  
+    table thead th, table tbody td {
+      padding: 0.3rem;
+    }
+  
+    section.legend {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Contenedor con scroll horizontal */
+.table-container {
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    table {
+      width: 100%; /* Forzamos el ancho al 100% para facilitar el scroll */
+      font-size: 0.8rem; /* Reducimos el tamaño del texto */
+    }
+  
+    table th,
+    table td {
+      padding: 0.4rem; /* Reducimos el espacio */
+    }
+  
+    header h1 {
+      font-size: 1.2rem; /* Reducimos el tamaño del encabezado */
+    }
+  
+    .legend ul {
+      font-size: 0.8rem; /* Reducimos el tamaño de la leyenda */
+    }
+  }
+  
