@@ -13,6 +13,11 @@ function extractTable(data, range) {
 function renderTable(data, title) {
   const section = document.createElement('section');
   section.innerHTML = `<h2>${title}</h2>`;
+
+  // Contenedor para la tabla
+  const container = document.createElement('div');
+  container.classList.add('table-container');
+
   const table = document.createElement('table');
   table.classList.add('classification'); // Agregar la clase principal
 
@@ -21,18 +26,15 @@ function renderTable(data, title) {
   data.forEach((row, rowIndex) => {
     const tr = document.createElement('tr');
     row.forEach((cell, colIndex) => {
-      // Determinar si es encabezado o celda de datos
       const isHeader = rowIndex === 0;
       const td = document.createElement(isHeader ? 'th' : 'td');
 
-      // Asignar clases específicas
       if (isHeader) {
-        td.classList.add('header-cell'); // Clase para encabezados
+        td.classList.add('header-cell');
       } else if (colIndex === 0) {
-        td.classList.add('position-cell'); // Clase para la columna de posiciones
+        td.classList.add('position-cell');
       }
 
-      // Asignar contenido
       td.textContent = cell || '-';
       tr.appendChild(td);
     });
@@ -40,7 +42,13 @@ function renderTable(data, title) {
   });
 
   table.appendChild(tbody);
-  section.appendChild(table);
+  container.appendChild(table);
+  section.appendChild(container);
+
+  // Añadir leyenda después de cada tabla
+  const legend = renderLegend();
+  section.appendChild(legend);
+
   document.querySelector('main').appendChild(section);
 }
 
@@ -61,5 +69,6 @@ function renderLegend() {
       <li><b>D.J</b>: Diferencia de juegos</li>
     </ul>
   `;
-  document.querySelector('main').appendChild(legendSection);
+  return legendSection;
 }
+
