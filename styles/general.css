@@ -99,30 +99,32 @@
     }
   }
   
-  /* Contenedor con scroll horizontal */
+/* Contenedor con scroll horizontal */
 .table-container {
     overflow-x: auto;
     margin: 0 auto;
+    width: 100%;
   }
   
-  /* Ajustes para pantallas pequeñas */
-  @media (max-width: 768px) {
+  /* Ajustes responsivos */
+  @media screen and (max-width: 768px) {
     table {
-      width: 100%; /* Forzamos el ancho al 100% para facilitar el scroll */
-      font-size: 0.8rem; /* Reducimos el tamaño del texto */
+      font-size: 0.8rem;
     }
   
-    table th,
-    table td {
-      padding: 0.4rem; /* Reducimos el espacio */
+    table thead th, table tbody td {
+      padding: 0.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table {
+      font-size: 0.7rem;
+      min-width: 600px; /* Ancho mínimo para habilitar scroll horizontal */
     }
   
-    header h1 {
-      font-size: 1.2rem; /* Reducimos el tamaño del encabezado */
-    }
-  
-    .legend ul {
-      font-size: 0.8rem; /* Reducimos el tamaño de la leyenda */
+    table thead th, table tbody td {
+      padding: 0.3rem;
     }
   }
   
