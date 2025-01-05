@@ -1,0 +1,67 @@
+/* Estilos para Tablas de Encuentros Cruzados */
+table.matches {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    border: 2px solid #000; /* Borde principal de la tabla */
+  }
+  
+  /* Encabezado de columnas */
+  table.matches th {
+    background-color: #e8f4fc; /* Fondo azul claro */
+    color: #333; /* Texto oscuro */
+    font-weight: bold;
+    padding: 0.6rem;
+    text-align: center;
+    border: 2px solid #000; /* Bordes oscuros */
+  }
+  
+  /* Celdas de datos */
+  table.matches td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd; /* Bordes suaves */
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+/* Estilos para la diagonal */
+table.matches td.diagonal {
+  background-color: #003366; /* Azul oscuro */
+  color: #003366; /* Texto blanco */
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #003366;
+}
+
+  /* Alternancia de colores en filas */
+  table.matches tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Blanco */
+  }
+  
+  table.matches tbody tr:nth-child(even) {
+    background-color: #f4f4f4; /* Gris muy claro */
+  }
+  
+  /* Resaltar fila al pasar el ratón */
+  table.matches tbody tr:hover {
+    background-color: #d0e4f7; /* Fondo azul suave */
+    cursor: pointer;
+  }
+  
+  /* Resaltar celdas con resultados */
+  table.matches td:not(.diagonal):not(:empty) {
+    font-weight: bold;
+    color: #0056b3; /* Azul oscuro */
+  }
+  
+  /* Celdas con resultados provisionales */
+  table.matches td:contains('provisional') {
+    color: #d9534f; /* Rojo */
+    font-style: italic;
+  }
+  
