@@ -184,9 +184,8 @@ def mostrar_tablas():
             cuadros[filename.split('.')[0]] = cuadro_enfrentamientos
             calendarios[filename.split('.')[0]] = calendario
 
-    #loader = jj.FileSystemLoader('.')
-    #env = jj.Environment(loader=loader)
-    env = jj.Environment()
+    loader = jj.FileSystemLoader('.')
+    env = jj.Environment(loader=loader)
     template = env.get_template('tablas.html')
     web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
     with open('docs/index.html', 'w') as f:
