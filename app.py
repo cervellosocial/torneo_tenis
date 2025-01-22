@@ -190,8 +190,9 @@ def mostrar_tablas():
     web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
     with open('docs/index.html', 'w') as f:
         f.write(web)
-    print('[Debug] Web:')
+    print('[Debug] >>>Web:')
     print(web)
+    print('[Debug] <<<Web:')
     #return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
 
 if __name__ == '__main__':
