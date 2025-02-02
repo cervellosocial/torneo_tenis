@@ -2,16 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import json
-from flask import Flask, render_template
-from flask_frozen import Freezer
-
-
-app = Flask(__name__)
-# app.config['APPLICATION_ROOT'] = '/torneo_tenis'
-app.config['FREEZER_BASE_URL'] = 'https://cervellosocial.github.io/torneo_tenis'
-app.config['FREEZER_RELATIVE_URLS'] = True
-
-freezer = Freezer(app)
+import jinja2 as jj
 
 def inicializar_datos(filepath):
     """Carga los datos desde un archivo JSON y crea un DataFrame de clasificación inicial."""
@@ -164,7 +155,6 @@ def generar_tabla_calendario(df_partidos):
     tabla_html += '</tbody></table>'
     return tabla_html
 
-@app.route('/')
 def mostrar_tablas():
     """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON en la carpeta data."""
     data_dir = os.path.join(os.path.dirname(__file__), 'data')
@@ -172,8 +162,11 @@ def mostrar_tablas():
     cuadros = {}
     calendarios = {}
 
-    # Obtener archivos JSON en orden alfabético (por el prefijo numérico)
-    archivos_json = sorted([f for f in os.listdir(data_dir) if f.endswith('.json')])
+    # Obtener archivos JSON y ordenarlos numéricamente según el prefijo del nombre
+    archivos_json = sorted(
+        [f for f in os.listdir(data_dir) if f.endswith('.json')],
+        key=lambda x: int(x.split('_')[0])  # Extraer y convertir el número inicial a entero
+    )
 
     for filename in archivos_json:
         filepath = os.path.join(data_dir, filename)
@@ -197,13 +190,16 @@ def mostrar_tablas():
         cuadros[nombre_division] = cuadro_enfrentamientos
         calendarios[nombre_division] = calendario
 
-    return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
-
+    loader = jj.FileSystemLoader('.')
+    env = jj.Environment(loader=loader)
+    template = env.get_template('tablas.html')
+    web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
+    with open('docs/index.html', 'w') as f:
+        f.write(web)
+    print('[Debug] >>>Web:')
+    print(web)
+    print('[Debug] <<<Web:')
+    #return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-# Comando para congelar el sitio
-@app.cli.command("freeze")
-def freeze():
-    freezer.freeze()
+    mostrar_tablas()
