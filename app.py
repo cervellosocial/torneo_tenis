@@ -2,7 +2,16 @@ import os
 import pandas as pd
 import numpy as np
 import json
-import jinja2 as jj
+from flask import Flask, render_template
+from flask_frozen import Freezer
+
+
+app = Flask(__name__)
+# app.config['APPLICATION_ROOT'] = '/torneo_tenis'
+app.config['FREEZER_BASE_URL'] = 'https://cervellosocial.github.io/torneo_tenis'
+app.config['FREEZER_RELATIVE_URLS'] = True
+
+freezer = Freezer(app)
 
 def inicializar_datos(filepath):
     """Carga los datos desde un archivo JSON y crea un DataFrame de clasificación inicial."""
@@ -155,6 +164,7 @@ def generar_tabla_calendario(df_partidos):
     tabla_html += '</tbody></table>'
     return tabla_html
 
+@app.route('/')
 def mostrar_tablas():
     """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON en la carpeta data."""
     data_dir = os.path.join(os.path.dirname(__file__), 'data')
@@ -162,36 +172,38 @@ def mostrar_tablas():
     cuadros = {}
     calendarios = {}
 
-    for filename in os.listdir(data_dir):
-        if filename.endswith('.json'):
-            filepath = os.path.join(data_dir, filename)
-            df_partidos, df_clasificacion = inicializar_datos(filepath)
-            df_clasificacion = actualizar_clasificacion(df_partidos, df_clasificacion)
-            cuadro_enfrentamientos = generar_cuadro_enfrentamientos(df_partidos)
+    # Obtener archivos JSON en orden alfabético (por el prefijo numérico)
+    archivos_json = sorted([f for f in os.listdir(data_dir) if f.endswith('.json')])
 
-            # **Añadir columna "Posición" antes de exportar**
-            df_clasificacion.insert(0, 'Posición', range(1, len(df_clasificacion) + 1))
+    for filename in archivos_json:
+        filepath = os.path.join(data_dir, filename)
+        df_partidos, df_clasificacion = inicializar_datos(filepath)
+        df_clasificacion = actualizar_clasificacion(df_partidos, df_clasificacion)
+        cuadro_enfrentamientos = generar_cuadro_enfrentamientos(df_partidos)
 
-            # Generar calendario de partidos
-            calendario = generar_tabla_calendario(df_partidos)
+        # Añadir columna "Posición" antes de exportar
+        df_clasificacion.insert(0, 'Posición', range(1, len(df_clasificacion) + 1))
 
-            # Añadir las tablas generadas al contexto
-            tablas[filename.split('.')[0]] = df_clasificacion.to_html(
-                index=False, classes='table classification'  # Clase CSS para clasificación
-            )
-            cuadros[filename.split('.')[0]] = cuadro_enfrentamientos
-            calendarios[filename.split('.')[0]] = calendario
+        # Generar calendario de partidos
+        calendario = generar_tabla_calendario(df_partidos)
 
-    loader = jj.FileSystemLoader('.')
-    env = jj.Environment(loader=loader)
-    template = env.get_template('tablas.html')
-    web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
-    with open('docs/index.html', 'w') as f:
-        f.write(web)
-    print('[Debug] >>>Web:')
-    print(web)
-    print('[Debug] <<<Web:')
-    #return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
+        # Extraer el nombre de la división eliminando el prefijo numérico
+        nombre_division = "_".join(filename.split('_')[1:]).replace('.json', '')
+
+        # Añadir las tablas generadas al contexto
+        tablas[nombre_division] = df_clasificacion.to_html(
+            index=False, classes='table classification'
+        )
+        cuadros[nombre_division] = cuadro_enfrentamientos
+        calendarios[nombre_division] = calendario
+
+    return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
+
 
 if __name__ == '__main__':
-    mostrar_tablas()
+    app.run(debug=True)
+
+# Comando para congelar el sitio
+@app.cli.command("freeze")
+def freeze():
+    freezer.freeze()
