@@ -52,7 +52,8 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
         juegos_local = 0
         juegos_visitante = 0
 
-        for set_result in [partido['set_1'], partido['set_2'], partido['set_3']]:
+        sets = sorted([key for key, value in partido.items() if 'set' in key])
+        for set_result in [partido[set] for set in sets]:
             if '-' in set_result:
                 local_set, visitante_set = map(int, set_result.split('-'))
                 juegos_local += local_set
