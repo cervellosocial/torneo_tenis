@@ -127,6 +127,7 @@ def generar_cuadro_enfrentamientos(df_partidos):
         if local in ['Descansa', 'Bye'] or visitante in ['Descansa', 'Bye']:
             continue
 
+        print('partido:', partido)
         sets = sorted([key for key in partido if 'set' in key])
         resultado = ' '.join([partido[set] for set in sets])
         resultado_visitante =' '.join([resultado_contrario(partido[set]) for set in sets])
