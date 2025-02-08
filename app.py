@@ -52,7 +52,7 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
         juegos_local = 0
         juegos_visitante = 0
 
-        sets = sorted([key for key, value in partido.items() if 'set' in key])
+        sets = sorted([key for key in partido.keys() if 'set' in key])
         for set_result in [partido[set] for set in sets]:
             if '-' in set_result:
                 local_set, visitante_set = map(int, set_result.split('-'))
@@ -128,7 +128,7 @@ def generar_cuadro_enfrentamientos(df_partidos):
         if local in ['Descansa', 'Bye'] or visitante in ['Descansa', 'Bye']:
             continue
 
-        sets = sorted([key for key,value in partido.items() if 'set' in key])
+        sets = sorted([key for key in partido.keys() if 'set' in key])
         resultado = ' '.join([partido[set] for set in sets])
         resultado_visitante =' '.join([resultado_contrario(partido[set]) for set in sets])
         if local != visitante:  # Evitar sobrescribir la diagonal
