@@ -98,6 +98,13 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
     return df_clasificacion
 
 def generar_cuadro_enfrentamientos(df_partidos):
+    def resultado_contrario(set):
+        if '-' in set:
+            puntos = set.split('-')
+            return f'{puntos[1]}-{puntos[0]}'
+        else:
+            return set
+    
     """Genera un cuadro de enfrentamientos basado en los partidos jugados."""
     jugadores = set(df_partidos['local']).union(set(df_partidos['visitante']))
     jugadores.discard('Descansa')  # Excluir 'Descansa'
@@ -120,9 +127,11 @@ def generar_cuadro_enfrentamientos(df_partidos):
         if local in ['Descansa', 'Bye'] or visitante in ['Descansa', 'Bye']:
             continue
 
-        resultado = f"{partido['set_1']} {partido['set_2']} {partido['set_3']}".strip()
+        resultado = ' '.join([partido[set] for sets in partido}
+        resultado_visitante =' '.join([resultado_contrario(partido[set]) for sets in partido}
         if local != visitante:  # Evitar sobrescribir la diagonal
             cuadro.at[local, visitante] = resultado
+            cuadro.at[visitante, local] = resultado_visitante
 
     # Renderizar la tabla con atributos CSS y permitir HTML en celdas
     return cuadro.style.set_table_attributes('class="table matches"').set_td_classes(
