@@ -17,7 +17,7 @@ table {
 }
 
 table thead th {
-  background-color: #faecb4; /* Amarillo claro */
+  background-color: #faecb4; /* Amarillo claro ahora un poco más oscuro */
   color: #333;
   font-weight: bold;
   padding: 0.5rem; /* Menor padding */
@@ -64,7 +64,7 @@ table.classification tbody td:nth-child(2) {
 
 /* Ajuste específico para la columna "Puntos" */
 table.classification thead th:nth-child(3) {
-  background-color: #fef7dc; /* Fondo amarillo claro */
+  background-color: #faecb4; /* Fondo amarillo claro */
   color: #333; /* Texto oscuro */
   font-weight: bold;
   text-align: center;
