@@ -132,7 +132,7 @@ table.matches tbody td.diagonal {
 .header-image img {
   display: block;
   margin: 2rem auto;
-  max-width: 250px;
+  max-width: auto;
   height: auto;
 }
 
