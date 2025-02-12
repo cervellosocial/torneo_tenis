@@ -63,12 +63,21 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
                 else:
                     sets_visitante += 1
 
-        if sets_local > sets_visitante:
-            ganador, perdedor = local, visitante
-        elif sets_visitante > sets_local:
-            ganador, perdedor = visitante, local
-        else:
-            continue
+        if not partido['tie'] :
+            if sets_local > sets_visitante:
+                ganador, perdedor = local, visitante
+            elif sets_visitante > sets_local:
+                ganador, perdedor = visitante, local
+            else:
+                continue
+        else:            
+            tie_local, tie_visitante = map(int, partido['tie'].split('-'))
+            if tie_local > tie_visitante:
+                juegos_local+=1
+                ganador, perdedor = local, visitante
+            else:
+                juegos_visitante+=1
+                ganador, perdedor = visitante, local
 
         # Determinar puntos para el perdedor
         puntos_perdedor = 2 if sets_local + sets_visitante == 3 else 1
