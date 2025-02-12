@@ -7,7 +7,7 @@
       "visitante": "Marc Cano",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     
     {
@@ -17,7 +17,7 @@
       "visitante": "Pol Cejas",
       "set_1": "1-6",
       "set_2": "1-6",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 1,
@@ -26,7 +26,7 @@
       "visitante": "Axel Villar",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 2,
@@ -35,7 +35,7 @@
       "visitante": "Pol Cejas",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 2,
@@ -44,7 +44,7 @@
       "visitante": "Axel Villar",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 2,
@@ -53,7 +53,7 @@
       "visitante": "Sasha Ruiz",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 3,
@@ -62,7 +62,7 @@
       "visitante": "Axel Villar",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 3,
@@ -71,7 +71,7 @@
       "visitante": "Sasha Ruiz",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 3,
@@ -80,7 +80,7 @@
       "visitante": "Nekane Lopez",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 4,
@@ -89,7 +89,7 @@
       "visitante": "Sasha Ruiz",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 4,
@@ -98,7 +98,7 @@
       "visitante": "Nekane Lopez",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 4,
@@ -107,7 +107,7 @@
       "visitante": "Marc Cano",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 5,
@@ -116,7 +116,7 @@
       "visitante": "Nekane Lopez",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 5,
@@ -125,7 +125,7 @@
       "visitante": "Marc Cano",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 5,
@@ -134,7 +134,7 @@
       "visitante": "Pol Cejas",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 6,
@@ -143,7 +143,7 @@
       "visitante": "Nekane Lopez",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 6,
@@ -152,7 +152,7 @@
       "visitante": "Sasha Ruiz",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 6,
@@ -161,7 +161,7 @@
       "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 7,
@@ -170,7 +170,7 @@
       "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 7,
@@ -179,7 +179,7 @@
       "visitante": "Marc Cano",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 7,
@@ -188,7 +188,7 @@
       "visitante": "Nekane Lopez",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 8,
@@ -197,7 +197,7 @@
       "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 8,
@@ -206,7 +206,7 @@
       "visitante": "Pol Cejas",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
       "jornada": 8,
@@ -215,7 +215,7 @@
       "visitante": "Marc Cano",
       "set_1": "",
       "set_2": "",
-      "set_3": ""
+      "tie": ""
     },
     {
         "jornada": 9,
@@ -224,7 +224,7 @@
         "visitante": "Descansa",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
     },
     {
         "jornada": 9,
@@ -233,7 +233,7 @@
         "visitante": "Laura Nasta",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
     },
     {
         "jornada": 9,
@@ -242,7 +242,7 @@
         "visitante": "Pol Cejas",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
     },
     {
         "jornada": 10,
@@ -251,7 +251,7 @@
         "visitante": "Descansa",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
     },
     {
         "jornada": 10,
@@ -260,7 +260,7 @@
         "visitante": "Sasha Ruiz",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
     },
     {
         "jornada": 10,
@@ -269,7 +269,7 @@
         "visitante": "Laura Nasta",
         "set_1": "",
         "set_2": "",
-        "set_3": ""
+        "tie": ""
       }
     ]
 }
