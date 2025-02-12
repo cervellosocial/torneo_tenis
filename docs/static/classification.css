@@ -9,94 +9,338 @@ table {
   width: 100%; /* Ocupar todo el ancho del contenedor */
   max-width: 900px; /* Ancho máximo para pantallas grandes */
   margin: 0 auto; /* Centrar la tabla */
-  border-collapse: collapse; /* Eliminar espacios entre bordes */
-  background-color: #fff; /* Fondo blanco */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  font-size: 0.9rem; /* Tamaño de fuente */
-  border: 2px solid #000; /* Borde negro alrededor de la tabla */
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  border: 2px solid #000;
 }
 
-/* Encabezados de la tabla */
 table thead th {
-  background-color: #faecb4; /* Fondo amarillo claro */
-  color: #333; /* Color del texto gris oscuro */
-  font-weight: bold; /* Texto en negrita */
-  padding: 0.5rem; /* Espaciado interno */
-  text-align: center; /* Alinear texto al centro */
-  border: 2px solid #000; /* Bordes negros */
-  font-size: 0.85rem; /* Reducir tamaño del texto */
+  background-color: #192020; /* Amarillo claro ahora un poco más oscuro */
+  color: #f0df9d;
+  font-weight: bold;
+  padding: 0.5rem; /* Menor padding */
+  text-align: center;
+  border: 2px solid #000;
+  font-size: 0.85rem; /* Texto más pequeño */
 }
 
-/* Celdas del cuerpo de la tabla */
 table tbody td {
-  padding: 0.4rem; /* Espaciado interno */
-  text-align: center; /* Alinear texto al centro */
-  border: 1px solid #ddd; /* Bordes grises claros entre celdas */
-  color: #333; /* Color del texto gris oscuro */
-  word-wrap: break-word; /* Permitir salto de línea si es necesario */
+  padding: 0.4rem; /* Menor padding */
+  text-align: center;
+  border: 1px solid #202020; /* Bordes más suaves */
+  color: #333;
+  word-wrap: break-word;
 }
 
-/* Alternancia de colores en filas */
+/* Alternancia de colores */
 table tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* Fondo blanco para filas impares */
+  background-color: #ffffff;
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+  background-color: #f9f9f9;
 }
 
-/* Efecto hover al pasar el mouse sobre una fila */
 table tbody tr:hover {
-  background-color: #e2e3e5; /* Cambio de color en hover */
-  cursor: pointer; /* Cambiar cursor a puntero */
+  background-color: #e2e3e5;
+  cursor: pointer;
 }
 
-/* Estilos específicos para la tabla de clasificación */
+/* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child {
-  background-color: #f8d7da; /* Fondo rosa claro en la primera columna (posición) */
-  color: #d9534f; /* Texto rojo */
-  font-weight: bold; /* Texto en negrita */
+  background-color: #f8d7da;
+  color: #222222;
+  font-weight: bold;
 }
 
-/* Estilo para la columna "Nombre" en la clasificación */
 table.classification tbody td:nth-child(2) {
-  font-weight: bold; /* Texto en negrita */
-  text-align: left; /* Alinear texto a la izquierda */
-  max-width: 200px; /* Limitar el ancho */
+  font-weight: bold;
+  text-align: left;
+  max-width: 200px; /* Limitar ancho máximo */
   white-space: normal; /* Permitir saltos de línea */
 }
 
-/* Ajuste de la columna "Puntos" en la clasificación */
+/* Ajuste específico para la columna "Puntos" */
 table.classification thead th:nth-child(3) {
   background-color: #faecb4; /* Fondo amarillo claro */
-  color: #333; /* Texto gris oscuro */
-  font-weight: bold; /* Texto en negrita */
-  text-align: center; /* Alinear texto al centro */
+  color: #333; /* Texto oscuro */
+  font-weight: bold;
+  text-align: center;
 }
 
 table.classification tbody td:nth-child(3) {
-  background-color: #a9d785; /* Fondo verde */
-  color: #000000; /* Texto negro */
-  font-weight: bold; /* Texto en negrita */
+  background-color: #f3921d; /* Fondo rosa claro ahora verde*/
+  color: #000000; /* Texto rojo ahora negro */
+  font-weight: bold;
 }
 
-/* Estilo para las celdas diagonales en tablas de encuentros cruzados */
+/* Estilo para Tablas de Encuentros Cruzados */
 table.matches tbody td.diagonal {
   background-color: #3b4dd4; /* Fondo azul oscuro */
   color: #ffffff; /* Texto blanco */
-  font-weight: bold; /* Texto en negrita */
-  text-align: center; /* Alinear texto al centro */
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Media Queries para hacer la tabla más responsiva */
+/* Botones de Categorías */
+.category-buttons {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 2rem; /* Separación entre botones */
+  padding: 2rem 0; /* Espaciado superior e inferior */
+  background-color: #043454; /* Fondo azul oscuro */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo */
+  margin-bottom: 2rem; /* Espacio debajo de los botones */
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.6); /* Sombra inferior */
+
+}
+
+.category-buttons .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline; /* Subrayado estático */
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.category-buttons .btn:hover {
+  color: #d1ecf1;
+  border: 2px solid #ffffff;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .category-buttons {
+    flex-direction: column; /* Botones en columna */
+    align-items: center; /* Centrar los botones */
+    gap: 1rem; /* Reducir espacio entre botones */
+  }
+
+  .category-buttons .btn {
+    width: 90%; /* Ocupar ancho del contenedor */
+    text-align: center; /* Asegurar texto centrado */
+  }
+}
+
+/* Estilo para imágenes */
+.header-image img {
+  display: block;
+  margin: 2rem auto;
+  max-width: auto;
+  height: auto;
+}
+
+.header-content {
+  text-align: center;
+  margin: 2rem 0; /* Espaciado vertical */
+}
+
+.header-content .header-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px; /* Ajustar el tamaño */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-content .header-logo:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Títulos centrados */
+.text-center {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-family: 'Anton', sans-serif;
+}
+
+/* Títulos de las divisiones */
+.division-header {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  color: #000;
+}
+
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
   table {
-    font-size: 0.8rem; /* Reducir el tamaño del texto en pantallas pequeñas */
+    font-size: 0.8rem; /* Reducir texto en pantallas pequeñas */
   }
 
   table thead th,
   table tbody td {
-    padding: 0.3rem; /* Reducir el espaciado interno */
+    padding: 0.3rem; /* Reducir padding */
+  }
+
+  .category-buttons {
+    flex-direction: column; /* Botones en columna */
+    gap: 1rem;
+  }
+
+  .header-image img,
+  .footer-image img {
+    max-width: 90%; /* Asegurar que no sobresalgan */
   }
 }
 
+/* Leyenda Compacta */
+.legend {
+  margin: 1rem auto; /* Reducir márgenes */
+  padding: 0.5rem; /* Reducir padding */
+  border: 1px solid #ccc; /* Borde más fino */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 85%; /* Ajuste del ancho */
+  max-width: 500px; /* Máximo ancho reducido */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+}
+
+.legend h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem; /* Reducir espacio inferior */
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+  font-weight: bold;
+}
+
+.legend ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinear en fila */
+  flex-wrap: wrap; /* Permitir múltiples filas */
+  justify-content: center; /* Centrar elementos */
+  gap: 0.5rem; /* Separación entre elementos */
+}
+
+.legend li {
+  margin: 0; /* Eliminar márgenes */
+  color: #555;
+  font-size: 0.8rem; /* Reducir tamaño de fuente */
+  text-align: center; /* Asegurar alineación */
+}
+
+.legend li strong {
+  color: #000; /* Resaltar texto en negrita */
+}
+
+
+/* Centrar las categorías en la sección de calendarios */
+.centered-category {
+  text-align: center; /* Centrar texto y contenido */
+  margin: 1rem auto; /* Agregar espacio y centrar el contenedor */
+  max-width: 800px; /* Limitar el ancho máximo */
+}
+
+.centered-category h3 {
+  font-family: 'Bebas Neue', sans-serif; /* Estilo para el título */
+  font-size: 1.8rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Separación debajo del título */
+}
+
+.centered-category div {
+  display: inline-block; /* Permitir contenido alineado al centro */
+  text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
+  width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+/* Contenedor del botón de calendario */
+.calendar-button-container {
+    text-align: center; /* Centrar el botón */
+    margin: 1rem 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo del botón de calendario */
+.btn-calendar {
+    display: inline-block;
+    background-color: #0056b3; /* Azul */
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-calendar:hover {
+    background-color: #003d82; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Pequeño efecto de zoom */
+}
+/* Estilo para Calendarios */
+.calendar-section table {
+  width: 100%; /* Ocupar todo el ancho */
+  margin: 1rem auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.calendar-section th,
+.calendar-section td {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Estilo para el encabezado */
+.calendar-section th {
+  background-color: #043454;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.calendar-section tbody tr.jornada-impar td {
+  background-color: rgba(236, 243, 244, 0.933) !important; /* Fuerza el color de fondo */
+}
+
+.calendar-section tbody tr.jornada-par td {
+  background-color: #ffffff !important; /* Fuerza el color de fondo */
+}
+
+/* Hover en filas */
+.calendar-section tbody tr:hover {
+  background-color: #0d5394; /* Azul claro */
+  cursor: pointer;
+}
+
+/* Botón Ir al Inicio */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem; /* Distancia desde la parte inferior */
+  right: 2rem; /* Distancia desde la derecha */
+  background-color: #0056b3; /* Azul */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%; /* Botón redondo */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #003d82; /* Azul más oscuro */
+  transform: scale(1.1); /* Pequeño zoom */
+}
+
+/* Ocultar el botón inicialmente */
+.back-to-top.hidden {
+  display: none;
+}
