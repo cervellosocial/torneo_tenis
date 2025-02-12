@@ -63,42 +63,40 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
                 else:
                     sets_visitante += 1
 
-        if not partido['tie'] :
-            if sets_local > sets_visitante:
-                ganador, perdedor = local, visitante
-            elif sets_visitante > sets_local:
-                ganador, perdedor = visitante, local
-            else:
-                continue
-        else:            
+        if partido['tie'] :
             tie_local, tie_visitante = map(int, partido['tie'].split('-'))
             if tie_local > tie_visitante:
                 juegos_local+=1
                 sets_local+=1
-                ganador, perdedor = local, visitante
             else:
                 juegos_visitante+=1
                 sets_visitante+=1
-                ganador, perdedor = visitante, local
 
         # Determinar puntos para el perdedor
-        puntos_perdedor = 2 if sets_local + sets_visitante == 3 else 1
-        puntos_ganador = 3
+        
+        puntos_local = 3 if sets_local>sets_visitante else 2 if sets_local>0 else 1
+        puntos_visitante = 3 if sets_visitante>sets_local else 2 if sets_visitante>0 else 1
 
         # Actualizar estadísticas del ganador
-        df_clasificacion.loc[df_clasificacion['Jugador'] == ganador, ['P.J', 'P.G', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
-            1, 1, max(sets_local, sets_visitante), min(sets_local, sets_visitante),
-            juegos_local if ganador == local else juegos_visitante,
-            juegos_visitante if ganador == local else juegos_local,
-            puntos_ganador
+        df_clasificacion.loc[df_clasificacion['Jugador'] == local, ['P.J', 'P.G', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
+            1,
+            1 if sets_local>sets_visitante,
+            sets_local,
+            sets_visitante,
+            juegos_local,
+            juegos_visitante,
+            puntos_local
         ]
 
         # Actualizar estadísticas del perdedor
-        df_clasificacion.loc[df_clasificacion['Jugador'] == perdedor, ['P.J', 'P.P', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
-            1, 1, min(sets_local, sets_visitante), max(sets_local, sets_visitante),
-            juegos_visitante if perdedor == visitante else juegos_local,
-            juegos_local if perdedor == visitante else juegos_visitante,
-            puntos_perdedor
+        df_clasificacion.loc[df_clasificacion['Jugador'] == visitante, ['P.J', 'P.P', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
+            1,
+            1 if sets_visitante>sets_local,
+            sets_visitante,
+            sets_local,
+            juegos_visitante,
+            juegos_local,
+            puntos_visitante
         ]
 
     # Calcular la diferencia de juegos
