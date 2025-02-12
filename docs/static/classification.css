@@ -29,7 +29,7 @@ table thead th {
 table tbody td {
   padding: 0.4rem; /* Menor padding */
   text-align: center;
-  border: 1px solid #ddd; /* Bordes más suaves */
+  border: 1px solid #202020; /* Bordes más suaves */
   color: #333;
   word-wrap: break-word;
 }
