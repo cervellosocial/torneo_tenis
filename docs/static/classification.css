@@ -50,7 +50,7 @@ table tbody tr:hover {
 
 /* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child {
-  background-color: #f8d7da;
+  background-color: #f6eaae;
   color: #222222;
   font-weight: bold;
 }
@@ -64,8 +64,8 @@ table.classification tbody td:nth-child(2) {
 
 /* Ajuste específico para la columna "Puntos" */
 table.classification thead th:nth-child(3) {
-  /* background-color: #faecb4;*/ /* Fondo amarillo claro */
-  /* color: #333;*/ /* Texto oscuro */
+   background-color: #f6eaae; /* Fondo amarillo claro */
+  color: #333; /* Texto oscuro */
   font-weight: bold;
   text-align: center;
 }
