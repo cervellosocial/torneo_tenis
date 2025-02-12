@@ -71,7 +71,7 @@ table.classification thead th:nth-child(3) {
 }
 
 table.classification tbody td:nth-child(3) {
-  background-color: #f3921d; /* Fondo rosa claro ahora verde*/
+  background-color: #f6eaae; /* Fondo rosa claro ahora verde*/
   color: #000000; /* Texto rojo ahora negro */
   font-weight: bold;
 }
