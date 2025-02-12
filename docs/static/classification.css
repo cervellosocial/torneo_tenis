@@ -17,8 +17,8 @@ table {
 }
 
 table thead th {
-  background-color: #faecb4; /* Amarillo claro ahora un poco más oscuro */
-  color: #333;
+  background-color: #192020; /* Amarillo claro ahora un poco más oscuro */
+  color: #f0df9d;
   font-weight: bold;
   padding: 0.5rem; /* Menor padding */
   text-align: center;
@@ -71,7 +71,7 @@ table.classification thead th:nth-child(3) {
 }
 
 table.classification tbody td:nth-child(3) {
-  background-color: #a9d785; /* Fondo rosa claro ahora verde*/
+  background-color: #f3921d; /* Fondo rosa claro ahora verde*/
   color: #000000; /* Texto rojo ahora negro */
   font-weight: bold;
 }
