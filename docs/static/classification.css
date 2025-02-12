@@ -50,7 +50,7 @@ table tbody tr:hover {
 
 /* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child {
-  background-color: #f8d7da;
+  background-color: #f3921d; /* Fondo rnaranja columna izquierda claro */
   color: #222222;
   font-weight: bold;
 }
