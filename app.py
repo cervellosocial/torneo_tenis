@@ -78,9 +78,10 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
         puntos_visitante = 3 if sets_visitante>sets_local else 2 if sets_visitante>0 else 1
 
         # Actualizar estadísticas del ganador
-        df_clasificacion.loc[df_clasificacion['Jugador'] == local, ['P.J', 'P.G', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
+        df_clasificacion.loc[df_clasificacion['Jugador'] == local, ['P.J', 'P.G', 'P.P', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
             1,
-            1 if sets_local>sets_visitante,
+            1 if sets_local>sets_visitante else 0,
+            0 if sets_local>sets_visitante else 1,
             sets_local,
             sets_visitante,
             juegos_local,
@@ -89,9 +90,10 @@ def actualizar_clasificacion(df_partidos, df_clasificacion):
         ]
 
         # Actualizar estadísticas del perdedor
-        df_clasificacion.loc[df_clasificacion['Jugador'] == visitante, ['P.J', 'P.P', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
+        df_clasificacion.loc[df_clasificacion['Jugador'] == visitante, ['P.J',  'P.G', 'P.P', 'S.G', 'S.P', 'J.G', 'J.P', 'Puntos']] += [
             1,
-            1 if sets_visitante>sets_local,
+            1 if sets_visitante>sets_local else 0,
+            0 if sets_visitante>sets_local else 1,
             sets_visitante,
             sets_local,
             juegos_visitante,
