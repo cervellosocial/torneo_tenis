@@ -7,7 +7,7 @@
             "visitante": "Jordi Garrido",
             "set_1": "0-6",
             "set_2": "2-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 1,
@@ -16,7 +16,7 @@
             "visitante": "Marc Garrido",
             "set_1": "6-2",
             "set_2": "6-1",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 1,
@@ -25,7 +25,7 @@
             "visitante": "Laura Nasta",
             "set_1": "6-2",
             "set_2": "4-6",
-            "set_3": "10-4"
+            "tie": "10-4"
         },
         {
             "jornada": 2,
@@ -34,7 +34,7 @@
             "visitante": "Marc Garrido",
             "set_1": "1-6",
             "set_2": "4-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 2,
@@ -43,7 +43,7 @@
             "visitante": "Laura Nasta",
             "set_1": "6-1",
             "set_2": "6-0",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 2,
@@ -52,7 +52,7 @@
             "visitante": "Soledad Manes",
             "set_1": "6-0",
             "set_2": "6-1",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 3,
@@ -61,7 +61,7 @@
             "visitante": "Laura Nasta",
             "set_1": "4-6",
             "set_2": "3-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 3,
@@ -70,7 +70,7 @@
             "visitante": "Soledad Manes",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 3,
@@ -79,7 +79,7 @@
             "visitante": "Jose Antonio",
             "set_1": "2-6",
             "set_2": "3-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 4,
@@ -88,7 +88,7 @@
             "visitante": "Soledad Manes",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 4,
@@ -97,7 +97,7 @@
             "visitante": "Jose Antonio",
             "set_1": "3-6",
             "set_2": "0-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 4,
@@ -106,7 +106,7 @@
             "visitante": "Jordi Garrido",
             "set_1": "4-6",
             "set_2": "4-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 5,
@@ -115,7 +115,7 @@
             "visitante": "Jose Antonio",
             "set_1": "1-6",
             "set_2": "0-6",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 5,
@@ -124,7 +124,7 @@
             "visitante": "Jordi Garrido",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 5,
@@ -133,7 +133,7 @@
             "visitante": "Marc Garrido",
             "set_1": "6-2",
             "set_2": "6-1",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 6,
@@ -142,7 +142,7 @@
             "visitante": "Jose Antonio",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 6,
@@ -151,7 +151,7 @@
             "visitante": "Soledad Manes",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 6,
@@ -160,7 +160,7 @@
             "visitante": "Montse Solsona",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 7,
@@ -169,7 +169,7 @@
             "visitante": "Montse Solsona",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 7,
@@ -178,7 +178,7 @@
             "visitante": "Jordi Garrido",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 7,
@@ -187,7 +187,7 @@
             "visitante": "Jose Antonio",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 8,
@@ -196,7 +196,7 @@
             "visitante": "Montse Solsona",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 8,
@@ -205,7 +205,7 @@
             "visitante": "Marc Garrido",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 8,
@@ -214,7 +214,7 @@
             "visitante": "Jordi Garrido",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 9,
@@ -223,7 +223,7 @@
             "visitante": "Montse Solsona",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 9,
@@ -232,7 +232,7 @@
             "visitante": "Laura Nasta",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 9,
@@ -241,7 +241,7 @@
             "visitante": "Marc Garrido",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 10,
@@ -250,7 +250,7 @@
             "visitante": "Montse Solsona",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 10,
@@ -259,7 +259,7 @@
             "visitante": "Soledad Manes",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         },
         {
             "jornada": 10,
@@ -268,7 +268,7 @@
             "visitante": "Laura Nasta",
             "set_1": "",
             "set_2": "",
-            "set_3": ""
+            "tie": ""
         }
     ]
 }
