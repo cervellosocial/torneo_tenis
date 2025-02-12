@@ -51,7 +51,7 @@ table tbody tr:hover {
 /* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child {
   background-color: #f8d7da;
-  color: #d9534f;
+  color: #222222;
   font-weight: bold;
 }
 
