@@ -63,13 +63,14 @@ table.classification tbody td:nth-child(2) {
 }
 
 /* Ajuste específico para la columna "Puntos" */
+/*
 table.classification thead th:nth-child(3) {
   background-color: #faecb4; /* Fondo amarillo claro */
   color: #333; /* Texto oscuro */
   font-weight: bold;
   text-align: center;
 }
-
+*/
 table.classification tbody td:nth-child(3) {
   background-color: #f3921d; /* Fondo rosa claro ahora verde*/
   color: #000000; /* Texto rojo ahora negro */
