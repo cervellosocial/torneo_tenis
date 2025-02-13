@@ -53,7 +53,7 @@ table.classification tbody td:first-child {
   background-color: #fcbc4b;
   color: #1b201e;
   font-weight: bold;
-  width: 50px; /* Ajusta este valor para reducir el ancho */
+  width: 30px; /* Ajusta este valor para reducir el ancho */
   max-width: 50px; /* Limita el ancho máximo */
   text-align: center; /* Asegura alineación */
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
