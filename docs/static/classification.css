@@ -61,13 +61,12 @@ table.classification tbody td:first-child {
   text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
 
+/* Ajuste en la columna de nombres */
 table.classification tbody td:nth-child(2) {
-  font-weight: bold;
-  text-align: left;
-  width: 90px; /* Ajusta este valor para reducir el ancho */
-  max-width: 90px; /* Limita el ancho máximo */
-  overflow: hidden; /* Oculta el contenido sobrante */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+  font-weight: bold; /* Texto en negrita */
+  text-align: left; /* Alinear texto a la izquierda */
+  max-width: 100px; /* Limitar el ancho máximo */
+  white-space: normal; /* Permitir saltos de línea */
 }
 
 /* Ajuste específico para la columna "Puntos" */
