@@ -65,7 +65,7 @@ table.classification tbody td:first-child {
 table.classification tbody td:nth-child(2) {
   font-weight: bold; /* Texto en negrita */
   text-align: left; /* Alinear texto a la izquierda */
-  max-width: 100px; /* Limitar el ancho máximo */
+  max-width: 80px; /* Limitar el ancho máximo */
   white-space: normal; /* Permitir saltos de línea */
 }
 
