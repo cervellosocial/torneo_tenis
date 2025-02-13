@@ -66,6 +66,10 @@ table.classification tbody td:nth-child(2) {
   text-align: left;
   max-width: 200px; /* Limitar ancho máximo */
   white-space: normal; /* Permitir saltos de línea */
+  width: 70px; /* Ajusta este valor para reducir el ancho */
+  max-width: 70px; /* Limita el ancho máximo */
+  overflow: hidden; /* Oculta el contenido sobrante */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
 
 /* Ajuste específico para la columna "Puntos" */
@@ -74,12 +78,24 @@ table.classification thead th:nth-child(3) {
  /* color: #333; /* Texto oscuro */
   font-weight: bold;
   text-align: center;
+  width: 30px; /* Ajusta este valor para reducir el ancho */
+  max-width: 30px; /* Limita el ancho máximo */
+  text-align: center; /* Asegura alineación */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el contenido sobrante */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
 
 table.classification tbody td:nth-child(3) {
   background-color: #fcbc4b; /*  Fondo rosa claro ahora verde*/
    color: #1b201e; /* Texto rojo ahora negro */
   font-weight: bold;
+  width: 30px; /* Ajusta este valor para reducir el ancho */
+  max-width: 30px; /* Limita el ancho máximo */
+  text-align: center; /* Asegura alineación */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el contenido sobrante */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
 
 /* Estilo para Tablas de Encuentros Cruzados */
