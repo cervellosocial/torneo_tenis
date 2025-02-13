@@ -6,7 +6,7 @@
 
 /* Estilos Generales para Tablas */
 table {
-  width: 60px; /* Ocupar todo el ancho del contenedor */
+  width: 100%; /* Ocupar todo el ancho del contenedor */
   max-width: 900px; /* Ancho máximo para pantallas grandes */
   margin: 0 auto; /* Centrar la tabla */
   border-collapse: collapse;
@@ -50,7 +50,6 @@ table tbody tr:hover {
 
 /* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child,
-table.classification tbody td:not(:nth-child(2)) { /* Todas menos la segunda */
   background-color: #fcbc4b;
   color: #1b201e;
   font-weight: bold;
