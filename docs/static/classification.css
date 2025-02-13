@@ -71,7 +71,7 @@ table.classification tbody td:nth-child(2) {
 
 /* Ajuste específico para la columna "Puntos" */
 table.classification thead th:nth-child(3) {
-   /* background-color: #f6eaae; /* Fondo amarillo claro */
+   /* background-color: #f6eaae; Fondo amarillo claro */
  /* color: #333; /* Texto oscuro */
   font-weight: bold;
   width: 30px; /* Ajusta este valor para reducir el ancho */
