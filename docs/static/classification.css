@@ -64,7 +64,6 @@ table.classification tbody td:first-child {
 table.classification tbody td:nth-child(2) {
   font-weight: bold;
   text-align: left;
-  max-width: 200px; /* Limitar ancho máximo */
   white-space: normal; /* Permitir saltos de línea */
   width: 70px; /* Ajusta este valor para reducir el ancho */
   max-width: 70px; /* Limita el ancho máximo */
@@ -77,7 +76,6 @@ table.classification thead th:nth-child(3) {
    /* background-color: #f6eaae; /* Fondo amarillo claro */
  /* color: #333; /* Texto oscuro */
   font-weight: bold;
-  text-align: center;
   width: 30px; /* Ajusta este valor para reducir el ancho */
   max-width: 50px; /* Limita el ancho máximo */
   text-align: center; /* Asegura alineación */
