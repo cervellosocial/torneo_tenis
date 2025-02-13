@@ -50,8 +50,8 @@ table tbody tr:hover {
 
 /* Estilo para Tablas de Clasificación */
 table.classification tbody td:first-child {
-  background-color: #f6eaae;
-  color: #222222;
+  background-color: #fcbc4b;
+  color: #1b201e;
   font-weight: bold;
 }
 
@@ -71,8 +71,8 @@ table.classification thead th:nth-child(3) {
 }
 
 table.classification tbody td:nth-child(3) {
- /*  background-color: #f6eaae; /* Fondo rosa claro ahora verde*/
- /*  color: #000000; /* Texto rojo ahora negro */
+  background-color: #fcbc4b; /*  Fondo rosa claro ahora verde*/
+   color: #1b201e; /* Texto rojo ahora negro */
   font-weight: bold;
 }
 
