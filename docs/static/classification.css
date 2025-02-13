@@ -66,7 +66,7 @@ table.classification tbody td:nth-child(2) {
   text-align: left;
   white-space: normal; /* Permitir saltos de línea */
   width: 70px; /* Ajusta este valor para reducir el ancho */
-  max-width: 70px; /* Limita el ancho máximo */
+  max-width: 100px; /* Limita el ancho máximo */
   overflow: hidden; /* Oculta el contenido sobrante */
   text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
 }
