@@ -101,21 +101,11 @@ table.matches tbody td.diagonal {
   font-weight: bold;
   text-align: center;
 }
-/* Centrar texto en la primera fila y columna BORRAR*/
-table.matches thead th,
-table.matches tbody td:first-child {
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap; /* Evitar saltos de línea */
-  overflow: hidden; /* Ocultar el exceso de texto */
-  text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto es muy largo */
-}
-
-/* Ajustar ancho mínimo de las celdas <BORRAR*/
-table.matches thead th,
-table.matches tbody td {
-  min-width: 60px; /* Ajusta según el contenido */
-  max-width: 100px; /* Evitar que las celdas se expandan demasiado */
+/* Contenedor de tablas para hacerlas responsivas BORRAR*/
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
 }
 
 /* Botones de Categorías */
