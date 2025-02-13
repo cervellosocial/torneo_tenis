@@ -49,7 +49,8 @@ table tbody tr:hover {
 }
 
 /* Estilo para Tablas de Clasificación */
-table.classification tbody td:first-child {
+table.classification tbody td:first-child,
+table.classification tbody td:not(:nth-child(2)) { /* Todas menos la segunda */
   background-color: #fcbc4b;
   color: #1b201e;
   font-weight: bold;
