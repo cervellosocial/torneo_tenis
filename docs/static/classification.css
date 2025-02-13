@@ -6,7 +6,7 @@
 
 /* Estilos Generales para Tablas */
 table {
-  width: 100%; /* Ocupar todo el ancho del contenedor */
+  width: 60px; /* Ocupar todo el ancho del contenedor */
   max-width: 900px; /* Ancho máximo para pantallas grandes */
   margin: 0 auto; /* Centrar la tabla */
   border-collapse: collapse;
