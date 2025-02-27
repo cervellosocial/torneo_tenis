@@ -38,7 +38,7 @@
         },
         {
             "jornada": 2,
-            "fecha": "Del 12/11 a 03/12",
+            "fecha": "Del 19/11 a 17/12",
             "local": "Alberto Díaz",
             "visitante": "Domenec Ramadan",
             "set_1": "3-6",
@@ -47,7 +47,7 @@
         },
         {
             "jornada": 2,
-            "fecha": "Del 12/11 a 03/12",
+            "fecha": "Del 19/11 a 17/12",
             "local": "Sergi Déu déu",
             "visitante": "Antonio Ruiz",
             "set_1": "6-0",
@@ -56,7 +56,7 @@
         },
         {
             "jornada": 2,
-            "fecha": "Del 12/11 a 03/12",
+            "fecha": "Del 19/11 a 17/12",
             "local": "Daniel Álvarez",
             "visitante": "Aurelio Calvo",
             "set_1": "6-0",
@@ -65,7 +65,7 @@
         },
         {
             "jornada": 2,
-            "fecha": "Del 12/11 a 03/12",
+            "fecha": "Del 19/11 a 17/12",
             "local": "Alberto Cerceda",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -74,7 +74,7 @@
         },
         {
             "jornada": 3,
-            "fecha": "Del 04/12 a 25/12",
+            "fecha": "Del 18/12 a 25/12",
             "local": "Alberto Díaz",
             "visitante": "Antonio Ruiz",
             "set_1": "6-0",
@@ -83,7 +83,7 @@
         },
         {
             "jornada": 3,
-            "fecha": "Del 04/12 a 25/12",
+            "fecha": "Del 18/12 a 25/12",
             "local": "Domenec Ramadan",
             "visitante": "Aurelio Calvo",
             "set_1": "6-2",
@@ -92,7 +92,7 @@
         },
         {
             "jornada": 3,
-            "fecha": "Del 04/12 a 25/12",
+            "fecha": "Del 18/12 a 25/12",
             "local": "Sergi Déu déu",
             "visitante": "Jose Luis",
             "set_1": "7-5",
@@ -101,7 +101,7 @@
         },
         {
             "jornada": 3,
-            "fecha": "Del 04/12 a 25/12",
+            "fecha": "Del 18/12 a 25/12",
             "local": "Daniel Álvarez",
             "visitante": "Alberto Cerceda",
             "set_1": "",
@@ -110,7 +110,7 @@
         },
         {
             "jornada": 4,
-            "fecha": "Del 26/12 a 16/01",
+            "fecha": "Del 16/01 a 13/02",
             "local": "Aurelio Calvo",
             "visitante": "Alberto Díaz",
             "set_1": "4-6",
@@ -119,7 +119,7 @@
         },
         {
             "jornada": 4,
-            "fecha": "Del 26/12 a 16/01",
+            "fecha": "Del 16/01 a 13/02",
             "local": "Jose Luis",
             "visitante": "Antonio Ruiz",
             "set_1": "4_6",
@@ -128,7 +128,7 @@
         },
         {
             "jornada": 4,
-            "fecha": "Del 26/12 a 16/01",
+            "fecha": "Del 16/01 a 13/02",
             "local": "Alberto Cerceda",
             "visitante": "Domenec Ramadan",
             "set_1": "",
@@ -137,7 +137,7 @@
         },
         {
             "jornada": 4,
-            "fecha": "Del 26/12 a 16/01",
+            "fecha": "Del 16/01 a 13/02",
             "local": "Daniel Álvarez",
             "visitante": "Sergi Déu déu",
             "set_1": "7-5",
@@ -146,7 +146,7 @@
         },
         {
             "jornada": 5,
-            "fecha": "Del 17/01 a 07/02",
+            "fecha": "Del 14/02 a 14/03",
             "local": "Jose Luis",
             "visitante": "Alberto Díaz",
             "set_1": "",
@@ -155,7 +155,7 @@
         },
         {
             "jornada": 5,
-            "fecha": "Del 17/01 a 07/02",
+            "fecha": "Del 14/02 a 14/03",
             "local": "Alberto Cerceda",
             "visitante": "Aurelio Calvo",
             "set_1": "",
@@ -164,7 +164,7 @@
         },
         {
             "jornada": 5,
-            "fecha": "Del 17/01 a 07/02",
+            "fecha": "Del 14/02 a 14/03",
             "local": "Daniel Álvarez",
             "visitante": "Antonio Ruiz",
             "set_1": "",
@@ -173,7 +173,7 @@
         },
         {
             "jornada": 5,
-            "fecha": "Del 17/01 a 07/02",
+            "fecha": "Del 14/02 a 14/03",
             "local": "Sergi Déu déu",
             "visitante": "Domenec Ramadan",
             "set_1": "",
@@ -182,7 +182,7 @@
         },
         {
             "jornada": 6,
-            "fecha": "Del 08/02 a 01/03",
+            "fecha": "Del 15/03 a 12/04",
             "local": "Alberto Cerceda",
             "visitante": "Alberto Díaz",
             "set_1": "",
@@ -191,7 +191,7 @@
         },
         {
             "jornada": 6,
-            "fecha": "Del 08/02 a 01/03",
+            "fecha": "Del 15/03 a 12/04",
             "local": "Daniel Álvarez",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -200,7 +200,7 @@
         },
         {
             "jornada": 6,
-            "fecha": "Del 08/02 a 01/03",
+            "fecha": "Del 15/03 a 12/04",
             "local": "Sergi Déu déu",
             "visitante": "Aurelio Calvo",
             "set_1": "",
@@ -209,7 +209,7 @@
         },
         {
             "jornada": 6,
-            "fecha": "Del 08/02 a 01/03",
+            "fecha": "Del 15/03 a 12/04",
             "local": "Domenec Ramadan",
             "visitante": "Antonio Ruiz",
             "set_1": "",
@@ -218,7 +218,7 @@
         },
         {
             "jornada": 7,
-            "fecha": "Del 02/03 a 23/03",
+            "fecha": "Del 13/04 a 11/05",
             "local": "Daniel Álvarez",
             "visitante": "Alberto Díaz",
             "set_1": "",
@@ -227,7 +227,7 @@
         },
         {
             "jornada": 7,
-            "fecha": "Del 02/03 a 23/03",
+            "fecha": "Del 13/04 a 11/05",
             "local": "Sergi Déu déu",
             "visitante": "Alberto Cerceda",
             "set_1": "",
@@ -236,7 +236,7 @@
         },
         {
             "jornada": 7,
-            "fecha": "Del 02/03 a 23/03",
+            "fecha": "Del 13/04 a 11/05",
             "local": "Domenec Ramadan",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -245,7 +245,7 @@
         },
         {
             "jornada": 7,
-            "fecha": "Del 02/03 a 23/03",
+            "fecha": "Del 13/04 a 11/05",
             "local": "Antonio Ruiz",
             "visitante": "Aurelio Calvo",
             "set_1": "",
