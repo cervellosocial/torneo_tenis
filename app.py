@@ -141,7 +141,7 @@ def generar_cuadro_enfrentamientos(df_partidos):
 
         sets = sorted([key for key in partido.keys() if 'set' in key])+['tie']
         resultado = '<br>'.join([partido[set] for set in sets])+'<br>'
-        resultado_visitante ='<br>'.join([resultado_contrario(partido[set]) for set in sets])+'<br>
+        resultado_visitante ='<br>'.join([resultado_contrario(partido[set]) for set in sets])+'<br>'
         if local != visitante:  # Evitar sobrescribir la diagonal
             if cuadro.at[local, visitante]:
                 cuadro.at[local, visitante] += '--- <br>'
