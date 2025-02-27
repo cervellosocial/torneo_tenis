@@ -13,6 +13,7 @@ table.matches {
 
 /* Encabezado */
 table.matches th {
+  width: 30px; /* Ajusta este valor para reducir el ancho */
   background-color: #e8f4fc; /* Fondo azul claro */
   color: #333;
   font-weight: bold;
