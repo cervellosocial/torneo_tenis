@@ -2,7 +2,7 @@
     "datos_partidos": [
         {
             "jornada": 1,
-            "fecha": "Del 21/10 a 11/11",
+            "fecha": "Del 21/10 a 18/11",
             "local": "Alberto Díaz",
             "visitante": "Sergi Déu déu",
             "set_1": "0-6",
@@ -11,7 +11,7 @@
         },
         {
             "jornada": 1,
-            "fecha": "Del 21/10 a 11/11",
+            "fecha": "Del 21/10 a 18/11",
             "local": "Daniel Álvarez",
             "visitante": "Domenec Ramadan",
             "set_1": "6-7",
@@ -20,7 +20,7 @@
         },
         {
             "jornada": 1,
-            "fecha": "Del 21/10 a 11/11",
+            "fecha": "Del 21/10 a 18/11",
             "local": "Alberto Cerceda",
             "visitante": "Antonio Ruiz",
             "set_1": "",
@@ -29,7 +29,7 @@
         },
         {
             "jornada": 1,
-            "fecha": "Del 21/10 a 11/11",
+            "fecha": "Del 21/10 a 18/11",
             "local": "Jose Luis",
             "visitante": "Aurelio Calvo",
             "set_1": "3-6",
