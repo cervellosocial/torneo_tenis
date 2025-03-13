@@ -1,4 +1,4 @@
-{
+s{
   "datos_partidos": [
     {
       "jornada": 1,
@@ -140,7 +140,7 @@
       "jornada": 6,
       "fecha": "Del 08/02 a 01/03",
       "local": "Marc Cano",
-      "visitante": "Nekane Lopez",
+      "visitante": "Descansa",
       "set_1": "0",
       "set_2": "0",
       "tie": ""
@@ -149,7 +149,7 @@
       "jornada": 6,
       "fecha": "Del 08/02 a 01/03",
       "local": "Pol Cejas",
-      "visitante": "Sasha Ruiz",
+      "visitante": "Nekane Lopez",
       "set_1": "0",
       "set_2": "0",
       "tie": ""
@@ -158,7 +158,7 @@
       "jornada": 6,
       "fecha": "Del 08/02 a 01/03",
       "local": "Axel Villar",
-      "visitante": "Descansa",
+      "visitante": "Sasha Ruiz",
       "set_1": "",
       "set_2": "",
       "tie": ""
