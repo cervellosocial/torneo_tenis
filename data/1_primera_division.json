@@ -95,8 +95,8 @@
             "fecha": "Del 04/12 a 25/12",
             "local": "Fran Morales",
             "visitante": "Esther Garrós",
-            "set_1": "0-6",
-            "set_2": "0-6",
+            "set_1": "6-0",
+            "set_2": "6-0",
             "tie": ""
         },
         {
@@ -185,8 +185,8 @@
             "fecha": "Del 17/01 a 07/02",
             "local": "Alejo Zeballo",
             "visitante": "Fran Morales",
-            "set_1": "0",
-            "set_2": "0",
+            "set_1": "6-0",
+            "set_2": "6-0",
             "tie": ""
         },
         {
@@ -275,8 +275,8 @@
             "fecha": "Del 02/03 a 23/03",
             "local": "Mario Cuenca",
             "visitante": "Fran Morales",
-            "set_1": "",
-            "set_2": "",
+            "set_1": "0",
+            "set_2": "0",
             "tie": ""
         },
         {
