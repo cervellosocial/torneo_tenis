@@ -18,20 +18,18 @@
 </style>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Tornejos Cervellos</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./static/classification.css">
-    <link rel="stylesheet" href="./static/matches.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playoffs Cervellos</title>
 </head>
 <body>
-    {% for playoff in playoffs %}
-    <div class="container">
-    <h2>{{playoff.name}}</h2>
-    {{playoff.tabla}}
-    </div>
-    {% endfor %}
+  <h1>Playoffs</h1>
+
+  {% for playoff in playoffs %}
+  <div class="container">
+  <h2>{{playoff.name}}</h2>
+  {{playoff.tabla}}
+  </div>
+  {% endfor %}
 </body>
 </html>
