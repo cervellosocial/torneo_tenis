@@ -183,8 +183,8 @@ def generar_tabla_calendario(df_partidos):
     tabla_html += '</tbody></table>'
     return tabla_html
 
-def mostrar_tablas():
-    """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON en la carpeta data."""
+def generar_torneos():
+    """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON de torno en la carpeta data."""
     data_dir = os.path.join(os.path.dirname(__file__), 'data')
     tablas = {}
     cuadros = {}
@@ -230,4 +230,4 @@ def mostrar_tablas():
     #return render_template('tablas.html', tablas=tablas, cuadros=cuadros, calendarios=calendarios)
 
 if __name__ == '__main__':
-    mostrar_tablas()
+    generar_torneos()
