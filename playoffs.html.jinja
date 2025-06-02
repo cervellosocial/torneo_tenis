@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.playoff_table {
+  border-collapse: collapse;
+}
+.playoff_player1 {
+  border-bottom: solid 2px;
+}
+.playoff_player2 {
+  border-bottom: solid 2px;
+  border-right: solid 2px;
+}
+.playoff_match {
+  border-right: solid 2px;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Tornejos Cervellos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/classification.css">
+    <link rel="stylesheet" href="./static/matches.css">
+</head>
+<body>
+    {% for playoff in playoffs %}
+    <div class="container">
+    <h2>{{playoff.name}}</h2>
+    {{playoff.tabla}}
+    </div>
+    {% endfor %}
+</body>
+</html>
