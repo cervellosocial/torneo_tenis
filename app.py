@@ -192,7 +192,7 @@ def mostrar_tablas():
 
     # Obtener archivos JSON y ordenarlos numéricamente según el prefijo del nombre
     archivos_json = sorted(
-        [f for f in os.listdir(data_dir) if f.endswith('.json')],
+        [f for f in os.listdir(data_dir) if f.startswith('torneo') and f.endswith('.json')],
         key=lambda x: int(x.split('_')[0])  # Extraer y convertir el número inicial a entero
     )
 
