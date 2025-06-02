@@ -19,7 +19,7 @@ def prepare_data():
       print(ronda,lenN,'k',k,'o',o)
       for i,entry in enumerate(group[ronda]['partidos']):
         for ii in range(int(k/2)):
-          row[int(o+i*k+ii)]=('','class="join"')
+          row[int(o+i*k+ii)]=('','class="playoff_match"')
         row[int(o+i*k)]=(entry['jugador1'],'class="playoff_player1"')
         row[int(o+i*k+k/2)]=(entry['jugador2'],'class="playoff_player2"')
         row[int(o+i*k+k/4)]=(entry['resultado'],'class="playoff_match"')
@@ -46,10 +46,10 @@ def prepare_data():
   
     out.append({
       'name':group['categoria'],
-      'tabla':tabla_html
+      'tabla':'\n'.join(tabla_html)
     })
 
-  print('\n'.join(tabla_html))
+  #print('\n'.join(tabla_html))
   return out
 
 def generate_playoffs():
