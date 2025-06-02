@@ -20,9 +20,9 @@ def prepare_data():
       for i,entry in enumerate(group[ronda]['partidos']):
         for ii in range(int(k/2)):
           row[int(o+i*k+ii)]=('','class="join"')
-        row[int(o+i*k)]=(entry['jugador1'],'class="player"')
-        row[int(o+i*k+k/2)]=(entry['jugador2'],'class="player"')
-        row[int(o+i*k+k/4)]=(entry['resultado'],'class="join"')
+        row[int(o+i*k)]=(entry['jugador1'],'class="playoff_player1"')
+        row[int(o+i*k+k/2)]=(entry['jugador2'],'class="playoff_player2"')
+        row[int(o+i*k+k/4)]=(entry['resultado'],'class="playoff_match"')
       tabla_rondas.append(row)
   
     row=[['',''] for v in range(len0*4)]
@@ -32,7 +32,7 @@ def prepare_data():
     headers = [group[ronda]['fecha'] for ronda in rondas]
   
     tabla_html=[]
-    tabla_html.append('<table>')
+    tabla_html.append('<table class="playoff_table">')
     tabla_html.append('<tr>')
     tabla_html+=['<th>'+header+'</th>' for header in headers]
     tabla_html.append('<th></th>')
