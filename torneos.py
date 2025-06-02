@@ -220,7 +220,7 @@ def generar_torneos():
 
     loader = jj.FileSystemLoader('.')
     env = jj.Environment(loader=loader)
-    template = env.get_template('tablas.html')
+    template = env.get_template('torneos.html.jinja')
     web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
     with open('docs/index.html', 'w') as f:
         f.write(web)
