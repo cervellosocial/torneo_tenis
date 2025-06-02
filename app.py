@@ -209,7 +209,7 @@ def mostrar_tablas():
         calendario = generar_tabla_calendario(df_partidos)
 
         # Extraer el nombre de la división eliminando el prefijo numérico
-        nombre_division = "_".join(filename.split('_')[1:]).replace('.json', '')
+        nombre_division = "_".join(filename.split('_')[2:]).replace('.json', '')
 
         # Añadir las tablas generadas al contexto
         tablas[nombre_division] = df_clasificacion.to_html(
