@@ -1,5 +1,5 @@
 import json
-import jinja2
+import jinja2 as jj
 
 def prepare_data():
   with open("data/playoffs.json") as f:
