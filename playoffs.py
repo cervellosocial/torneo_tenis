@@ -2,7 +2,7 @@ import json
 import jinja2
 
 def prepare_data():
-  with open("playoffs.json") as f:
+  with open("data/playoffs.json") as f:
     playoffs = json.load(f)
   
   out = []
@@ -61,6 +61,6 @@ def generate_playoffs():
     web = template.render(playoffs=playoffs)
     with open('docs/playoffs_beta.html', 'w') as f:
         f.write(web)
-    print('[Debug] >>>Web:')
+    print('[Debug] >>>Web Playoffs:')
     print(web)
-    print('[Debug] <<<Web:')
+    print('[Debug] <<<Web Playoffs:')
