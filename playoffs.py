@@ -26,7 +26,7 @@ def prepare_data():
       tabla_rondas.append(row)
   
     row=[['',''] for v in range(len0*4)]
-    row[len0*2-1] = (group['ganador'],'class="player"')
+    row[len0*2-1] = (group['ganador'],'class="playoff_player1"')
     tabla_rondas.append(row)
   
     headers = [group[ronda]['fecha'] for ronda in rondas]
