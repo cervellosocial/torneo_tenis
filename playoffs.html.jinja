@@ -33,10 +33,10 @@
   
   <!-- Botones de Navegación -->
   <div class="category-buttons">
-      {% for nombre in tablas.keys() %}
-          <a href="#{{ nombre }}" class="btn">{{ nombre.replace('_', ' ').capitalize() }}</a>
+      {% for playoff in playoffs %}
+          <a href="#{{playoff.name}}" class="btn">{{ playoff.name.capitalize() }}</a>
       {% endfor %}
-          <a href="./playoffs.html" class="btn">Playoffs</a>
+          <a href="./index.html" class="btn">Torneo</a>
   </div>
   
   <!-- Títulos -->
@@ -44,7 +44,7 @@
   <h2 class="text-center">3ª LLIGA SOCIAL MIXTA</h2>
 
   {% for playoff in playoffs %}
-  <div class="container">
+  <div id="{{playoff.name}}" class="container">
   <h2>{{playoff.name}}</h2>
   {{playoff.tabla}}
   </div>
