@@ -45,7 +45,7 @@ def prepare_data():
       
     tabla_html.append('<tr class="playoff_header">')
     tabla_html+=['<th> </th>' for _ in headers]
-    tabla_html[-2]='<th>3er y 4to</th>'
+    tabla_html[-2]='<th>3er y 4to<br>'+group['final34']['fecha']+'</th>'
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
@@ -53,7 +53,7 @@ def prepare_data():
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
-    tabla_html[-2]='<td class="playoff_match">'+group['final34']['partidos'][0]['resultdo']+'</td>'
+    tabla_html[-2]='<td class="playoff_match">'+group['final34']['partidos'][0]['resultado']+'</td>'
     tabla_html[-1]='<td class="playoff_player1">'+group['ganador34']+'</td>'
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
