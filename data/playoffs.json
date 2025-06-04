@@ -3,30 +3,30 @@
     "categoria":"Primera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] Javier Morant","jugador2":"Joan Agudo","resultado":"-"},
-        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":"-"},
-        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":"-"},
-        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":"-"}
+        {"jugador1":"[1] Javier Morant","jugador2":"Joan Agudo","resultado":""},
+        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":""},
+        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":""},
+        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"},
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""},
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"?",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
@@ -36,30 +36,30 @@
     "categoria":"Segunda Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] Domenec Ramadan","jugador2":"Bye","resultado":"-"},
-        {"jugador1":"Sergi Deu","jugador2":"[4] Aurelio Calvo","resultado":"-"},
-        {"jugador1":"[3] Alberto Diaz","jugador2":"Jose Luis","resultado":"-"},
-        {"jugador1":"Bye","jugador2":"[2] Daniel Alvarez","resultado":"-"}
+        {"jugador1":"[1] Domenec Ramadan","jugador2":"Bye","resultado":""},
+        {"jugador1":"Sergi Deu","jugador2":"[4] Aurelio Calvo","resultado":""},
+        {"jugador1":"[3] Alberto Diaz","jugador2":"Jose Luis","resultado":""},
+        {"jugador1":"Bye","jugador2":"[2] Daniel Alvarez","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Domenec Ramadan","jugador2":"?","resultado":"-"},
-        {"jugador1":"?","jugador2":"Daniel Alvarez","resultado":"-"}
+        {"jugador1":"Domenec Ramadan","jugador2":"?","resultado":""},
+        {"jugador1":"?","jugador2":"Daniel Alvarez","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"?",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
@@ -69,30 +69,30 @@
     "categoria":"Tercera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] Jose Antonio","jugador2":"Bye","resultado":"-"},
-        {"jugador1":"Soledad Manes","jugador2":"[4] Marc Garrido","resultado":"-"},
-        {"jugador1":"[3] Laura Nasta","jugador2":"Montse Solsona","resultado":"-"},
-        {"jugador1":"Bye","jugador2":"[2] Jordi Garrido","resultado":"-"}
+        {"jugador1":"[1] Jose Antonio","jugador2":"Bye","resultado":""},
+        {"jugador1":"Soledad Manes","jugador2":"[4] Marc Garrido","resultado":""},
+        {"jugador1":"[3] Laura Nasta","jugador2":"Montse Solsona","resultado":""},
+        {"jugador1":"Bye","jugador2":"[2] Jordi Garrido","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jose Antonio","jugador2":"?","resultado":"-"},
-        {"jugador1":"?","jugador2":"Jordi Garrido","resultado":"-"}
+        {"jugador1":"Jose Antonio","jugador2":"?","resultado":""},
+        {"jugador1":"?","jugador2":"Jordi Garrido","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"?",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
@@ -102,30 +102,30 @@
     "categoria":"Division Infantil",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] Pol Cejas","jugador2":"Bye","resultado":"-"},
-        {"jugador1":"Axel Villar","jugador2":"[4] Nekane Lopez","resultado":"-"},
-        {"jugador1":"[3] Marc Cano","jugador2":"Bye","resultado":"-"},
-        {"jugador1":"Bye","jugador2":"[2]Sasha Ruiz","resultado":"-"}
+        {"jugador1":"[1] Pol Cejas","jugador2":"Bye","resultado":""},
+        {"jugador1":"Axel Villar","jugador2":"[4] Nekane Lopez","resultado":""},
+        {"jugador1":"[3] Marc Cano","jugador2":"Bye","resultado":""},
+        {"jugador1":"Bye","jugador2":"[2]Sasha Ruiz","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Pol Cejas","jugador2":"?","resultado":"-"},
-        {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":"-"}
+        {"jugador1":"Pol Cejas","jugador2":"?","resultado":""},
+        {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"?",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":"-"}
+        {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
