@@ -49,7 +49,7 @@ def prepare_data():
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
-    tabla_html[-2]='<td class="playoff_player1">'+group['final34']['partidos][0]['jugador1']+'</td>'
+    tabla_html[-2]='<td class="playoff_player1">'+group['final34']['partidos'][0]['jugador1']+'</td>'
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
