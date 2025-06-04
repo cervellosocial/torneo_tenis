@@ -42,6 +42,24 @@ def prepare_data():
       for i,r in enumerate(tabla_rondas):
         tabla_html.append('<td '+tabla_rondas[i][j][1]+'>'+tabla_rondas[i][j][0]+'</td>')
       tabla_html.append('</tr>')
+      
+    tabla_html.append('<tr class="playoff_header">')
+    tabla_html+=['<th> </th>' for _ in headers]
+    tabla_html[-2]='<th>3er y 4to</th>'
+    tabla_html.append('</tr>')
+    tabla_html.append('<tr>')
+    tabla_html+=['<td> </td>' for _ in headers]
+    tabla_html[-2]='<td class="playoff_player1">'+group['final34']['partidos][0]['jugador1']</td>'
+    tabla_html.append('</tr>')
+    tabla_html.append('<tr>')
+    tabla_html+=['<td> </td>' for _ in headers]
+    tabla_html[-2]='<td class="playoff_match">'+group['final34']['partidos'][0]['resultdo']</td>'
+    tabla_html[-1]='<td class="playoff_player1">'+group['ganador34']</td>'
+    tabla_html.append('</tr>')
+    tabla_html.append('<tr>')
+    tabla_html+=['<td> </td>' for _ in headers]
+    tabla_html[-2]='<td class="playoff_player2">'+group['final34']['partidos'][0]['jugador2']</td>'
+    tabla_html.append('</tr>')
     tabla_html.append('</table>')
   
     out.append({
