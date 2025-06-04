@@ -1,0 +1,172 @@
+
+/* Botones de Categorías */
+.category-buttons {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 2rem; /* Separación entre botones */
+  padding: 2rem 0; /* Espaciado superior e inferior */
+  background-color: #043454; /* Fondo azul oscuro */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo */
+  margin-bottom: 2rem; /* Espacio debajo de los botones */
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.6); /* Sombra inferior */
+
+}
+
+.category-buttons .btn {
+  font-family: 'Montserrat', Verdana;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline; /* Subrayado estático */
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.category-buttons .btn:hover {
+  color: #d1ecf1;
+  border: 2px solid #ffffff;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .category-buttons {
+    flex-direction: column; /* Botones en columna */
+    align-items: center; /* Centrar los botones */
+    gap: 1rem; /* Reducir espacio entre botones */
+  }
+
+  .category-buttons .btn {
+    width: 90%; /* Ocupar ancho del contenedor */
+    text-align: center; /* Asegurar texto centrado */
+  }
+}
+
+/* Estilo para imágenes */
+.header-image img {
+  display: block;
+  margin: 2rem auto;
+  max-width: auto;
+  height: auto;
+}
+
+.header-content {
+  text-align: center;
+  margin: 2rem 0; /* Espaciado vertical */
+}
+
+.header-content .header-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px; /* Ajustar el tamaño */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-content .header-logo:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Títulos centrados */
+.text-center {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-family: 'Anton', sans-serif;
+}
+
+/* Títulos de las divisiones */
+.division-header {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: #000;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem; /* Reducir texto en pantallas pequeñas */
+  }
+
+  table thead th,
+  table tbody td {
+    padding: 0.3rem; /* Reducir padding */
+  }
+
+  .category-buttons {
+    flex-direction: column; /* Botones en columna */
+    gap: 1rem;
+  }
+
+  .header-image img,
+  .footer-image img {
+    max-width: 90%; /* Asegurar que no sobresalgan */
+  }
+}
+
+/* Leyenda Compacta */
+.legend {
+  margin: 1rem auto; /* Reducir márgenes */
+  padding: 0.5rem; /* Reducir padding */
+  border: 1px solid #ccc; /* Borde más fino */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 85%; /* Ajuste del ancho */
+  max-width: 500px; /* Máximo ancho reducido */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+}
+
+.legend h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem; /* Reducir espacio inferior */
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+  font-weight: bold;
+}
+
+.legend ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinear en fila */
+  flex-wrap: wrap; /* Permitir múltiples filas */
+  justify-content: center; /* Centrar elementos */
+  gap: 0.5rem; /* Separación entre elementos */
+}
+
+.legend li {
+  margin: 0; /* Eliminar márgenes */
+  color: #555;
+  font-size: 0.8rem; /* Reducir tamaño de fuente */
+  text-align: center; /* Asegurar alineación */
+}
+
+.legend li strong {
+  color: #000; /* Resaltar texto en negrita */
+}
+
+
+/* Centrar las categorías en la sección de calendarios */
+.centered-category {
+  text-align: center; /* Centrar texto y contenido */
+  margin: 1rem auto; /* Agregar espacio y centrar el contenedor */
+  max-width: 800px; /* Limitar el ancho máximo */
+}
+
+.centered-category h3 {
+  font-family: 'Bebas Neue', sans-serif; /* Estilo para el título */
+  font-size: 1.8rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Separación debajo del título */
+}
+
+.centered-category div {
+  display: inline-block; /* Permitir contenido alineado al centro */
+  text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
+  width: 100%; /* Ocupar todo el ancho disponible */
+}
