@@ -4,6 +4,8 @@
 <style>
 .playoff_table {
   border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0px auto;
 }
 .playoff_player1 {
   border-bottom: solid 2px;
@@ -23,7 +25,23 @@
   <title>Playoffs Cervellos</title>
 </head>
 <body>
-  <h1>Playoffs</h1>
+
+  <!-- Logo -->
+  <div class="header-image">
+      <img src="./static/img/logoescudo.png">
+  </div>
+  
+  <!-- Botones de Navegación -->
+  <div class="category-buttons">
+      {% for nombre in tablas.keys() %}
+          <a href="#{{ nombre }}" class="btn">{{ nombre.replace('_', ' ').capitalize() }}</a>
+      {% endfor %}
+          <a href="./playoffs.html" class="btn">Playoffs</a>
+  </div>
+  
+  <!-- Títulos -->
+  <h1 class="text-center">PLAYOFFS</h1>
+  <h2 class="text-center">3ª LLIGA SOCIAL MIXTA</h2>
 
   {% for playoff in playoffs %}
   <div class="container">
