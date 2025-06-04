@@ -49,16 +49,16 @@ def prepare_data():
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
-    tabla_html[-2]='<td class="playoff_player1">'+group['final34']['partidos][0]['jugador1']</td>'
+    tabla_html[-2]='<td class="playoff_player1">'+group['final34']['partidos][0]['jugador1']+'</td>'
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
-    tabla_html[-2]='<td class="playoff_match">'+group['final34']['partidos'][0]['resultdo']</td>'
-    tabla_html[-1]='<td class="playoff_player1">'+group['ganador34']</td>'
+    tabla_html[-2]='<td class="playoff_match">'+group['final34']['partidos'][0]['resultdo']+'</td>'
+    tabla_html[-1]='<td class="playoff_player1">'+group['ganador34']+'</td>'
     tabla_html.append('</tr>')
     tabla_html.append('<tr>')
     tabla_html+=['<td> </td>' for _ in headers]
-    tabla_html[-2]='<td class="playoff_player2">'+group['final34']['partidos'][0]['jugador2']</td>'
+    tabla_html[-2]='<td class="playoff_player2">'+group['final34']['partidos'][0]['jugador2']+'</td>'
     tabla_html.append('</tr>')
     tabla_html.append('</table>')
   
