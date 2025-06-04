@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playoffs Cervellos</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./static/header.css">
+  <link rel="stylesheet" href="./static/playoffs.css">
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="header-image">
+      <img src="./static/img/logoescudo.png">
+  </div>
+  
+  <!-- Botones de Navegación -->
+  <div class="category-buttons">
+      {% for playoff in playoffs %}
+          <a href="#{{playoff.name}}" class="btn">{{ playoff.name.capitalize() }}</a>
+      {% endfor %}
+          <a href="./index.html" class="btn">Torneo</a>
+  </div>
+  
+  <!-- Títulos -->
+  <h1 class="text-center">PLAYOFFS</h1>
+  <h2 class="text-center">3ª LLIGA SOCIAL MIXTA</h2>
+
+  {% for playoff in playoffs %}
+  <div id="{{playoff.name}}" class="container">
+  <h2 class="division-header">{{playoff.name}}</h2>
+  {{playoff.tabla}}
+  </div>
+  {% endfor %}
+</body>
+</html>
