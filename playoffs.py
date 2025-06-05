@@ -25,7 +25,7 @@ def prepare_data():
         o = int(k/4)-1 if r>0 else 0
         c1 = int(o+i*k)
         c2 = int(c1+k/2)
-        c3  =int(c1+k/4)+1
+        c3  =int(c1+k/4+1)
         print('r1',r,c1,c2,c3)
         for v in range(c1+1,c2):
           tabla_rondas[r][v]=('','class="playoff_match"')
