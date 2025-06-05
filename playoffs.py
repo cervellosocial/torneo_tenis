@@ -29,7 +29,7 @@ def prepare_data():
           tabla_rondas[r][v]=('','class="playoff_match"')
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
         tabla_rondas[r][c2]=(partido['jugador2'],'class="playoff_player2"')
-        tabla_rondas[r+1][int((c1+c2)/2)+1]=(partido['resultado'],'class="playoff_result"')
+        tabla_rondas[r+1][int(c1+k/4)+1]=(partido['resultado'],'class="playoff_result"')
     tabla_rondas[-1][int(nCols/2)]=(group['ganador'],'class="playoff_player1"')
     tabla_rondas[-1][int(nCols/2+1)]=(group['final']['partidos'][0]['resultado'],'class="playoff_result"')
     
