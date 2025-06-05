@@ -4,26 +4,26 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Javier Morant","jugador2":"Joan Agudo","resultado":"(6-0 6-0)"},
-        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":""},
-        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":""},
-        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":""}
+        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":"r12"},
+        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":"r13"},
+        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":"r14"}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Javier Morant","jugador2":"?","resultado":""},
+        {"jugador1":"Javier Morant","jugador2":"j22","resultado":"r22"},
         {"jugador1":"?","jugador2":"?","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"j31","jugador2":"j32","resultado":"r31"}
       ],
       "fecha":"27/6"
     },
-    "ganador":"?",
+    "ganador":"gg",
     "final34":{
       "partidos":[
         {"jugador1":"?","jugador2":"?","resultado":""}
