@@ -29,9 +29,9 @@ def prepare_data():
           tabla_rondas[r][v]=('','class="playoff_match"')
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
         tabla_rondas[r][c2]=(partido['jugador2'],'class="playoff_player2"')
-        tabla_rondas[r+1][int((c1+c2)/2)]=(partido['resultado'],'')
-    tabla_rondas[-1][int(nCols/2)]=(group['ganador'],'')
-    tabla_rondas[-1][int(nCols/2+1)]=(group['final']['partidos'][0]['resultado'],'')
+        tabla_rondas[r+1][int((c1+c2)/2)]=(partido['resultado'],'class="playoff_result"')
+    tabla_rondas[-1][int(nCols/2)]=(group['ganador'],'class="playoff_player1"')
+    tabla_rondas[-1][int(nCols/2+1)]=(group['final']['partidos'][0]['resultado'],'class="playoff_result"')
     
     headers34 =['' for _ in headers]
     headers34[-2]='3er y 4to<br>'+group['final34']['fecha']
@@ -39,9 +39,10 @@ def prepare_data():
     for _ in range(nRows):
       tabla_rondas34.append([('','') for _ in range(4)])
     tabla_rondas34[-2][0]=(group['final34']['partidos'][0]['jugador1'],'class="playoff_player1"')
-    tabla_rondas34[-2][3]=(group['final34']['partidos'][0]['jugador2'],'class="playoff_player2"')
-    tabla_rondas34[-1][2]=(group['ganador34'],'class="playoff_player1"')
-    tabla_rondas34[-1][3]=(group['final34']['partidos'][0]['resultado'],'class="playoff_player2"')
+    tabla_rondas34[-2][1]=(group['final34']['','class="playoff_match"')
+    tabla_rondas34[-2][2]=(group['final34']['partidos'][0]['jugador2'],'class="playoff_player2"')
+    tabla_rondas34[-1][1]=(group['ganador34'],'class="playoff_player1"')
+    tabla_rondas34[-1][2]=(group['final34']['partidos'][0]['resultado'],'class="playoff_result"')
     
     tabla_html=[]
     tabla_html.append('<table class="playoff_table">')
