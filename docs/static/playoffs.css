@@ -4,6 +4,10 @@
   margin: 0px auto;
   width: 80%;
 }
+table.playoff_table td {
+  height: 2rem;
+}
+  
 .playoff_header {
   font-size: 1rem;
   text-align: center;
