@@ -28,7 +28,7 @@ def prepare_data():
         c3  =int(c1+k/4+1)
         print('r1',r,c1,c2,c3)
         for v in range(c1+1,c2):
-          tabla_rondas[r][v]=('','class="playoff_match"')
+          tabla_rondas[r][v][2]='class="playoff_match"'
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
         tabla_rondas[r][c2]=(partido['jugador2'],'class="playoff_player2"')
         tabla_rondas[r+1][c3]=(partido['resultado'],'class="playoff_result"')
