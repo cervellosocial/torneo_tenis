@@ -13,7 +13,7 @@ def prepare_data():
     rondas = sorted(v for v in group if v.startswith('ronda'))+['final']
     nRows = len(rondas)+1
     for _ in range(nRows):
-      table.append([('','') for _ in range(nCols)])
+      tabla_rondas.append([('','') for _ in range(nCols)])
     print(len(tabla_rondas), len(tabla_rondas[0]))
     
     headers = [group[ronda]['fecha'] for ronda in rondas]
