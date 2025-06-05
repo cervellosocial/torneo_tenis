@@ -25,11 +25,13 @@ def prepare_data():
         o = int(k/4)-1 if r>0 else 0
         c1 = int(o+i*k)
         c2 = int(c1+k/2)
+        c3  =int(c1+k/4)+1
+        print(c1,c2,c3)
         for v in range(c1+1,c2):
           tabla_rondas[r][v]=('','class="playoff_match"')
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
         tabla_rondas[r][c2]=(partido['jugador2'],'class="playoff_player2"')
-        tabla_rondas[r+1][round(c1+k/4)+1]=(partido['resultado'],'class="playoff_result"')
+        tabla_rondas[r+1][c3]=(partido['resultado'],'class="playoff_result"')
     tabla_rondas[-1][int(nCols/2)]=(group['ganador'],'class="playoff_player1"')
     tabla_rondas[-1][int(nCols/2+1)]=(group['final']['partidos'][0]['resultado'],'class="playoff_result"')
     
