@@ -12,7 +12,7 @@ def prepare_data():
     rondas = sorted(v for v in group if v.startswith('ronda'))+['final']
     nRows = len(rondas)+1
     
-    headers = [group[ronda]['fecha'] for ronda in rondas]+['']
+    headers = [ronda+'<br>'+group[ronda]['fecha'] for ronda in rondas]+['']
     tabla_rondas = []
     for _ in range(nRows):
       tabla_rondas.append([('','') for _ in range(nCols)])
