@@ -11,12 +11,13 @@ def prepare_data():
     nCols = len0*2*2 - 1
     rondas = sorted(v for v in group if v.startswith('ronda'))+['final']
     nRows = len(rondas)+1
+    
+    headers = [group[ronda]['fecha'] for ronda in rondas+['']]
+    tabla_rondas = []
     for _ in range(nRows):
       tabla_rondas.append([('','') for _ in range(nCols)])
     print(len(tabla_rondas), len(tabla_rondas[0]))
     
-    headers = [group[ronda]['fecha'] for ronda in rondas+['']]
-    tabla_rondas = []
     for r,ronda in enumerate(rondas):
       for i,partido in enumerate(group[ronda]['partidos']):
         lenN = len(group[ronda]['partidos'])
