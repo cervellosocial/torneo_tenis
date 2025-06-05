@@ -26,7 +26,7 @@ def prepare_data():
         c1 = int(o+i*k)
         c2 = int(c1+k/2)
         c3  =int(c1+k/4)+1
-        print(c1,c2,c3)
+        print('r1',r,c1,c2,c3)
         for v in range(c1+1,c2):
           tabla_rondas[r][v]=('','class="playoff_match"')
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
