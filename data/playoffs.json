@@ -13,7 +13,7 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Javier Morant","jugador2":"j22","resultado":"r22"},
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"j241","jugador2":"j241","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
@@ -26,11 +26,11 @@
     "ganador":"gg",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"j341","jugador2":"j342","resultado":"r34"}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"?"
+    "ganador34":"g34"
   },
   {
     "categoria":"Segunda Division",
