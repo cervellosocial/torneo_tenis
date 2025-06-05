@@ -4,33 +4,33 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Javier Morant","jugador2":"Joan Agudo","resultado":"(6-0 6-0)"},
-        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":"r12"},
-        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":"r13"},
-        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":"r14"}
+        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":""},
+        {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":""},
+        {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Javier Morant","jugador2":"j22","resultado":"r22"},
-        {"jugador1":"j241","jugador2":"j241","resultado":""}
+        {"jugador1":"Javier Morant","jugador2":"","resultado":""},
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"j31","jugador2":"j32","resultado":"r31"}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"27/6"
     },
-    "ganador":"gg",
+    "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"j341","jugador2":"j342","resultado":"r34"}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"g34"
+    "ganador34":""
   },
   {
     "categoria":"Segunda Division",
@@ -45,25 +45,25 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Domenec Ramadan","jugador2":"?","resultado":""},
-        {"jugador1":"?","jugador2":"Daniel Alvarez","resultado":""}
+        {"jugador1":"Domenec Ramadan","jugador2":"","resultado":""},
+        {"jugador1":"","jugador2":"Daniel Alvarez","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"27/6"
     },
-    "ganador":"?",
+    "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"?"
+    "ganador34":""
   },
   {
     "categoria":"Tercera Division",
@@ -78,25 +78,25 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jose Antonio","jugador2":"?","resultado":""},
-        {"jugador1":"?","jugador2":"Jordi Garrido","resultado":""}
+        {"jugador1":"Jose Antonio","jugador2":"","resultado":""},
+        {"jugador1":"","jugador2":"Jordi Garrido","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"27/6"
     },
-    "ganador":"?",
+    "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"?"
+    "ganador34":""
   },
   {
     "categoria":"Division Infantil",
@@ -111,24 +111,24 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Pol Cejas","jugador2":"?","resultado":""},
+        {"jugador1":"Pol Cejas","jugador2":"","resultado":""},
         {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"27/6"
     },
-    "ganador":"?",
+    "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"?","jugador2":"?","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"?"
+    "ganador34":""
   }
 ]
