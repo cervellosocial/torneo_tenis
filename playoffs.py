@@ -7,7 +7,6 @@ def prepare_data():
   
   out = []
   for group in playoffs :
-    tabla_rondas = []
     len0 = len(group['ronda1']['partidos'])
     nCols = len0*2*2 - 1
     rondas = sorted(v for v in group if v.startswith('ronda'))+['final']
@@ -16,9 +15,8 @@ def prepare_data():
       tabla_rondas.append([('','') for _ in range(nCols)])
     print(len(tabla_rondas), len(tabla_rondas[0]))
     
-    headers = [group[ronda]['fecha'] for ronda in rondas]
-    headers.append('')
-    
+    headers = [group[ronda]['fecha'] for ronda in rondas+['']]
+    tabla_rondas = []
     for r,ronda in enumerate(rondas):
       for i,partido in enumerate(group[ronda]['partidos']):
         lenN = len(group[ronda]['partidos'])
@@ -36,6 +34,7 @@ def prepare_data():
     
     headers34 =['' for _ in headers]
     headers34[-2]='3er y 4to<br>'+group['final34']['fecha']
+    tabla_rondas34=[]
     for _ in range(nRows):
       tabla_rondas34.append([('','') for _ in range(4)])
     tabla_rondas34[-2][0]=(group['final34']['partidos'][0]['jugador1'],'class="playoff_player1"')
