@@ -59,7 +59,7 @@ def prepare_data():
     for j,c in enumerate(tabla_rondas34[0]):
       tabla_html.append('<tr>')
       for i,r in enumerate(tabla_rondas34):
-        tabla_html.append('<td '+tabla_rondas[i][j][1]+'>'+tabla_rondas[i][j][0]+'</td>')
+        tabla_html.append('<td '+tabla_rondas34[i][j][1]+'>'+tabla_rondas34[i][j][0]+'</td>')
       tabla_html.append('</tr>')
     tabla_html.append('</table>')
   
