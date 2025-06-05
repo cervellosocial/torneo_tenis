@@ -17,7 +17,7 @@ def prepare_data():
     print(len(tabla_rondas), len(tabla_rondas[0]))
     
     headers = [group[ronda]['fecha'] for ronda in rondas]
-    headers.append()
+    headers.append('')
     
     for r,ronda in enumerate(rondas):
       for i,partido in enumerate(group[ronda]['partidos']):
