@@ -81,7 +81,7 @@ def generate_playoffs():
     env = jj.Environment(loader=loader)
     template = env.get_template('playoffs.html.jinja')
     web = template.render(playoffs=playoffs)
-    with open('docs/playoffs_beta.html', 'w') as f:
+    with open('docs/playoffs.html', 'w') as f:
         f.write(web)
     print('[Debug] >>>Web Playoffs:')
     print(web)
