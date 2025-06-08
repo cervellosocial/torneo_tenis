@@ -71,7 +71,7 @@
       "partidos":[
         {"jugador1":"[1] Jose Antonio","jugador2":"Bye","resultado":""},
         {"jugador1":"Soledad Manes","jugador2":"[4] Marc Garrido","resultado":""},
-        {"jugador1":"[3] Laura Nasta","jugador2":"Montse Solsona","resultado":""},
+        {"jugador1":"[3] Laura Nasta","jugador2":"Montse Solsona","resultado":"(6-2 6-1)"},
         {"jugador1":"Bye","jugador2":"[2] Jordi Garrido","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
@@ -79,7 +79,7 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Jose Antonio","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"Jordi Garrido","resultado":""}
+        {"jugador1":"Laura Nasta","jugador2":"Jordi Garrido","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
