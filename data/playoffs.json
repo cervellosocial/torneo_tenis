@@ -38,7 +38,7 @@
       "partidos":[
         {"jugador1":"[1] Domenec Ramadan","jugador2":"Bye","resultado":""},
         {"jugador1":"Sergi Deu","jugador2":"[4] Aurelio Calvo","resultado":""},
-        {"jugador1":"[3] Alberto Diaz","jugador2":"Jose Luis","resultado":""},
+        {"jugador1":"[3] Alberto Diaz","jugador2":"Jose Luis","resultado":"(4-6 2-6)"},
         {"jugador1":"Bye","jugador2":"[2] Daniel Alvarez","resultado":""}
       ],
       "fecha":"28/5 al 9/6"
@@ -46,7 +46,7 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Domenec Ramadan","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"Daniel Alvarez","resultado":""}
+        {"jugador1":"Jose Luis","jugador2":"Daniel Alvarez","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
