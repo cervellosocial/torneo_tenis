@@ -112,13 +112,13 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Pol Cejas","jugador2":"","resultado":""},
-        {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":""}
+        {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":"(6-0 7-6)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"","jugador2":"Marc Cano","resultado":""}
       ],
       "fecha":"27/6"
     },
