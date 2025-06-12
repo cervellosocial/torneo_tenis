@@ -79,13 +79,13 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Jose Antonio","jugador2":"","resultado":""},
-        {"jugador1":"Laura Nasta","jugador2":"Jordi Garrido","resultado":""}
+        {"jugador1":"Laura Nasta","jugador2":"Jordi Garrido","resultado":"(2-6 5-7)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"","jugador2":"Jordi Garrido","resultado":""}
       ],
       "fecha":"27/6"
     },
