@@ -70,7 +70,7 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Jose Antonio","jugador2":"Bye","resultado":""},
-        {"jugador1":"Soledad Manes","jugador2":"[4] Marc Garrido","resultado":""},
+        {"jugador1":"Soledad Manes","jugador2":"[4] Marc Garrido","resultado":"(w.o"},
         {"jugador1":"[3] Laura Nasta","jugador2":"Montse Solsona","resultado":"(6-2 6-1)"},
         {"jugador1":"Bye","jugador2":"[2] Jordi Garrido","resultado":""}
       ],
@@ -78,14 +78,14 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jose Antonio","jugador2":"","resultado":""},
+        {"jugador1":"Jose Antonio","jugador2":"Soledad Manes","resultado":"(6-2 6-2)"},
         {"jugador1":"Laura Nasta","jugador2":"Jordi Garrido","resultado":"(2-6 5-7)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"Jordi Garrido","resultado":""}
+        {"jugador1":"Jose Antonio","jugador2":"Jordi Garrido","resultado":""}
       ],
       "fecha":"27/6"
     },
