@@ -103,7 +103,7 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Pol Cejas","jugador2":"Bye","resultado":""},
-        {"jugador1":"Axel Villar","jugador2":"[4] Nekane Lopez","resultado":""},
+        {"jugador1":"Axel Villar","jugador2":"[4] Nekane Lopez","resultado":"(w.o)"},
         {"jugador1":"[3] Marc Cano","jugador2":"Bye","resultado":""},
         {"jugador1":"Bye","jugador2":"[2]Sasha Ruiz","resultado":""}
       ],
@@ -111,7 +111,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Pol Cejas","jugador2":"","resultado":""},
+        {"jugador1":"Pol Cejas","jugador2":"","resultado":"Axel Villar"},
         {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":"(6-0 7-6)"}
       ],
       "fecha":"10/6 al 22/6"
