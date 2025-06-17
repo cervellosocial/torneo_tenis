@@ -4,7 +4,7 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Javier Morant","jugador2":"Joan Agudo","resultado":"(6-0 6-0)"},
-        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":""},
+        {"jugador1":"Mario Cuenca","jugador2":"[4] Alejo Zeballo","resultado":"(1-6 4-6)"},
         {"jugador1":"[3] Alejandro Huertas","jugador2":"Esther Garros","resultado":"(6-3 6-3)"},
         {"jugador1":"Fran Morales","jugador2":"[2] Alejandro Ariza","resultado":""}
       ],
@@ -12,7 +12,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Javier Morant","jugador2":"","resultado":""},
+        {"jugador1":"Javier Morant","jugador2":"Alejo Zeballo","resultado":""},
         {"jugador1":"Alejandro Huertas","jugador2":"","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
