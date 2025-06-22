@@ -45,14 +45,14 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Domenec Ramadan","jugador2":"Sergi Deu","resultado":""},
+        {"jugador1":"Domenec Ramadan","jugador2":"Sergi Deu","resultado":"w.o"},
         {"jugador1":"Jose Luis","jugador2":"Daniel Alvarez","resultado":""}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"Domenec Ramadan","jugador2":"","resultado":""}
       ],
       "fecha":"27/6"
     },
@@ -111,24 +111,24 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Pol Cejas","jugador2":"Axel Villar","resultado":""},
+        {"jugador1":"Pol Cejas","jugador2":"Axel Villar","resultado":"(6-1 6-3)"},
         {"jugador1":"Marc Cano","jugador2":"Sasha Ruiz","resultado":"(6-0 7-6)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"Marc Cano","resultado":""}
+        {"jugador1":"Pol Cejas","jugador2":"Marc Cano","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"","jugador2":"Axel Villar","resultado":""}
+        {"jugador1":"Sasha Ruiz","jugador2":"Axel Villar","resultado":"w.o"}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":""
+    "ganador34":"Axel Villar"
   }
 ]
