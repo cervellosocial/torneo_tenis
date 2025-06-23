@@ -46,20 +46,20 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Domenec Ramadan","jugador2":"Sergi Deu","resultado":"w.o"},
-        {"jugador1":"Jose Luis","jugador2":"Daniel Alvarez","resultado":""}
+        {"jugador1":"Jose Luis","jugador2":"Daniel Alvarez","resultado":"(6-2 7-6)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"Domenec Ramadan","jugador2":"","resultado":""}
+        {"jugador1":"Domenec Ramadan","jugador2":"Daniel Alvarez","resultado":""}
       ],
       "fecha":"27/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"Sergi Deu","jugador2":"Jose Luis","resultado":""}
       ],
       "fecha":"22/6 al 27/6"
     },
