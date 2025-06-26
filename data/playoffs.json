@@ -13,13 +13,13 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Javier Morant","jugador2":"Alejo Zeballo","resultado":""},
-        {"jugador1":"Alejandro Huertas","jugador2":"Fran Morales","resultado":""}
+        {"jugador1":"Alejandro Huertas","jugador2":"Fran Morales","resultado":"(6-2 6-2)"}
       ],
       "fecha":"10/6 al 22/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"","jugador2":"Alejandro Huertas","resultado":""}
       ],
       "fecha":"27/6"
     },
