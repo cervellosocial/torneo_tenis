@@ -59,11 +59,11 @@
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"Sergi Deu","jugador2":"Jose Luis","resultado":""}
+        {"jugador1":"Sergi Deu","jugador2":"Jose Luis","resultado":"w.o"}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":""
+    "ganador34":"Jose Luis"
   },
   {
     "categoria":"Tercera Division",
@@ -92,11 +92,11 @@
     "ganador":"Jose Antonio",
     "final34":{
       "partidos":[
-        {"jugador1":"Soledad","jugador2":"Laura","resultado":""}
+        {"jugador1":"Soledad","jugador2":"Laura","resultado":"(3-6 6-3 10-7)"}
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":""
+    "ganador34":"Laura"
   },
   {
     "categoria":"Division Infantil",
