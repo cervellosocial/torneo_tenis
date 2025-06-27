@@ -118,11 +118,11 @@
     },
     "final":{
       "partidos":[
-        {"jugador1":"Pol Cejas","jugador2":"Marc Cano","resultado":""}
+        {"jugador1":"Pol Cejas","jugador2":"Marc Cano","resultado":"(6-3 6-3)"}
       ],
       "fecha":"27/6"
     },
-    "ganador":"",
+    "ganador":"Marc Cano",
     "final34":{
       "partidos":[
         {"jugador1":"Sasha Ruiz","jugador2":"Axel Villar","resultado":"w.o"}
