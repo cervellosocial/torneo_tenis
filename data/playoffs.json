@@ -52,11 +52,11 @@
     },
     "final":{
       "partidos":[
-        {"jugador1":"Domenec Ramadan","jugador2":"Daniel Alvarez","resultado":""}
+        {"jugador1":"Domenec Ramadan","jugador2":"Daniel Alvarez","resultado":"(6-2 6-4)"}
       ],
       "fecha":"27/6"
     },
-    "ganador":"",
+    "ganador":"Domenec Ramadan",
     "final34":{
       "partidos":[
         {"jugador1":"Sergi Deu","jugador2":"Jose Luis","resultado":"w.o"}
