@@ -19,11 +19,11 @@
     },
     "final":{
       "partidos":[
-        {"jugador1":"Javier Morant","jugador2":"Alejandro Huertas","resultado":""}
+        {"jugador1":"Javier Morant","jugador2":"Alejandro Huertas","resultado":"5-7 0-6 15-13"}
       ],
       "fecha":"27/6"
     },
-    "ganador":"",
+    "ganador":"Alejandro Huertas",
     "final34":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":""}
