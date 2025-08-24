@@ -1,7 +1,6 @@
 {
     "datos_partidos": [
         {
-            "jornada": 1,
             "fecha": "Del 21/10 a 11/11",
             "local": "Mario Cuenca",
             "visitante": "Alejandro Huertas",
@@ -11,4 +10,5 @@
         }
     ]
 }
+
 
