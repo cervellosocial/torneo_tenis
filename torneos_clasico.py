@@ -191,10 +191,7 @@ def generar_torneos():
     calendarios = {}
 
     # Obtener archivos JSON y ordenarlos numéricamente según el prefijo del nombre
-    archivos_json = sorted(
-        [f for f in os.listdir(data_dir) if f.startswith('torneo_') and f.endswith('.json')],
-        key=lambda x: int(x.split('_')[1])  # Extraer y convertir el número inicial a entero
-    )
+    archivos_json = ['division_infantil.json']
 
     for filename in archivos_json:
         filepath = os.path.join(data_dir, filename)
@@ -220,7 +217,7 @@ def generar_torneos():
 
     loader = jj.FileSystemLoader('.')
     env = jj.Environment(loader=loader)
-    template = env.get_template('torneos.html.jinja')
+    template = env.get_template('torneos_clasico.html.jinja')
     web = template.render(tablas=tablas, cuadros=cuadros, calendarios=calendarios)
     with open('docs/index.html', 'w') as f:
         f.write(web)
@@ -231,3 +228,4 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
