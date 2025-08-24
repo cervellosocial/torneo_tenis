@@ -185,7 +185,7 @@ def generar_torneos():
 
 
         # Extraer el nombre de la división eliminando el prefijo numérico
-        nombre_division = "_".join(filename.split('_')[2:]).replace('.json', '')
+        nombre_division = filename.replace('.json', '').replace('torneo','').replace('_',' ')
 
         # Añadir las tablas generadas al contexto
         tablas[nombre_division] = df_clasificacion.to_html(
@@ -207,5 +207,6 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
 
 
