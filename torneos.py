@@ -160,29 +160,7 @@ def generar_cuadro_enfrentamientos(df_partidos):
             columns=cuadro.columns,
         )
     ).to_html(escape=False)
-
-def generar_tabla_calendario(df_partidos):
-    """Genera una tabla HTML para el calendario, con estilos para jornadas pares e impares."""
-    tabla_html = '<table class="calendar-table">'
-    tabla_html += '<thead><tr><th>Jornada</th><th>Fecha</th><th>Local</th><th>Visitante</th></tr></thead>'
-    tabla_html += '<tbody>'
     
-    for _, partido in df_partidos.iterrows():
-        try:
-            jornada = int(partido["jornada"])  # Asegúrate de que "jornada" sea un número entero
-            clase = "jornada-par" if jornada % 2 == 0 else "jornada-impar"
-            tabla_html += f'<tr class="{clase}">'
-            tabla_html += f'<td>{jornada}</td>'
-            tabla_html += f'<td>{partido["fecha"]}</td>'
-            tabla_html += f'<td>{partido["local"]}</td>'
-            tabla_html += f'<td>{partido["visitante"]}</td>'
-            tabla_html += '</tr>'
-        except ValueError:
-            print(f"Error: El valor de 'jornada' no es un entero: {partido['jornada']}")
-    
-    tabla_html += '</tbody></table>'
-    return tabla_html
-
 def generar_torneos():
     """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON de torno en la carpeta data."""
     data_dir = os.path.join(os.path.dirname(__file__), 'data')
@@ -205,8 +183,6 @@ def generar_torneos():
         # Añadir columna "Posición" antes de exportar
         df_clasificacion.insert(0, 'Posición', range(1, len(df_clasificacion) + 1))
 
-        # Generar calendario de partidos
-        calendario = generar_tabla_calendario(df_partidos)
 
         # Extraer el nombre de la división eliminando el prefijo numérico
         nombre_division = "_".join(filename.split('_')[2:]).replace('.json', '')
@@ -231,3 +207,4 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
