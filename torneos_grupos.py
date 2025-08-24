@@ -189,7 +189,7 @@ def generar_torneos():
 
         # Añadir las tablas generadas al contexto
         tablas[nombre_division] = df_clasificacion.to_html(
-            index=False, classes='table classification'
+            index=False, classes='table classification', headers = False
         )
         cuadros[nombre_division] = cuadro_enfrentamientos
 
@@ -206,6 +206,7 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
 
 
 
