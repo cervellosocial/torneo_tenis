@@ -171,7 +171,7 @@ def generar_torneos():
     # Obtener archivos JSON y ordenarlos numéricamente según el prefijo del nombre
     archivos_json = sorted(
         [f for f in os.listdir(data_dir) if f.startswith('torneo_') and f.endswith('.json')],
-        key=lambda x: int(x.split('_')[2])  # Extraer y convertir el número inicial a entero
+        key=lambda x: int(x.split('.')[0].split('_')[2])  # Extraer y convertir el número inicial a entero
     )
 
     for filename in archivos_json:
@@ -207,6 +207,7 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
 
 
 
