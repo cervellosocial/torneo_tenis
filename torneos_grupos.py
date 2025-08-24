@@ -189,7 +189,7 @@ def generar_torneos():
 
         # Añadir las tablas generadas al contexto
         dheaders =['Posición','Jugador','Puntos','Partidos<br>Jugados','<br>Ganados','<br>Perdidos','Sets<br>Ganados','<br>Perdidos','Juegos<br>Ganados','<br>Perdidos','<br>Diferencia']
-        dheader = '<thead><tr><th>'+'</th><th>'.join(dheaders)+'</th></tr></thead>
+        dheader = '<thead><tr><th>'+'</th><th>'.join(dheaders)+'</th></tr></thead>'
         tablas[nombre_division] = df_clasificacion.to_html(
             index=False, classes='table classification', header = False
         ).replace('<tbody>',dheader+'\n<tbody>')
@@ -209,6 +209,7 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
 
 
 
