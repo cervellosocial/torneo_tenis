@@ -192,7 +192,6 @@ def generar_torneos():
             index=False, classes='table classification'
         )
         cuadros[nombre_division] = cuadro_enfrentamientos
-        calendarios[nombre_division] = calendario
 
     loader = jj.FileSystemLoader('.')
     env = jj.Environment(loader=loader)
@@ -207,6 +206,7 @@ def generar_torneos():
 
 if __name__ == '__main__':
     generar_torneos()
+
 
 
 
