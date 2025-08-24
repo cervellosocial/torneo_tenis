@@ -20,9 +20,8 @@
 
         <!-- Botones de Navegación -->
         <div class="category-buttons">
-            {% for nombre in tablas.keys() %}
-                <a href="#{{ nombre }}" class="btn">{{ nombre.replace('_', ' ').capitalize() }}</a>
-            {% endfor %}
+                <a href="./index.html" class="btn">Adultos</a>
+                <a href="./infantil.html" class="btn">Infantil</a>
                 <a href="./playoffs.html" class="btn">Playoffs</a>
         </div>
 
@@ -36,16 +35,11 @@
             </div>
         </div>
 
-        <!-- Clasificaciones y Cuadros -->
+        <!-- Clasificaciones -->
         {% for nombre, tabla in tablas.items() %}
             <section id="{{ nombre }}" class="classification">
                 <h2 class="division-header">{{ nombre.replace('_', ' ').capitalize() }}</h2>
 
-                <!-- Botón para enlazar al calendario -->
-                <div class="calendar-button-container">
-                    <a href="#calendarios-{{ nombre }}" class="btn-calendar">Ver Calendario</a>
-                </div>
-                
                 <div>{{ tabla|safe }}</div>
 
                 <!-- Leyenda -->
@@ -63,10 +57,11 @@
                     </ul>
                 </div>
             </section>
+        {% endfor %}
 
-            <!-- Cuadro de Enfrentamientos -->
-          
-        <section class="matches">
+        <!-- Cuadro de Enfrentamientos -->
+        {% for nombre, tabla in tablas.items() %}          
+            <section class="matches">
                 <div>{{ cuadros[nombre]|safe }}</div>
             </section>
         {% endfor %}
@@ -80,4 +75,5 @@
 
 </body>
 </html>
+
 
