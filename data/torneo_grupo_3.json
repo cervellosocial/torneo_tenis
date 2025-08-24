@@ -1,0 +1,36 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 21/10 a 11/11",
+            "local": "J1",
+            "visitante": "J2",
+            "set_1": "3-6",
+            "set_2": "3-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 21/10 a 11/11",
+            "local": "J1",
+            "visitante": "J3",
+            "set_1": "3-6",
+            "set_2": "3-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 21/10 a 11/11",
+            "local": "J1",
+            "visitante": "J4",
+            "set_1": "3-6",
+            "set_2": "3-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 21/10 a 11/11",
+            "local": "J1",
+            "visitante": "J5",
+            "set_1": "3-6",
+            "set_2": "3-6",
+            "tie": ""
+        }
+    ]
+}
