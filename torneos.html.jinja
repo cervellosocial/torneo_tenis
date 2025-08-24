@@ -74,18 +74,10 @@
         <!-- Separador -->
         <hr class="separator">
 
-        <!-- Calendarios al final -->
-        <section id="calendarios">
-            {% for nombre, calendario in calendarios.items() %}
-                <div id="calendarios-{{ nombre }}" class="calendar-section centered-category">
-                    <h3 class="calendar-header">{{ nombre.replace('_', ' ').capitalize() }}</h3>
-                    <div>{{ calendario|safe }}</div>
-                </div>
-            {% endfor %}
-        </section>
     </div>
     <!-- Botón Ir al Inicio -->
 <a href="#top" class="back-to-top" title="Ir al inicio">⬆️</a>
 
 </body>
 </html>
+
