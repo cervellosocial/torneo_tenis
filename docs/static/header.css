@@ -1,4 +1,12 @@
-
+body{
+  margin:0;
+  font-family: system-ui, ...;
+  color:var(--text);
+  background: radial-gradient(1200px 800px at 10% -10%, #1a2350 0, transparent 70%),
+              radial-gradient(800px 600px at 100% 0%, #1d3b57 0, transparent 60%),
+              var(--bg);
+  line-height:1.6;
+}
 /* Botones de Categorías */
 .category-buttons {
   display: flex;
@@ -174,4 +182,5 @@
   text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
   width: 100%; /* Ocupar todo el ancho disponible */
 }
+
 
