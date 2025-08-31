@@ -5,12 +5,16 @@
   justify-content: center; /* Centrar horizontalmente */
   gap: 2rem; /* Separación entre botones */
   padding: 2rem 0; /* Espaciado superior e inferior */
-  background-color: #043454; /* Fondo azul oscuro */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo */
-  margin-bottom: 2rem; /* Espacio debajo de los botones */
-  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.6); /* Sombra inferior */
 
+  /* 🔽 Fondo más suave */
+  background: radial-gradient(1000px 600px at 10% -10%, #2d4f91 0, transparent 70%),
+              radial-gradient(600px 400px at 100% 0%, #3f719e 0, transparent 60%),
+              #1a2b4c; /* Azul base más claro */
+
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Sombra más ligera */
+  margin-bottom: 2rem; /* Espacio debajo de los botones */
 }
+
 
 .category-buttons .btn {
   font-family: 'Montserrat', Verdana;
@@ -170,3 +174,4 @@
   text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
   width: 100%; /* Ocupar todo el ancho disponible */
 }
+
