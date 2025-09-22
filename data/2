@@ -1,0 +1,87 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Alejo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Joan Agudo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Alejandro Ariza",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Joan Agudo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Alejandro Ariza",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Joan Agudo",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Joan Agudo",
+            "visitante": "Alejandro Ariza",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Alejandro Ariza",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}
+
+
+
