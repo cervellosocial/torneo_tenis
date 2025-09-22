@@ -2,7 +2,7 @@
   "datos_partidos": [
     {
       "jornada": 1,
-      "fecha": "Del 21/10 a 11/11",
+      "fecha": "Del 23/09 a 09/11",
       "local": "Hugo",
       "visitante": "Jan Mundet",
       "set_1": "",
@@ -12,7 +12,7 @@
     
     {
       "jornada": 1,
-      "fecha": "Del 21/10 a 11/11",
+      "fecha": "Del 23/09 a 09/11",
       "local": "Natalia",
       "visitante": "Pol Cejas",
       "set_1": "",
@@ -21,7 +21,7 @@
     },
     {
       "jornada": 1,
-      "fecha": "Del 21/10 a 11/11",
+      "fecha": "Del 23/09 a 09/11",
       "local": "Jan Peña",
       "visitante": "Axel Villar",
       "set_1": "",
@@ -30,7 +30,7 @@
     },
     {
       "jornada": 2,
-      "fecha": "Del 12/11 a 03/12",
+      "fecha": "Del 10/11 a 27/12",
       "local": "Hugo",
       "visitante": "Pol Cejas",
       "set_1": "",
@@ -39,7 +39,7 @@
     },
     {
       "jornada": 2,
-      "fecha": "Del 12/11 a 03/12",
+      "fecha": "Del 10/11 a 27/12",
       "local": "Jan Mundet",
       "visitante": "Axel Villar",
       "set_1": "",
@@ -48,7 +48,7 @@
     },
     {
       "jornada": 2,
-      "fecha": "Del 12/11 a 03/12",
+      "fecha": "Del 10/11 a 27/12",
       "local": "Natalia",
       "visitante": "Jan Peña",
       "set_1": "",
@@ -57,7 +57,7 @@
     },
     {
       "jornada": 3,
-      "fecha": "Del 04/12 a 25/12",
+      "fecha": "Del 28/12 a 13/02",
       "local": "Hugo",
       "visitante": "Axel Villar",
       "set_1": "",
@@ -66,7 +66,7 @@
     },
     {
       "jornada": 3,
-      "fecha": "Del 04/12 a 25/12",
+      "fecha": "Del 28/12 a 13/02",
       "local": "Pol Cejas",
       "visitante": "Jan Peña",
       "set_1": "",
@@ -75,7 +75,7 @@
     },
     {
       "jornada": 3,
-      "fecha": "Del 04/12 a 25/12",
+      "fecha": "Del 28/12 a 13/02",
       "local": "Jan Mundet",
       "visitante": "Natalia",
       "set_1": "",
@@ -84,7 +84,7 @@
     },
     {
       "jornada": 4,
-      "fecha": "Del 26/12 a 16/01",
+      "fecha": "Del 14/02 a 01/04",
       "local": "Hugo",
       "visitante": "Jan Peña",
       "set_1": "",
@@ -93,7 +93,7 @@
     },
     {
       "jornada": 4,
-      "fecha": "Del 26/12 a 16/01",
+      "fecha": "Del 14/02 a 01/04",
       "local": "Axel Villar",
       "visitante": "Natalia",
       "set_1": "",
@@ -102,7 +102,7 @@
     },
     {
       "jornada": 4,
-      "fecha": "Del 26/12 a 16/01",
+      "fecha": "Del 14/02 a 01/04",
       "local": "Pol Cejas",
       "visitante": "Jan Mundet",
       "set_1": "",
@@ -111,7 +111,7 @@
     },
     {
       "jornada": 5,
-      "fecha": "Del 17/01 a 07/02",
+      "fecha": "Del 02/04 a 21/05",
       "local": "Hugo",
       "visitante": "Natalia",
       "set_1": "",
@@ -120,7 +120,7 @@
     },
     {
       "jornada": 5,
-      "fecha": "Del 17/01 a 07/02",
+      "fecha": "Del 02/04 a 21/05",
       "local": "Jan Peña",
       "visitante": "Jan Mundet",
       "set_1": "",
@@ -129,7 +129,7 @@
     },
     {
       "jornada": 5,
-      "fecha": "Del 17/01 a 07/02",
+      "fecha": "Del 02/04 a 21/05",
       "local": "Axel Villar",
       "visitante": "Pol Cejas",
       "set_1": "",
@@ -139,5 +139,6 @@
    
     ]
 }
+
 
 
