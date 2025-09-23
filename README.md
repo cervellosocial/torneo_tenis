@@ -28,7 +28,7 @@ Para 1 partido por jugador por jornada:
 * 8 jugadores = 7 jornadas con 4 partidos por jornada
 * ...
 ## Distribucion uniforme de partidos en jornadas
-Regla para la tabla : Se empieza con el jugador de indice mas bajo y se anade un partido no jugado con el siguiente jugador de indice mas bajo
+Regla para la tabla : Se empieza con el jugador de indice mas bajo que no haya jugado en la jornada y se anade un partido no jugado con el siguiente jugador de indice mas bajo
 Para 8 jugadores
  | Jornada |  |  |  |  | 
  | - | - | - | - | - | 
@@ -39,3 +39,4 @@ Para 8 jugadores
  | 5 | j1-j6 | j2-j5 | j3-j8 | j4-j7 | 
  | 6 | j1-j7 | j2-j8 | j3-j5 | j4-j6 |  
  | 7 | j1-j8 | j2-j7 | j3-j6 | j4-j5 | 
+
