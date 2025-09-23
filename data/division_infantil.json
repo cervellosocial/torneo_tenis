@@ -9,7 +9,6 @@
       "set_2": "",
       "tie": ""
     },
-    
     {
       "jornada": 1,
       "fecha": "Del 23/09 a 09/11",
@@ -29,10 +28,19 @@
       "tie": ""
     },
     {
+      "jornada": 1,
+      "fecha": "Del 23/09 a 09/11",
+      "local": "j7",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
       "jornada": 2,
       "fecha": "Del 10/11 a 27/12",
       "local": "Hugo",
-      "visitante": "Pol Cejas",
+      "visitante": "Natalia",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -41,7 +49,7 @@
       "jornada": 2,
       "fecha": "Del 10/11 a 27/12",
       "local": "Jan Mundet",
-      "visitante": "Axel Villar",
+      "visitante": "Pol Cejas",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -49,6 +57,150 @@
     {
       "jornada": 2,
       "fecha": "Del 10/11 a 27/12",
+      "local": "Jan Peña",
+      "visitante": "j7",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 2,
+      "fecha": "Del 10/11 a 27/12",
+      "local": "Axel Villar",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Hugo",
+      "visitante": "Pol Cejas",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Jan Mundet",
+      "visitante": "Natalia",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Jan Peña",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Axel Villar",
+      "visitante": "j7",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Hugo",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Jan Mundet",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Natalia",
+      "visitante": "j7",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Pol Cejas",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Jan Mundet",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Natalia",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Pol Cejas",
+      "visitante": "j7",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "j7",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Jan Mundet",
+      "visitante": "j8",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
       "local": "Natalia",
       "visitante": "Jan Peña",
       "set_1": "",
@@ -56,89 +208,53 @@
       "tie": ""
     },
     {
-      "jornada": 3,
-      "fecha": "Del 28/12 a 13/02",
-      "local": "Hugo",
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Pol Cejas",
       "visitante": "Axel Villar",
       "set_1": "",
       "set_2": "",
       "tie": ""
     },
     {
-      "jornada": 3,
-      "fecha": "Del 28/12 a 13/02",
-      "local": "Pol Cejas",
-      "visitante": "Jan Peña",
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "j8",
       "set_1": "",
       "set_2": "",
       "tie": ""
     },
     {
-      "jornada": 3,
-      "fecha": "Del 28/12 a 13/02",
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
       "local": "Jan Mundet",
-      "visitante": "Natalia",
+      "visitante": "j7",
       "set_1": "",
       "set_2": "",
       "tie": ""
     },
     {
-      "jornada": 4,
-      "fecha": "Del 14/02 a 01/04",
-      "local": "Hugo",
-      "visitante": "Jan Peña",
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Natalia",
+      "visitante": "Axel Villar",
       "set_1": "",
       "set_2": "",
       "tie": ""
     },
     {
-      "jornada": 4,
-      "fecha": "Del 14/02 a 01/04",
-      "local": "Axel Villar",
-      "visitante": "Natalia",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
-    },
-    {
-      "jornada": 4,
-      "fecha": "Del 14/02 a 01/04",
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
       "local": "Pol Cejas",
-      "visitante": "Jan Mundet",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
-    },
-    {
-      "jornada": 5,
-      "fecha": "Del 02/04 a 21/05",
-      "local": "Hugo",
-      "visitante": "Natalia",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
-    },
-    {
-      "jornada": 5,
-      "fecha": "Del 02/04 a 21/05",
-      "local": "Jan Peña",
-      "visitante": "Jan Mundet",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
-    },
-    {
-      "jornada": 5,
-      "fecha": "Del 02/04 a 21/05",
-      "local": "Axel Villar",
-      "visitante": "Pol Cejas",
+      "visitante": "Jan Peña",
       "set_1": "",
       "set_2": "",
       "tie": ""
     }
-   
-    ]
+  ]
 }
+
 
 
 
