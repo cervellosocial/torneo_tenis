@@ -31,7 +31,7 @@
       "jornada": 1,
       "fecha": "Del 23/09 a 09/11",
       "local": "javi",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -67,7 +67,7 @@
       "jornada": 2,
       "fecha": "Del 10/11 a 27/12",
       "local": "Axel Villar",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -94,7 +94,7 @@
       "jornada": 3,
       "fecha": "Del 28/12 a 13/02",
       "local": "Jan Peña",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -139,7 +139,7 @@
       "jornada": 4,
       "fecha": "Del 14/02 a 01/04",
       "local": "Pol Cejas",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -166,7 +166,7 @@
       "jornada": 5,
       "fecha": "Del 02/04 a 21/05",
       "local": "Natalia",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -193,7 +193,7 @@
       "jornada": 6,
       "fecha": "Del 02/04 a 21/05",
       "local": "Jan Mundet",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -220,7 +220,7 @@
       "jornada": 7,
       "fecha": "Del 02/04 a 21/05",
       "local": "Hugo",
-      "visitante": "descansa",
+      "visitante": "Descansa",
       "set_1": "",
       "set_2": "",
       "tie": ""
@@ -254,6 +254,7 @@
     }
   ]
 }
+
 
 
 
