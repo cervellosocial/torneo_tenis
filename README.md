@@ -28,6 +28,7 @@ Para 1 partido por jugador por jornada:
 * 8 jugadores = 7 jornadas con 4 partidos por jornada
 * ...
 ## Distribucion uniforme de partidos en jornadas
+(round_robin.py)
 
 ### 5-6 jugadores
 | Jornada |  |  |  | 
@@ -76,5 +77,6 @@ Para 1 partido por jugador por jornada:
 | 9 | j1-j9 | j10-j8 | j11-j7 | j12-j6 | j2-j5 | j3-j4 |
 | 10 | j1-j10 | j11-j9 | j12-j8 | j2-j7 | j3-j6 | j4-j5 |
 | 11 | j1-j11 | j12-j10 | j2-j9 | j3-j8 | j4-j7 | j5-j6 |
+
 
 
