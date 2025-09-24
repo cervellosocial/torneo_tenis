@@ -5,8 +5,11 @@ Para actualizar la pagina con nuevos resultados, simplemente editar los diferent
 
 Pagina : [https://cervellosocial.github.io/torneo_tenis/](https://cervellosocial.github.io/torneo_tenis/)
 
-# Documentacion
+# Documentacion & Detalles
+
+* En torneos, los jugadores con nombre `Descansa` y `Bye` se muestran en las jornadas pero se ignoran en las tablas de puntuacion
 
 [Distribucion de partidos para torneos](./Distribucion_de_partidos_para_torneos.md)
+
 
 
