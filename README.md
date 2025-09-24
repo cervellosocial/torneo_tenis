@@ -6,5 +6,6 @@ Para actualizar la pagina con nuevos resultados, simplemente editar los diferent
 Pagina : [https://cervellosocial.github.io/torneo_tenis/](https://cervellosocial.github.io/torneo_tenis/)
 
 # Documentacion
-* [Distribucion de partidos para torneos](Distribucion de partidos para torneos.md)
+
+[Distribucion de partidos para torneos]('./Distribucion_de_partidos_para_torneos.md')
 
