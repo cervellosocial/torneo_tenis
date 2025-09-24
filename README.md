@@ -7,5 +7,6 @@ Pagina : [https://cervellosocial.github.io/torneo_tenis/](https://cervellosocial
 
 # Documentacion
 
-[Distribucion de partidos para torneos]('./Distribucion_de_partidos_para_torneos.md')
+[Distribucion de partidos para torneos](./Distribucion_de_partidos_para_torneos.md)
+
 
