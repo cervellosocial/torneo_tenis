@@ -1,4 +1,4 @@
-# Informascion para distribucion de partidos en torneo normal 
+# Informacion para distribucion de partidos en torneo normal 
 -todos contra todos-
 
 ## Numero de partidos
