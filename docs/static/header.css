@@ -64,7 +64,7 @@
   display: block;
   margin: 0 auto;
  
-  max-width: 250px; /* Ajustar el tamaño */
+  max-width: 250px; !important; /* Ajustar el tamaño */
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
@@ -175,6 +175,7 @@
   text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
   width: 100%; /* Ocupar todo el ancho disponible */
 }
+
 
 
 
