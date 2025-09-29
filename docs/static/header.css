@@ -109,7 +109,7 @@
     gap: 1rem;
   }
 
-  .header-image img,
+  .header-image img:not(.header-logo),
   .footer-image img {
     max-width: 90%; /* Asegurar que no sobresalgan */
   }
@@ -175,6 +175,7 @@
   text-align: left; /* Asegurar texto dentro del div esté alineado a la izquierda */
   width: 100%; /* Ocupar todo el ancho disponible */
 }
+
 
 
 
