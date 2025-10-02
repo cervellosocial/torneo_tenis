@@ -1,0 +1,25 @@
+{
+  "jugadores": [
+    {
+      "nombre": "Esther",
+      "rondas": [6, 9, 7, 8, 5]
+    },
+    {
+      "nombre": "Alejo",
+      "rondas": [9, 7, 6, 9, 4]
+    },
+    {
+      "nombre": "Joan Agudo",
+      "rondas": [4, 8, 9, 5, 7]
+    },
+    {
+      "nombre": "Mario",
+      "rondas": [9, 5, 8, 6, 9]
+    },
+    {
+      "nombre": "Alejandro Ariza",
+      "rondas": [7, 9, 6, 8, 5]
+    }
+    // ... hasta los 16 jugadores
+  ]
+}
