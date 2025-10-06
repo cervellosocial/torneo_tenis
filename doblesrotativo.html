@@ -2,29 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Torneo de Dobles Rotativo</title>
+  <title>Clasificación Torneo Dobles Rotativo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
       background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
     }
     table {
-      width: 100%;
+      width: 80%;
+      margin: 20px auto;
       border-collapse: collapse;
-      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     th, td {
       padding: 10px;
-      text-align: center;
       border: 1px solid #ddd;
     }
     th {
-      background-color: #4CAF50;
+      background: #4CAF50;
       color: white;
     }
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background: #f2f2f2;
     }
   </style>
 </head>
@@ -41,36 +46,8 @@
     <tbody></tbody>
   </table>
 
-  <script>
-    async function cargarDatos() {
-      const response = await fetch("resultados.json"); // el JSON en GitHub
-      const data = await response.json();
-
-      // Calcular totales
-      const jugadores = data.jugadores.map(j => {
-        const total = j.rondas.reduce((a, b) => a + b, 0);
-        return { nombre: j.nombre, total: total };
-      });
-
-      // Ordenar por puntos
-      jugadores.sort((a, b) => b.total - a.total);
-
-      // Mostrar en tabla
-      const tbody = document.querySelector("#tablaClasificacion tbody");
-      tbody.innerHTML = "";
-      jugadores.forEach((j, index) => {
-        const fila = document.createElement("tr");
-        fila.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${j.nombre}</td>
-          <td>${j.total}</td>
-        `;
-        tbody.appendChild(fila);
-      });
-    }
-
-    cargarDatos();
-  </script>
+  <script src="template.js"></script>
 </body>
 </html>
+
 
