@@ -50,9 +50,9 @@
       "fecha": "Del 10/11 a 27/12",
       "local": "Jan Mundet",
       "visitante": "Pol Cejas",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
+      "set_1": "6-2",
+      "set_2": "4-6",
+      "tie": "11-9"
     },
     {
       "jornada": 2,
@@ -254,6 +254,7 @@
     }
   ]
 }
+
 
 
 
