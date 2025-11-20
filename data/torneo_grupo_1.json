@@ -20,8 +20,8 @@
             "fecha": "Del 22/09 a 23/11",
             "local": "Esther",
             "visitante": "Mario",
-            "set_1": "",
-            "set_2": "",
+            "set_1": "5-7",
+            "set_2": "0-6",
             "tie": ""
         },
         {
@@ -82,6 +82,7 @@
         }
     ]
 }
+
 
 
 
