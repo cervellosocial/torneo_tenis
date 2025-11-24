@@ -1,0 +1,101 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Alejo",
+            "set_1": "3-6",
+            "set_2": "4-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Joan Agudo",
+            "set_1": "6-2",
+            "set_2": "6-1",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Mario",
+            "set_1": "5-7",
+            "set_2": "0-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Alejandro Ariza",
+            "set_1": "6-0",
+            "set_2": "6-0",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Joan Agudo",
+            "set_1": "6-2",
+            "set_2": "6-1",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Alejandro Ariza",
+            "set_1": "0-6",
+            "set_2": "7-5",
+            "tie": "6-4"
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Joan Agudo",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Joan Agudo",
+            "visitante": "Alejandro Ariza",
+            "set_1": "6-0",
+            "set_2": "6-0",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Alejandro Ariza",
+            "set_1": "6-0",
+            "set_2": "6-0",
+            "tie": ""
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

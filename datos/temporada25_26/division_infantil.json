@@ -1,0 +1,268 @@
+{
+  "datos_partidos": [
+    {
+      "jornada": 1,
+      "fecha": "Del 23/09 a 09/11",
+      "local": "Hugo",
+      "visitante": "Jan Mundet",
+      "set_1": "1-6",
+      "set_2": "6-2",
+      "tie": "10-7"
+    },
+    {
+      "jornada": 1,
+      "fecha": "Del 23/09 a 09/11",
+      "local": "Natalia",
+      "visitante": "Pol Cejas",
+      "set_1": "3-6",
+      "set_2": "2-6",
+      "tie": ""
+    },
+    {
+      "jornada": 1,
+      "fecha": "Del 23/09 a 09/11",
+      "local": "Jan Peña",
+      "visitante": "Axel Villar",
+      "set_1": "2-6",
+      "set_2": "0-6",
+      "tie": ""
+    },
+    {
+      "jornada": 1,
+      "fecha": "Del 23/09 a 09/11",
+      "local": "Javi",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 2,
+      "fecha": "Del 10/11 a 27/12",
+      "local": "Hugo",
+      "visitante": "Natalia",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 2,
+      "fecha": "Del 10/11 a 27/12",
+      "local": "Jan Mundet",
+      "visitante": "Pol Cejas",
+      "set_1": "6-2",
+      "set_2": "4-6",
+      "tie": "11-9"
+    },
+    {
+      "jornada": 2,
+      "fecha": "Del 10/11 a 27/12",
+      "local": "Jan Peña",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 2,
+      "fecha": "Del 10/11 a 27/12",
+      "local": "Axel Villar",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Hugo",
+      "visitante": "Pol Cejas",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Jan Mundet",
+      "visitante": "Natalia",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Jan Peña",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 3,
+      "fecha": "Del 28/12 a 13/02",
+      "local": "Axel Villar",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Hugo",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Jan Mundet",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Natalia",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 4,
+      "fecha": "Del 14/02 a 01/04",
+      "local": "Pol Cejas",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Jan Mundet",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Natalia",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 5,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Pol Cejas",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Jan Mundet",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Natalia",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 6,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Pol Cejas",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Hugo",
+      "visitante": "Descansa",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Jan Mundet",
+      "visitante": "Javi",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Natalia",
+      "visitante": "Axel Villar",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    },
+    {
+      "jornada": 7,
+      "fecha": "Del 02/04 a 21/05",
+      "local": "Pol Cejas",
+      "visitante": "Jan Peña",
+      "set_1": "",
+      "set_2": "",
+      "tie": ""
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

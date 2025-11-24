@@ -1,8 +1,8 @@
 import json
 import jinja2 as jj
 
-def prepare_data():
-  with open("data/playoffs.json") as f:
+def prepare_data(datos_json):
+  with open(datos_json) as f:
     playoffs = json.load(f)
   
   out = []
@@ -16,7 +16,7 @@ def prepare_data():
     tabla_rondas = []
     for _ in range(nRows):
       tabla_rondas.append([('','') for _ in range(nCols)])
-    print(len(tabla_rondas), len(tabla_rondas[0]))
+    #print(len(tabla_rondas), len(tabla_rondas[0]))
     
     for r,ronda in enumerate(rondas):
       for i,partido in enumerate(group[ronda]['partidos']):
@@ -26,7 +26,7 @@ def prepare_data():
         c1 = int(o+i*k)
         c2 = int(c1+k/2)
         c3  =int(c1+k/4+1)
-        print('r1',r,c1,c2,c3)
+        #print('r1',r,c1,c2,c3)
         for v in range(c1+1,c2):
           tabla_rondas[r][v]=(tabla_rondas[r][v][0],'class="playoff_match"')
         tabla_rondas[r][c1]=(partido['jugador1'],'class="playoff_player1"')
@@ -74,15 +74,18 @@ def prepare_data():
   #print('\n'.join(tabla_html))
   return out
 
-def generate_playoffs():
-    playoffs = prepare_data()
+def generate_playoffs(datos_json, pagina, template = 'web_templates/playoffs.html.jinja'):
+
+    print(f'Playoffs: {pagina} - ', datos_json)
+
+    playoffs = prepare_data(datos_json)
   
     loader = jj.FileSystemLoader('.')
     env = jj.Environment(loader=loader)
-    template = env.get_template('playoffs.html.jinja')
-    web = template.render(playoffs=playoffs)
-    with open('docs/playoffs.html', 'w') as f:
+    template = env.get_template(template)
+    web = template.render(playoffs=playoffs).encode('utf-8')
+    with open('web/'+pagina, 'wb') as f:
         f.write(web)
-    print('[Debug] >>>Web Playoffs:')
-    print(web)
-    print('[Debug] <<<Web Playoffs:')
+    #print('[Debug] >>>Web Playoffs:')
+    #print(web)
+    #print('[Debug] <<<Web Playoffs:')

@@ -1,0 +1,87 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Toño",
+            "visitante": "Sergi Déu",
+            "set_1": "6-0",
+            "set_2": "6-0",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Toño",
+            "visitante": "Raul",
+            "set_1": "6-4",
+            "set_2": "0-6",
+            "tie": "6-4"
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Toño",
+            "visitante": "Sergio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Toño",
+            "visitante": "Roberto",
+            "set_1": "6-1",
+            "set_2": "6-1",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sergi Déu",
+            "visitante": "Raul",
+            "set_1": "0-6",
+            "set_2": "0-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sergi Déu",
+            "visitante": "Sergio",
+            "set_1": "2-6",
+            "set_2": "3-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sergi Déu",
+            "visitante": "Roberto",
+            "set_1": "6-0",
+            "set_2": "6-0",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Raul",
+            "visitante": "Sergio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Raul",
+            "visitante": "Roberto",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sergio",
+            "visitante": "Roberto",
+            "set_1": "6-2",
+            "set_2": "7-5",
+            "tie": ""
+        }
+    ]
+}
+
+
+

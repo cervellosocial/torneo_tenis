@@ -1,0 +1,87 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sole",
+            "visitante": "Laura",
+            "set_1": "6-4",
+            "set_2": "6-2",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sole",
+            "visitante": "Jordi Garrido",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sole",
+            "visitante": "Jordi Mundet",
+            "set_1": "2-6",
+            "set_2": "6-7",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Sole",
+            "visitante": "Jose Antonio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Jordi Garrido",
+            "set_1": "1-6",
+            "set_2": "2-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Jordi Mundet",
+            "set_1": "1-6",
+            "set_2": "6-4",
+            "tie": "11-9"
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Jose Antonio",
+            "set_1": "1-6",
+            "set_2": "2-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Jordi Mundet",
+            "set_1": "2-6",
+            "set_2": "6-2",
+            "tie": "4-10"
+        },
+           {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Jose Antonio",
+            "set_1": "2-6",
+            "set_2": "4-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 22/09 a 23/11",
+            "local": "Jordi Mundet",
+            "visitante": "Jose Antonio",
+            "set_1": "2-6",
+            "set_2": "5-7",
+            "tie": ""
+        }
+    ]
+}
+
+
+
