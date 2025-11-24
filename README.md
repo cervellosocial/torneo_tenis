@@ -7,7 +7,7 @@ Pagina Publica : [https://cervellosocial.github.io/torneo_tenis/](https://cervel
 * En torneos, los jugadores con nombre `Descansa` y `Bye` se muestran en las jornadas pero se ignoran en las tablas de puntuacion
 * [Distribucion de partidos para torneos](./Distribucion_de_partidos_para_torneos.md)
 
-##Pagina de entrada & paginas estaticas
+## Pagina de entrada & paginas estaticas
 
 El archivo [web/index.html](web/index.html) es el puto de entrada de la web.<br>
 Este archivo es manual y contiene los enlaces a las otras paginas
@@ -40,6 +40,7 @@ e.g. - Para genera el archivo `torneo1.html` con los datos de los archivos en `d
 Si se quiere añadir una nueva pagina generada (un nuevo torneo) hay que añadir la generacion de una nueva pagina como en el ejemplo anterior; con el tipo de torneo, el nombre de la nueva pagina y la ruta a los nuevos archivos de datos.
 
 Para que se pueda navegar hasta la pagina facilmente, tambien habra que añadirla a [web/index.html](web/index.html)
+
 
 
 
