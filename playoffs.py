@@ -74,7 +74,7 @@ def prepare_data(datos_json):
   #print('\n'.join(tabla_html))
   return out
 
-def generate_playoffs(datos_json, pagina, template = 'web_templates/playoffs.html.jinja'):
+def generar_web(pagina, datos_json, template = 'web_templates/playoffs.html.jinja'):
 
     print(f'Playoffs: {pagina} - ', datos_json)
 

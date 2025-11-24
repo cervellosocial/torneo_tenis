@@ -161,7 +161,7 @@ def generar_cuadro_enfrentamientos(df_partidos):
         )
     ).to_html(escape=False)
     
-def generar_torneos(datos_json, pagina, template ='web_templates/torneos_grupos.html.jinja'):
+def generar_web(pagina, datos_json, template ='web_templates/torneos_grupos.html.jinja'):
     """Renderiza las tablas de clasificación y cuadros de enfrentamientos desde los JSON de torno en la carpeta data."""
 
     print(f'Torneo Grupos: {pagina} - ', datos_json)
