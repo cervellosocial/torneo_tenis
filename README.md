@@ -1,6 +1,6 @@
 # Torneos
 
-Pagina Resultante : [https://cervellosocial.github.io/torneo_tenis/](https://cervellosocial.github.io/torneo_tenis/)
+Pagina Publica : [https://cervellosocial.github.io/torneo_tenis/](https://cervellosocial.github.io/torneo_tenis/)
 
 # Documentacion & Detalles
 
@@ -40,6 +40,7 @@ e.g. - Para genera el archivo `torneo1.html` con los datos de los archivos en `d
 Si se quiere añadir una nueva pagina generada (un nuevo torneo) hay que añadir la generacion de una nueva pagina como en el ejemplo anterior; con el tipo de torneo, el nombre de la nueva pagina y la ruta a los nuevos archivos de datos.
 
 Para que se pueda navegar hasta la pagina facilmente, tambien habra que añadirla a [web/index.html](web/index.html)
+
 
 
 
