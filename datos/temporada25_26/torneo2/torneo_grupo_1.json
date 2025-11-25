@@ -1,7 +1,7 @@
 {
     "datos_partidos": [
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Esther",
             "visitante": "Alejo",
             "set_1": "",
@@ -9,7 +9,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Esther",
             "visitante": "Domenech",
             "set_1": "",
@@ -17,7 +17,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Esther",
             "visitante": "Mario",
             "set_1": "",
@@ -25,7 +25,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Esther",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -33,7 +33,7 @@
             "tie": ""
         },
            {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Alejo",
             "visitante": "Domenech",
             "set_1": "",
@@ -41,7 +41,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Alejo",
             "visitante": "Mario",
             "set_1": "",
@@ -49,7 +49,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Alejo",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -57,7 +57,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Domenech",
             "visitante": "Mario",
             "set_1": "",
@@ -65,7 +65,7 @@
             "tie": ""
         },
            {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Domenech",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -73,7 +73,7 @@
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Mario",
             "visitante": "Jose Luis",
             "set_1": "",
@@ -82,6 +82,7 @@
         }
     ]
 }
+
 
 
 
