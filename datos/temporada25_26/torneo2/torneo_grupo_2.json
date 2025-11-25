@@ -1,83 +1,83 @@
 {
     "datos_partidos": [
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Domenech",
-            "visitante": "Alberto Diaz",
-            "set_1": "6-3",
-            "set_2": "6-1",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Joan Agudo",
+            "visitante": "Toño",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Domenech",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Joan Agudo",
             "visitante": "Dani",
-            "set_1": "6-1",
-            "set_2": "6-0",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Domenech",
-            "visitante": "Jose Luís",
-            "set_1": "6-1",
-            "set_2": "6-2",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Joan Agudo",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Domenech",
-            "visitante": "Aurelio",
-            "set_1": "6-1",
-            "set_2": "6-3",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Joan Agudo",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
            {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Alberto Diaz",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Toño",
             "visitante": "Dani",
-            "set_1": "1-6",
-            "set_2": "5-7",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Alberto Diaz",
-            "visitante": "Jose Luís",
-            "set_1": "6-2",
-            "set_2": "2-6",
-            "tie": "6-10"
-        },
-        {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Alberto Diaz",
-            "visitante": "Aurelio",
-            "set_1": "6-2",
-            "set_2": "7-6",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Toño",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Toño",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
             "local": "Dani",
-            "visitante": "Jose Luís",
-            "set_1": "7-5",
-            "set_2": "6-2",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
            {
-            "fecha": "Del 22/09 a 23/11",
+            "fecha": "Del 26/11 a 26/01",
             "local": "Dani",
-            "visitante": "Aurelio",
-            "set_1": "6-3",
-            "set_2": "6-0",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
-            "fecha": "Del 22/09 a 23/11",
-            "local": "Jose Luís",
-            "visitante": "Aurelio",
-            "set_1": "7-6",
-            "set_2": "6-3",
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Aldara",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         }
     ]
