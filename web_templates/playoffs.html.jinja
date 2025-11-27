@@ -23,8 +23,14 @@
   
   <!-- Títulos -->
   <h1 class="text-center">PLAYOFFS</h1>
-  <h2 class="text-center">3ª LLIGA SOCIAL MIXTA</h2>
-
+  <h2 class="text-center">4ª LLIGA SOCIAL MIXTA</h2>
+  
+  <div class="header-content">
+      <div class="header-image">
+          <img src="./static/img/social25.jpg" alt="Tornejo Logo" class="header-logo">
+      </div>
+  </div>
+        
   {% for playoff in playoffs %}
   <div id="{{playoff.name}}" class="container">
   <h2 class="division-header">{{playoff.name}}</h2>
