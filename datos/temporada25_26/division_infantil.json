@@ -59,9 +59,9 @@
       "fecha": "Del 10/11 a 27/12",
       "local": "Jan Peña",
       "visitante": "Javi",
-      "set_1": "",
-      "set_2": "",
-      "tie": ""
+      "set_1": "6-1",
+      "set_2": "3-6",
+      "tie": "6-4"
     },
     {
       "jornada": 2,
@@ -254,6 +254,7 @@
     }
   ]
 }
+
 
 
 
