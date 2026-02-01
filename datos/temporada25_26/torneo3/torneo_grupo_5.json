@@ -1,0 +1,87 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Laura",
+            "visitante": "Fran Falcón",
+            "set_1": "6-1",
+            "set_2": "6-2",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Laura",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Laura",
+            "visitante": "Óscar",
+            "set_1": "6-4",
+            "set_2": "6-2",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Laura",
+            "visitante": "Alex Vila",
+            "set_1": "3-6",
+            "set_2": "6-2",
+            "tie": "10-5"
+        },
+           {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Fran Falcón",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Fran Falcón",
+            "visitante": "Óscar",
+            "set_1": "4-6",
+            "set_2": "1-6",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Fran Falcón",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Sole",
+            "visitante": "Óscar",
+            "set_1": "3-6",
+            "set_2": "6-2",
+            "tie": "10-7"
+        },
+           {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Sole",
+            "visitante": "Alex Vila",
+            "set_1": "2-6",
+            "set_2": "7-6",
+            "tie": "5-10"
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Óscar",
+            "visitante": "Alex Vila",
+            "set_1": "6-3",
+            "set_2": "6-1",
+            "tie": ""
+        }
+    ]
+}
+
+
+
