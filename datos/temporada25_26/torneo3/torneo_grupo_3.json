@@ -4,46 +4,46 @@
             "fecha": "Del 26/11 a 26/01",
             "local": "Alberto Diaz",
             "visitante": "Aurelio",
-            "set_1": "6-0",
-            "set_2": "6-3",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Alberto Diaz",
-            "visitante": "Jose Antonio",
-            "set_1": "4-6",
-            "set_2": "4-6",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Alberto Diaz",
-            "visitante": "Sergio",
-            "set_1": "3-6",
-            "set_2": "0-6",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Alberto Diaz",
             "visitante": "Jordi Mundet",
-            "set_1": "6-1",
-            "set_2": "6-0",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
            {
             "fecha": "Del 26/11 a 26/01",
             "local": "Aurelio",
-            "visitante": "Jose Antonio",
-            "set_1": "3-6",
-            "set_2": "4-6",
+            "visitante": "Raúl",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Aurelio",
-            "visitante": "Sergio",
+            "visitante": "Sergi Déu",
             "set_1": "",
             "set_2": "",
             "tie": ""
@@ -58,26 +58,26 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Jose Antonio",
-            "visitante": "Sergio",
-            "set_1": "6-7",
-            "set_2": "2-6",
+            "local": "Raúl",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
            {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Jose Antonio",
+            "local": "Raúl",
             "visitante": "Jordi Mundet",
-            "set_1": "6-2",
-            "set_2": "6-0",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Sergio",
+            "local": "Sergi Déu",
             "visitante": "Jordi Mundet",
-            "set_1": "6-0",
-            "set_2": "6-0",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         }
     ]
