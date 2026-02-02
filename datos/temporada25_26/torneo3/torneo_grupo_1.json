@@ -2,7 +2,7 @@
     "datos_partidos": [
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
+            "local": "Dani",
             "visitante": "Alejo",
             "set_1": "",
             "set_2": "",
@@ -10,7 +10,7 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
+            "local": "Dani",
             "visitante": "Domenech",
             "set_1": "3-6",
             "set_2": "1-6",
@@ -18,15 +18,15 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
-            "visitante": "Mario",
+            "local": "Dani",
+            "visitante": "Toño",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
+            "local": "Dani",
             "visitante": "Jose Luis",
             "set_1": "4-6",
             "set_2": "4-6",
@@ -43,7 +43,7 @@
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Alejo",
-            "visitante": "Mario",
+            "visitante": "Toño",
             "set_1": "",
             "set_2": "",
             "tie": ""
@@ -59,7 +59,7 @@
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Domenech",
-            "visitante": "Mario",
+            "visitante": "Toño",
             "set_1": "",
             "set_2": "",
             "tie": ""
@@ -74,7 +74,7 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Mario",
+            "local": "Toño",
             "visitante": "Jose Luis",
             "set_1": "",
             "set_2": "",
@@ -82,6 +82,7 @@
         }
     ]
 }
+
 
 
 
