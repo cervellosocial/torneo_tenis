@@ -2,15 +2,15 @@
     "datos_partidos": [
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Laura",
-            "visitante": "Fran Falcón",
-            "set_1": "6-1",
-            "set_2": "6-2",
+            "local": "Ingrid",
+            "visitante": "Inma",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Laura",
+            "local": "Ingrid",
             "visitante": "Sole",
             "set_1": "",
             "set_2": "",
@@ -18,23 +18,23 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Laura",
-            "visitante": "Óscar",
-            "set_1": "6-4",
-            "set_2": "6-2",
+            "local": "Ingrid",
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Laura",
+            "local": "Ingrid",
             "visitante": "Alex Vila",
-            "set_1": "3-6",
-            "set_2": "6-2",
-            "tie": "10-5"
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
         },
            {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Inma",
             "visitante": "Sole",
             "set_1": "",
             "set_2": "",
@@ -42,15 +42,15 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
-            "visitante": "Óscar",
-            "set_1": "4-6",
-            "set_2": "1-6",
+            "local": "Inma",
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Inma",
             "visitante": "Alex Vila",
             "set_1": "",
             "set_2": "",
@@ -59,25 +59,25 @@
         {
             "fecha": "Del 26/11 a 26/01",
             "local": "Sole",
-            "visitante": "Óscar",
-            "set_1": "3-6",
-            "set_2": "6-2",
-            "tie": "10-7"
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
         },
            {
             "fecha": "Del 26/11 a 26/01",
             "local": "Sole",
             "visitante": "Alex Vila",
-            "set_1": "2-6",
-            "set_2": "7-6",
-            "tie": "5-10"
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Óscar",
+            "local": "Adrián",
             "visitante": "Alex Vila",
-            "set_1": "6-3",
-            "set_2": "6-1",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         }
     ]
