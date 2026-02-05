@@ -2,7 +2,7 @@
     "datos_partidos": [
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Adriana",
             "visitante": "Sasha",
             "set_1": "",
             "set_2": "",
@@ -11,7 +11,7 @@
     
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Adriana",
             "visitante": "Jan Mundet",
             "set_1": "",
             "set_2": "",
@@ -19,7 +19,7 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Adriana",
             "visitante": "Jennifer",
             "set_1": "",
             "set_2": "",
@@ -54,7 +54,7 @@
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Fran Falcón",
+            "local": "Adriana",
             "visitante": "Armand",
             "set_1": "",
             "set_2": "",
@@ -112,7 +112,7 @@
          {
             "fecha": "Del 26/11 a 26/01",
             "local": "Hugo",
-            "visitante": "Fran Falcón",
+            "visitante": "Adriana",
             "set_1": "",
             "set_2": "",
             "tie": ""
