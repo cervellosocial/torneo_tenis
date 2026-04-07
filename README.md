@@ -9,7 +9,7 @@ Pagina Publica : [https://cervellosocial.github.io/torneo_tenis/](https://cervel
 
 ## Pagina de entrada & paginas estaticas
 
-El archivo [web/index.html](web/index.html) es el puto de entrada de la web.<br>
+El archivo [web/index.html](web/index.html) es el punto de entrada de la web.<br>
 Este archivo es manual y contiene los enlaces a las otras paginas
 
 El resto de archivos en el directorio [web/](web/) son publicados directamente como parte de la web.<br>
