@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Antonio",
+            "visitante": "Laura",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Antonio",
+            "visitante": "Óscar",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Antonio",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Antonio",
+            "visitante": "Elena",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Laura",
+            "visitante": "Óscar",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Laura",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Laura",
+            "visitante": "Elena",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Óscar",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Óscar",
+            "visitante": "Elena",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Aldara",
+            "visitante": "Elena",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

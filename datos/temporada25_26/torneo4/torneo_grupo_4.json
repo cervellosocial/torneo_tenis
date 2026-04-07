@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Roberto",
+            "visitante": "Jordi Garrido",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Roberto",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Roberto",
+            "visitante": "Aurelio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Roberto",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Garrido",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Garrido",
+            "visitante": "Aurelio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Garrido",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Sole",
+            "visitante": "Aurelio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Sole",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Aurelio",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

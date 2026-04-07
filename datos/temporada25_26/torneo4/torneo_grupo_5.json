@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Ingrid",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Ingrid",
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Ingrid",
+            "visitante": "Jan Mundet",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Hugo",
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Hugo",
+            "visitante": "Jan Mundet",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Adrián",
+            "visitante": "Jan Mundet",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Mundet",
+            "visitante": "Ingrid",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Mundet",
+            "visitante": "Jan Mundet",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Mundet",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jordi Mundet",
+            "visitante": "Adrián",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

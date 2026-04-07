@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Joan Agudo",
+            "visitante": "Jose Luis",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Joan Agudo",
+            "visitante": "Toño",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Joan Agudo",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Joan Agudo",
+            "visitante": "Alberto Diaz",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Luis",
+            "visitante": "Toño",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Luis",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Jose Luis",
+            "visitante": "Alberto Diaz",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Toño",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Toño",
+            "visitante": "Alberto Diaz",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Sergi Déu",
+            "visitante": "Alberto Diaz",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

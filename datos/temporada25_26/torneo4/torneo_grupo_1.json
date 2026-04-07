@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Dani",
+            "visitante": "Alejo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Dani",
+            "visitante": "Domenech",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Dani",
+            "visitante": "Sergio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Dani",
+            "visitante": "Esther",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Alejo",
+            "visitante": "Domenech",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Alejo",
+            "visitante": "Sergio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Alejo",
+            "visitante": "Esther",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Domenech",
+            "visitante": "Sergio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Domenech",
+            "visitante": "Esther",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 7 marzo al 31 mayo",
+            "local": "Sergio",
+            "visitante": "Esther",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}
