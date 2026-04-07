@@ -14,7 +14,10 @@ if __name__ == '__main__':
 
   datos_torneo3 = sorted(glob('datos/temporada25_26/torneo3/*.json'))
   torneo_grupos.generar_web('ronda3.html', datos_torneo3)
-  
+
+  datos_torneo4 = sorted(glob('datos/temporada25_26/torneo4/*.json'))
+  torneo_grupos.generar_web('ronda4.html', datos_torneo4)
+
   datos_infantil = ['datos/temporada25_26/division_infantil.json']
   torneo_clasico.generar_web('infantil.html', datos_infantil,)
 
