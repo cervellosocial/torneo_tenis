@@ -4,13 +4,13 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"[4]","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
         {"jugador1":" ","jugador2":"","resultado":"()"},
+        {"jugador1":"[3]","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"[2]","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
@@ -50,13 +50,13 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[4] ","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"},
-        {"jugador1":" ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":" ","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"[4]","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":" ","jugador2":"","resultado":"()"},
+        {"jugador1":"[3]","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"[2]","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
@@ -95,14 +95,14 @@
     "categoria":"Tercera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1]","jugador2":"","resultado":"()"},
+        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"[4]","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":" ","jugador2":"","resultado":"()"},
         {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"[2]","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
