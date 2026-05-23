@@ -141,10 +141,10 @@
     "categoria":"Division Infantil",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1]  ","jugador2":"","resultado":"()"},
-        {"jugador1":" ","jugador2":"[4]  ","resultado":"()"},
-        {"jugador1":"[3]  ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2] ","resultado":"()"}
+        {"jugador1":"[1]","jugador2":"","resultado":"()"},
+        {"jugador1":"[4]","jugador2":"","resultado":"()"},
+        {"jugador1":"[3]","jugador2":"","resultado":"()"},
+        {"jugador1":"[2]","jugador2":"","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
