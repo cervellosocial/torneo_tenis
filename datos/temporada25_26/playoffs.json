@@ -7,19 +7,19 @@
         {"jugador1":"","jugador2":"[4]","resultado":"()"},
         {"jugador1":"[3]","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"[2]","resultado":"()"},
-        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[4]","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"}
+        {"jugador1":" ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[4]","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"}
+        {"jugador1":" ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
@@ -32,14 +32,14 @@
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"27/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"22/6 al 27/6"
     },
@@ -49,60 +49,27 @@
     "categoria":"Segunda Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] ","jugador2":"","resultado":""},
+        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"[4] ","resultado":"()"},
         {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":""},
-        {"jugador1":"[1] ","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"[4] ","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":""}
+        {"jugador1":"","jugador2":"[2]","resultado":"()"},
+        {"jugador1":" ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":" ","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"[1] ","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"[4] ","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":""}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda3":{
-      "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"","resultado":"()"}
-      ],
-      "fecha":"10/6 al 22/6"
-    },
-    "final":{
-      "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"}
-      ],
-      "fecha":"27/6"
-    },
-    "ganador":"",
-    "final34":{
-      "partidos":[
-        {"jugador1":"","jugador2":"","resultado":""}
-      ],
-      "fecha":"22/6 al 27/6"
-    },
-    "ganador34":""
-  },
-  {
-    "categoria":"Tercera Division",
-    "ronda1":{
-      "partidos":[
-        {"jugador1":"[1]","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"[4]","resultado":"("},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":""}
-      ],
-      "fecha":"28/5 al 9/6"
-    },
-    "ronda2":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"}
@@ -122,16 +89,62 @@
       ],
       "fecha":"22/6 al 27/6"
     },
-    "ganador34":"Laura"
+    "ganador34":""
+  },
+  {
+    "categoria":"Tercera Division",
+    "ronda1":{
+      "partidos":[
+        {"jugador1":"[1]","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"[4]","resultado":"()"},
+        {"jugador1":"[3]","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"[2]","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
+      ],
+      "fecha":"28/5 al 9/6"
+    },
+    "ronda2":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
+      ],
+      "fecha":"28/5 al 9/6"
+    },
+    "ronda3":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
+      ],
+      "fecha":"10/6 al 22/6"
+    },
+    "final":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
+      ],
+      "fecha":"27/6"
+    },
+    "ganador":"",
+    "final34":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
+      ],
+      "fecha":"22/6 al 27/6"
+    },
+    "ganador34":""
   },
   {
     "categoria":"Division Infantil",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1]  ","jugador2":"","resultado":""},
+        {"jugador1":"[1]  ","jugador2":"","resultado":"()"},
         {"jugador1":" ","jugador2":"[4]  ","resultado":"()"},
-        {"jugador1":"[3]  ","jugador2":"","resultado":""},
-        {"jugador1":"","jugador2":"[2] ","resultado":""}
+        {"jugador1":"[3]  ","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"[2] ","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
@@ -151,7 +164,7 @@
     "ganador":" ",
     "final34":{
       "partidos":[
-        {"jugador1":" ","jugador2":" ","resultado":""}
+        {"jugador1":" ","jugador2":" ","resultado":"()"}
       ],
       "fecha":"22/6 al 27/6"
     },
