@@ -1,10 +1,15 @@
 from glob import glob
 import torneo_clasico
 import torneo_grupos
-import playoffs 
+import playoffs
+
+from time import sleep
 
 
 if __name__ == '__main__':
+
+  # delay para que la accion se ejecute la ultima
+  sleep(60)
 
   datos_torneo1 = sorted(glob('datos/temporada25_26/torneo1/*.json'))
   torneo_grupos.generar_web('ronda1.html',datos_torneo1)
