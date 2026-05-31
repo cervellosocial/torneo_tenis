@@ -3,14 +3,14 @@
     "categoria":"Primera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
+        {"jugador1":"[1] Alejo","jugador2":"Bye","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"[4]","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"[3] ","jugador2":"","resultado":"()"},
+        {"jugador1":"Bye","jugador2":"[4]Dani","resultado":"()"},
+        {"jugador1":"[3]Domenech ","jugador2":"Bye","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"[2]","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"Bye","jugador2":"`[2]Esther","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
