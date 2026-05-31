@@ -4,22 +4,22 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Alejo","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"Alberto Diaz","jugador2":"Jose Luis","resultado":"()"},
+        {"jugador1":"Sergio","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Bye","jugador2":"[4]Dani","resultado":"()"},
         {"jugador1":"[3]Domenech ","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"Bye","jugador2":"`[2]Esther","resultado":"()"}
+        {"jugador1":"Sergi Déu","jugador2":"Joan Agudo","resultado":"()"},
+        {"jugador1":"Toño","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Bye","jugador2":"[2]Esther","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":" ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"Alejo","jugador2":"","resultado":"()"},
+        {"jugador1":"Sergio","jugador2":"Dani","resultado":"()"},
+        {"jugador1":"Domenech","jugador2":"","resultado":"()"},
+        {"jugador1":"Toño","jugador2":"Esther","resultado":"()"}
       ],
       "fecha":"28/5 al 9/6"
     },
