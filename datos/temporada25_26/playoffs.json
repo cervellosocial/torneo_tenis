@@ -49,7 +49,7 @@
     "categoria":"Segunda Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1]Jose Anotonio ","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"[1]Jose Antonio ","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Sole","jugador2":"Roberto","resultado":"()"},
         {"jugador1":"Aurelio","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Bye","jugador2":"[4]Óscar","resultado":"()"},
@@ -62,7 +62,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jose Anotnio","jugador2":"","resultado":"()"},
+        {"jugador1":"Jose Antonio","jugador2":"","resultado":"()"},
         {"jugador1":"Aurelio","jugador2":"Óscar","resultado":"()"},
         {"jugador1":"Laura","jugador2":"","resultado":"()"},
         {"jugador1":"Aldara","jugador2":"Elena","resultado":"()"}
