@@ -34,14 +34,14 @@
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"27/6"
+      "fecha":"19/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"22/6 al 27/6"
+      "fecha":"22/6 al 19/6"
     },
     "ganador34":""
   },
@@ -49,23 +49,23 @@
     "categoria":"Segunda Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[4]","resultado":"()"},
-        {"jugador1":"[3] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"}
+        {"jugador1":"[1]Jose Anotonio ","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Sole","jugador2":"Roberto","resultado":"()"},
+        {"jugador1":"Aurelio","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Bye","jugador2":"[4]Óscar","resultado":"()"},
+        {"jugador1":"[3]Laura ","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Alex","jugador2":"Jordi","resultado":"()"},
+        {"jugador1":"Aldara","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"","jugador2":"[2]Elena","resultado":"()"}
       ],
       "fecha":"01/6/5 al 6/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"Jose Anotnio","jugador2":"","resultado":"()"},
+        {"jugador1":"Aurelio","jugador2":"Óscar","resultado":"()"},
+        {"jugador1":"Laura","jugador2":"","resultado":"()"},
+        {"jugador1":"Aldara","jugador2":"Elena","resultado":"()"}
       ],
       "fecha":"7/6 al 12/6"
     },
@@ -80,14 +80,14 @@
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"27/6"
+      "fecha":"19/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"22/6 al 27/6"
+      "fecha":"22/6 al 19/6"
     },
     "ganador34":""
   },
@@ -95,23 +95,23 @@
     "categoria":"Tercera Division",
     "ronda1":{
       "partidos":[
-         {"jugador1":"[1] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[4]","resultado":"()"},
-        {"jugador1":"[3] ","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"[2]","resultado":"()"}
+         {"jugador1":"[1]Jan Mundet","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Sasha","jugador2":"Jeniffer","resultado":"()"},
+        {"jugador1":"Inma","jugador2":"Jordi","resultado":"()"},
+        {"jugador1":"Bye","jugador2":"[4]Hugo","resultado":"()"},
+        {"jugador1":"[3]Axel ","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"Fran","jugador2":"Ingrid","resultado":"()"},
+        {"jugador1":"Armand","jugador2":"Adriana","resultado":"()"},
+        {"jugador1":"","jugador2":"[2]Adrián","resultado":"()"}
       ],
       "fecha":"01/6/5 al 6/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"Jan Mundet","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"Hugo","resultado":"()"},
+        {"jugador1":"Axel","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"Adrián","resultado":"()"}
       ],
       "fecha":"7/6 al 12/6"
     },
@@ -126,14 +126,14 @@
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"27/6"
+      "fecha":"19/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha":"22/6 al 27/6"
+      "fecha":"22/6 al 19/6"
     },
     "ganador34":""
   },
@@ -159,14 +159,14 @@
       "partidos":[
         {"jugador1":" ","jugador2":" ","resultado":"()"}
       ],
-      "fecha":"27/6"
+      "fecha":"19/6"
     },
     "ganador":" ",
     "final34":{
       "partidos":[
         {"jugador1":" ","jugador2":" ","resultado":"()"}
       ],
-      "fecha":"22/6 al 27/6"
+      "fecha":"22/6 al 19/6"
     },
     "ganador34":" "
   }
