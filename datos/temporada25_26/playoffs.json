@@ -141,19 +141,19 @@
     "categoria":"Division Infantil",
     "ronda1":{
       "partidos":[
-        {"jugador1":"[1]","jugador2":"","resultado":"()"},
-        {"jugador1":"[4]","jugador2":"","resultado":"()"},
-        {"jugador1":"[3]","jugador2":"","resultado":"()"},
-        {"jugador1":"[2]","jugador2":"","resultado":"()"}
+        {"jugador1":"[1]Jan Mundet","jugador2":"Bye","resultado":"()"},
+        {"jugador1":"[4]Hugo","jugador2":"Natalia","resultado":"()"},
+        {"jugador1":"[3]Axel","jugador2":"Jan Pardo","resultado":"()"},
+        {"jugador1":"Javi","jugador2":"[2]Pol Cejas","resultado":"()"}
       ],
-      "fecha":"28/5 al 9/6"
+      "fecha":"1/6 al 11/6"
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":" ","jugador2":" ","resultado":"()"},
+        {"jugador1":"Jan Mundet","jugador2":" ","resultado":"()"},
         {"jugador1":" ","jugador2":" ","resultado":"()"}
       ],
-      "fecha":"10/6 al 22/6"
+      "fecha":"12/6 al 18/6"
     },
     "final":{
       "partidos":[
