@@ -142,7 +142,7 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1]Jan Mundet","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"[4]Hugo","jugador2":"Natalia","resultado":"()"},
+        {"jugador1":"[4]Hugo","jugador2":"Natalia","resultado":"(w.o)"},
         {"jugador1":"[3]Axel","jugador2":"Jan Pardo","resultado":"()"},
         {"jugador1":"Javi","jugador2":"[2]Pol Cejas","resultado":"()"}
       ],
@@ -150,7 +150,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jan Mundet","jugador2":" ","resultado":"()"},
+        {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
         {"jugador1":" ","jugador2":" ","resultado":"()"}
       ],
       "fecha":"12/6 al 18/6"
