@@ -4,7 +4,7 @@
     "ronda1":{
       "partidos":[
         {"jugador1":"[1] Alejo","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"Alberto Diaz","jugador2":"Jose Luis","resultado":"()"},
+        {"jugador1":"Alberto Diaz","jugador2":"Jose Luis","resultado":"(7-5 1-6 5-10)"},
         {"jugador1":"Sergio","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Bye","jugador2":"[4]Dani","resultado":"()"},
         {"jugador1":"[3]Domenech ","jugador2":"Bye","resultado":"()"},
@@ -16,7 +16,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Alejo","jugador2":"","resultado":"()"},
+        {"jugador1":"Alejo","jugador2":"Jose Luis","resultado":"()"},
         {"jugador1":"Sergio","jugador2":"Dani","resultado":"()"},
         {"jugador1":"Domenech","jugador2":"","resultado":"()"},
         {"jugador1":"Toño","jugador2":"Esther","resultado":"(w.o)"}
