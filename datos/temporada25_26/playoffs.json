@@ -8,7 +8,7 @@
         {"jugador1":"Sergio","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Bye","jugador2":"[4]Dani","resultado":"()"},
         {"jugador1":"[3]Domenech ","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"Sergi Déu","jugador2":"Joan Agudo","resultado":"()"},
+        {"jugador1":"Sergi Déu","jugador2":"Joan Agudo","resultado":"(1-6 1-6)"},
         {"jugador1":"Toño","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Bye","jugador2":"[2]Esther","resultado":"()"}
       ],
@@ -18,7 +18,7 @@
       "partidos":[
         {"jugador1":"Alejo","jugador2":"Jose Luis","resultado":"()"},
         {"jugador1":"Sergio","jugador2":"Dani","resultado":"()"},
-        {"jugador1":"Domenech","jugador2":"","resultado":"()"},
+        {"jugador1":"Domenech","jugador2":"Joan Agudo","resultado":"()"},
         {"jugador1":"Toño","jugador2":"Esther","resultado":"(w.o)"}
       ],
       "fecha":"7/6 al 12/6"
@@ -101,7 +101,7 @@
         {"jugador1":"Bye","jugador2":"[4]Hugo","resultado":"()"},
         {"jugador1":"[3]Axel ","jugador2":"Bye","resultado":"()"},
         {"jugador1":"Fran","jugador2":"Ingrid","resultado":"()"},
-        {"jugador1":"Armand","jugador2":"Adriana","resultado":"()"},
+        {"jugador1":"Armand","jugador2":"Adriana","resultado":"(w.o)"},
         {"jugador1":"","jugador2":"[2]Adrián","resultado":"()"}
       ],
       "fecha":"01/6/5 al 6/6"
@@ -111,14 +111,14 @@
         {"jugador1":"Jan Mundet","jugador2":"","resultado":"()"},
         {"jugador1":"Inma","jugador2":"Hugo","resultado":"()"},
         {"jugador1":"Axel","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"Adrián","resultado":"()"}
+        {"jugador1":"Adriana","jugador2":"Adrián","resultado":"(1-6 2-6)"}
       ],
       "fecha":"7/6 al 12/6"
     },
     "ronda3":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"Adrián","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
     },
