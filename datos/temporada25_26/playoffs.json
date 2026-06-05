@@ -96,7 +96,7 @@
     "ronda1":{
       "partidos":[
          {"jugador1":"[1]Jan Mundet","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"Sasha","jugador2":"Jeniffer","resultado":"()"},
+        {"jugador1":"Sasha","jugador2":"Jeniffer","resultado":"(w.o)"},
         {"jugador1":"Inma","jugador2":"Jordi","resultado":"(w.o)"},
         {"jugador1":"Bye","jugador2":"[4]Hugo","resultado":"()"},
         {"jugador1":"[3]Axel ","jugador2":"Bye","resultado":"()"},
@@ -108,7 +108,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jan Mundet","jugador2":"","resultado":"()"},
+        {"jugador1":"Jan Mundet","jugador2":"Jennifer","resultado":"()"},
         {"jugador1":"Inma","jugador2":"Hugo","resultado":"()"},
         {"jugador1":"Axel","jugador2":"","resultado":"()"},
         {"jugador1":"Adriana","jugador2":"Adrián","resultado":"(1-6 2-6)"}
