@@ -63,16 +63,16 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Jose Antonio","jugador2":"Roberto","resultado":"()"},
-        {"jugador1":"Aurelio","jugador2":"Óscar","resultado":"()"},
+        {"jugador1":"Aurelio","jugador2":"Óscar","resultado":"(6-4 6-3)"},
         {"jugador1":"Laura","jugador2":"Alex","resultado":"()"},
-        {"jugador1":"Aldara","jugador2":"Elena","resultado":"()"}
+        {"jugador1":"Aldara","jugador2":"Elena","resultado":"(6-4 6-4)"}
       ],
       "fecha":"7/6 al 12/6"
     },
     "ronda3":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"},
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"Aurelio","resultado":"()"},
+        {"jugador1":"","jugador2":"Aldara","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
     },
