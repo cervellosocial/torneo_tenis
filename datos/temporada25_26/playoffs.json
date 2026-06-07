@@ -100,7 +100,7 @@
         {"jugador1":"Inma","jugador2":"Jordi","resultado":"(w.o)"},
         {"jugador1":"Bye","jugador2":"[4]Hugo","resultado":"()"},
         {"jugador1":"[3]Axel ","jugador2":"Bye","resultado":"()"},
-        {"jugador1":"Fran","jugador2":"Ingrid","resultado":"()"},
+        {"jugador1":"Fran","jugador2":"Ingrid","resultado":"(6-4 4-3 ab.)"},
         {"jugador1":"Armand","jugador2":"Adriana","resultado":"(w.o)"},
         {"jugador1":"","jugador2":"[2]Adrián","resultado":"()"}
       ],
@@ -110,7 +110,7 @@
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Jennifer","resultado":"()"},
         {"jugador1":"Inma","jugador2":"Hugo","resultado":"()"},
-        {"jugador1":"Axel","jugador2":"","resultado":"()"},
+        {"jugador1":"Axel","jugador2":"Fran","resultado":"()"},
         {"jugador1":"Adriana","jugador2":"Adrián","resultado":"(1-6 2-6)"}
       ],
       "fecha":"7/6 al 12/6"
