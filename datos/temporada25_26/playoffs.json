@@ -16,7 +16,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Alejo","jugador2":"Jose Luis","resultado":"()"},
+        {"jugador1":"Alejo","jugador2":"Jose Luis","resultado":"(6-7 7-6 10-8)"},
         {"jugador1":"Sergio","jugador2":"Dani","resultado":"()"},
         {"jugador1":"Domenech","jugador2":"Joan Agudo","resultado":"()"},
         {"jugador1":"Toño","jugador2":"Esther","resultado":"(w.o)"}
@@ -25,7 +25,7 @@
     },
     "ronda3":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"Alejo","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"Esther","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
