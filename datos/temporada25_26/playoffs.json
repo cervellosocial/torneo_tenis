@@ -144,14 +144,14 @@
         {"jugador1":"[1]Jan Mundet","jugador2":"Bye","resultado":"()"},
         {"jugador1":"[4]Hugo","jugador2":"Natalia","resultado":"(w.o)"},
         {"jugador1":"[3]Axel","jugador2":"Jan Peña","resultado":"(6-0 6-0)"},
-        {"jugador1":"Javi","jugador2":"[2]Pol Cejas","resultado":"()"}
+        {"jugador1":"Javi","jugador2":"[2]Pol Cejas","resultado":"(0-6 0-6)"}
       ],
       "fecha":"1/6 al 11/6"
     },
     "ronda2":{
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
-        {"jugador1":"Axel","jugador2":" ","resultado":"()"}
+        {"jugador1":"Axel","jugador2":"Pol","resultado":"()"}
       ],
       "fecha":"12/6 al 18/6"
     },
