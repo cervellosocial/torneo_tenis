@@ -25,14 +25,14 @@
     },
     "ronda3":{
       "partidos":[
-        {"jugador1":"Alejo","jugador2":"Dani","resultado":"()"},
+        {"jugador1":"Alejo","jugador2":"Dani","resultado":"(6-1 6-3)"},
         {"jugador1":"","jugador2":"Esther","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"Alejo","jugador2":"","resultado":"()"}
       ],
       "fecha":"19/6"
     },
@@ -108,7 +108,7 @@
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"Jan Mundet","jugador2":"Jennifer","resultado":"()"},
+        {"jugador1":"Jan Mundet","jugador2":"Jennifer","resultado":"(6-2 6-0)"},
         {"jugador1":"Inma","jugador2":"Hugo","resultado":"(2-6 1-6)"},
         {"jugador1":"Axel","jugador2":"Fran","resultado":"()"},
         {"jugador1":"Adriana","jugador2":"Adrián","resultado":"(1-6 2-6)"}
@@ -117,7 +117,7 @@
     },
     "ronda3":{
       "partidos":[
-        {"jugador1":"","jugador2":"Hugo","resultado":"()"},
+        {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
         {"jugador1":"","jugador2":"Adrián","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
