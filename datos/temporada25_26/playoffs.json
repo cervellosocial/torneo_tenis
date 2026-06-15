@@ -110,7 +110,7 @@
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Jennifer","resultado":"(6-2 6-0)"},
         {"jugador1":"Inma","jugador2":"Hugo","resultado":"(2-6 1-6)"},
-        {"jugador1":"Axel","jugador2":"Fran","resultado":"()"},
+        {"jugador1":"Axel","jugador2":"Fran","resultado":"(2-6 1-6)"},
         {"jugador1":"Adriana","jugador2":"Adrián","resultado":"(1-6 2-6)"}
       ],
       "fecha":"7/6 al 12/6"
@@ -118,7 +118,7 @@
     "ronda3":{
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
-        {"jugador1":"","jugador2":"Adrián","resultado":"()"}
+        {"jugador1":"Fran","jugador2":"Adrián","resultado":"()"}
       ],
       "fecha":"13/6 al 18/6"
     },
