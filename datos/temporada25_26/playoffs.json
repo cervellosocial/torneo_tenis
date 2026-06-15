@@ -26,20 +26,20 @@
     "ronda3":{
       "partidos":[
         {"jugador1":"Alejo","jugador2":"Dani","resultado":"(6-1 6-3)"},
-        {"jugador1":"Domenech","jugador2":"Esther","resultado":"()"}
+        {"jugador1":"Domenech","jugador2":"Esther","resultado":"(6-2 6-3)"}
       ],
       "fecha":"13/6 al 18/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"Alejo","jugador2":"","resultado":"()"}
+        {"jugador1":"Alejo","jugador2":"Domenech","resultado":"()"}
       ],
       "fecha":"19/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"Dani","jugador2":"","resultado":"()"}
+        {"jugador1":"Dani","jugador2":"Esther","resultado":"()"}
       ],
       "fecha":"19/6"
     },
@@ -118,20 +118,20 @@
     "ronda3":{
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
-        {"jugador1":"Fran","jugador2":"Adrián","resultado":"()"}
+        {"jugador1":"Fran","jugador2":"Adrián","resultado":"(6-3 3-6 10-5)"}
       ],
       "fecha":"13/6 al 18/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"Fran","resultado":"()"}
       ],
       "fecha":"19/6"
     },
     "ganador":"",
     "final34":{
       "partidos":[
-        {"jugador1":"","jugador2":"","resultado":"()"}
+        {"jugador1":"","jugador2":"Adrián","resultado":"()"}
       ],
       "fecha":"19/6"
     },
