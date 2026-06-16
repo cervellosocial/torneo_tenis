@@ -151,13 +151,13 @@
     "ronda2":{
       "partidos":[
         {"jugador1":"Jan Mundet","jugador2":"Hugo","resultado":"()"},
-        {"jugador1":"Axel","jugador2":"Pol","resultado":"()"}
+        {"jugador1":"Axel","jugador2":"Pol","resultado":"(7-5 4-6 5-10)"}
       ],
       "fecha":"12/6 al 18/6"
     },
     "final":{
       "partidos":[
-        {"jugador1":" ","jugador2":" ","resultado":"()"}
+        {"jugador1":" ","jugador2":"Pol","resultado":"()"}
       ],
       "fecha":"19/6"
     },
