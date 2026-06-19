@@ -36,14 +36,14 @@
       ],
       "fecha":"19/6"
     },
-    "ganador":"",
+    "ganador":"Domenech",
     "final34":{
       "partidos":[
-        {"jugador1":"Dani","jugador2":"Esther","resultado":"()"}
+        {"jugador1":"Dani","jugador2":"Esther","resultado":"(3-6 6-1 8-10)"}
       ],
       "fecha":"19/6"
     },
-    "ganador34":""
+    "ganador34":"Esther"
   },
   {
     "categoria":"Segunda Division",
@@ -82,14 +82,14 @@
       ],
       "fecha":"19/6"
     },
-    "ganador":"",
+    "ganador":"Jose Antonio",
     "final34":{
       "partidos":[
         {"jugador1":"Aurelio","jugador2":"Alex","resultado":"()"}
       ],
       "fecha":"19/6"
     },
-    "ganador34":""
+    "ganador34":"Alex"
   },
   {
     "categoria":"Tercera Division",
@@ -124,18 +124,18 @@
     },
     "final":{
       "partidos":[
-        {"jugador1":"Jan","jugador2":"Fran","resultado":"()"}
+        {"jugador1":"Jan","jugador2":"Fran","resultado":"(6-0 6-0)"}
       ],
       "fecha":"19/6"
     },
-    "ganador":"",
+    "ganador":"Jan",
     "final34":{
       "partidos":[
-        {"jugador1":"Hugo","jugador2":"Adrián","resultado":"()"}
+        {"jugador1":"Hugo","jugador2":"Adrián","resultado":"(6-1 6-2)"}
       ],
       "fecha":"19/6"
     },
-    "ganador34":""
+    "ganador34":"Hugo"
   },
   {
     "categoria":"Division Infantil",
