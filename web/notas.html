@@ -68,3 +68,252 @@
 
         /* Destacar la columna de nombres en la cabecera */
         .table-header th.th-player {
+            text-align: left !important;
+            padding-left: 20px !important;
+        }
+
+        /* Estilos generales de las celdas de datos */
+        .ranking-table td {
+            padding: 12px 8px !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            color: #334155 !important;
+            border: 1px solid #e2e8f0 !important; /* Rejilla tipo Excel limpia */
+            text-align: center !important;
+            vertical-align: middle !important;
+        }
+
+        /* Columna de Posición (Estilo marcador retro) */
+        .col-position {
+            background-color: #0f2439 !important; /* Fondo oscuro */
+            color: #ffffff !important;
+            font-weight: 800 !important;
+            width: 60px !important;
+        }
+
+        /* Columna de Jugador */
+        .col-player {
+            text-align: left !important;
+            padding-left: 20px !important;
+            font-weight: 700 !important;
+            color: #0f2439 !important;
+        }
+
+        /* Columna de Puntos (Color destacado Oro/Amarillo Tenis suavizado) */
+        .col-points {
+            background-color: #fef08a !important; /* Tono amarillo/oro claro que no satura */
+            color: #854d0e !important; /* Texto marrón oscuro para contraste perfecto */
+            font-weight: 800 !important;
+            width: 70px !important;
+        }
+
+        /* Columnas de Estadísticas secundarias */
+        .col-stat {
+            width: 85px !important;
+        }
+
+        /* Columna de Diferencia de Juegos (Última columna) */
+        .col-diff {
+            font-weight: 700 !important;
+            background-color: #f8fafc !important;
+            width: 90px !important;
+        }
+
+        /* Filas alternas con un sutil verde/pista muy claro */
+        .ranking-table tr:nth-child(even) td:not(.col-position):not(.col-points) {
+            background-color: #f4f9f6 !important; 
+        }
+
+        /* Resaltar fila al pasar el ratón (Interactividad) */
+        .ranking-table tr:hover td:not(.col-position):not(.col-points) {
+            background-color: #eaedd4 !important; /* Tono verde tenis muy suave */
+        }
+
+        /* Estilos para números negativos en diferencias */
+        .text-negative {
+            color: #ef4444 !important;
+        }
+        /* Estilos para números positivos en diferencias */
+        .text-positive {
+            color: #10b981 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="final-point-groups-container">
+
+        <div class="group-section">
+            <h3 class="group-title">Grupo 1</h3>
+            
+            <div class="table-responsive-wrapper">
+                <table class="ranking-table">
+                    <thead>
+                        <tr class="table-header">
+                            <th style="width: 60px;">Posición</th>
+                            <th class="th-player">Jugador</th>
+                            <th style="width: 70px;">Puntos</th>
+                            <th class="col-stat">Partidos<br>Jugados</th>
+                            <th class="col-stat">Partidos<br>Ganados</th>
+                            <th class="col-stat">Partidos<br>Perdidos</th>
+                            <th class="col-stat">Sets<br>Ganados</th>
+                            <th class="col-stat">Sets<br>Perdidos</th>
+                            <th class="col-stat">Juegos<br>Ganados</th>
+                            <th class="col-stat">Juegos<br>Perdidos</th>
+                            <th class="col-diff">Diferencia<br>Juegos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-position">1</td>
+                            <td class="col-player">Alejo</td>
+                            <td class="col-points">11</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>4</td>
+                            <td>43</td>
+                            <td>33</td>
+                            <td class="col-diff text-positive">10</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">2</td>
+                            <td class="col-player">Esther</td>
+                            <td class="col-points">10</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>41</td>
+                            <td>29</td>
+                            <td class="col-diff text-positive">12</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">3</td>
+                            <td class="col-player">Domenech</td>
+                            <td class="col-points">8</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>38</td>
+                            <td>23</td>
+                            <td class="col-diff text-positive">15</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">4</td>
+                            <td class="col-player">Dani</td>
+                            <td class="col-points">3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td>21</td>
+                            <td class="col-diff text-negative">-10</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">5</td>
+                            <td class="col-player">Sergio</td>
+                            <td class="col-points">3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>36</td>
+                            <td class="col-diff text-negative">-27</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="group-section">
+            <h3 class="group-title">Grupo 2</h3>
+            
+            <div class="table-responsive-wrapper">
+                <table class="ranking-table">
+                    <thead>
+                        <tr class="table-header">
+                            <th>Posición</th>
+                            <th class="th-player">Jugador</th>
+                            <th>Puntos</th>
+                            <th class="col-stat">Partidos<br>Jugados</th>
+                            <th class="col-stat">Partidos<br>Ganados</th>
+                            <th class="col-stat">Partidos<br>Perdidos</th>
+                            <th class="col-stat">Sets<br>Ganados</th>
+                            <th class="col-stat">Sets<br>Perdidos</th>
+                            <th class="col-stat">Juegos<br>Ganados</th>
+                            <th class="col-stat">Juegos<br>Perdidos</th>
+                            <th class="col-diff">Diferencia<br>Juegos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-position">1</td>
+                            <td class="col-player">Jose Luis</td>
+                            <td class="col-points">9</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>36</td>
+                            <td>10</td>
+                            <td class="col-diff text-positive">26</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">2</td>
+                            <td class="col-player">Sergi Déu</td>
+                            <td class="col-points">7</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>27</td>
+                            <td>26</td>
+                            <td class="col-diff text-positive">1</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">3</td>
+                            <td class="col-player">Joan Agudo</td>
+                            <td class="col-points">5</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>25</td>
+                            <td>34</td>
+                            <td class="col-diff text-negative">-9</td>
+                        </tr>
+                        <tr>
+                            <td class="col-position">4</td>
+                            <td class="col-player">Alberto Diaz</td>
+                            <td class="col-points">3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>19</td>
+                            <td>37</td>
+                            <td class="col-diff text-negative">-18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
