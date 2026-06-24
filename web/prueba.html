@@ -14,33 +14,30 @@
             min-height: 100vh;
         }
 
+        #final-point-experiment .brand {
+            color: #0f2439 !important; /* Texto del logo en azul oscuro */
+            font-size: 20px !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
+        }
 
-#final-point-experiment .brand {
-    color: #0f2439 !important; /* Texto del logo en azul oscuro */
-    font-size: 20px !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-}
+        #final-point-experiment .brand span {
+            color: #a4b300 !important; /* Un tono verde/amarillo tenis un poco más oscuro para que contraste bien sobre blanco */
+        }
 
-#final-point-experiment .brand span {
-    color: #a4b300 !important; /* Un tono verde/amarillo tenis un poco más oscuro para que contraste bien sobre blanco */
-}
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
 
-#final-point-experiment .nav-menu {
-    list-style: none !important;
-    display: flex !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        #final-point-experiment .nav-item {
+            margin-left: 20px !important;
+        }
 
-#final-point-experiment .nav-item {
-    margin-left: 20px !important;
-}
-
-#final-point-experiment .nav-link {
-    color: #334155 !important; /* Texto de
         #final-point-experiment .nav-link {
-            color: rgba(255, 255, 255, 0.8) !important;
+            color: #334155 !important;
             text-decoration: none !important;
             font-weight: 500 !important;
         }
@@ -52,17 +49,15 @@
             justify-content: center !important;
             align-items: center !important;
             text-align: center !important;
+            padding: 0 20px !important;
         }
-#final-point-experiment .logo-box {
-    width: 100% !important;     /* Fuerza a la imagen a usar el ancho disponible */
-    max-width: 800px !important; /* ¡Cambia este número (550px, 600px, 700px) hasta que tenga el tamaño que quieras! */
-    height: auto !important;    /* Mantiene la proporción para que no se deforme */
-    display: block !important;
-    margin: 0 auto !important;  /* Asegura que siga perfectamente centrada */
-}
 
-        #final-point-experiment .logo-box span {
-            color: #d4e117 !important;
+        #final-point-experiment .logo-box {
+            width: 100% !important;     /* Fuerza a la imagen a usar el ancho disponible */
+            max-width: 800px !important; /* ¡Cambia este número (550px, 600px, 700px) hasta que tenga el tamaño que quieras! */
+            height: auto !important;    /* Mantiene la proporción para que no se deforme */
+            display: block !important;
+            margin: 0 auto !important;  /* Asegura que siga perfectamente centrada */
         }
 
         #final-point-experiment .cards-container {
@@ -76,6 +71,12 @@
             top: -50px !important; 
         }
 
+        #final-point-experiment .card-link {
+            flex: 1 !important;
+            text-decoration: none !important;
+            display: flex !important;
+        }
+
         #final-point-experiment .card {
             background-color: #ffffff !important;
             flex: 1 !important;
@@ -84,6 +85,15 @@
             padding: 20px !important;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
             box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+        }
+
+        #final-point-experiment .card:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2) !important;
         }
 
         #final-point-experiment .card h3 {
@@ -98,12 +108,24 @@
             color: #555 !important;
             font-size: 13px !important;
             line-height: 1.4 !important;
+            margin-bottom: 15px !important;
+        }
+
+        #final-point-experiment .ver-mas {
+            color: #0f2439 !important;
+            font-weight: bold !important;
+            font-size: 13px !important;
+            align-self: flex-end !important;
         }
 
         @media (max-width: 768px) {
-            #final-point-experiment .navbar { flex-direction: column !important; gap: 10px !important; }
-            #final-point-experiment .nav-menu { justify-content: center !important; }
-            #final-point-experiment .cards-container { flex-direction: column !important; top: -20px !important; }
+            #final-point-experiment .cards-container { 
+                flex-direction: column !important; 
+                top: -20px !important; 
+            }
+            #final-point-experiment .card-link {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -111,37 +133,36 @@
 
     <div id="final-point-experiment">
 
-</nav>
-
-      <section class="hero-banner">
-    <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
-</section>
+        <section class="hero-banner">
+            <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
+        </section>
 
         <section class="cards-container">
-    
-    <a href="AQUÍ_TU_ENLACE_A_LOS_PLAYOFFS" class="card-link">
-        <div class="card">
-            <h3>Historial</h3>
-            <p>Consultar torneos.</p>
-            <span class="ver-mas">Ver→</span>
-        </div>
-    </a>
+            
+            <a href="AQUÍ_TU_ENLACE_A_LOS_PLAYOFFS" class="card-link">
+                <div class="card">
+                    <h3>Historial</h3>
+                    <p>Consultar torneos.</p>
+                    <span class="ver-mas">Ver →</span>
+                </div>
+            </a>
 
-    <div class="card">
-        <h3>Torneos </h3>
-        <p>Torneos 2026/27/p>
-            <span class="ver-mas">Ver→</span>
-    </div>
+            <!-- Si quieres que esta tarjeta también sea un enlace, puedes cambiar el div por un <a> como los demás -->
+            <div class="card">
+                <h3>Torneos</h3>
+                <p>Torneos 2026/27</p>
+                <span class="ver-mas">Ver →</span>
+            </div>
 
-    <a href="https://finalpoint.es/ronda4.html" class="card-link">
-        <div class="card">
-            <h3>Ranking de jugadores</h3>
-            <p>Consultar ranking</p>
-            <span class="ver-mas">Ver→</span>
-        </div>
-    </a>
+            <a href="https://finalpoint.es/ronda4.html" class="card-link">
+                <div class="card">
+                    <h3>Ranking de jugadores</h3>
+                    <p>Consultar ranking</p>
+                    <span class="ver-mas">Ver →</span>
+                </div>
+            </a>
 
-</section>
+        </section>
 
     </div>
 
