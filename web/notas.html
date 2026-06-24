@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Club Rankings</title>
+    <title>Final Point - Club Rankings Avanzado</title>
     <style>
         /* Estilos Base de la Página */
         #fp-clubs-layout {
@@ -22,11 +22,10 @@
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
-            border-bottom: 4px solid #a4b300 !important; /* Fina línea verde tenis */
+            border-bottom: 4px solid #a4b300 !important;
             box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
         }
 
-        /* Logotipo simulado de Final Point */
         .logo-placeholder {
             color: #ffffff !important;
             font-size: 32px !important;
@@ -40,23 +39,23 @@
             color: #a4b300 !important;
         }
 
-        /* --- CONTENEDOR MULTI-CLUB (GRID DE 3) --- */
+        /* --- CONTENEDOR MULTI-CLUB (GRID ADAPTADO) --- */
         .rankings-grid {
-            max-width: 1200px !important;
-            margin: -40px auto 50px auto !important; /* Desplazado hacia arriba para pisar el banner como en tu idea */
+            max-width: 1250px !important;
+            margin: -40px auto 50px auto !important;
             padding: 0 20px !important;
             display: grid !important;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)) !important; /* Un poco más ancho para albergar las nuevas columnas */
             gap: 30px !important;
         }
 
         /* --- TARJETA DE MARCADOR CLÁSICO --- */
         .ranking-card {
-            background-color: #fdfbf7 !important; /* Tono crema/arena fino */
+            background-color: #fdfbf7 !important; /* Crema/arena suave */
             border-radius: 8px !important;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
             border: 1px solid #e3dfd5 !important;
-            padding: 20px 0 10px 0 !important;
+            padding: 20px 0 0 0 !important;
             overflow: hidden !important;
             transition: transform 0.3s ease !important;
         }
@@ -70,10 +69,8 @@
             display: flex !important;
             align-items: center !important;
             padding: 0 20px 15px 20px !important;
-            border-bottom: 2px solid #0f2439 !important; /* Línea de división fina */
         }
 
-        /* Escudo simulado elegante */
         .club-shield-emblem {
             width: 45px !important;
             height: 45px !important;
@@ -98,51 +95,93 @@
             letter-spacing: 0.5px !important;
         }
 
-        /* Lista de posiciones (Tabla) */
+        /* --- TABLA INTERNA CON COLUMNAS NUEVAS --- */
         .ranking-table {
             width: 100% !important;
             border-collapse: collapse !important;
         }
 
+        /* Fila de títulos de columna (Finos y sutiles) */
+        .table-sub-header {
+            border-top: 2px solid #0f2439 !important;
+            border-bottom: 1.5px solid #0f2439 !important;
+            background-color: rgba(15, 36, 57, 0.02) !important;
+        }
+
+        .table-sub-header th {
+            font-size: 11px !important;
+            text-transform: uppercase !important;
+            color: #64748b !important;
+            padding: 8px 5px !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.5px !important;
+        }
+
         .ranking-table tr {
-            border-bottom: 1px solid #e3dfd5 !important; /* Líneas finas y sutiles */
+            border-bottom: 1px solid #e3dfd5 !important;
         }
 
         .ranking-table tr:last-child {
             border-bottom: none !important;
         }
 
+        .ranking-table td {
+            padding: 12px 5px !important;
+            font-size: 14px !important;
+            color: #0f2439 !important;
+            vertical-align: middle !important;
+        }
+
         /* Celda del número de posición */
         .td-num {
-            width: 50px !important;
+            width: 45px !important;
             text-align: center !important;
-            font-size: 16px !important;
+            font-size: 15px !important;
             font-weight: 800 !important;
-            color: #c23a3a !important; /* Rojo elegante, no chillón */
-            padding: 14px 0 !important;
-            border-right: 1.5px solid #0f2439 !important; /* Línea vertical fina estilo libreta */
+            color: #c23a3a !important; /* Rojo elegante */
+            border-right: 1.5px solid #0f2439 !important; /* Línea vertical fina */
         }
 
         /* Celda del nombre del jugador */
         .td-name {
-            padding: 14px 0 14px 20px !important;
-            font-size: 15px !important;
+            text-align: left !important;
+            padding-left: 15px !important;
             font-weight: 700 !important;
-            color: #0f2439 !important; /* Azul marino distinguido */
+            max-width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        /* Resaltado para filas vacías o diseño de reserva si decides añadir más filas */
-        .row-empty {
-            color: #b5b0a3 !important;
-            font-weight: 400 !important;
-            font-style: italic !important;
+        /* Nueva columna: Categoría */
+        .td-cat {
+            text-align: center !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            color: #475569 !important;
+            width: 55px !important;
         }
 
-        /* Diseño responsivo para pantallas pequeñas */
-        @media (max-width: 768px) {
-            .hero-banner { height: 120px !important; }
-            .logo-placeholder { font-size: 26px !important; }
-            .rankings-grid { margin-top: 20px !important; }
+        /* Nuevas columnas: Estadísticas numéricas */
+        .td-stat {
+            text-align: center !important;
+            font-weight: 700 !important;
+            width: 40px !important;
+        }
+
+        .td-stat.pg {
+            color: #10b981 !important; /* Verde suave para partidos ganados */
+        }
+
+        .td-stat.pp {
+            color: #ef4444 !important; /* Rojo suave para partidos perdidos */
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 400px) {
+            .rankings-grid { grid-template-columns: 1fr !important; padding: 0 10px !important; }
+            .td-name { font-size: 13px !important; padding-left: 8px !important; }
+            .td-cat, .td-stat { font-size: 11px !important; }
         }
     </style>
 </head>
@@ -150,100 +189,180 @@
 
     <div id="fp-clubs-layout">
 
+        <!-- Banner Principal Superior -->
         <section class="hero-banner">
             <div class="logo-placeholder">Final<span>Point</span></div>
         </section>
 
+        <!-- Rejilla de Clasificaciones -->
         <div class="rankings-grid">
 
+            <!-- CUADRO 1: Club Tennis Cervelló -->
             <div class="ranking-card">
                 <div class="card-header">
                     <div class="club-shield-emblem">CTC</div>
                     <div class="club-info-text">Club tennis<br>Cervelló</div>
                 </div>
+                
                 <table class="ranking-table">
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Cat</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td class="td-num">1</td>
                             <td class="td-name">Alejo M.</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">14</td>
+                            <td class="td-stat pp">2</td>
                         </tr>
                         <tr>
                             <td class="td-num">2</td>
                             <td class="td-name">Esther G.</td>
+                            <td class="td-cat">Sénior</td>
+                            <td class="td-stat pg">11</td>
+                            <td class="td-stat pp">3</td>
                         </tr>
                         <tr>
                             <td class="td-num">3</td>
                             <td class="td-name">Domenech T.</td>
+                            <td class="td-cat">+45</td>
+                            <td class="td-stat pg">9</td>
+                            <td class="td-stat pp">4</td>
                         </tr>
                         <tr>
                             <td class="td-num">4</td>
                             <td class="td-name">Dani R.</td>
+                            <td class="td-cat">Sénior</td>
+                            <td class="td-stat pg">7</td>
+                            <td class="td-stat pp">6</td>
                         </tr>
                         <tr>
                             <td class="td-num">5</td>
                             <td class="td-name">Sergio V.</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">5</td>
+                            <td class="td-stat pp">8</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
+            <!-- CUADRO 2: Club Tennis Barcelona -->
             <div class="ranking-card">
                 <div class="card-header">
-                    <div class="club-shield-emblem" style="color: #ffffff;">CTB</div>
+                    <div class="club-shield-emblem">CTB</div>
                     <div class="club-info-text">Club tennis<br>Barcelona</div>
                 </div>
+                
                 <table class="ranking-table">
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Cat</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td class="td-num">1</td>
                             <td class="td-name">Jose Luis F.</td>
+                            <td class="td-cat">+45</td>
+                            <td class="td-stat pg">15</td>
+                            <td class="td-stat pp">1</td>
                         </tr>
                         <tr>
                             <td class="td-num">2</td>
                             <td class="td-name">Sergi Déu</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">12</td>
+                            <td class="td-stat pp">3</td>
                         </tr>
                         <tr>
                             <td class="td-num">3</td>
                             <td class="td-name">Joan Agudo</td>
+                            <td class="td-cat">Sénior</td>
+                            <td class="td-stat pg">10</td>
+                            <td class="td-stat pp">4</td>
                         </tr>
                         <tr>
                             <td class="td-num">4</td>
                             <td class="td-name">Alberto Diaz</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">8</td>
+                            <td class="td-stat pp">7</td>
                         </tr>
                         <tr>
                             <td class="td-num">5</td>
                             <td class="td-name">Marc Pons</td>
+                            <td class="td-cat">Sub-21</td>
+                            <td class="td-stat pg">6</td>
+                            <td class="td-stat pp">9</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
+            <!-- CUADRO 3: Club Tennis Girona -->
             <div class="ranking-card">
                 <div class="card-header">
                     <div class="club-shield-emblem">CTG</div>
                     <div class="club-info-text">Club tennis<br>Girona</div>
                 </div>
+                
                 <table class="ranking-table">
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Cat</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td class="td-num">1</td>
                             <td class="td-name">Carlos Alcaraz</td>
+                            <td class="td-cat">Sénior</td>
+                            <td class="td-stat pg">16</td>
+                            <td class="td-stat pp">0</td>
                         </tr>
                         <tr>
                             <td class="td-num">2</td>
                             <td class="td-name">Jannik Sinner</td>
+                            <td class="td-cat">Sénior</td>
+                            <td class="td-stat pg">14</td>
+                            <td class="td-stat pp">2</td>
                         </tr>
                         <tr>
                             <td class="td-num">3</td>
                             <td class="td-name">David Ferrer</td>
+                            <td class="td-cat">+45</td>
+                            <td class="td-stat pg">11</td>
+                            <td class="td-stat pp">5</td>
                         </tr>
                         <tr>
                             <td class="td-num">4</td>
                             <td class="td-name">Rafa Nadal</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">9</td>
+                            <td class="td-stat pp">6</td>
                         </tr>
                         <tr>
                             <td class="td-num">5</td>
                             <td class="td-name">Roberto B.</td>
+                            <td class="td-cat">+35</td>
+                            <td class="td-stat pg">7</td>
+                            <td class="td-stat pp">8</td>
                         </tr>
                     </tbody>
                 </table>
