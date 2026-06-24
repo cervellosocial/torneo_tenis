@@ -66,7 +66,7 @@
             transform: translateY(-5px) !important;
         }
 
-        /* Cabecera interna del Club (Estructura de 3 columnas) */
+        /* Cabecera interna del Club (Estructura de 3 columnas perfecta) */
         .card-header {
             display: flex !important;
             align-items: center !important;
@@ -114,19 +114,17 @@
             flex-shrink: 0 !important;
         }
 
-        /* --- TABLA INTERNA --- */
+        /* --- TABLA INTERNA CON ANCHOS FIJOS --- */
         .ranking-table {
             width: 100% !important;
             border-collapse: collapse !important;
+            table-layout: fixed !important; /* Fuerza a respetar los anchos asignados */
         }
 
         .table-sub-header {
             border-top: 2px solid #0f2439 !important;
             border-bottom: 1.5px solid #0f2439 !important;
             background-color: rgba(15, 36, 57, 0.06) !important;
-            position: sticky !important;
-            top: 0 !important;
-            z-index: 10 !important;
         }
 
         .table-sub-header th {
@@ -146,16 +144,13 @@
             border-bottom: none !important;
         }
 
-        /* --- ALTERNANCIA LIMPIA CADA 3 FILAS (CORREGIDO) --- */
-        .ranking-table tbody tr {
+        /* --- CLASES DE SEPARACIÓN ESTÉTICA CADA 3 PUESTOS --- */
+        .bloque-crema {
             background-color: #fdfbf7 !important;
         }
 
-        /* Selección limpia por bloques de 3 sin saturar el renderizado */
-        .ranking-table tbody tr:nth-child(6n+4),
-        .ranking-table tbody tr:nth-child(6n+5),
-        .ranking-table tbody tr:nth-child(6n+6) {
-            background-color: #f0f4f8 !important;
+        .bloque-lino {
+            background-color: #f0f4f8 !important; /* Gris/azul lino elegante */
         }
 
         .ranking-table td {
@@ -165,7 +160,7 @@
             vertical-align: middle !important;
         }
 
-        /* Elementos específicos de las celdas */
+        /* Configuración precisa de celdas y columnas */
         .td-num {
             width: 45px !important;
             text-align: center !important;
@@ -179,7 +174,6 @@
             text-align: left !important;
             padding-left: 15px !important;
             font-weight: 700 !important;
-            max-width: 130px !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
@@ -190,7 +184,7 @@
             font-size: 11.5px !important;
             font-weight: 600 !important;
             color: #475569 !important;
-            width: 55px !important;
+            width: 60px !important;
         }
 
         .td-stat {
@@ -227,6 +221,13 @@
                 </div>
                 
                 <table class="ranking-table">
+                    colgroup>
+                        <col style="width: 45px;">
+                        <col>
+                        <col style="width: 60px;">
+                        <col style="width: 40px;">
+                        <col style="width: 40px;">
+                    </colgroup>
                     <thead>
                         <tr class="table-sub-header">
                             <th>Pos</th>
@@ -237,27 +238,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td class="td-num">1</td><td class="td-name">Alejo C.</td><td class="td-cat">+40</td><td class="td-stat pg">14</td><td class="td-stat pp">2</td></tr>
-                        <tr><td class="td-num">2</td><td class="td-name">Esther G.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">3</td><td class="td-name">Domenech T.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">4</td><td class="td-name">Dani R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">5</td><td class="td-name">Sergio V.</td><td class="td-cat">+35</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">6</td><td class="td-name">Manel G.</td><td class="td-cat">+45</td><td class="td-stat pg">12</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">7</td><td class="td-name">Xavi H.</td><td class="td-cat">+35</td><td class="td-stat pg">10</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">8</td><td class="td-name">Albert M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">9</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">9</td><td class="td-name">Marta F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">8</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">10</td><td class="td-name">Carlos S.</td><td class="td-cat">+40</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">11</td><td class="td-name">Jordi P.</td><td class="td-cat">+50</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">12</td><td class="td-name">Ramon L.</td><td class="td-cat">+45</td><td class="td-stat pg">7</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">13</td><td class="td-name">Laura M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">6</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">14</td><td class="td-name">Oscar B.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">15</td><td class="td-name">Victor J.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">16</td><td class="td-name">Pau V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">5</td><td class="td-stat pp">9</td></tr>
-                        <tr><td class="td-num">17</td><td class="td-name">Raul G.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">18</td><td class="td-name">Anna S.</td><td class="td-cat">Sénior</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">19</td><td class="td-name">Ruben D.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
-                        <tr><td class="td-num">20</td><td class="td-name">Joan M.</td><td class="td-cat">+50</td><td class="td-stat pg">3</td><td class="td-stat pp">7</td></tr>
-                    </tbody>
+                        <tr class="bloque-crema"><td class="td-num">1</td><td class="td-name">Alejo C.</td><td class="td-cat">+40</td><td class="td-stat pg">14</td><td class="td-stat pp">2</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">2</td><td class="td-name">Esther G.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">3</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">3</td><td class="td-name">Domenech T.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">4</td><td class="td-name">Dani R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">5</td><td class="td-name">Sergio V.</td><td class="td-cat">+35</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">6</td><td class="td-name">Manel G.</td><td class="td-cat">+45</td><td class="td-stat pg">12</td><td class="td-stat pp">4</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">7</td><td class="td-name">Xavi H.</td><td class="td-cat">+35</td><td class="td-stat pg">10</td><td class="td-stat pp">5</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">8</td><td class="td-name">Albert M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">9</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">9</td><td class="td-name">Marta F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">8</td><td class="td-stat pp">5</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">10</td><td class="td-name">Carlos S.</td><td class="td-cat">+40</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">11</td><td class="td-name">Jordi P.</td><td class="td-cat">+50</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">12</td><td class="td-name">Ramon L.</td><td class="td-cat">+45</td><td class="td-stat pg">7</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">13</td><td class="td-name">Laura M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">6</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">14</td><td class="td-name">Oscar B.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">15</td><td class="td-name">Victor J.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">7</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">16</td><td class="td-name">Pau V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">5</td><td class="td-stat pp">9</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">17</td><td class="td-name">Raul G.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">18</td><td class="td-name">Anna S.</td><td class="td-cat">Sénior</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">19</td><td class="td-name">Ruben D.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">20</td><td class="td-name">Joan M.</td><td class="td-cat">+50</td><td class="td-stat pg">3</td><td class="td-stat pp">7</td></tr>
+                        </tbody>
                 </table>
             </div>
 
@@ -269,6 +270,13 @@
                 </div>
                 
                 <table class="ranking-table">
+                    <colgroup>
+                        <col style="width: 45px;">
+                        <col>
+                        <col style="width: 60px;">
+                        <col style="width: 40px;">
+                        <col style="width: 40px;">
+                    </colgroup>
                     <thead>
                         <tr class="table-sub-header">
                             <th>Pos</th>
@@ -279,516 +287,32 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td class="td-num">1</td><td class="td-name">Jose Luis F.</td><td class="td-cat">+45</td><td class="td-stat pg">15</td><td class="td-stat pp">1</td></tr>
-                        <tr><td class="td-num">2</td><td class="td-name">Sergi Déu</td><td class="td-cat">+35</td><td class="td-stat pg">12</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">3</td><td class="td-name">Joan Agudo</td><td class="td-cat">Sénior</td><td class="td-stat pg">10</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">4</td><td class="td-name">Alberto Diaz</td><td class="td-cat">+35</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">5</td><td class="td-name">Marc Pons</td><td class="td-cat">Sub-21</td><td class="td-stat pg">6</td><td class="td-stat pp">9</td></tr>
-                        <tr><td class="td-num">6</td><td class="td-name">Mateo R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">2</td></tr>
-                        <tr><td class="td-num">7</td><td class="td-name">Lucas M.</td><td class="td-cat">+40</td><td class="td-stat pg">10</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">8</td><td class="td-name">Nicolas G.</td><td class="td-cat">+35</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">9</td><td class="td-name">Santiago L.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">10</td><td class="td-name">Tomas V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">8</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">11</td><td class="td-name">Alvaro P.</td><td class="td-cat">+50</td><td class="td-stat pg">8</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">12</td><td class="td-name">Diego J.</td><td class="td-cat">+40</td><td class="td-stat pg">7</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">13</td><td class="td-name">Bruno F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">14</td><td class="td-name">Samuel S.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">15</td><td class="td-name">Enrique D.</td><td class="td-cat">+45</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">16</td><td class="td-name">Gonzalo B.</td><td class="td-cat">+50</td><td class="td-stat pg">5</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">17</td><td class="td-name">Manuel R.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">18</td><td class="td-name">Joaquin J.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">19</td><td class="td-name">Felipe C.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">20</td><td class="td-name">Julian T.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="ranking-card">
-                <div class="card-header">
-                    <div class="club-siglas-logo">CTG</div>
-                    <div class="club-info-text">Club tennis<br>Girona</div>
-                    <img class="club-shield-emblem" src="ruta/de/tu/logo-girona.png" alt="Logo Club Tennis Girona">
-                </div>
-                
-                <table class="ranking-table">
-                    <thead>
-                        <tr class="table-sub-header">
-                            <th>Pos</th>
-                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
-                            <th>Cat</th><!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Club Rankings Avanzado</title>
-    <style>
-        /* Estilos Base de la Página */
-        #fp-clubs-layout {
-            font-family: 'Segoe UI', Arial, sans-serif !important;
-            background-color: #f4f6f8 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            min-height: 100vh;
-        }
-
-        /* --- BANNER SUPERIOR PREMIUM --- */
-        .hero-banner {
-            background-color: #0e2234 !important;
-            background-image: linear-gradient(180deg, #0e2234 0%, #0a1826 100%) !important;
-            height: 160px !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            border-bottom: 4px solid #a4b300 !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
-        }
-
-        .logo-placeholder {
-            color: #ffffff !important;
-            font-size: 32px !important;
-            font-weight: 800 !important;
-            letter-spacing: 1px !important;
-            text-transform: uppercase !important;
-            font-style: italic !important;
-        }
-
-        .logo-placeholder span {
-            color: #a4b300 !important;
-        }
-
-        /* --- CONTENEDOR MULTI-CLUB --- */
-        .rankings-grid {
-            max-width: 1350px !important;
-            margin: -40px auto 50px auto !important;
-            padding: 0 20px !important;
-            display: grid !important;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
-            gap: 30px !important;
-        }
-
-        /* --- TARJETA DE MARCADOR CLÁSICO --- */
-        .ranking-card {
-            background-color: #fdfbf7 !important;
-            border-radius: 8px !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
-            border: 1px solid #e3dfd5 !important;
-            padding: 20px 0 0 0 !important;
-            overflow: hidden !important;
-            transition: transform 0.3s ease !important;
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        .ranking-card:hover {
-            transform: translateY(-5px) !important;
-        }
-
-        /* Cabecera interna del Club (Estructura de 3 columnas) */
-        .card-header {
-            display: flex !important;
-            align-items: center !important;
-            justify-content: space-between !important;
-            padding: 0 20px 15px 20px !important;
-            background-color: #fdfbf7 !important;
-        }
-
-        /* Izquierda: Logo Azul con Siglas */
-        .club-siglas-logo {
-            background-color: #0f2439 !important;
-            color: #ffffff !important;
-            width: 45px !important;
-            height: 45px !important;
-            border-radius: 50% !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            font-weight: 800 !important;
-            font-size: 14px !important;
-            font-style: italic !important;
-            letter-spacing: 0.5px !important;
-            border: 2px solid #a4b300 !important;
-            flex-shrink: 0 !important;
-        }
-
-        /* Centro: Texto del Club */
-        .club-info-text {
-            color: #0f2439 !important;
-            font-size: 15px !important;
-            font-weight: 700 !important;
-            line-height: 1.3 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 0.5px !important;
-            flex-grow: 1 !important;
-            padding: 0 15px !important;
-            text-align: left !important;
-        }
-
-        /* Derecha: Escudo PNG opcional */
-        .club-shield-emblem {
-            width: 45px !important;
-            height: 45px !important;
-            object-fit: contain !important;
-            flex-shrink: 0 !important;
-        }
-
-        /* --- TABLA INTERNA --- */
-        .ranking-table {
-            width: 100% !important;
-            border-collapse: collapse !important;
-        }
-
-        .table-sub-header {
-            border-top: 2px solid #0f2439 !important;
-            border-bottom: 1.5px solid #0f2439 !important;
-            background-color: rgba(15, 36, 57, 0.06) !important;
-            position: sticky !important;
-            top: 0 !important;
-            z-index: 10 !important;
-        }
-
-        .table-sub-header th {
-            font-size: 11px !important;
-            text-transform: uppercase !important;
-            color: #475569 !important;
-            padding: 11px 5px !important;
-            font-weight: 700 !important;
-            letter-spacing: 0.5px !important;
-        }
-
-        .ranking-table tr {
-            border-bottom: 1px solid #e3dfd5 !important;
-        }
-
-        .ranking-table tr:last-child {
-            border-bottom: none !important;
-        }
-
-        /* --- ALTERNANCIA ELEGANTE CADA 3 FILAS --- */
-        /* Por defecto usa el fondo crema claro */
-        .ranking-table tbody tr {
-            background-color: #fdfbf7 !important;
-        }
-
-        /* Bloques de 3 filas alternas (Filas 4-6, 10-12, 16-18, etc.) en un gris/azul suave refinado */
-        .ranking-table tbody tr:nth-child(6n+4),
-        .ranking-table tbody tr:nth-child(6n+5),
-        .ranking-table tbody tr:nth-child(6n+6) {
-            background-color: #f0f4f8 !important;
-        }
-
-        .ranking-table td {
-            padding: 10px 5px !important;
-            font-size: 13.5px !important;
-            color: #0f2439 !important;
-            vertical-align: middle !important;
-        }
-
-        /* Elementos específicos de las celdas */
-        .td-num {
-            width: 45px !important;
-            text-align: center !important;
-            font-size: 14px !important;
-            font-weight: 800 !important;
-            color: #c23a3a !important;
-            border-right: 1.5px solid #0f2439 !important;
-        }
-
-        .td-name {
-            text-align: left !important;
-            padding-left: 15px !important;
-            font-weight: 700 !important;
-            max-width: 130px !important;
-            white-space: nowrap !important;
-            overflow: hidden !important;
-            text-overflow: ellipsis !important;
-        }
-
-        .td-cat {
-            text-align: center !important;
-            font-size: 11.5px !important;
-            font-weight: 600 !important;
-            color: #475569 !important;
-            width: 55px !important;
-        }
-
-        .td-stat {
-            text-align: center !important;
-            font-weight: 700 !important;
-            width: 40px !important;
-        }
-
-        .td-stat.pg { color: #10b981 !important; }
-        .td-stat.pp { color: #ef4444 !important; }
-
-        /* Estilo responsivo */
-        @media (max-width: 400px) {
-            .rankings-grid { grid-template-columns: 1fr !important; padding: 0 10px !important; }
-            .td-name { font-size: 12px !important; padding-left: 8px !important; }
-        }
-    </style>
-</head>
-<body>
-
-    <div id="fp-clubs-layout">
-
-        <section class="hero-banner">
-            <div class="logo-placeholder">Final<span>Point</span></div>
-        </section>
-
-        <div class="rankings-grid">
-
-            <div class="ranking-card">
-                <div class="card-header">
-                    <div class="club-siglas-logo">CTC</div>
-                    <div class="club-info-text">Club tennis<br>Cervelló</div>
-                    <img class="club-shield-emblem" src="logophs.png" alt="Logo Club Tennis Cervelló">
-                </div>
-                
-                <table class="ranking-table">
-                    <thead>
-                        <tr class="table-sub-header">
-                            <th>Pos</th>
-                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
-                            <th>Cat</th>
-                            <th>PG</th>
-                            <th>PP</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td class="td-num">1</td><td class="td-name">Alejo C.</td><td class="td-cat">+40</td><td class="td-stat pg">14</td><td class="td-stat pp">2</td></tr>
-                        <tr><td class="td-num">2</td><td class="td-name">Esther G.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">3</td><td class="td-name">Domenech T.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">4</td><td class="td-name">Dani R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">5</td><td class="td-name">Sergio V.</td><td class="td-cat">+35</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">6</td><td class="td-name">Manel G.</td><td class="td-cat">+45</td><td class="td-stat pg">12</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">7</td><td class="td-name">Xavi H.</td><td class="td-cat">+35</td><td class="td-stat pg">10</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">8</td><td class="td-name">Albert M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">9</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">9</td><td class="td-name">Marta F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">8</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">10</td><td class="td-name">Carlos S.</td><td class="td-cat">+40</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">11</td><td class="td-name">Jordi P.</td><td class="td-cat">+50</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">12</td><td class="td-name">Ramon L.</td><td class="td-cat">+45</td><td class="td-stat pg">7</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">13</td><td class="td-name">Laura M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">6</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">14</td><td class="td-name">Oscar B.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">15</td><td class="td-name">Victor J.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">16</td><td class="td-name">Pau V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">5</td><td class="td-stat pp">9</td></tr>
-                        <tr><td class="td-num">17</td><td class="td-name">Raul G.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">18</td><td class="td-name">Anna S.</td><td class="td-cat">Sénior</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">19</td><td class="td-name">Ruben D.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
-                        <tr><td class="td-num">20</td><td class="td-name">Joan M.</td><td class="td-cat">+50</td><td class="td-stat pg">3</td><td class="td-stat pp">7</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="ranking-card">
-                <div class="card-header">
-                    <div class="club-siglas-logo">CTB</div>
-                    <div class="club-info-text">Club tennis<br>Barcelona</div>
-                    <img class="club-shield-emblem" src="ruta/de/tu/logo-barcelona.png" alt="Logo Club Tennis Barcelona">
-                </div>
-                
-                <table class="ranking-table">
-                    <thead>
-                        <tr class="table-sub-header">
-                            <th>Pos</th>
-                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
-                            <th>Cat</th>
-                            <th>PG</th>
-                            <th>PP</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td class="td-num">1</td><td class="td-name">Jose Luis F.</td><td class="td-cat">+45</td><td class="td-stat pg">15</td><td class="td-stat pp">1</td></tr>
-                        <tr><td class="td-num">2</td><td class="td-name">Sergi Déu</td><td class="td-cat">+35</td><td class="td-stat pg">12</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">3</td><td class="td-name">Joan Agudo</td><td class="td-cat">Sénior</td><td class="td-stat pg">10</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">4</td><td class="td-name">Alberto Diaz</td><td class="td-cat">+35</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">5</td><td class="td-name">Marc Pons</td><td class="td-cat">Sub-21</td><td class="td-stat pg">6</td><td class="td-stat pp">9</td></tr>
-                        <tr><td class="td-num">6</td><td class="td-name">Mateo R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">2</td></tr>
-                        <tr><td class="td-num">7</td><td class="td-name">Lucas M.</td><td class="td-cat">+40</td><td class="td-stat pg">10</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">8</td><td class="td-name">Nicolas G.</td><td class="td-cat">+35</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">9</td><td class="td-name">Santiago L.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">10</td><td class="td-name">Tomas V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">8</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">11</td><td class="td-name">Alvaro P.</td><td class="td-cat">+50</td><td class="td-stat pg">8</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">12</td><td class="td-name">Diego J.</td><td class="td-cat">+40</td><td class="td-stat pg">7</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">13</td><td class="td-name">Bruno F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">14</td><td class="td-name">Samuel S.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">15</td><td class="td-name">Enrique D.</td><td class="td-cat">+45</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">16</td><td class="td-name">Gonzalo B.</td><td class="td-cat">+50</td><td class="td-stat pg">5</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">17</td><td class="td-name">Manuel R.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">18</td><td class="td-name">Joaquin J.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">19</td><td class="td-name">Felipe C.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">20</td><td class="td-name">Julian T.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="ranking-card">
-                <div class="card-header">
-                    <div class="club-siglas-logo">CTG</div>
-                    <div class="club-info-text">Club tennis<br>Girona</div>
-                    <img class="club-shield-emblem" src="ruta/de/tu/logo-girona.png" alt="Logo Club Tennis Girona">
-                </div>
-                
-                <table class="ranking-table">
-                    <thead>
-                        <tr class="table-sub-header">
-                            <th>Pos</th>
-                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
-                            <th>Cat</th>
-                            <th>PG</th>
-                            <th>PP</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td class="td-num">1</td><td class="td-name">Carlos Alcaraz</td><td class="td-cat">Sénior</td><td class="td-stat pg">16</td><td class="td-stat pp">0</td></tr>
-                        <tr><td class="td-num">2</td><td class="td-name">Jannik Sinner</td><td class="td-cat">Sénior</td><td class="td-stat pg">14</td><td class="td-stat pp">2</td></tr>
-                        <tr><td class="td-num">3</td><td class="td-name">David Ferrer</td><td class="td-cat">+45</td><td class="td-stat pg">11</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">4</td><td class="td-name">Rafa Nadal</td><td class="td-cat">+35</td><td class="td-stat pg">9</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">5</td><td class="td-name">Roberto B.</td><td class="td-cat">+35</td><td class="td-stat pg">7</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">6</td><td class="td-name">Daniil M.</td><td class="td-cat">Sénior</td><td class="td-stat pg">12</td><td class="td-stat pp">3</td></tr>
-                        <tr><td class="td-num">7</td><td class="td-name">Alexander Z.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">4</td></tr>
-                        <tr><td class="td-num">8</td><td class="td-name">Casper R.</td><td class="td-cat">+35</td><td class="td-stat pg">10</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">9</td><td class="td-name">Stefanos T.</td><td class="td-cat">Sénior</td><td class="td-stat pg">9</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">10</td><td class="td-name">Hubert H.</td><td class="td-cat">+35</td><td class="td-stat pg">8</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">11</td><td class="td-name">Grigor D.</td><td class="td-cat">+40</td><td class="td-stat pg">8</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">12</td><td class="td-name">Alex de M.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">7</td><td class="td-stat pp">5</td></tr>
-                        <tr><td class="td-num">13</td><td class="td-name">Taylor F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">14</td><td class="td-name">Tommy P.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">15</td><td class="td-name">Ben S.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">16</td><td class="td-name">Ugo H.</td><td class="td-cat">Sénior</td><td class="td-stat pg">5</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">17</td><td class="td-name">Holger R.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">5</td><td class="td-stat pp">7</td></tr>
-                        <tr><td class="td-num">18</td><td class="td-name">Sebastian K.</td><td class="td-cat">Sénior</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
-                        <tr><td class="td-num">19</td><td class="td-name">Felix A.</td><td class="td-cat">Sénior</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
-                        <tr><td class="td-num">20</td><td class="td-name">Arthur F.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">4</td><td class="td-stat pp">9</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">1</td><td class="td-name">Jose Luis F.</td><td class="td-cat">+45</td><td class="td-stat pg">15</td><td class="td-stat pp">1</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">2</td><td class="td-name">Sergi Déu</td><td class="td-cat">+35</td><td class="td-stat pg">12</td><td class="td-stat pp">3</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">3</td><td class="td-name">Joan Agudo</td><td class="td-cat">Sénior</td><td class="td-stat pg">10</td><td class="td-stat pp">4</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">4</td><td class="td-name">Alberto Diaz</td><td class="td-cat">+35</td><td class="td-stat pg">8</td><td class="td-stat pp">7</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">5</td><td class="td-name">Marc Pons</td><td class="td-cat">Sub-21</td><td class="td-stat pg">6</td><td class="td-stat pp">9</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">6</td><td class="td-name">Mateo R.</td><td class="td-cat">Sénior</td><td class="td-stat pg">11</td><td class="td-stat pp">2</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">7</td><td class="td-name">Lucas M.</td><td class="td-cat">+40</td><td class="td-stat pg">10</td><td class="td-stat pp">3</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">8</td><td class="td-name">Nicolas G.</td><td class="td-cat">+35</td><td class="td-stat pg">9</td><td class="td-stat pp">4</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">9</td><td class="td-name">Santiago L.</td><td class="td-cat">+45</td><td class="td-stat pg">9</td><td class="td-stat pp">5</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">10</td><td class="td-name">Tomas V.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">8</td><td class="td-stat pp">4</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">11</td><td class="td-name">Alvaro P.</td><td class="td-cat">+50</td><td class="td-stat pg">8</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">12</td><td class="td-name">Diego J.</td><td class="td-cat">+40</td><td class="td-stat pg">7</td><td class="td-stat pp">5</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">13</td><td class="td-name">Bruno F.</td><td class="td-cat">Sénior</td><td class="td-stat pg">7</td><td class="td-stat pp">7</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">14</td><td class="td-name">Samuel S.</td><td class="td-cat">+35</td><td class="td-stat pg">6</td><td class="td-stat pp">5</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">15</td><td class="td-name">Enrique D.</td><td class="td-cat">+45</td><td class="td-stat pg">6</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">16</td><td class="td-name">Gonzalo B.</td><td class="td-cat">+50</td><td class="td-stat pg">5</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">17</td><td class="td-name">Manuel R.</td><td class="td-cat">+40</td><td class="td-stat pg">5</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-lino"><td class="td-num">18</td><td class="td-name">Joaquin J.</td><td class="td-cat">Sub-21</td><td class="td-stat pg">4</td><td class="td-stat pp">6</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">19</td><td class="td-name">Felipe C.</td><td class="td-cat">+35</td><td class="td-stat pg">4</td><td class="td-stat pp">8</td></tr>
+                        <tr class="bloque-crema"><td class="td-num">20</td><td class="td-name">Julian T.</td><td class="td-cat">+45</td><td class="td-stat pg">4</td><td class="td-stat pp">10</td></tr>
                     </tbody>
                 </table>
             </div>
 
         </div>
-
     </div>
 
 </body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Club Rankings Avanzado</title>
-    <style>
-        /* Estilos Base de la Página */
-        #fp-clubs-layout {
-            font-family: 'Segoe UI', Arial, sans-serif !important;
-            background-color: #f4f6f8 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            min-height: 100vh;
-        }
-
-        /* --- BANNER SUPERIOR PREMIUM --- */
-        .hero-banner {
-            background-color: #0e2234 !important;
-            background-image: linear-gradient(180deg, #0e2234 0%, #0a1826 100%) !important;
-            height: 160px !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            border-bottom: 4px solid #a4b300 !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
-        }
-
-        .logo-placeholder {
-            color: #ffffff !important;
-            font-size: 32px !important;
-            font-weight: 800 !important;
-            letter-spacing: 1px !important;
-            text-transform: uppercase !important;
-            font-style: italic !important;
-        }
-
-        .logo-placeholder span {
-            color: #a4b300 !important;
-        }
-
-        /* --- CONTENEDOR MULTI-CLUB --- */
-        .rankings-grid {
-            max-width: 1350px !important;
-            margin: -40px auto 50px auto !important;
-            padding: 0 20px !important;
-            display: grid !important;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
-            gap: 30px !important;
-        }
-
-        /* --- TARJETA DE MARCADOR CLÁSICO --- */
-        .ranking-card {
-            background-color: #fdfbf7 !important;
-            border-radius: 8px !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
-            border: 1px solid #e3dfd5 !important;
-            padding: 20px 0 0 0 !important;
-            overflow: hidden !important;
-            transition: transform 0.3s ease !important;
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        .ranking-card:hover {
-            transform: translateY(-5px) !important;
-        }
-
-        /* Cabecera interna del Club (Estructura de 3 columnas) */
-        .card-header {
-            display: flex !important;
-            align-items: center !important;
-            justify-content: space-between !important;
-            padding: 0 20px 15px 20px !important;
-            background-color: #fdfbf7 !important;
-        }
-
-        /* Izquierda: Logo Azul con Siglas */
-        .club-siglas-logo {
-            background-color: #0f2439 !important;
-            color: #ffffff !important;
-            width: 45px !important;
-            height: 45px !important;
-            border-radius: 50% !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            font-weight: 800 !important;
-            font-size: 14px !important;
-            font-style: italic !important;
-            letter-spacing: 0.5px !important;
-            border: 2px solid #a4b300 !important;
-            flex-shrink: 0 !important;
-        }
-
-        /* Centro: Texto del Club */
-        .club-info-text {
-            color: #0f2439 !important;
-            font-size: 15px !important;
-            font-weight: 700 !important;
-            line-height: 1.3 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 0.5px !important;
-            flex-grow: 1 !important;
-            padding: 0 15px !important;
-            text-align: left !important;
-        }
-
-        /* Derecha: Escudo PNG opcional */
-        .club-shield-emblem {
-            width: 45px !important;
-            height: 45px !important;
-            object-fit: contain !important;
-            flex-shrink: 0 !important;
-        }
-
-        /* --- TABLA INTERNA --- */
-        .ranking-table {
-            width: 100% !important;
-            border-collapse: collapse !important;
-        }
-
-        .table-sub-header {
-            border-top: 2px solid #0f2439
+</html>
