@@ -1,227 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Sitio web estático de prueba: secciones, estilos modernos y un poco de JS." />
-  <title>Mi Web Estática de Prueba</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧪</text></svg>">
-  <style>
-    :root{
-      --bg: #0b1020;
-      --card: #111834;
-      --text: #e6e8ef;
-      --muted: #a7b0c2;
-      --brand: #6ee7ff;
-      --accent: #9b8cff;
-      --ring: rgba(110,231,255,.45);
-      --radius: 16px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text); background: radial-gradient(1200px 800px at 10% -10%, #1a2350 0, transparent 70%),
-                      radial-gradient(800px 600px at 100% 0%, #1d3b57 0, transparent 60%),
-                      var(--bg);
-      line-height:1.6;
-    }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{opacity:.9; text-decoration:underline}
-    .container{width:min(1100px, 92%); margin-inline:auto}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Point - Torneos de Tenis</title>
+    <style>
+        /* --- VARIABLES DE COLOR (Basadas en tu imagen) --- */
+        :root {
+            --azul-oscuro: #0f2439;
+            --amarillo-tenis: #d4e117;
+            --blanco: #ffffff;
+            --gris-fondo: #f8f9fa;
+        }
 
-    /* Header */
-    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(140%) blur(6px); background:rgba(11,16,32,.6); border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-    .logo{display:flex; gap:10px; align-items:center; font-weight:700}
-    .logo-badge{width:36px; height:36px; display:grid; place-items:center; border-radius:10px; background:linear-gradient(135deg, var(--brand), var(--accent)); color:#0b1020; font-weight:900}
-    .menu{display:flex; gap:20px; align-items:center}
-    .menu a{padding:8px 10px; border-radius:10px}
-    .menu a:hover{background:rgba(255,255,255,.06)}
-    .menu-btn{display:none; border:1px solid rgba(255,255,255,.15); background:#0f1733; color:var(--text); padding:8px 10px; border-radius:10px}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gris-fondo);
+        }
 
-    /* Hero */
-    .hero{padding:72px 0 40px}
-    .pill{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid rgba(255,255,255,.12); border-radius:999px; color:var(--muted); font-size:14px; background:rgba(255,255,255,.03)}
-    .hero h1{font-size: clamp(28px, 6vw, 48px); line-height:1.1; margin:14px 0}
-    .hero p{color:var(--muted); max-width:60ch}
-    .cta{display:flex; gap:12px; margin-top:22px}
-    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.16); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); color:var(--text)}
-    .btn.primary{border-color:transparent; background:linear-gradient(135deg, var(--brand), var(--accent)); color:#0b1020; font-weight:700}
+        /* --- MENÚ DE NAVEGACIÓN --- */
+        .navbar {
+            background-color: var(--azul-oscuro);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-    /* Features */
-    .grid{display:grid; gap:16px}
-    .features{padding:40px 0}
-    .features .grid{grid-template-columns: repeat(3, 1fr)}
-    .card{background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius); padding:18px; box-shadow: 0 20px 50px rgba(0,0,0,.25)}
-    .card h3{margin:8px 0 6px}
-    .badge{display:inline-block; padding:6px 10px; border-radius:10px; font-size:12px; color:#0b1020; background:linear-gradient(135deg, var(--brand), var(--accent)); font-weight:700}
+        .navbar .brand {
+            color: var(--blanco);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-    /* Gallery */
-    .gallery{padding:10px 0 40px}
-    .gallery .grid{grid-template-columns: repeat(4, 1fr)}
-    .shot{aspect-ratio: 4 / 3; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.1); background:linear-gradient(45deg, rgba(110,231,255,.35), rgba(155,140,255,.35))}
-    .shot span{display:grid; place-items:center; height:100%; color:#0b1020; font-weight:800; font-size: 20px; background: repeating-linear-gradient(135deg, rgba(255,255,255,.25) 0 8px, rgba(255,255,255,.1) 8px 16px)}
+        .navbar .brand span {
+            color: var(--amarillo-tenis);
+        }
 
-    /* Contact */
-    .contact{padding:40px 0}
-    form{display:grid; gap:12px}
-    .row{display:grid; gap:12px; grid-template-columns:1fr 1fr}
-    input, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.18); background:rgba(9,14,30,.6); color:var(--text)}
-    input:focus, textarea:focus{outline:none; box-shadow:0 0 0 3px var(--ring)}
-    .help{color:var(--muted); font-size:14px}
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* Footer */
-    footer{padding:30px 0; color:var(--muted); border-top:1px solid rgba(255,255,255,.06)}
+        .nav-item {
+            margin-left: 25px;
+        }
 
-    /* Utilities */
-    @media (max-width: 900px){
-      .features .grid{grid-template-columns: repeat(2, 1fr)}
-      .gallery .grid{grid-template-columns: repeat(3, 1fr)}
-    }
-    @media (max-width: 700px){
-      .menu{display:none}
-      .menu-btn{display:inline-flex}
-      .features .grid{grid-template-columns: 1fr}
-      .gallery .grid{grid-template-columns: repeat(2, 1fr)}
-      .row{grid-template-columns:1fr}
-    }
-  </style>
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--amarillo-tenis);
+        }
+
+        /* --- SECCIÓN HERO (Banner Azul) --- */
+        .hero-banner {
+            background-color: var(--azul-oscuro);
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Contenedor del Logo */
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        /* Simulación del logo estilizado en CSS/Texto limpio, pon aquí tu imagen si la tienes separada */
+        .logo-text {
+            color: var(--blanco);
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 800;
+            line-height: 0.9;
+            position: relative;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 38px;
+            padding-left: 15px;
+        }
+
+        .logo-text::after {
+            content: '🎾';
+            font-size: 24px;
+            position: absolute;
+            top: 15px;
+            right: -30px;
+        }
+
+        /* --- CONTENEDOR DE TARJETAS ALINEADAS --- */
+        .cards-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            /* El truco de magia: posicionamiento absoluto relativo para pisar el fondo azul */
+            position: relative;
+            top: -60px; 
+        }
+
+        .card {
+            background-color: var(--blanco);
+            flex: 1; /* Hace que las 3 midan exactamente lo mismo */
+            min-height: 180px;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra suave idéntica a tu diseño */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contenido interno de las tarjetas */
+        .card h3 {
+            margin-top: 0;
+            color: var(--azul-oscuro);
+            font-size: 20px;
+            border-bottom: 2px solid var(--amarillo-tenis);
+            padding-bottom: 8px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Adaptación para pantallas móviles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-menu {
+                justify-content: center;
+                width: 100%;
+            }
+            .nav-item {
+                margin: 0 10px;
+            }
+            .cards-container {
+                flex-direction: column;
+                top: -30px;
+                gap: 20px;
+            }
+            .hero-banner {
+                height: 260px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="logo" aria-label="Logotipo">
-        <div class="logo-badge" aria-hidden="true">★</div>
-        <span>Mi Web Estática</span>
-      </div>
-      <nav aria-label="principal" class="menu" id="menu">
-        <a href="https://www.finalpoint.es/">Inicio</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <!-- Hero -->
-    <section id="inicio" class="hero container">
-      <div class="pill">🧪 Proyecto de prueba · 100% estático</div>
-      <h1>Una plantilla bonita y lista para copiar/pegar</h1>
-      <p>Incluye encabezado fijo, secciones, tarjetas, galería y un formulario. Todo en un solo archivo HTML con estilos modernos y accesibles.</p>
-      <div class="cta">
-        <a class="btn primary" href="#contacto">Empezar ahora</a>
-        <a class="btn" href="#galeria">Ver ejemplos</a>
-      </div>
-    </section>
+    <nav class="navbar">
+        <a href="#" class="brand">Final<span>Point</span></a>
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link active">Inicio</a></li>
+            <li><a href="#torneos" class="nav-link">Torneos actuales</a></li>
+            <li><a href="#rankings" class="nav-link">Rankings</a></li>
+            <li><a href="#historico" class="nav-link">Historial</a></li>
+        </ul>
+    </nav>
 
-    <!-- Features -->
-    <section id="caracteristicas" class="features container">
-      <h2>Características</h2>
-      <div class="grid">
-        <article class="card">
-          <span class="badge">HTML</span>
-          <h3>Semántico</h3>
-          <p>Usa etiquetas <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code> para mejorar accesibilidad y SEO.</p>
-        </article>
-        <article class="card">
-          <span class="badge">CSS</span>
-          <h3>Estética moderna</h3>
-          <p>Gradientes sutiles, bordes redondeados y sombras suaves. Responsive de serie.</p>
-        </article>
-        <article class="card">
-          <span class="badge">JS</span>
-          <h3>Navegación móvil</h3>
-          <p>Un mini script para abrir/cerrar el menú en pantallas pequeñas, sin frameworks.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="galeria" class="gallery container">
-      <h2>Galería (placeholders)</h2>
-      <div class="grid">
-        <figure class="shot"><span>📷 1</span></figure>
-        <figure class="shot"><span>📷 2</span></figure>
-        <figure class="shot"><span>📷 3</span></figure>
-        <figure class="shot"><span>📷 4</span></figure>
-        <figure class="shot"><span>📷 5</span></figure>
-        <figure class="shot"><span>📷 6</span></figure>
-        <figure class="shot"><span>📷 7</span></figure>
-        <figure class="shot"><span>📷 8</span></figure>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contacto" class="contact container">
-      <h2>Contacto</h2>
-      <p class="help">Formulario de demostración (no envía nada). Úsalo como base.</p>
-      <form action="#" method="post" onsubmit="event.preventDefault(); alert('¡Formulario de prueba enviado!');">
-        <div class="row">
-          <label>
-            Nombre
-            <input name="nombre" type="text" placeholder="Ana Pérez" required />
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" placeholder="ana@email.com" required />
-          </label>
+    <section class="hero-banner">
+        <div class="logo-container">
+            <div class="logo-text">
+                Final<br><span>Point</span>
+            </div>
         </div>
-        <label>
-          Mensaje
-          <textarea name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto…" required></textarea>
-        </label>
-        <button class="btn primary" type="submit">Enviar</button>
-      </form>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Mi Web Estática · Hecha con HTML + CSS + JS</p>
-    </div>
-  </footer>
+    <section class="cards-container">
+        
+        <div class="card">
+            <h3>Últimos Playoffs</h3>
+            <p>Consulta las eliminatorias del torneo en curso, cruces directos y resultados actualizados de la jornada.</p>
+        </div>
 
-  <script>
-    // Año dinámico
-    document.getElementById('year').textContent = new Date().getFullYear();
+        <div class="card">
+            <h3>Fase de Grupos</h3>
+            <p>Clasificaciones en tiempo real, partidos jugados, sets a favor y puntos acumulados de la liga regular.</p>
+        </div>
 
-    // Menú móvil
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('menu');
-    btn?.addEventListener('click', () => {
-      const isOpen = getComputedStyle(menu).display !== 'none';
-      if(isOpen){
-        menu.style.display = 'none';
-        btn.setAttribute('aria-label','Abrir menú');
-      }else{
-        menu.style.display = 'flex';
-        menu.style.flexDirection = 'column';
-        menu.style.gap = '10px';
-        btn.setAttribute('aria-label','Cerrar menú');
-      }
-    });
+        <div class="card">
+            <h3>Próximos Partidos</h3>
+            <p>Orden de juego oficial, asignación de pistas y horarios de los partidos programados para este fin de semana.</p>
+        </div>
 
-    // Suavizar scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if(el){
-          e.preventDefault();
-          window.scrollTo({ top: el.offsetTop - 64, behavior: 'smooth' });
-          // cerrar menú en móvil
-          if(window.innerWidth < 700){
-            menu.style.display = 'none';
-            btn.setAttribute('aria-label','Abrir menú');
-          }
-        }
-      });
-    });
-  </script>
+    </section>
+
 </body>
 </html>
-
-
