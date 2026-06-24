@@ -3,220 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Ranking Oficial</title>
+    <title>Final Point - Clasificación por Grupos</title>
     <style>
-        /* Contenedor principal con la estética de tierra batida de la imagen */
-        #fp-ranking-board {
+        /* Contenedor adaptado a la estética de la página inicial */
+        #final-point-groups-container {
             font-family: 'Segoe UI', Arial, sans-serif !important;
-            background-color: #e06927 !important; /* Color arcilla/naranja de fondo */
+            background-color: #f8f9fa !important; /* Fondo gris claro limpio */
+            margin: 0 !important;
             padding: 40px 20px !important;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
             box-sizing: border-box;
         }
 
-        /* Estructura del marcador (Inspirado en DALL·E 2025-02-11 12.17.20...) */
-        .scoreboard-container {
-            background-color: #1b4d3e !important; /* Verde oscuro perimetral */
-            border: 5px solid #ffffff !important;
-            border-radius: 12px !important;
-            width: 100% !important;
-            max-width: 800px !important;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.35) !important;
-            overflow: hidden;
+        /* Envoltura de cada grupo para darle aire al diseño */
+        .group-section {
+            max-width: 1000px !important;
+            margin: 0 auto 50px auto !important;
         }
 
-        /* Tabla estilo Excel / Marcador clásico */
+        /* Título del Grupo (Coherente con la tipografía e identidad) */
+        .group-title {
+            color: #0f2439 !important; /* Azul oscuro */
+            font-size: 26px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            margin-bottom: 15px !important;
+            padding-left: 5px !important;
+            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis */
+            display: inline-block;
+        }
+
+        /* Contenedor de la tabla con bordes de la pista de tenis */
+        .table-responsive-wrapper {
+            background-color: #ffffff !important;
+            border: 4px solid #0e2234 !important; /* Borde azul oscuro blindado */
+            border-radius: 12px !important;
+            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.08) !important;
+            overflow-x: auto !important; /* Permite scroll horizontal en móviles si es necesario */
+        }
+
+        /* Tabla de Clasificación Estilo Excel Premium */
         .ranking-table {
             width: 100% !important;
             border-collapse: collapse !important;
-            background-color: #ffffff !important;
+            min-width: 850px; /* Evita que las columnas se aplasten en pantallas pequeñas */
+        }
+
+        /* Cabecera principal de la tabla (Azul oscuro inicial) */
+        .table-header {
+            background-color: #0e2234 !important;
+        }
+
+        .table-header th {
+            color: #ffffff !important;
+            padding: 14px 8px !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Celdas superiores finas */
             text-align: center !important;
         }
 
-        /* Fila del título principal (Verde Pista de la foto) */
-        .table-main-header {
-            background-color: #2a664e !important; 
-            color: #ffffff !important;
-        }
-
-        .table-main-header th {
-            padding: 16px !important;
-            font-size: 20px !important;
-            font-weight: 800 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1.5px !important;
-            border-bottom: 4px solid #ffffff !important;
-        }
-
-        /* Fila de subcabeceras (Gama de verdes claros y oscuros combinados) */
-        .table-sub-header {
-            background-color: #1b4d3e !important;
-            color: #ffffff !important;
-        }
-
-        .table-sub-header th {
-            padding: 12px 10px !important;
-            font-size: 13px !important;
-            text-transform: uppercase !important;
-            font-weight: 700 !important;
-            border: 2px solid #ffffff !important; /* Celdas estilo Excel marcadas */
-        }
-
-        /* Estilos de las celdas de datos */
-        .ranking-table td {
-            padding: 12px 10px !important;
-            font-size: 14px !important;
-            font-weight: 700 !important;
-            color: #0f2439 !important;
-            border: 2px solid #1b4d3e !important; /* Bordes verdes para simular las celdas de la imagen */
-        }
-
-        /* Columna de posición (Color destacado oscuro) */
-        .col-pos {
-            background-color: #0f2439 !important;
-            color: #ffffff !important;
-            font-size: 15px !important;
-            font-weight: 800 !important;
-            width: 50px;
-        }
-
-        /* Columna del nombre del jugador (Alineado a la izquierda para mejor lectura) */
-        .col-player {
-            text-align: left !important;
-            padding-left: 20px !important;
-            font-size: 15px !important;
-        }
-
-        /* Columnas de números / Celdas estadísticas */
-        .col-stat {
-            width: 80px;
-        }
-
-        /* Filas alternas con tonos verde claro sutiles para emular el patrón de la foto */
-        .ranking-table tr:nth-child(even) td:not(.col-pos) {
-            background-color: #f4f8f5 !important; 
-        }
-
-        /* Resaltado para la fila del líder (Opcional - Toque estético) */
-        .ranking-table tr:nth-child(3) .col-player {
-            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis al número 1 */
-        }
-
-        /* Responsivo para pantallas pequeñas */
-        @media (max-width: 600px) {
-            .ranking-table td, .table-sub-header th {
-                padding: 8px 5px !important;
-                font-size: 12px !important;
-            }
-            .col-player { padding-left: 10px !important; font-size: 13px !important; }
-        }
-    </style>
-</head>
-<body>
-
-    <div id="fp-ranking-board">
-
-        <div class="scoreboard-container">
-            <table class="ranking-table">
-                <thead>
-                    <!-- Cabecera principal -->
-                    <tr class="table-main-header">
-                        <th colspan="5">OFFICIAL TOURNAMENT RANKING</th>
-                    </tr>
-                    <!-- Columnas estilo Excel -->
-                    <tr class="table-sub-header">
-                        <th style="width: 50px;">POS</th>
-                        <th>PLAYER SEAT</th>
-                        <th class="col-stat">PJ</th>
-                        <th class="col-stat">PG</th>
-                        <th class="col-stat">PP</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- 
-                        INSTRUCCIONES PARA TI: 
-                        Para mover a los jugadores de puesto, simplemente corta la fila entera <tr>...</tr> 
-                        y pégala más arriba o más abajo. Modifica los números manualmente según corresponda.
-                    -->
-                    <tr>
-                        <td class="col-pos">1</td>
-                        <td class="col-player">Carlos Alcaraz</td>
-                        <td class="col-stat">12</td>
-                        <td class="col-stat">10</td>
-                        <td class="col-stat">2</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">2</td>
-                        <td class="col-player">Jannik Sinner</td>
-                        <td class="col-stat">11</td>
-                        <td class="col-stat">9</td>
-                        <td class="col-stat">2</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">3</td>
-                        <td class="col-player">Novak Djokovic</td>
-                        <td class="col-stat">10</td>
-                        <td class="col-stat">8</td>
-                        <td class="col-stat">2</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">4</td>
-                        <td class="col-player">Daniil Medvedev</td>
-                        <td class="col-stat">12</td>
-                        <td class="col-stat">7</td>
-                        <td class="col-stat">5</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">5</td>
-                        <td class="col-player">Alexander Zverev</td>
-                        <td class="col-stat">9</td>
-                        <td class="col-stat">6</td>
-                        <td class="col-stat">3</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">6</td>
-                        <td class="col-player">Andrey Rublev</td>
-                        <td class="col-stat">10</td>
-                        <td class="col-stat">5</td>
-                        <td class="col-stat">5</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">7</td>
-                        <td class="col-player">Casper Ruud</td>
-                        <td class="col-stat">11</td>
-                        <td class="col-stat">5</td>
-                        <td class="col-stat">6</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">8</td>
-                        <td class="col-player">Stefanos Tsitsipas</td>
-                        <td class="col-stat">10</td>
-                        <td class="col-stat">4</td>
-                        <td class="col-stat">6</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">9</td>
-                        <td class="col-player">Hubert Hurkacz</td>
-                        <td class="col-stat">9</td>
-                        <td class="col-stat">3</td>
-                        <td class="col-stat">6</td>
-                    </tr>
-                    <tr>
-                        <td class="col-pos">10</td>
-                        <td class="col-player">Alex de Minaur</td>
-                        <td class="col-stat">10</td>
-                        <td class="col-stat">2</td>
-                        <td class="col-stat">8</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-</body>
-</html>
-</html>
+        /* Destacar la columna de nombres en la cabecera */
+        .table-header th.th-player {
