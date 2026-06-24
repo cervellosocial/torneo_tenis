@@ -58,11 +58,12 @@
             align-items: center !important;
             text-align: center !important;
         }
-
-       #final-point-experiment .logo-box {
-    max-width: 300px; /* Ajusta este tamaño para que el logo se vea del tamaño que quieras */
-    height: auto;
-    display: block;
+#final-point-experiment .logo-box {
+    width: 100% !important;     /* Fuerza a la imagen a usar el ancho disponible */
+    max-width: 550px !important; /* ¡Cambia este número (550px, 600px, 700px) hasta que tenga el tamaño que quieras! */
+    height: auto !important;    /* Mantiene la proporción para que no se deforme */
+    display: block !important;
+    margin: 0 auto !important;  /* Asegura que siga perfectamente centrada */
 }
 
         #final-point-experiment .logo-box span {
