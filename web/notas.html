@@ -3,6 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Point - Rankings</title>
+    <style>
+        /* Estilos Base de la Página */
+        #fp-clubs-layout {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f4f6f8 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+        }
+
+        /* --- BANNER SUPERIOR --- */
+        .hero-banner {
+            background-color: #0e2234 !important;
+            background-image: linear-gradient(180deg, #0e2234 0%, #0a1826 100%) !important;
+            height: 160px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            border-bottom: 4px solid #a4b300 !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
+        }
+
+        .logo-placeholder {
+            color: #ffffff !important;
+            font-size: 32px !important;
+            font-weight: 800 !important;
+            letter-spacing: 1px !important;
+            text-transform: uppercase !important;
+            font-style: italic !important;
+        }
+
+        .logo-placeholder span {
+            color: #a4b300 !important;
+        }
+
+        /* --- CONTENEDOR DE 3 COLUMNAS EN PARALELO --- */
+        .rankings-grid {
+            max-width: 1400px !important;
+            margin: -40px auto 50px auto !important;
+            padding: 0 20px !important;
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important; /* Fuerza exactamente 3 columnas */
+            gap: 25px !important;
+        }
+
+        /* --- TARJETA DE CLASIFICACIÓN --- */
+        .ranking-card {
+            background-color: #fdfbf7 !important; /* Un solo color uniforme de fondo */
+            border-radius: 8px !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+            border: 1px solid #e3dfd5 !important;
+            padding: 20px 0 0 0 !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        /* Cabecera del Club */
+        .card-header {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 0 20px 15px 20px !important;
+            background-color: #fdfbf7 !important;
+        }
+
+        .club-siglas-logo {
+            background-color: #0f2439 !important;
+            color: #ffffff !important;
+            width: 45px !important;
+            height: 45px !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-weight: 800 !important;
+            font-size: 14px !important;
+            font-style: italic !important;
+            border: 2px solid #a4b300 !important;
+            flex-shrink: 0 !important;
+        }
+
+        .club-info-text {
+            color: #0f2439 !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+            text-transform: uppercase !important;
+            flex-grow: 1 !important;
+            padding: 0 15px !important;
+            text-align: left !important;
+        }
+
+        .club-shield-emblem {
+            width: 45px !important;
+            height: 45px !important;
+            object-fit: contain !important;
+            flex-shrink: 0 !important;
+        }
+
+        /* --- TABLA --- */
+        .ranking-table {
+            width: 100% !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            background-color: #fdfbf7 !important; /* Fondo idéntico para toda la tabla */
+        }
+
+        .table-sub-header {
+            border-top: 2px solid #0f2439 !important;
+            border-bottom: 1.5px solid #0f2439 !important;
+            background-color: rgba(15, 36, 57, 0.06) !important;
+        }
+
+        .table-sub-header th {
+            font-size: 11px !important;
+            text-transform: uppercase !important;
+            color: #475569 !important;
+            padding: 11px 5px !important;
+            font-weight: 700 !important;
+        }
+
+        .ranking-table tr {
+            border-bottom: 1px solid #e3dfd5 !important;
+            background-color: #fdfbf7 !important; /* Renglones uniformes sin distinción */
+        }
+
+        .ranking-table tr:last-child {
+            border-bottom: none !important;
+        }
+
+        .ranking-table td {
+            padding: 10px 5px !important;
+            font-size: 13.5px !important;
+            color: #0f2439 !important;
+            vertical-align: middle !important;
+        }
+
+        .td-num {
+            width: 45px !important;
+            text-align: center !important;
+            font-size: 14px !important;
+            font-weight: 800 !important;
+            color: #0f2439 !important; /* Color estándar para los números */
+            border-right: 1.5px solid #0f2439 !important;
+        }
+
+        .td-name {
+            text-align: left !important;
+            padding-left: 15px !important;
+            font-weight: 700 !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+        }
+
+        .td-cat {
+            text-align: center !important;
+            font-size: 11.5px !important;
+            font-weight: 600 !important;
+            color: #475569 !important;
+            width: 60px !important;
+        }
+
+        .td-stat {
+            text-align: center !important;
+            font-weight: 700 !important;
+            width: 40px !important;
+        }
+
+        .td-stat.pg { color: #10b981 !important; }
+        .td-stat.pp { color: #ef4444 !important; }
+
+        /* Responsivo para pantallas medianas/pequeñas */
+        @media (max-width: 1024px) {
+            .rankings-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 768px) {
+            .rankings-grid { grid-template-columns: 1fr !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fp-clubs-layout">
+
+        <!-- Banner Principal -->
+        <section class="hero-banner">
+            <div class="logo-placeholder">Final<span>Point</span></div>
+        </section>
+
+        <!-- Rejilla con las 3 columnas principales (3 Clubes) -->
+        <div class="rankings-grid">
+
+            <!-- COLUMNA 1: CLUB TENNIS CERVELLÓ -->
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-siglas-logo">CTC</div>
+                    <div class="club-info-text">Club tennis<br>Cervelló</div>
+                    <img class="club-shield-emblem" src="logophs.png" alt="Logo Club">
+                </div>
+                
+                <table class="ranking-table">
+                    <colgroup>
+                        <col style="width: 45px;">
+                        <col>
+                        <col style="width: 60px;">
+                        <col style="width: 40px;">
+                        <col style="width: 40px;">
+                    </colgroup>
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Ptos</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí van tus 50 jugadores de Cervelló uno detrás de otro -->
+                        <tr><td class="td-num">1</td><td class="td-name">Alejo</td><td class="td-cat">11 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">2</td><td class="td-name">Esther</td><td class="td-cat">10 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">3</td><td class="td-name">Domenech</td><td class="td-cat">8 ptos</td><td class="td-stat pg">2</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">4</td><td class="td-name">Dani</td><td class="td-cat">3 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">2</td></tr>
+                        <tr><td class="td-num">5</td><td class="td-name">Sergio</td><td class="td-cat">3 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">3</td></tr>
+                        <tr><td class="td-num">6</td><td class="td-name">Jose Luis</td><td class="td-cat">9 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">7</td><td class="td-name">Sergi Déu</td><td class="td-cat">7 ptos</td><td class="td-stat pg">2</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">8</td><td class="td-name">Joan Agudo</td><td class="td-cat">5 ptos</td><td class="td-stat pg">1</td><td class="td-stat pp">2</td></tr>
+                        <tr><td class="td-num">9</td><td class="td-name">Alberto Diaz</td><td class="td-cat">3 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">3</td></tr>
+                        <tr><td class="td-num">10</td><td class="td-name">Toño</td><td class="td-cat">0 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">11</td><td class="td-name">Jose Antonio</td><td class="td-cat">9 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">12</td><td class="td-name">Elena</td><td class="td-cat">1 pto</td><td class="td-stat pg">0</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">13</td><td class="td-name">Laura</td><td class="td-cat">1 pto</td><td class="td-stat pg">0</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">14</td><td class="td-name">Óscar</td><td class="td-cat">1 pto</td><td class="td-stat pg">0</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">15</td><td class="td-name">Aldara</td><td class="td-cat">0 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">16</td><td class="td-name">Aurelio</td><td class="td-cat">12 ptos</td><td class="td-stat pg">4</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">17</td><td class="td-name">Sole</td><td class="td-cat">10 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">18</td><td class="td-name">Roberto</td><td class="td-cat">9 ptos</td><td class="td-stat pg">2</td><td class="td-stat pp">2</td></tr>
+                        <tr><td class="td-num">19</td><td class="td-name">Jordi Garrido</td><td class="td-cat">6 ptos</td><td class="td-stat pg">1</td><td class="td-stat pp">3</td></tr>
+                        <tr><td class="td-num">20</td><td class="td-name">Alex Vila</td><td class="td-cat">4 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">4</td></tr>
+                        <tr><td class="td-num">21</td><td class="td-name">Jan Mundet</td><td class="td-cat">12 ptos</td><td class="td-stat pg">4</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">22</td><td class="td-name">Axel Villar</td><td class="td-cat">4 ptos</td><td class="td-stat pg">1</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">23</td><td class="td-name">Hugo</td><td class="td-cat">3 ptos</td><td class="td-stat pg">1</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">24</td><td class="td-name">Adrián</td><td class="td-cat">3 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">3</td></tr>
+                        <tr><td class="td-num">25</td><td class="td-name">Jordi Mundet</td><td class="td-cat">1 pto</td><td class="td-stat pg">0</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">26</td><td class="td-name">Ingrid</td><td class="td-cat">1 pto</td><td class="td-stat pg">0</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">27</td><td class="td-name">Fran Falcón</td><td class="td-cat">9 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">28</td><td class="td-name">Jennifer</td><td class="td-cat">9 ptos</td><td class="td-stat pg">3</td><td class="td-stat pp">0</td></tr>
+                        <tr><td class="td-num">29</td><td class="td-name">Armand</td><td class="td-cat">8 ptos</td><td class="td-stat pg">2</td><td class="td-stat pp">2</td></tr>
+                        <tr><td class="td-num">30</td><td class="td-name">Adriana</td><td class="td-cat">6 ptos</td><td class="td-stat pg">0</td><td class="td-stat pp">4</td></tr>
+                        <tr><td class="td-num">31</td><td class="td-name">Inma</td><td class="td-cat">6 ptos</td><td class="td-stat pg">1</td><td class="td-stat pp">3</td></tr>
+                        <!-- Continúa agregando hasta completar los 50 en esta sola columna -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- COLUMNA 2: SEGUNDO CLUB -->
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-siglas-logo">CTB</div>
+                    <div class="club-info-text">Club tennis<br>Barcelona</div>
+                    <div class="club-info-text" style="text-align: right; font-size: 11px; color: #475569;">Logo Club</div>
+                </div>
+                
+                <table class="ranking-table">
+                    <colgroup>
+                        <col style="width: 45px;">
+                        <col>
+                        <col style="width: 60px;">
+                        <col style="width: 40px;">
+                        <col style="width: 40px;">
+                    </colgroup>
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Cat</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí rellenas con los 50 jugadores del segundo club -->
+                        <tr><td class="td-num">1</td><td class="td-name">Jose Luis F.</td><td class="td-cat">+45</td><td class="td-stat pg">15</td><td class="td-stat pp">1</td></tr>
+                        <tr><td class="td-num">2</td><td class="td-name">Sergi Déu</td><td class="td-cat">+35</td><td class="td-stat pg">12</td><td class="td-stat pp">3</td></tr>
+                        <tr><td class="td-num">3</td><td class="td-name">Joan Agudo</td><td class="td-cat">Sénior</td><td class="td-stat pg">10</td><td class="td-stat pp">4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- COLUMNA 3: TERCER CLUB -->
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-siglas-logo">G3</div>
+                    <div class="club-info-text">Tercer Club<br>Deportivo</div>
+                    <div class="club-info-text" style="text-align: right; font-size: 11px; color: #475569;">Logo Club</div>
+                </div>
+                
+                <table class="ranking-table">
+                    <colgroup>
+                        <col style="width: 45px;">
+                        <col>
+                        <col style="width: 60px;">
+                        <col style="width: 40px;">
+                        <col style="width: 40px;">
+                    </colgroup>
+                    <thead>
+                        <tr class="table-sub-header">
+                            <th>Pos</th>
+                            <th style="text-align: left; padding-left: 15px;">Jugador</th>
+                            <th>Cat</th>
+                            <th>PG</th>
+                            <th>PP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí rellenas con los 50 jugadores del tercer club -->
+                        <tr><td class="td-num">1</td><td class="td-name">Ejemplo J.</td><td class="td-cat">Sénior</td><td class="td-stat pg">5</td><td class="td-stat pp">0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Point - Club Rankings Avanzado</title>
     <style>
         /* Estilos Base de la Página */
