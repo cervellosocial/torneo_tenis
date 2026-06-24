@@ -14,7 +14,40 @@
             min-height: 100vh;
         }
 
+/* --- CABECERA EN BLANCO --- */
+#final-point-experiment .navbar {
+    background-color: #ffffff !important; /* Fondo blanco para el menú */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 15px 5% !important;
+    border-bottom: 1px solid #e2e8f0 !important; /* Una fina línea gris para separar el menú */
+}
 
+#final-point-experiment .brand {
+    color: #0f2439 !important; /* Texto del logo en azul oscuro */
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+#final-point-experiment .brand span {
+    color: #a4b300 !important; /* Un tono verde/amarillo tenis un poco más oscuro para que contraste bien sobre blanco */
+}
+
+#final-point-experiment .nav-menu {
+    list-style: none !important;
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#final-point-experiment .nav-item {
+    margin-left: 20px !important;
+}
+
+#final-point-experiment .nav-link {
+    color: #334155 !important; /* Texto de
         #final-point-experiment .nav-link {
             color: rgba(255, 255, 255, 0.8) !important;
             text-decoration: none !important;
@@ -86,7 +119,17 @@
 <body>
 
     <div id="final-point-experiment">
-
+<nav class="navbar">
+    <a href="#" class="brand">Final<span>Point</span></a>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#torneos" class="nav-link">Torneos</a></li>
+        <li class="nav-item"><a href="#ranking" class="nav-link">Ranking</a></li>
+        <li class="nav-item"><a href="#inscripciones" class="nav-link">Inscripciones</a></li>
+        <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+</nav>
 
       <section class="hero-banner">
     <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
