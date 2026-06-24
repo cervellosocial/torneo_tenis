@@ -3,314 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Clasificación por Grupos</title>
+    <title>Final Point - Club Rankings</title>
     <style>
-        /* Contenedor adaptado a la estética de la página inicial */
-        #final-point-groups-container {
+        /* Estilos Base de la Página */
+        #fp-clubs-layout {
             font-family: 'Segoe UI', Arial, sans-serif !important;
-            background-color: #f8f9fa !important; /* Fondo gris claro limpio */
+            background-color: #f4f6f8 !important;
             margin: 0 !important;
-            padding: 40px 20px !important;
+            padding: 0 !important;
             min-height: 100vh;
-            box-sizing: border-box;
         }
 
-        /* Envoltura de cada grupo para darle aire al diseño */
-        .group-section {
-            max-width: 1000px !important;
-            margin: 0 auto 50px auto !important;
+        /* --- BANNER SUPERIOR PREMIUM --- */
+        .hero-banner {
+            background-color: #0e2234 !important;
+            background-image: linear-gradient(180deg, #0e2234 0%, #0a1826 100%) !important;
+            height: 160px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            border-bottom: 4px solid #a4b300 !important; /* Fina línea verde tenis */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
         }
 
-        /* Título del Grupo (Coherente con la tipografía e identidad) */
-        .group-title {
-            color: #0f2439 !important; /* Azul oscuro */
-            font-size: 26px !important;
+        /* Logotipo simulado de Final Point */
+        .logo-placeholder {
+            color: #ffffff !important;
+            font-size: 32px !important;
             font-weight: 800 !important;
-            text-transform: uppercase !important;
             letter-spacing: 1px !important;
-            margin-bottom: 15px !important;
-            padding-left: 5px !important;
-            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis */
-            display: inline-block;
+            text-transform: uppercase !important;
+            font-style: italic !important;
         }
 
-        /* Contenedor de la tabla con bordes de la pista de tenis */
-        .table-responsive-wrapper {
-            background-color: #ffffff !important;
-            border: 4px solid #0e2234 !important; /* Borde azul oscuro blindado */
-            border-radius: 12px !important;
-            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.08) !important;
-            overflow-x: auto !important; /* Permite scroll horizontal en móviles si es necesario */
+        .logo-placeholder span {
+            color: #a4b300 !important;
         }
 
-        /* Tabla de Clasificación Estilo Excel Premium */
+        /* --- CONTENEDOR MULTI-CLUB (GRID DE 3) --- */
+        .rankings-grid {
+            max-width: 1200px !important;
+            margin: -40px auto 50px auto !important; /* Desplazado hacia arriba para pisar el banner como en tu idea */
+            padding: 0 20px !important;
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            gap: 30px !important;
+        }
+
+        /* --- TARJETA DE MARCADOR CLÁSICO --- */
+        .ranking-card {
+            background-color: #fdfbf7 !important; /* Tono crema/arena fino */
+            border-radius: 8px !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+            border: 1px solid #e3dfd5 !important;
+            padding: 20px 0 10px 0 !important;
+            overflow: hidden !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        .ranking-card:hover {
+            transform: translateY(-5px) !important;
+        }
+
+        /* Cabecera interna del Club */
+        .card-header {
+            display: flex !important;
+            align-items: center !important;
+            padding: 0 20px 15px 20px !important;
+            border-bottom: 2px solid #0f2439 !important; /* Línea de división fina */
+        }
+
+        /* Escudo simulado elegante */
+        .club-shield-emblem {
+            width: 45px !important;
+            height: 45px !important;
+            background-color: #0f2439 !important;
+            border-radius: 6px !important;
+            margin-right: 15px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: #a4b300 !important;
+            font-size: 18px !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+        }
+
+        .club-info-text {
+            color: #0f2439 !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            line-height: 1.3 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        /* Lista de posiciones (Tabla) */
         .ranking-table {
             width: 100% !important;
             border-collapse: collapse !important;
-            min-width: 850px; /* Evita que las columnas se aplasten en pantallas pequeñas */
         }
 
-        /* Cabecera principal de la tabla (Azul oscuro inicial) */
-        .table-header {
-            background-color: #0e2234 !important;
+        .ranking-table tr {
+            border-bottom: 1px solid #e3dfd5 !important; /* Líneas finas y sutiles */
         }
 
-        .table-header th {
-            color: #ffffff !important;
-            padding: 14px 8px !important;
-            font-size: 13px !important;
-            font-weight: 700 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 0.5px !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Celdas superiores finas */
+        .ranking-table tr:last-child {
+            border-bottom: none !important;
+        }
+
+        /* Celda del número de posición */
+        .td-num {
+            width: 50px !important;
             text-align: center !important;
-        }
-
-        /* Destacar la columna de nombres en la cabecera */
-        .table-header th.th-player {
-            text-align: left !important;
-            padding-left: 20px !important;
-        }
-
-        /* Estilos generales de las celdas de datos */
-        .ranking-table td {
-            padding: 12px 8px !important;
-            font-size: 14px !important;
-            font-weight: 600 !important;
-            color: #334155 !important;
-            border: 1px solid #e2e8f0 !important; /* Rejilla tipo Excel limpia */
-            text-align: center !important;
-            vertical-align: middle !important;
-        }
-
-        /* Columna de Posición (Estilo marcador retro) */
-        .col-position {
-            background-color: #0f2439 !important; /* Fondo oscuro */
-            color: #ffffff !important;
+            font-size: 16px !important;
             font-weight: 800 !important;
-            width: 60px !important;
+            color: #c23a3a !important; /* Rojo elegante, no chillón */
+            padding: 14px 0 !important;
+            border-right: 1.5px solid #0f2439 !important; /* Línea vertical fina estilo libreta */
         }
 
-        /* Columna de Jugador */
-        .col-player {
-            text-align: left !important;
-            padding-left: 20px !important;
+        /* Celda del nombre del jugador */
+        .td-name {
+            padding: 14px 0 14px 20px !important;
+            font-size: 15px !important;
             font-weight: 700 !important;
-            color: #0f2439 !important;
+            color: #0f2439 !important; /* Azul marino distinguido */
         }
 
-        /* Columna de Puntos (Color destacado Oro/Amarillo Tenis suavizado) */
-        .col-points {
-            background-color: #fef08a !important; /* Tono amarillo/oro claro que no satura */
-            color: #854d0e !important; /* Texto marrón oscuro para contraste perfecto */
-            font-weight: 800 !important;
-            width: 70px !important;
+        /* Resaltado para filas vacías o diseño de reserva si decides añadir más filas */
+        .row-empty {
+            color: #b5b0a3 !important;
+            font-weight: 400 !important;
+            font-style: italic !important;
         }
 
-        /* Columnas de Estadísticas secundarias */
-        .col-stat {
-            width: 85px !important;
-        }
-
-        /* Columna de Diferencia de Juegos (Última columna) */
-        .col-diff {
-            font-weight: 700 !important;
-            background-color: #f8fafc !important;
-            width: 90px !important;
-        }
-
-        /* Filas alternas con un sutil verde/pista muy claro */
-        .ranking-table tr:nth-child(even) td:not(.col-position):not(.col-points) {
-            background-color: #f4f9f6 !important; 
-        }
-
-        /* Resaltar fila al pasar el ratón (Interactividad) */
-        .ranking-table tr:hover td:not(.col-position):not(.col-points) {
-            background-color: #eaedd4 !important; /* Tono verde tenis muy suave */
-        }
-
-        /* Estilos para números negativos en diferencias */
-        .text-negative {
-            color: #ef4444 !important;
-        }
-        /* Estilos para números positivos en diferencias */
-        .text-positive {
-            color: #10b981 !important;
+        /* Diseño responsivo para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .hero-banner { height: 120px !important; }
+            .logo-placeholder { font-size: 26px !important; }
+            .rankings-grid { margin-top: 20px !important; }
         }
     </style>
 </head>
 <body>
 
-    <div id="final-point-groups-container">
+    <div id="fp-clubs-layout">
 
-        <div class="group-section">
-            <h3 class="group-title">Grupo 1</h3>
-            
-            <div class="table-responsive-wrapper">
+        <section class="hero-banner">
+            <div class="logo-placeholder">Final<span>Point</span></div>
+        </section>
+
+        <div class="rankings-grid">
+
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-shield-emblem">CTC</div>
+                    <div class="club-info-text">Club tennis<br>Cervelló</div>
+                </div>
                 <table class="ranking-table">
-                    <thead>
-                        <tr class="table-header">
-                            <th style="width: 60px;">Posición</th>
-                            <th class="th-player">Jugador</th>
-                            <th style="width: 70px;">Puntos</th>
-                            <th class="col-stat">Partidos<br>Jugados</th>
-                            <th class="col-stat">Partidos<br>Ganados</th>
-                            <th class="col-stat">Partidos<br>Perdidos</th>
-                            <th class="col-stat">Sets<br>Ganados</th>
-                            <th class="col-stat">Sets<br>Perdidos</th>
-                            <th class="col-stat">Juegos<br>Ganados</th>
-                            <th class="col-stat">Juegos<br>Perdidos</th>
-                            <th class="col-diff">Diferencia<br>Juegos</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
-                            <td class="col-position">1</td>
-                            <td class="col-player">Alejo</td>
-                            <td class="col-points">11</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>4</td>
-                            <td>43</td>
-                            <td>33</td>
-                            <td class="col-diff text-positive">10</td>
+                            <td class="td-num">1</td>
+                            <td class="td-name">Alejo M.</td>
                         </tr>
                         <tr>
-                            <td class="col-position">2</td>
-                            <td class="col-player">Esther</td>
-                            <td class="col-points">10</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>6</td>
-                            <td>3</td>
-                            <td>41</td>
-                            <td>29</td>
-                            <td class="col-diff text-positive">12</td>
+                            <td class="td-num">2</td>
+                            <td class="td-name">Esther G.</td>
                         </tr>
                         <tr>
-                            <td class="col-position">3</td>
-                            <td class="col-player">Domenech</td>
-                            <td class="col-points">8</td>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>5</td>
-                            <td>2</td>
-                            <td>38</td>
-                            <td>23</td>
-                            <td class="col-diff text-positive">15</td>
+                            <td class="td-num">3</td>
+                            <td class="td-name">Domenech T.</td>
                         </tr>
                         <tr>
-                            <td class="col-position">4</td>
-                            <td class="col-player">Dani</td>
-                            <td class="col-points">3</td>
-                            <td>2</td>
-                            <td>0</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>4</td>
-                            <td>11</td>
-                            <td>21</td>
-                            <td class="col-diff text-negative">-10</td>
+                            <td class="td-num">4</td>
+                            <td class="td-name">Dani R.</td>
                         </tr>
                         <tr>
-                            <td class="col-position">5</td>
-                            <td class="col-player">Sergio</td>
-                            <td class="col-points">3</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>6</td>
-                            <td>9</td>
-                            <td>36</td>
-                            <td class="col-diff text-negative">-27</td>
+                            <td class="td-num">5</td>
+                            <td class="td-name">Sergio V.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
 
-
-        <div class="group-section">
-            <h3 class="group-title">Grupo 2</h3>
-            
-            <div class="table-responsive-wrapper">
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-shield-emblem" style="color: #ffffff;">CTB</div>
+                    <div class="club-info-text">Club tennis<br>Barcelona</div>
+                </div>
                 <table class="ranking-table">
-                    <thead>
-                        <tr class="table-header">
-                            <th>Posición</th>
-                            <th class="th-player">Jugador</th>
-                            <th>Puntos</th>
-                            <th class="col-stat">Partidos<br>Jugados</th>
-                            <th class="col-stat">Partidos<br>Ganados</th>
-                            <th class="col-stat">Partidos<br>Perdidos</th>
-                            <th class="col-stat">Sets<br>Ganados</th>
-                            <th class="col-stat">Sets<br>Perdidos</th>
-                            <th class="col-stat">Juegos<br>Ganados</th>
-                            <th class="col-stat">Juegos<br>Perdidos</th>
-                            <th class="col-diff">Diferencia<br>Juegos</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
-                            <td class="col-position">1</td>
-                            <td class="col-player">Jose Luis</td>
-                            <td class="col-points">9</td>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>6</td>
-                            <td>0</td>
-                            <td>36</td>
-                            <td>10</td>
-                            <td class="col-diff text-positive">26</td>
+                            <td class="td-num">1</td>
+                            <td class="td-name">Jose Luis F.</td>
                         </tr>
                         <tr>
-                            <td class="col-position">2</td>
-                            <td class="col-player">Sergi Déu</td>
-                            <td class="col-points">7</td>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>4</td>
-                            <td>2</td>
-                            <td>27</td>
-                            <td>26</td>
-                            <td class="col-diff text-positive">1</td>
+                            <td class="td-num">2</td>
+                            <td class="td-name">Sergi Déu</td>
                         </tr>
                         <tr>
-                            <td class="col-position">3</td>
-                            <td class="col-player">Joan Agudo</td>
-                            <td class="col-points">5</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>4</td>
-                            <td>25</td>
-                            <td>34</td>
-                            <td class="col-diff text-negative">-9</td>
+                            <td class="td-num">3</td>
+                            <td class="td-name">Joan Agudo</td>
                         </tr>
                         <tr>
-                            <td class="col-position">4</td>
-                            <td class="col-player">Alberto Diaz</td>
-                            <td class="col-points">3</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>6</td>
-                            <td>19</td>
-                            <td>37</td>
-                            <td class="col-diff text-negative">-18</td>
+                            <td class="td-num">4</td>
+                            <td class="td-name">Alberto Diaz</td>
+                        </tr>
+                        <tr>
+                            <td class="td-num">5</td>
+                            <td class="td-name">Marc Pons</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <div class="ranking-card">
+                <div class="card-header">
+                    <div class="club-shield-emblem">CTG</div>
+                    <div class="club-info-text">Club tennis<br>Girona</div>
+                </div>
+                <table class="ranking-table">
+                    <tbody>
+                        <tr>
+                            <td class="td-num">1</td>
+                            <td class="td-name">Carlos Alcaraz</td>
+                        </tr>
+                        <tr>
+                            <td class="td-num">2</td>
+                            <td class="td-name">Jannik Sinner</td>
+                        </tr>
+                        <tr>
+                            <td class="td-num">3</td>
+                            <td class="td-name">David Ferrer</td>
+                        </tr>
+                        <tr>
+                            <td class="td-num">4</td>
+                            <td class="td-name">Rafa Nadal</td>
+                        </tr>
+                        <tr>
+                            <td class="td-num">5</td>
+                            <td class="td-name">Roberto B.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
     </div>
