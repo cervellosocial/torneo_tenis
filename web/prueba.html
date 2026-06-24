@@ -3,214 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Torneos de Tenis</title>
+    <title>Final Point - Test</title>
     <style>
-        /* --- VARIABLES DE COLOR (Basadas en tu imagen) --- */
-        :root {
-            --azul-oscuro: #0f2439;
-            --amarillo-tenis: #d4e117;
-            --blanco: #ffffff;
-            --gris-fondo: #f8f9fa;
+        /* Versión blindada para evitar conflictos con tu CSS actual */
+        #final-point-experiment {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f8f9fa !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--gris-fondo);
+        #final-point-experiment .navbar {
+            background-color: #0f2439 !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding: 15px 5% !important;
         }
 
-        /* --- MENÚ DE NAVEGACIÓN --- */
-        .navbar {
-            background-color: var(--azul-oscuro);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 5%;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        #final-point-experiment .brand {
+            color: #ffffff !important;
+            font-size: 20px !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
         }
 
-        .navbar .brand {
-            color: var(--blanco);
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
+        #final-point-experiment .brand span {
+            color: #d4e117 !important;
         }
 
-        .navbar .brand span {
-            color: var(--amarillo-tenis);
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
-        .nav-menu {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
+        #final-point-experiment .nav-item {
+            margin-left: 25px !important;
         }
 
-        .nav-item {
-            margin-left: 25px;
+        #final-point-experiment .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
         }
 
-        .nav-link {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
+        #final-point-experiment .hero-banner {
+            background-color: #0f2439 !important;
+            height: 280px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
         }
 
-        .nav-link:hover, .nav-link.active {
-            color: var(--amarillo-tenis);
+        #final-point-experiment .logo-box {
+            color: #ffffff !important;
+            font-size: 45px !important;
+            font-style: italic !important;
+            font-weight: 800 !important;
+            line-height: 0.9 !important;
+            border: 3px solid #d4e117 !important;
+            padding: 10px 20px !important;
+            border-radius: 8px !important;
         }
 
-        /* --- SECCIÓN HERO (Banner Azul) --- */
-        .hero-banner {
-            background-color: var(--azul-oscuro);
-            height: 320px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            text-align: center;
-            padding: 0 20px;
+        #final-point-experiment .logo-box span {
+            color: #d4e117 !important;
         }
 
-        /* Contenedor del Logo */
-        .logo-container {
-            margin-bottom: 20px;
+        #final-point-experiment .cards-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            gap: 20px !important;
+            position: relative !important;
+            top: -50px !important; 
         }
 
-        /* Simulación del logo estilizado en CSS/Texto limpio, pon aquí tu imagen si la tienes separada */
-        .logo-text {
-            color: var(--blanco);
-            font-size: 48px;
-            font-style: italic;
-            font-weight: 800;
-            line-height: 0.9;
-            position: relative;
+        #final-point-experiment .card {
+            background-color: #ffffff !important;
+            flex: 1 !important;
+            min-height: 150px !important;
+            border-radius: 12px !important;
+            padding: 20px !important;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+            box-sizing: border-box !important;
         }
 
-        .logo-text span {
-            display: block;
-            font-size: 38px;
-            padding-left: 15px;
+        #final-point-experiment .card h3 {
+            margin-top: 0 !important;
+            color: #0f2439 !important;
+            font-size: 18px !important;
+            border-bottom: 2px solid #d4e117 !important;
+            padding-bottom: 5px !important;
         }
 
-        .logo-text::after {
-            content: '🎾';
-            font-size: 24px;
-            position: absolute;
-            top: 15px;
-            right: -30px;
+        #final-point-experiment .card p {
+            color: #555 !important;
+            font-size: 13px !important;
+            line-height: 1.4 !important;
         }
 
-        /* --- CONTENEDOR DE TARJETAS ALINEADAS --- */
-        .cards-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            /* El truco de magia: posicionamiento absoluto relativo para pisar el fondo azul */
-            position: relative;
-            top: -60px; 
-        }
-
-        .card {
-            background-color: var(--blanco);
-            flex: 1; /* Hace que las 3 midan exactamente lo mismo */
-            min-height: 180px;
-            border-radius: 16px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra suave idéntica a tu diseño */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-sizing: border-box;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Contenido interno de las tarjetas */
-        .card h3 {
-            margin-top: 0;
-            color: var(--azul-oscuro);
-            font-size: 20px;
-            border-bottom: 2px solid var(--amarillo-tenis);
-            padding-bottom: 8px;
-        }
-
-        .card p {
-            color: #555;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        /* Adaptación para pantallas móviles */
         @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .nav-menu {
-                justify-content: center;
-                width: 100%;
-            }
-            .nav-item {
-                margin: 0 10px;
-            }
-            .cards-container {
-                flex-direction: column;
-                top: -30px;
-                gap: 20px;
-            }
-            .hero-banner {
-                height: 260px;
-            }
+            #final-point-experiment .navbar { flex-direction: column !important; gap: 10px !important; }
+            #final-point-experiment .nav-menu { justify-content: center !important; }
+            #final-point-experiment .cards-container { flex-direction: column !important; top: -20px !important; }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="brand">Final<span>Point</span></a>
-        <ul class="nav-menu">
-            <li><a href="#" class="nav-link active">Inicio</a></li>
-            <li><a href="#torneos" class="nav-link">Torneos actuales</a></li>
-            <li><a href="#rankings" class="nav-link">Rankings</a></li>
-            <li><a href="#historico" class="nav-link">Historial</a></li>
-        </ul>
-    </nav>
+    <div id="final-point-experiment">
 
-    <section class="hero-banner">
-        <div class="logo-container">
-            <div class="logo-text">
-                Final<br><span>Point</span>
+        <nav class="navbar">
+            <a href="#" class="brand">Final<span>Point</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Torneos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Rankings</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero-banner">
+            <div class="logo-box">
+                FINAL<br><span>POINT</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cards-container">
-        
-        <div class="card">
-            <h3>Últimos Playoffs</h3>
-            <p>Consulta las eliminatorias del torneo en curso, cruces directos y resultados actualizados de la jornada.</p>
-        </div>
+        <section class="cards-container">
+            <div class="card">
+                <h3>Últimos Playoffs</h3>
+                <p>Consulta las eliminatorias del torneo en curso y resultados actualizados.</p>
+            </div>
+            <div class="card">
+                <h3>Fase de Grupos</h3>
+                <p>Clasificaciones en tiempo real, partidos jugados y puntos acumulados.</p>
+            </div>
+            <div class="card">
+                <h3>Próximos Partidos</h3>
+                <p>Orden de juego oficial, asignación de pistas y horarios programados.</p>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Fase de Grupos</h3>
-            <p>Clasificaciones en tiempo real, partidos jugados, sets a favor y puntos acumulados de la liga regular.</p>
-        </div>
-
-        <div class="card">
-            <h3>Próximos Partidos</h3>
-            <p>Orden de juego oficial, asignación de pistas y horarios de los partidos programados para este fin de semana.</p>
-        </div>
-
-    </section>
+    </div>
 
 </body>
 </html>
