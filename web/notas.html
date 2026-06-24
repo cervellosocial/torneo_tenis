@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Ranking Interactivo</title>
+    <title>Final Point - Ranking Oficial</title>
     <style>
-        /* Contenedor principal con estética de tierra batida */
+        /* Contenedor principal con la estética de tierra batida de la imagen */
         #fp-ranking-board {
             font-family: 'Segoe UI', Arial, sans-serif !important;
             background-color: #e06927 !important; /* Color arcilla/naranja de fondo */
@@ -17,146 +17,101 @@
             box-sizing: border-box;
         }
 
-        /* Estructura del marcador (Pista de tenis) */
+        /* Estructura del marcador (Inspirado en DALL·E 2025-02-11 12.17.20...) */
         .scoreboard-container {
-            background-color: #1b4d3e !important; /* Verde oscuro de pista */
-            border: 6px solid #ffffff !important;
-            border-radius: 16px !important;
+            background-color: #1b4d3e !important; /* Verde oscuro perimetral */
+            border: 5px solid #ffffff !important;
+            border-radius: 12px !important;
             width: 100% !important;
-            max-width: 750px !important;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4) !important;
+            max-width: 800px !important;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35) !important;
             overflow: hidden;
         }
 
-        /* Cabecera del marcador */
-        .scoreboard-header {
-            background-color: #ffffff !important;
-            color: #1b4d3e !important;
-            padding: 15px 20px !important;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 4px solid #1b4d3e !important;
-        }
-
-        .scoreboard-header h2 {
-            margin: 0 !important;
-            font-size: 22px !important;
-            font-weight: 800 !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1px !important;
-        }
-
-        .tennis-net-effect {
-            font-size: 12px !important;
-            font-weight: bold !important;
-            color: #a4b300 !important;
-            background: #0f2439 !important;
-            padding: 4px 10px !important;
-            border-radius: 4px !important;
-            text-transform: uppercase !important;
-        }
-
-        /* Lista de clasificación (Área Drag & Drop) */
-        .ranking-list {
-            list-style: none !important;
-            margin: 0 !important;
-            padding: 10px !important;
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 8px !important;
-        }
-
-        /* Fila de Jugador */
-        .ranking-item {
-            background-color: #ffffff !important;
-            border-radius: 8px !important;
-            display: flex !important;
-            align-items: center !important;
-            padding: 10px 15px !important;
-            transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-            border-left: 6px solid #a4b300 !important; /* Detalle verde tenis */
-        }
-
-        /* Estado mientras se arrastra un elemento */
-        .ranking-item.dragging {
-            opacity: 0.5 !important;
-            background-color: #f1f5f9 !important;
-            border: 2px dashed #a4b300 !important;
-        }
-
-        /* Agarrador para arrastrar */
-        .drag-handle {
-            cursor: grab !important;
-            color: #94a3b8 !important;
-            font-size: 20px !important;
-            margin-right: 15px !important;
-            user-select: none !important;
-        }
-
-        .drag-handle:active {
-            cursor: grabbing !important;
-        }
-
-        /* Número de posición (Estilo marcador clásico) */
-        .position-badge {
-            background-color: #0f2439 !important; /* Azul oscuro */
-            color: #ffffff !important;
-            font-weight: 800 !important;
-            font-size: 16px !important;
-            width: 32px !important;
-            height: 32px !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            border-radius: 6px !important;
-            margin-right: 20px !important;
-            border: 2px solid #ffffff !important;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
-        }
-
-        /* Nombre del jugador */
-        .player-name {
-            color: #0f2439 !important;
-            font-weight: 700 !important;
-            font-size: 16px !important;
-            flex-grow: 1 !important;
-        }
-
-        /* Elemento estético: Pelotas de tenis como indicadores de racha/puntos de la imagen */
-        .tennis-balls-stats {
-            display: flex !important;
-            gap: 6px !important;
-            align-items: center !important;
-        }
-
-        .tennis-ball {
-            width: 14px !important;
-            height: 14px !important;
-            background-color: #d4e117 !important; /* Amarillo/Verde tenis fosforito */
-            border-radius: 50% !important;
-            border: 1px solid #99a800 !important;
-            position: relative !important;
-            box-shadow: inset -2px -2px 4px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.2) !important;
-        }
-
-        /* Línea curva característica de la pelota de tenis */
-        .tennis-ball::after {
-            content: '' !important;
-            position: absolute !important;
+        /* Tabla estilo Excel / Marcador clásico */
+        .ranking-table {
             width: 100% !important;
-            height: 100% !important;
-            border: 1px solid rgba(255,255,255,0.6) !important;
-            border-radius: 50% !important;
-            left: -3px !important;
-            top: -1px !important;
-            box-sizing: border-box !important;
+            border-collapse: collapse !important;
+            background-color: #ffffff !important;
+            text-align: center !important;
         }
 
-        /* Responsivo */
-        @media (max-width: 480px) {
-            .tennis-balls-stats { display: none !important; }
-            .scoreboard-header h2 { font-size: 18px !important; }
+        /* Fila del título principal (Verde Pista de la foto) */
+        .table-main-header {
+            background-color: #2a664e !important; 
+            color: #ffffff !important;
+        }
+
+        .table-main-header th {
+            padding: 16px !important;
+            font-size: 20px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1.5px !important;
+            border-bottom: 4px solid #ffffff !important;
+        }
+
+        /* Fila de subcabeceras (Gama de verdes claros y oscuros combinados) */
+        .table-sub-header {
+            background-color: #1b4d3e !important;
+            color: #ffffff !important;
+        }
+
+        .table-sub-header th {
+            padding: 12px 10px !important;
+            font-size: 13px !important;
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
+            border: 2px solid #ffffff !important; /* Celdas estilo Excel marcadas */
+        }
+
+        /* Estilos de las celdas de datos */
+        .ranking-table td {
+            padding: 12px 10px !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            color: #0f2439 !important;
+            border: 2px solid #1b4d3e !important; /* Bordes verdes para simular las celdas de la imagen */
+        }
+
+        /* Columna de posición (Color destacado oscuro) */
+        .col-pos {
+            background-color: #0f2439 !important;
+            color: #ffffff !important;
+            font-size: 15px !important;
+            font-weight: 800 !important;
+            width: 50px;
+        }
+
+        /* Columna del nombre del jugador (Alineado a la izquierda para mejor lectura) */
+        .col-player {
+            text-align: left !important;
+            padding-left: 20px !important;
+            font-size: 15px !important;
+        }
+
+        /* Columnas de números / Celdas estadísticas */
+        .col-stat {
+            width: 80px;
+        }
+
+        /* Filas alternas con tonos verde claro sutiles para emular el patrón de la foto */
+        .ranking-table tr:nth-child(even) td:not(.col-pos) {
+            background-color: #f4f8f5 !important; 
+        }
+
+        /* Resaltado para la fila del líder (Opcional - Toque estético) */
+        .ranking-table tr:nth-child(3) .col-player {
+            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis al número 1 */
+        }
+
+        /* Responsivo para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .ranking-table td, .table-sub-header th {
+                padding: 8px 5px !important;
+                font-size: 12px !important;
+            }
+            .col-player { padding-left: 10px !important; font-size: 13px !important; }
         }
     </style>
 </head>
@@ -165,160 +120,103 @@
     <div id="fp-ranking-board">
 
         <div class="scoreboard-container">
-            <!-- Encabezado del Marcador -->
-            <div class="scoreboard-header">
-                <h2>Live Ranking List</h2>
-                <div class="tennis-net-effect">Match Results</div>
-            </div>
-
-            <!-- Lista de Jugadores Arrastrables -->
-            <ul class="ranking-list" id="draggable-list">
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">1</div>
-                    <span class="player-name">Carlos Alcaraz</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">2</div>
-                    <span class="player-name">Jannik Sinner</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">3</div>
-                    <span class="player-name">Novak Djokovic</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">4</div>
-                    <span class="player-name">Daniil Medvedev</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">5</div>
-                    <span class="player-name">Alexander Zverev</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">6</div>
-                    <span class="player-name">Andrey Rublev</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">7</div>
-                    <span class="player-name">Casper Ruud</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">8</div>
-                    <span class="player-name">Stefanos Tsitsipas</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">9</div>
-                    <span class="player-name">Hubert Hurkacz</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-                <li class="ranking-item" draggable="true">
-                    <span class="drag-handle">☰</span>
-                    <div class="position-badge">10</div>
-                    <span class="player-name">Alex de Minaur</span>
-                    <div class="tennis-balls-stats">
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                        <div class="tennis-ball"></div>
-                    </div>
-                </li>
-            </ul>
+            <table class="ranking-table">
+                <thead>
+                    <!-- Cabecera principal -->
+                    <tr class="table-main-header">
+                        <th colspan="5">OFFICIAL TOURNAMENT RANKING</th>
+                    </tr>
+                    <!-- Columnas estilo Excel -->
+                    <tr class="table-sub-header">
+                        <th style="width: 50px;">POS</th>
+                        <th>PLAYER SEAT</th>
+                        <th class="col-stat">PJ</th>
+                        <th class="col-stat">PG</th>
+                        <th class="col-stat">PP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 
+                        INSTRUCCIONES PARA TI: 
+                        Para mover a los jugadores de puesto, simplemente corta la fila entera <tr>...</tr> 
+                        y pégala más arriba o más abajo. Modifica los números manualmente según corresponda.
+                    -->
+                    <tr>
+                        <td class="col-pos">1</td>
+                        <td class="col-player">Carlos Alcaraz</td>
+                        <td class="col-stat">12</td>
+                        <td class="col-stat">10</td>
+                        <td class="col-stat">2</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">2</td>
+                        <td class="col-player">Jannik Sinner</td>
+                        <td class="col-stat">11</td>
+                        <td class="col-stat">9</td>
+                        <td class="col-stat">2</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">3</td>
+                        <td class="col-player">Novak Djokovic</td>
+                        <td class="col-stat">10</td>
+                        <td class="col-stat">8</td>
+                        <td class="col-stat">2</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">4</td>
+                        <td class="col-player">Daniil Medvedev</td>
+                        <td class="col-stat">12</td>
+                        <td class="col-stat">7</td>
+                        <td class="col-stat">5</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">5</td>
+                        <td class="col-player">Alexander Zverev</td>
+                        <td class="col-stat">9</td>
+                        <td class="col-stat">6</td>
+                        <td class="col-stat">3</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">6</td>
+                        <td class="col-player">Andrey Rublev</td>
+                        <td class="col-stat">10</td>
+                        <td class="col-stat">5</td>
+                        <td class="col-stat">5</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">7</td>
+                        <td class="col-player">Casper Ruud</td>
+                        <td class="col-stat">11</td>
+                        <td class="col-stat">5</td>
+                        <td class="col-stat">6</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">8</td>
+                        <td class="col-player">Stefanos Tsitsipas</td>
+                        <td class="col-stat">10</td>
+                        <td class="col-stat">4</td>
+                        <td class="col-stat">6</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">9</td>
+                        <td class="col-player">Hubert Hurkacz</td>
+                        <td class="col-stat">9</td>
+                        <td class="col-stat">3</td>
+                        <td class="col-stat">6</td>
+                    </tr>
+                    <tr>
+                        <td class="col-pos">10</td>
+                        <td class="col-player">Alex de Minaur</td>
+                        <td class="col-stat">10</td>
+                        <td class="col-stat">2</td>
+                        <td class="col-stat">8</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
     </div>
 
-    <!-- Lógica de Arrastrar, Soltar y Actualizar Posiciones -->
-    <script>
-        const list = document.getElementById('draggable-list');
-        let draggingItem = null;
-
-        // Añadir eventos a los elementos de la lista
-        list.addEventListener('dragstart', (e) => {
-            draggingItem = e.target;
-            setTimeout(() => e.target.classList.add('dragging'), 0);
-        });
-
-        list.addEventListener('dragend', (e) => {
-            e.target.classList.remove('dragging');
-            draggingItem = null;
-            updatePositions(); // Re-calcula los números del ranking al soltar
-        });
-
-        list.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            const afterElement = getDragAfterElement(list, e.clientY);
-            if (afterElement == null) {
-                list.appendChild(draggingItem);
-            } else {
-                list.insertBefore(draggingItem, afterElement);
-            }
-        });
-
-        // Función para calcular la posición del cursor respecto a los demás elementos
-        function getDragAfterElement(container, y) {
-            const draggableElements = [...container.querySelectorAll('.ranking-item:not(.dragging)')];
-
-            return draggableElements.reduce((closest, child) => {
-                const box = child.getBoundingClientRect();
-                const offset = y - box.top - box.height / 2;
-                if (offset < 0 && offset > closest.offset) {
-                    return { offset: offset, element: child };
-                } else {
-                    return closest;
-                }
-            }, { offset: Number.NEGATIVE_INFINITY }).element;
-        }
-
-        // Función automática para re-numerar los puestos (1, 2, 3...) según el orden actual
-        function updatePositions() {
-            const badges = list.querySelectorAll('.position-badge');
-            badges.forEach((badge, index) => {
-                badge.textContent = index + 1;
-            });
-        }
-    </script>
 </body>
+</html>
 </html>
