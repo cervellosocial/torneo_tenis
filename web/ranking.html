@@ -103,11 +103,11 @@
             color: #a4b300 !important;
         }
         .header-logo {
-            height: 100% !important;       /* Fuerza a la imagen a usar el alto total del banner */
-            max-height: 300px !important;  /* El límite real de tu hero-banner */
-            max-width: 95% !important;     /* Evita que toque los bordes laterales en móviles */
-            object-fit: contain !important; /* Conserva la proporción para que no se deforme */
-            padding: 10px 0 !important;    /* Un margen mínimo para que no toque las líneas límite */
+            height: 100% !important;
+            max-height: 300px !important;
+            max-width: 95% !important;
+            object-fit: contain !important;
+            padding: 10px 0 !important;
         }
         /* --- CONTENEDOR MULTI-CLUB --- */
         .rankings-grid {
@@ -136,7 +136,7 @@
             transform: translateY(-5px) !important;
         }
 
-        /* Cabecera interna del Club (Estructura de 3 columnas) */
+        /* Cabecera interna del Club */
         .card-header {
             display: flex !important;
             align-items: center !important;
@@ -144,7 +144,6 @@
             padding: 0 20px 15px 20px !important;
         }
 
-        /* Izquierda: Logo Azul con Siglas */
         .club-siglas-logo {
             background-color: #0f2439 !important;
             color: #ffffff !important;
@@ -162,7 +161,6 @@
             flex-shrink: 0 !important;
         }
 
-        /* Centro: Texto del Club */
         .club-info-text {
             color: #0f2439 !important;
             font-size: 15px !important;
@@ -175,7 +173,6 @@
             text-align: left !important;
         }
 
-        /* Derecha: Escudo PNG opcional */
         .club-shield-emblem {
             width: 45px !important;
             height: 45px !important;
@@ -202,7 +199,7 @@
             font-size: 11px !important;
             text-transform: uppercase !important;
             color: #64748b !important;
-            padding: 10px 5px !important;
+            padding: 8px 5px !important;
             font-weight: 700 !important;
             letter-spacing: 0.5px !important;
         }
@@ -215,12 +212,17 @@
             border-bottom: none !important;
         }
 
+        /* Filas más estrechas aplicando menos padding vertical */
         .ranking-table td {
-            padding: 10px 5px !important;
+            padding: 6px 5px !important;
             font-size: 13.5px !important;
             color: #0f2439 !important;
             vertical-align: middle !important;
-            height: 38px; /* Mantiene la altura fija de las filas vacías */
+        }
+
+        /* Altura mínima controlada exclusivamente para celdas vacías */
+        .ranking-table td:empty {
+            height: 28px !important;
         }
 
         /* Elementos específicos de las celdas */
@@ -271,7 +273,6 @@
 
     <div id="fp-clubs-layout">
 
-        <!-- Barra de Navegación Añadida -->
         <nav class="main-navbar">
             <div class="navbar-container">
                 <a href="#" class="brand">Final <span>Point</span></a>
@@ -284,22 +285,16 @@
             </div>
         </nav>
 
-        <!-- Banner Principal Superior -->
         <section class="hero-banner">
             <img class="header-logo" src="./static/img/logo123.jpg" alt="Logo Final Point" style="height: 80px !important; width: auto !important; max-width: 90% !important; object-fit: contain !important;">
         </section>
 
-        <!-- Rejilla de Clasificaciones -->
         <div class="rankings-grid">
 
-            <!-- CUADRO 1: Club Tennis Cervelló -->
             <div class="ranking-card">
                 <div class="card-header">
-                    <!-- Izquierda: Siglas -->
                     <div class="club-siglas-logo">CTC</div>
-                    <!-- Centro: Nombre -->
                     <div class="club-info-text">Club tennis<br>Cervelló</div>
-                    <!-- Derecha: Posibilidad de añadir PNG -->
                     <img class="club-shield-emblem" src="logophs.png" alt="Logo Club Tennis Cervelló">
                 </div>
                 
@@ -368,14 +363,10 @@
                 </table>
             </div>
 
-            <!-- CUADRO 2: Club Tennis Barcelona -->
             <div class="ranking-card">
                 <div class="card-header">
-                    <!-- Izquierda: Siglas -->
                     <div class="club-siglas-logo">CTB</div>
-                    <!-- Centro: Nombre -->
                     <div class="club-info-text">Club tennis<br>B</div>
-                    <!-- Derecha: Posibilidad de añadir PNG -->
                     <img class="club-shield-emblem" src="ruta/de/tu/logo-barcelona.png" alt="Logo Club Tennis Barcelona">
                 </div>
                 
@@ -444,14 +435,10 @@
                 </table>
             </div>
 
-            <!-- CUADRO 3: Club Tennis Girona -->
             <div class="ranking-card">
                 <div class="card-header">
-                    <!-- Izquierda: Siglas -->
                     <div class="club-siglas-logo">CTG</div>
-                    <!-- Centro: Nombre -->
                     <div class="club-info-text">Club tennis<br>G</div>
-                    <!-- Derecha: Posibilidad de añadir PNG -->
                     <img class="club-shield-emblem" src="ruta/de/tu/logo-girona.png" alt="Logo Club Tennis Girona">
                 </div>
                 
