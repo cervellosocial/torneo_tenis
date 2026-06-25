@@ -39,9 +39,11 @@
             color: #a4b300 !important;
         }
 .header-logo {
-    max-height: 120px !important; /* Evita que el logo toque los bordes superior e inferior */
-    max-width: 90% !important;    /* Lo hace responsive para que no se corte en móviles */
-    object-fit: contain !important; /* Mantiene la proporción original de tu imagen */
+    height: 100% !important;       /* Fuerza a la imagen a usar el alto total del banner */
+    max-height: 160px !important;  /* El límite real de tu hero-banner */
+    max-width: 95% !important;     /* Evita que toque los bordes laterales en móviles */
+    object-fit: contain !important; /* Conserva la proporción para que no se deforme */
+    padding: 10px 0 !important;    /* Un margen mínimo para que no toque las líneas límite */
 }
         /* --- CONTENEDOR MULTI-CLUB --- */
         .rankings-grid {
