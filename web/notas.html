@@ -38,7 +38,11 @@
         .logo-placeholder span {
             color: #a4b300 !important;
         }
-
+.header-logo {
+    max-height: 120px !important; /* Evita que el logo toque los bordes superior e inferior */
+    max-width: 90% !important;    /* Lo hace responsive para que no se corte en móviles */
+    object-fit: contain !important; /* Mantiene la proporción original de tu imagen */
+}
         /* --- CONTENEDOR MULTI-CLUB --- */
         .rankings-grid {
             max-width: 1350px !important;
