@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Point - Club Rankings Avanzado</title>
     <style>
+
+        /* --- NUEVA BARRA DE NAVEGACIÓN (Importada de prueba) --- */
+        #fp-clubs-layout .main-navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            padding: 15px 20px !important;
+        }
+
+        #fp-clubs-layout .navbar-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+
+        #fp-clubs-layout .brand {
+            color: #0f2439 !important;
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+        }
+
+        #fp-clubs-layout .brand span {
+            color: #a4b300 !important; /* Verde tenis */
+        }
+
+        #fp-clubs-layout .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 20px !important;
+        }
+
+        #fp-clubs-layout .nav-link {
+            color: #475569 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            transition: color 0.2s ease !important;
+            text-transform: capitalize !important;
+        }
+
+        #fp-clubs-layout .nav-link:hover {
+            color: #a4b300 !important;
+        }
+
+        /* --- ACTUALIZACIÓN DE HERO BANNER Y LOGO (Mismo tamaño que en prueba) --- */
+        #fp-clubs-layout .hero-banner {
+            background-color: #0e2234 !important;
+            height: 250px !important; /* Aumentado a 250px como en prueba */
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            padding: 0 20px !important;
+            border-bottom: 4px solid #a4b300 !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
+        }
+
+        #fp-clubs-layout .logo-box {
+            width: 100% !important;
+            max-width: 650px !important; /* Mismo tamaño que en prueba */
+            height: auto !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        /* Estilo responsivo para la barra de navegación */
+        @media (max-width: 768px) {
+            #fp-clubs-layout .navbar-container {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            #fp-clubs-layout .nav-menu {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 12px 15px !important;
+            }
+        }
         /* Estilos Base de la Página */
         #fp-clubs-layout {
             font-family: 'Segoe UI', Arial, sans-serif !important;
@@ -15,16 +101,7 @@
         }
 
         /* --- BANNER SUPERIOR PREMIUM --- */
-        .hero-banner {
-            background-color: #0e2234 !important;
-            background-image: linear-gradient(180deg, #0e2234 0%, #0a1826 100%) !important;
-            height: 160px !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            border-bottom: 4px solid #a4b300 !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
-        }
+ 
 
         .logo-placeholder {
             color: #ffffff !important;
@@ -38,13 +115,7 @@
         .logo-placeholder span {
             color: #a4b300 !important;
         }
-.header-logo {
-    height: 100% !important;       /* Fuerza a la imagen a usar el alto total del banner */
-    max-height: 300px !important;  /* El límite real de tu hero-banner */
-    max-width: 95% !important;     /* Evita que toque los bordes laterales en móviles */
-    object-fit: contain !important; /* Conserva la proporción para que no se deforme */
-    padding: 10px 0 !important;    /* Un margen mínimo para que no toque las líneas límite */
-}
+
         /* --- CONTENEDOR MULTI-CLUB --- */
         .rankings-grid {
             max-width: 1350px !important;
@@ -203,17 +274,26 @@
     </style>
 </head>
 <body>
+<div id="fp-clubs-layout">
 
-    <div id="fp-clubs-layout">
+        <nav class="main-navbar">
+            <div class="navbar-container">
+                <a href="#" class="brand">Final <span>Point</span></a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">inicio</a></li>
+                    <li><a href="#" class="nav-link">torneos</a></li>
+                    <li><a href="ranking.html" class="nav-link">ranking</a></li>
+                    <li><a href="#" class="nav-link">contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <!-- Banner Principal Superior -->
-      <!-- Banner Principal Superior -->
-<section class="hero-banner">
-    <img class="header-logo" src="./static/img/logo123.jpg" alt="Logo Final Point" style="height: 80px !important; width: auto !important; max-width: 90% !important; object-fit: contain !important;">>
-</section>
+        <section class="hero-banner">
+            <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
+        </section>
 
-        <!-- Rejilla de Clasificaciones -->
         <div class="rankings-grid">
+            ...
 
             <!-- CUADRO 1: Club Tennis Cervelló -->
             <div class="ranking-card">
