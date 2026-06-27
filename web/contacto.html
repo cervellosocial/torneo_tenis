@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Point - Contacto</title>
+    <style>
+        /* Versión blindada y optimizada de Final Point */
+        #final-point-experiment {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f8f9fa !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+        }
+
+        /* --- BARRA DE NAVEGACIÓN --- */
+        #final-point-experiment .main-navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            padding: 15px 20px !important;
+        }
+
+        #final-point-experiment .navbar-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+
+        #final-point-experiment .brand {
+            color: #0f2439 !important;
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+        }
+
+        #final-point-experiment .brand span {
+            color: #a4b300 !important; /* Verde tenis */
+        }
+
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 20px !important;
+        }
+
+        #final-point-experiment .nav-link {
+            color: #475569 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            transition: color 0.2s ease !important;
+            text-transform: capitalize !important;
+        }
+
+        #final-point-experiment .nav-link:hover {
+            color: #a4b300 !important;
+        }
+
+        /* --- HERO BANNER (Estrecho, igual que la galería) --- */
+        #final-point-experiment .hero-banner {
+            background-color: #0e2234 !important;
+            height: 150px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            padding: 0 20px !important;
+        }
+
+        #final-point-experiment .logo-box {
+            width: 100% !important;
+            max-width: 650px !important;
+            height: auto !important;
+            max-height: 110px !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        /* --- SECCIÓN DE CONTACTO --- */
+        #final-point-experiment .contact-section {
+            max-width: 1100px !important;
+            margin: 40px auto !important;
+            padding: 0 20px !important;
+        }
+
+        #final-point-experiment .contact-title {
+            color: #0f2439 !important;
+            font-size: 24px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            margin-bottom: 25px !important;
+            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis */
+            padding-left: 12px !important;
+        }
+
+        /* Distribución en dos columnas */
+        #final-point-experiment .contact-grid {
+            display: flex !important;
+            gap: 40px !important;
+        }
+
+        /* Columna Izquierda: Formulario */
+        #final-point-experiment .contact-form-container {
+            flex: 1.3 !important;
+            background-color: #ffffff !important;
+            border-radius: 14px !important;
+            padding: 30px !important;
+            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.05) !important;
+            border: 1px solid rgba(15, 36, 57, 0.05) !important;
+        }
+
+        #final-point-experiment .form-group {
+            margin-bottom: 20px !important;
+        }
+
+        #final-point-experiment .form-group label {
+            display: block !important;
+            color: #0f2439 !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            margin-bottom: 8px !important;
+        }
+
+        #final-point-experiment .form-control {
+            width: 100% !important;
+            padding: 12px 15px !important;
+            font-size: 14px !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 8px !important;
+            background-color: #f8f9fa !important;
+            box-sizing: border-box !important;
+            font-family: inherit !important;
+            transition: all 0.2s ease !important;
+        }
+
+        #final-point-experiment .form-control:focus {
+            outline: none !important;
+            border-color: #a4b300 !important;
+            background-color: #ffffff !important;
+            box-shadow: 0 0 0 3px rgba(164, 179, 0, 0.1) !important;
+        }
+
+        #final-point-experiment textarea.form-control {
+            resize: vertical !important;
+            min-height: 120px !important;
+        }
+
+        #final-point-experiment .btn-submit {
+            background-color: #0f2439 !important;
+            color: #ffffff !important;
+            border: none !important;
+            padding: 14px 28px !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            border-radius: 8px !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+            width: auto !important;
+        }
+
+        #final-point-experiment .btn-submit:hover {
+            background-color: #a4b300 !important; /* Iluminación en verde tenis */
+            transform: translateY(-2px) !important;
+        }
+
+        /* Columna Derecha: Información */
+        #final-point-experiment .contact-info-container {
+            flex: 1 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 25px !important;
+        }
+
+        #final-point-experiment .info-box {
+            background-color: #ffffff !important;
+            border-radius: 14px !important;
+            padding: 25px !important;
+            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.05) !important;
+            border: 1px solid rgba(15, 36, 57, 0.05) !important;
+        }
+
+        #final-point-experiment .info-box h3 {
+            margin: 0 0 15px 0 !important;
+            color: #0f2439 !important;
+            font-size: 18px !important;
+            font-weight: 700;
+            border-bottom: 2px solid #a4b300 !important;
+            padding-bottom: 6px !important;
+            display: inline-block !important;
+        }
+
+        #final-point-experiment .info-box p {
+            margin: 0 0 10px 0 !important;
+            color: #64748b !important;
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+        }
+
+        #final-point-experiment .info-box p strong {
+            color: #0f2439 !important;
+        }
+
+        #final-point-experiment .info-box p:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        /* Mapa ficticio / Marcador de posición */
+        #final-point-experiment .map-placeholder {
+            background-color: #e2e8f0 !important;
+            border-radius: 14px !important;
+            height: 200px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            color: #475569 !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            border: 1px solid rgba(15, 36, 57, 0.05) !important;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        #final-point-experiment .main-footer {
+            text-align: center !important;
+            padding: 30px !important;
+            margin-top: 60px !important;
+            background-color: #0e2234 !important;
+            color: #ffffff !important;
+            font-size: 13px !important;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 850px) {
+            #final-point-experiment .navbar-container {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            #final-point-experiment .nav-menu {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 12px 15px !important;
+            }
+            #final-point-experiment .contact-grid {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+            #final-point-experiment .contact-section {
+                margin: 25px auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="final-point-experiment">
+
+        <!-- Barra de Navegación -->
+        <nav class="main-navbar">
+            <div class="navbar-container">
+                <a href="#" class="brand">Final<span>Point</span></a>
+                <ul class="nav-menu">
+                    <li><a href="https://finalpoint.es" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">torneos</a></li>
+                    <li><a href="https://finalpoint.es/ronda4.html" class="nav-link">ranking</a></li>
+                    <li><a href="#" class="nav-link">inscripciones</a></li>
+                    <li><a href="https://finalpoint.es/galeria.html" class="nav-link">galería</a></li>
+                    <li><a href="#" class="nav-link">contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sección del Banner Principal -->
+        <section class="hero-banner">
+            <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
+        </section>
+
+        <!-- Nueva Sección de Contacto -->
+        <main class="contact-section">
+            <h2 class="contact-title">Contacto</h2>
+            
+            <div class="contact-grid">
+                
+                <!-- Columna Izquierda: Formulario -->
+                <section class="contact-form-container">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="¿En qué podemos ayudarte?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Escribe aquí tu consulta..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </section>
+
+                <!-- Columna Derecha: Información de Utilidad -->
+                <aside class="contact-info-container">
+                    
+                    <div class="info-box">
+                        <h3>¿Tienes dudas?</h3>
+                        <p>Si quieres saber más sobre las inscripciones de los próximos torneos o necesitas ayuda con el ranking, escríbenos y te responderemos lo antes posible.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Datos de Contacto</h3>
+                        <p><strong>Email:</strong> info@finalpoint.es</p>
+                        <p><strong>Horario de atención:</strong><br>Lunes a Viernes: 9:00 - 20:00</p>
+                    </div>
+
+                    <!-- Espacio listo para insertar un mapa de Google Maps -->
+                    <div class="map-placeholder">
+                        📍 Ubicación de las Pistas Centrales
+                    </div>
+
+                </aside>
+
+            </div>
+        </main>
+
+        <!-- Pie de página integrado -->
+        <footer class="main-footer">
+            <p>&copy; 2026 Final Point. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
