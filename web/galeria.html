@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería de Fotos</title>
+    <style>
+        /* Estilos Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Contenedor de la Galería */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Rejilla de la Galería (Grid) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Tarjetas de las Fotos */
+        .gallery-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Evita que la imagen se deforme */
+            display: block;
+        }
+
+        .gallery-info {
+            padding: 15px;
+        }
+
+        .gallery-info h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .gallery-info p {
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background: #2c3e50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Galería Visual</h1>
+        <p>Una colección de momentos, paisajes y capturas favoritas</p>
+    </header>
+
+    <div class="gallery-container">
+        <main class="gallery-grid">
+            
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" alt="Paisaje de montaña">
+                <div class="gallery-info">
+                    <h3>Montañas Majestuosas</h3>
+                    <p>Un amanecer increíble en los Alpes.</p>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Playa tropical">
+                <div class="gallery-info">
+                    <h3>Costa Tropical</h3>
+                    <p>Aguas cristalinas y arena blanca.</p>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600" alt="Bosque con niebla">
+                <div class="gallery-info">
+                    <h3>Bosque Misterioso</h3>
+                    <p>La naturaleza en su estado más puro.</p>
+                </div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=600" alt="Camino en el bosque">
+                <div class="gallery-info">
+                    <h3>El Sendero</h3>
+                    <p>Caminatas que sanan el alma.</p>
+                </div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1472214222541-d510753a4707?w=600" alt="Atardecer en el campo">
+                <div class="gallery-info">
+                    <h3>Atardecer Dorado</h3>
+                    <p>El fin de un día perfecto.</p>
+                </div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=600" alt="Rayos de sol en los árboles">
+                <div class="gallery-info">
+                    <h3>Luz de Esperanza</h3>
+                    <p>Rayos de sol filtrándose entre hojas.</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mi Galería de Fotos. Creado con ❤️.</p>
+    </footer>
+
+</body>
+</html>
