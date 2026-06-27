@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Tu punto final</title>
-    <!-- Google Fonts: Poppins -->
+    <title>Final Point - Tu punto final (Hero Estrecho)</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome para los Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- REGLAS GENERALES Y VARIABLES --- */
+        /* --- VARIABLES Y REGLAS GENERALES --- */
         :root {
-            --lime: #ccdf13; /* Verde lima/tenis */
-            --bg-dark: #001e3d; /* Azul marino base */
-            --bg-light: #f4f7f6; /* Gris muy claro de fondo */
+            --lime: #ccdf13;
+            --bg-dark: #001e3d;
+            --bg-light: #f4f7f6;
             --text-dark: #1e293b;
             --text-light: #ffffff;
             --card-bg: #ffffff;
@@ -97,39 +95,39 @@
             background-color: #0c335c;
         }
 
-        /* --- HERO SECTION (LA CINTA AZUL COMPLETA) --- */
+        /* --- HERO SECTION MODIFICADA (MÁS ESTRECHA) --- */
         .hero {
-            /* 
-               ESTA ES LA PARTE QUE DEFINIRÁ TU IMAGEN DE FONDO.
-               He usado la imagen de referencia como fondo temporal.
-               Cuando tengas tu imagen final, cambia la URL aquí.
-            */
-            background-image: url('hero.png');
-            background-size: cover; /* Cubre todo el ancho y alto */
-            background-position: center; /* Centra la imagen */
+            background-color: var(--bg-dark);
+            /* REEMPLAZA ESTA URL POR TU ENLACE DE GITHUB RAW */
+            background-image: url('hero.png'); 
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
             
             color: var(--text-light);
-            padding: 100px 8% 220px 8%; /* Aumentado padding inferior para el solapado */
+            
+            /* --- CAMBIOS CLAVE PARA HACERLO MÁS ESTRECHO --- */
+            min-height: 50vh; /* Altura mínima reducida a la mitad (antes era 80vh o similar) */
+            padding: 50px 8% 140px 8%; /* Padding superior e inferior muy reducidos */
+            
             display: flex;
-            justify-content: flex-start; /* Alinea el contenido a la izquierda */
+            justify-content: flex-start;
             align-items: center;
             position: relative;
-            min-height: 80vh; /* Asegura un buen alto */
         }
 
-        /* El contenido de texto se mantiene a la izquierda */
         .hero-content {
-            max-width: 550px;
+            max-width: 500px;
             position: relative;
-            z-index: 10; /* Por encima de la imagen de fondo */
+            z-index: 10;
         }
 
         .hero-content h1 {
-            font-size: 48px;
+            /* Fuente ligeramente más pequeña para el hero estrecho */
+            font-size: 38px; 
             font-weight: 700;
             line-height: 1.1;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .hero-content h1 span {
@@ -138,27 +136,29 @@
 
         .hero-content p {
             color: #cbd5e1;
-            font-size: 16px;
-            margin-bottom: 35px;
-            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
         }
 
         .hero-buttons {
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
         }
 
         .btn-primary {
             background-color: var(--lime);
             color: var(--bg-dark);
-            padding: 14px 28px;
+            /* Padding ligeramente más compacto */
+            padding: 12px 24px; 
             border-radius: 8px;
             font-weight: 700;
             display: flex;
             align-items: center;
             gap: 10px;
             transition: transform 0.2s, background 0.3s;
+            font-size: 14px;
         }
 
         .btn-primary:hover {
@@ -173,18 +173,19 @@
             gap: 8px;
             border-bottom: 1px solid transparent;
             transition: border 0.3s;
+            font-size: 14px;
         }
 
         .btn-secondary:hover {
             border-bottom: 1px solid var(--text-light);
         }
 
-        /* --- CARDS SECTION (SOLAPADO) --- */
+        /* --- MAIN CONTAINER (CARDS SOLAPADAS) --- */
         .main-container {
             padding: 0 8% 60px 8%;
-            margin-top: -120px; /* Hace el efecto de solapar sobre el fondo oscuro */
+            margin-top: -80px; /* Reducido para que se solape menos y se vea más ordenado */
             position: relative;
-            z-index: 20; /* Mayor que el hero content */
+            z-index: 20;
         }
 
         .grid-cards {
@@ -198,15 +199,17 @@
             background-color: var(--card-bg);
             border-radius: 16px;
             padding: 40px 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
             position: relative;
             border-left: 4px solid var(--lime);
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
         }
 
         .card-number {
@@ -251,7 +254,6 @@
             font-size: 15px;
             line-height: 1.6;
             margin-bottom: 35px;
-            min-height: 4.8em; /* Mantiene altura consistente */
         }
 
         .card-link {
@@ -261,7 +263,7 @@
             align-items: center;
             gap: 8px;
             font-size: 15px;
-            margin-top: auto; /* Empuja hacia abajo */
+            margin-top: auto;
         }
 
         .card-link:hover {
@@ -288,7 +290,7 @@
 
         .feature-icon {
             background-color: #f1f5f9;
-            color: #84cc16; /* Verde éxito */
+            color: #84cc16;
             width: 55px;
             height: 55px;
             border-radius: 50%;
@@ -315,10 +317,8 @@
         /* --- RESPONSIVIDAD SUTIL --- */
         @media (max-width: 1024px) {
             .hero {
-                padding: 80px 5% 200px 5%;
-            }
-            .hero-content h1 {
-                font-size: 38px;
+                padding: 50px 5% 120px 5%;
+                min-height: 40vh;
             }
         }
 
@@ -335,8 +335,10 @@
             }
             .hero {
                 min-height: auto;
-                padding: 60px 5% 180px 5%;
-                background-position: left center; /* Ajuste para móvil */
+                padding: 40px 5% 110px 5%;
+            }
+            .hero-content h1 {
+                font-size: 32px;
             }
             .grid-cards {
                 grid-template-columns: 1fr;
@@ -346,7 +348,6 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">FINAL <span>POINT</span></div>
         <ul class="nav-links">
@@ -362,7 +363,6 @@
         </a>
     </nav>
 
-    <!-- HERO SECTION (LA CINTA AZUL CON TU IMAGEN DE FONDO) -->
     <header class="hero">
         <div class="hero-content">
             <h1>Tu pasión.<br><span>Tu punto final.</span></h1>
@@ -377,51 +377,36 @@
             </div>
         </div>
         
-        <!-- 
-           TU IMAGEN DE FONDO COMPLETA (incluyendo la pista y la pelota)
-           se renderiza detrás de este contenido gracias al CSS de .hero
-        -->
-    </header>
+        </header>
 
-    <!-- MAIN CONTAINER (Tarjetas Solapadas) -->
     <main class="main-container">
         
-        <!-- Grid de 3 Columnas principales -->
         <section class="grid-cards">
             
-            <!-- Tarjeta 01 -->
             <div class="card">
                 <span class="card-number">01</span>
                 <div class="card-header-box">
-                    <div class="card-icon">
-                        <i class="fa-regular fa-calendar"></i>
-                    </div>
+                    <div class="card-icon"><i class="fa-regular fa-calendar"></i></div>
                     <h3>Historial</h3>
                 </div>
                 <p>Consulta torneos anteriores y resultados históricos.</p>
                 <a href="#" class="card-link">Ver historial &rarr;</a>
             </div>
 
-            <!-- Tarjeta 02 -->
             <div class="card">
                 <span class="card-number">02</span>
                 <div class="card-header-box">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-baseball"></i>
-                    </div>
+                    <div class="card-icon"><i class="fa-solid fa-baseball"></i></div>
                     <h3>Torneos</h3>
                 </div>
                 <p>Calendario y cuadro de torneos de la temporada 2026/27.</p>
                 <a href="#" class="card-link">Ver torneos &rarr;</a>
             </div>
 
-            <!-- Tarjeta 03 -->
             <div class="card">
                 <span class="card-number">03</span>
                 <div class="card-header-box">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-chart-simple"></i>
-                    </div>
+                    <div class="card-icon"><i class="fa-solid fa-chart-simple"></i></div>
                     <h3>Ranking</h3>
                 </div>
                 <p>Consulta la clasificación actualizada de los jugadores.</p>
@@ -430,7 +415,6 @@
 
         </section>
 
-        <!-- Barra de Características Inferior -->
         <section class="features-bar">
             
             <div class="feature-item">
