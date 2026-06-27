@@ -95,10 +95,9 @@
             background-color: #0c335c;
         }
 
-        /* --- HERO SECTION MODIFICADA (MÁS ESTRECHA) --- */
+        /* --- HERO SECTION MODIFICADA (MÁS ESTRECHA Y CON ESPACIO PARA LOGO) --- */
         .hero {
             background-color: var(--bg-dark);
-            /* REEMPLAZA ESTA URL POR TU ENLACE DE GITHUB RAW */
             background-image: url('hero.png'); 
             background-size: cover;
             background-position: center;
@@ -106,14 +105,14 @@
             
             color: var(--text-light);
             
-            /* --- CAMBIOS CLAVE PARA HACERLO MÁS ESTRECHO --- */
-            min-height: 50vh; /* Altura mínima reducida a la mitad (antes era 80vh o similar) */
-            padding: 50px 8% 140px 8%; /* Padding superior e inferior muy reducidos */
+            min-height: 50vh; 
+            padding: 50px 8% 140px 8%; 
             
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between; /* Distribuye el texto a la izquierda y el logo a la derecha */
             align-items: center;
             position: relative;
+            gap: 40px;
         }
 
         .hero-content {
@@ -123,7 +122,6 @@
         }
 
         .hero-content h1 {
-            /* Fuente ligeramente más pequeña para el hero estrecho */
             font-size: 38px; 
             font-weight: 700;
             line-height: 1.1;
@@ -150,7 +148,6 @@
         .btn-primary {
             background-color: var(--lime);
             color: var(--bg-dark);
-            /* Padding ligeramente más compacto */
             padding: 12px 24px; 
             border-radius: 8px;
             font-weight: 700;
@@ -180,10 +177,29 @@
             border-bottom: 1px solid var(--text-light);
         }
 
+        /* NUEVO: Contenedor para el logo del Hero */
+        .hero-logo-container {
+            position: relative;
+            z-index: 10;
+            max-width: 300px; /* Controla el ancho máximo de tu diseño */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            /* Filtro opcional por si subes un logo negro y quieres que se vea blanco */
+            /* filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.3)); */
+        }
+
         /* --- MAIN CONTAINER (CARDS SOLAPADAS) --- */
         .main-container {
             padding: 0 8% 60px 8%;
-            margin-top: -80px; /* Reducido para que se solape menos y se vea más ordenado */
+            margin-top: -80px; 
             position: relative;
             z-index: 20;
         }
@@ -320,6 +336,9 @@
                 padding: 50px 5% 120px 5%;
                 min-height: 40vh;
             }
+            .hero-logo-container {
+                max-width: 250px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -335,10 +354,23 @@
             }
             .hero {
                 min-height: auto;
-                padding: 40px 5% 110px 5%;
+                padding: 40px 5% 130px 5%;
+                flex-direction: column; /* Coloca el texto arriba y el logo abajo en móviles */
+                text-align: center;
+                justify-content: center;
+            }
+            .hero-content {
+                max-width: 100%;
             }
             .hero-content h1 {
                 font-size: 32px;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-logo-container {
+                max-width: 200px;
+                margin-top: 20px; /* Separación del texto en móvil */
             }
             .grid-cards {
                 grid-template-columns: 1fr;
@@ -377,7 +409,11 @@
             </div>
         </div>
         
-        </header>
+        <div class="hero-logo-container">
+            <img src="logo123.jpg" alt="Logo Final Point">
+        </div>
+        
+    </header>
 
     <main class="main-container">
         
