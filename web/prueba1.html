@@ -3,244 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Test</title>
-    <style>
-        /* --- ESTILOS BASE --- */
-        #final-point-experiment {
-            font-family: 'Segoe UI', Arial, sans-serif !important;
-            background-color: #f8f9fa !important; /* Fondo gris claro idéntico a la foto */
-            margin: 0 !important;
-            padding: 0 !important;
-            min-height: 100vh;
-        }
-
-        /* --- BARRA DE NAVEGACIÓN --- */
-        #final-point-experiment .main-navbar {
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
-            position: sticky !important;
-            top: 0 !important;
-            z-index: 1000 !important;
-            padding: 15px 20px !important;
-        }
-
-        #final-point-experiment .navbar-container {
-            max-width: 1100px !important;
-            margin: 0 auto !important;
-            display: flex !important;
-            justify-content: space-between !important;
-            align-items: center !important;
-        }
-
-        #final-point-experiment .brand {
-            color: #0f2439 !important;
-            font-size: 22px !important;
-            font-weight: 800 !important;
-            text-decoration: none !important;
-            text-transform: uppercase !important;
-            letter-spacing: 1px !important;
-        }
-
-        #final-point-experiment .brand span {
-            color: #a4b300 !important; /* Verde tenis */
-        }
-
-        #final-point-experiment .nav-menu {
-            list-style: none !important;
-            display: flex !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            gap: 20px !important;
-        }
-
-        #final-point-experiment .nav-link {
-            color: #475569 !important;
-            text-decoration: none !important;
-            font-weight: 600 !important;
-            font-size: 14px !important;
-            transition: color 0.2s ease !important;
-            text-transform: capitalize !important;
-        }
-
-        #final-point-experiment .nav-link:hover {
-            color: #a4b300 !important;
-        }
-
-        /* --- HERO BANNER --- */
-        #final-point-experiment .hero-banner {
-            background-color: #0e2234 !important;
-            height: 250px !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            text-align: center !important;
-            padding: 0 20px !important;
-        }
-
-        #final-point-experiment .logo-box {
-            width: 100% !important;
-            max-width: 650px !important;
-            height: auto !important;
-            display: block !important;
-            margin: 0 auto !important;
-        }
-
-        /* --- CONTENEDOR DE TARJETAS (ESTRECHADO COMO EN LA FOTO) --- */
-        #final-point-experiment .cards-container {
-            max-width: 850px !important; /* Ancho ajustado para que queden compactas */
-            margin: 0 auto !important;
-            padding: 0 20px !important;
-            display: flex !important;
-            justify-content: center !important;
-            gap: 25px !important;
-            position: relative !important;
-            top: -40px !important; 
-        }
-
-        #final-point-experiment .card-link {
-            flex: 1 !important;
-            max-width: 260px !important;
-            text-decoration: none !important;
-            display: flex !important;
-        }
-
-        /* --- TARJETAS EXACTAS DE LA IMAGEN --- */
-        #final-point-experiment .card {
-            background-color: #ffffff !important; /* Blanco puro */
-            flex: 1 !important;
-            min-height: 160px !important;
-            border-radius: 14px !important; /* Esquinas curvas suaves */
-            padding: 22px !important;
-            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.08) !important; /* Sombra suave */
-            box-sizing: border-box !important;
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
-            border: 1px solid rgba(15, 36, 57, 0.05) !important;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-        }
-
-        /* Efecto hover dinámico */
-        #final-point-experiment .card-link:hover .card {
-            transform: translateY(-7px) !important;
-            box-shadow: 0 15px 30px rgba(15, 36, 57, 0.15) !important;
-            border-color: #a4b300 !important;
-        }
-
-        /* Títulos de las tarjetas */
-        #final-point-experiment .card h3 {
-            margin-top: 0 !important;
-            color: #0f2439 !important;
-            font-size: 17px !important;
-            font-weight: 700 !important;
-            border-bottom: 3px solid #a4b300 !important; /* Línea verde inferior */
-            padding-bottom: 6px !important;
-            transition: color 0.3s ease !important;
-        }
-
-        #final-point-experiment .card-link:hover .card h3 {
-            color: #a4b300 !important;
-        }
-
-        /* Párrafos interiores */
-        #final-point-experiment .card p {
-            color: #64748b !important; /* Gris slate */
-            font-size: 13px !important;
-            line-height: 1.5 !important;
-            margin: 10px 0 15px 0 !important;
-        }
-
-        /* Enlace "Ver →" */
-        #final-point-experiment .ver-mas {
-            color: #0f2439 !important;
-            font-weight: 700 !important;
-            font-size: 13px !important;
-            align-self: flex-end !important;
-            display: flex !important;
-            align-items: center !important;
-            gap: 5px !important;
-            transition: transform 0.2s ease, color 0.2s ease !important;
-        }
-
-        #final-point-experiment .card-link:hover .ver-mas {
-            color: #a4b300 !important;
-            transform: translateX(3px) !important;
-        }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 768px) {
-            #final-point-experiment .navbar-container {
-                flex-direction: column !important;
-                gap: 12px !important;
-            }
-            #final-point-experiment .nav-menu {
-                flex-wrap: wrap !important;
-                justify-content: center !important;
-                gap: 12px 15px !important;
-            }
-            #final-point-experiment .cards-container { 
-                flex-direction: column !important; 
-                align-items: center !important;
-                top: -20px !important; 
-            }
-            #final-point-experiment .card-link {
-                width: 100% !important;
-                max-width: 320px !important;
+    <title>Final Point - Torneos de Tenis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNav: '#0e1e38',
+                        brandDark: '#03152d',
+                        brandDark2: '#082549',
+                        brandLime: '#c2db11',
+                    }
+                }
             }
         }
-    </style>
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-gray-50 font-sans antialiased">
 
-    <div id="final-point-experiment">
-
-        <nav class="main-navbar">
-            <div class="navbar-container">
-                <a href="#" class="brand">Final<span>Point</span></a>
-                <ul class="nav-menu">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">torneos</a></li>
-                    <li><a href="https://finalpoint.es/ronda4.html" class="nav-link">ranking</a></li>
-                    <li><a href="#" class="nav-link">inscripciones</a></li>
-                    <li><a href="#" class="nav-link">galería</a></li>
-                    <li><a href="#" class="nav-link">contacto</a></li>
-                </ul>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2 text-2xl font-black text-brandDark tracking-tight">
+                <span>FINAL</span><span class="text-brandLime">POINT</span>
             </div>
-        </nav>
-
-        <section class="hero-banner">
-            <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
-        </section>
-
-        <section class="cards-container">
             
-            <a href="notas.html" class="card-link">
-                <div class="card">
-                    <h3>Historial</h3>
-                    <p>Consultar torneos anteriores y resultados históricos.</p>
-                    <span class="ver-mas">Ver →</span>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+                <a href="#" class="text-brandDark border-b-2 border-brandLime pb-1">Home</a>
+                <a href="#" class="hover:text-brandDark transition">Torneos</a>
+                <a href="#" class="hover:text-brandDark transition">Ranking</a>
+                <a href="#" class="hover:text-brandDark transition">Inscripciones</a>
+                <a href="#" class="hover:text-brandDark transition">Galería</a>
+                <a href="#" class="hover:text-brandDark transition">Contacto</a>
+            </nav>
+
+            <button class="bg-brandDark text-white px-5 py-2.5 rounded-lg text-sm font-medium flex items-center space-x-2 hover:bg-brandDark2 transition">
+                <i class="far fa-user"></i>
+                <span>Iniciar sesión</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="relative bg-gradient-to-r from-brandDark via-brandDark2 to-brandDark text-white overflow-hidden pb-32">
+        <div class="absolute right-0 top-0 w-1/2 h-full opacity-20 bg-radial-gradient from-brandLime to-transparent pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6">
+                <h1 class="text-5xl md:text-6xl font-black tracking-tight leading-tight">
+                    Tu pasión.<br>
+                    Tu <span class="text-brandLime">punto final.</span>
+                </h1>
+                <p class="text-gray-300 text-lg max-w-md font-light leading-relaxed">
+                    Gestionamos torneos de tenis con transparencia, competitividad y pasión por el deporte.
+                </p>
+                <div class="pt-4 flex flex-wrap items-center gap-6">
+                    <a href="#" class="bg-brandLime text-brandDark px-6 py-3 rounded-xl font-bold text-sm flex items-center space-x-2 shadow-lg hover:bg-opacity-90 transition">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Ver próximos torneos</span>
+                    </a>
+                    <a href="#" class="text-sm font-semibold border-b border-white border-opacity-40 pb-1 hover:border-brandLime transition flex items-center space-x-2">
+                        <span>Cómo funciona</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
                 </div>
-            </a>
+            </div>
 
-            <a href="#" class="card-link">
-                <div class="card">
-                    <h3>Torneos</h3>
-                    <p>Calendario y cuadro de torneos de la temporada 2026/27.</p>
-                    <span class="ver-mas">Ver →</span>
+            <div class="flex flex-col items-center justify-center relative h-64 md:h-auto">
+                <div class="text-center border-2 border-brandLime border-opacity-20 rounded-full p-8 p-y-12">
+                    <span class="italic text-4xl font-serif font-bold block">Final</span>
+                    <span class="text-5xl font-black tracking-widest text-brandLime uppercase block -mt-2">Point</span>
                 </div>
-            </a>
+                <div class="absolute -right-4 bottom-4 w-32 h-32 bg-brandLime rounded-full blur-xs opacity-80 shadow-2xl border-4 border-white border-opacity-30 hidden lg:block"></div>
+            </div>
+        </div>
+    </main>
 
-            <a href="ranking.html" class="card-link">
-                <div class="card">
-                    <h3>Ranking</h3>
-                    <p>Consultar la clasificación actualizada de los jugadores.</p>
-                    <span class="ver-mas">Ver →</span>
+    <section class="max-w-7xl mx-auto px-6 -mt-20 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-3xl p-8 shadow-xl border-l-4 border-brandLime relative overflow-hidden group hover:shadow-2xl transition duration-300">
+                <span class="absolute top-6 left-6 text-brandLime font-bold text-lg">01</span>
+                <div class="flex flex-col items-center text-center mt-4 space-y-4">
+                    <div class="w-16 h-16 bg-brandDark rounded-full flex items-center justify-center text-brandLime text-2xl shadow-inner">
+                        <i class="far fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark">Historial</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Consulta torneos anteriores y resultados históricos.
+                    </p>
+                    <a href="#" class="text-brandDark font-bold text-sm pt-2 border-b border-gray-300 group-hover:border-brandLime transition flex items-center space-x-2">
+                        <span>Ver historial</span>
+                        <i class="fas fa-arrow-right text-xs text-brandLime"></i>
+                    </a>
                 </div>
-            </a>
+            </div>
 
-        </section>
+            <div class="bg-white rounded-3xl p-8 shadow-xl border-l-4 border-brandLime relative overflow-hidden group hover:shadow-2xl transition duration-300">
+                <span class="absolute top-6 left-6 text-brandLime font-bold text-lg">02</span>
+                <div class="flex flex-col items-center text-center mt-4 space-y-4">
+                    <div class="w-16 h-16 bg-brandDark rounded-full flex items-center justify-center text-brandLime text-2xl shadow-inner">
+                        <i class="fas fa-table-tennis-paddle-ball"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark">Torneos</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Calendario y cuadro de torneos de la temporada 2026/27.
+                    </p>
+                    <a href="#" class="text-brandDark font-bold text-sm pt-2 border-b border-gray-300 group-hover:border-brandLime transition flex items-center space-x-2">
+                        <span>Ver torneos</span>
+                        <i class="fas fa-arrow-right text-xs text-brandLime"></i>
+                    </a>
+                </div>
+            </div>
 
-    </div>
+            <div class="bg-white rounded-3xl p-8 shadow-xl border-l-4 border-brandLime relative overflow-hidden group hover:shadow-2xl transition duration-300">
+                <span class="absolute top-6 left-6 text-brandLime font-bold text-lg">03</span>
+                <div class="flex flex-col items-center text-center mt-4 space-y-4">
+                    <div class="w-16 h-16 bg-brandDark rounded-full flex items-center justify-center text-brandLime text-2xl shadow-inner">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark">Ranking</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Consulta la clasificación actualizada de los jugadores.
+                    </p>
+                    <a href="#" class="text-brandDark font-bold text-sm pt-2 border-b border-gray-300 group-hover:border-brandLime transition flex items-center space-x-2">
+                        <span>Ver ranking</span>
+                        <i class="fas fa-arrow-right text-xs text-brandLime"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 my-16">
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-lime-50 text-brandLime rounded-full flex items-center justify-center text-lg shrink-0">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brandDark text-sm">Transparencia</h4>
+                    <p class="text-xs text-gray-500">Gestión clara y resultados verificados.</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-lime-50 text-brandLime rounded-full flex items-center justify-center text-lg shrink-0">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brandDark text-sm">Competitividad</h4>
+                    <p class="text-xs text-gray-500">Torneos para todos los niveles y categorías.</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-lime-50 text-brandLime rounded-full flex items-center justify-center text-lg shrink-0">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brandDark text-sm">Comunidad</h4>
+                    <p class="text-xs text-gray-500">Conectamos jugadores y clubes.</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-lime-50 text-brandLime rounded-full flex items-center justify-center text-lg shrink-0">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brandDark text-sm">Actualizado</h4>
+                    <p class="text-xs text-gray-500">Información en tiempo real siempre disponible.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>
