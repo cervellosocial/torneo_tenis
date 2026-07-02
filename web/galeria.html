@@ -1,3 +1,5 @@
+HTML
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -69,7 +71,7 @@
         /* --- HERO BANNER --- */
         #final-point-experiment .hero-banner {
             background-color: #0e2234 !important;
-            height: 140px !important; /* <--- CAMBIA ESTE VALOR (Estaba en 250px) */
+            height: 140px !important; 
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -81,14 +83,13 @@
             width: 100% !important;
             max-width: 650px !important;
             height: auto !important;
-           /* max-height: 110px !important;  <--- AÑADE ESTO para que el logo se encoja proporcionalmente si la barra es muy estrecha */
             display: block !important;
             margin: 0 auto !important;
         }
 
         /* --- SECCIÓN NUEVA: GALERÍA DE FOTOS --- */
         #final-point-experiment .gallery-section {
-            max-width: 1100px !important; /* Alineado con el contenedor del navbar */
+            max-width: 1100px !important; 
             margin: 40px auto !important;
             padding: 0 20px !important;
         }
@@ -99,7 +100,7 @@
             font-weight: 800 !important;
             text-transform: uppercase !important;
             margin-bottom: 25px !important;
-            border-left: 5px solid #a4b300 !important; /* Detalle verde tenis a la izquierda */
+            border-left: 5px solid #a4b300 !important; 
             padding-left: 12px !important;
         }
 
@@ -111,7 +112,7 @@
 
         #final-point-experiment .gallery-item {
             background-color: #ffffff !important;
-            border-radius: 14px !important; /* Mismo radio que las tarjetas originales */
+            border-radius: 14px !important; 
             overflow: hidden !important;
             box-shadow: 0 10px 25px rgba(15, 36, 57, 0.05) !important;
             border: 1px solid rgba(15, 36, 57, 0.05) !important;
@@ -119,14 +120,16 @@
         }
 
         #final-point-experiment .gallery-item:hover {
-            transform: translateY(-7px) !important; /* Mismo efecto de elevación */
+            transform: translateY(-7px) !important; 
             box-shadow: 0 15px 30px rgba(15, 36, 57, 0.12) !important;
-            border-color: #a4b300 !important; /* Borde verde dinámico al pasar el cursor */
+            border-color: #a4b300 !important; 
         }
 
+        /* --- CAMBIO AQUÍ: Proporción 70:31 --- */
         #final-point-experiment .gallery-item img {
             width: 100% !important;
-            height: 220px !important;
+            height: auto !important;
+            aspect-ratio: 70 / 31 !important;
             object-fit: cover !important;
             display: block !important;
         }
@@ -144,7 +147,7 @@
 
         #final-point-experiment .gallery-info p {
             margin: 0 !important;
-            color: #64748b !important; /* Gris slate reglamentario */
+            color: #64748b !important; 
             font-size: 13px !important;
             line-height: 1.5 !important;
         }
@@ -246,3 +249,13 @@
 
 </body>
 </html>
+
+¿Qué cambios se aplicaron?
+
+En la línea 99 del código se reemplazó la altura fija (height: 220px !important;) por lo siguiente:
+
+    height: auto !important;: Permite que el alto se calcule dinámicamente según el ancho disponible en la cuadrícula.
+
+    aspect-ratio: 70 / 31 !important;: Fuerza la proporción exacta que solicitaste (estilo panorámico muy moderno).
+
+    object-fit: cover !important;: Asegura que las fotos llenen el espacio perfectamente sin deformarse ni estirarse, cortando los bordes excedentes si es necesario.
