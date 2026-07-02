@@ -5,352 +5,478 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12 Horas Nocturnas - Torneo de Tenis</title>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
-            --accent-color: #ccff00; /* Verde tenis nocturno */
-            --text-muted: #94a3b8;
+        /* Integración y Coherencia Estética con Final Point */
+        #final-point-experiment {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f8f9fa !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+            color: #475569 !important;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        /* --- BARRA DE NAVEGACIÓN --- */
+        #final-point-experiment .main-navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            padding: 15px 20px !important;
+            border-bottom: 1px solid rgba(15, 36, 57, 0.05) !important;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding-bottom: 60px;
+        #final-point-experiment .navbar-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
         }
 
-        header {
-            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--accent-color);
+        #final-point-experiment .brand {
+            color: #0f2439 !important;
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--text-color);
-            margin-bottom: 10px;
+        #final-point-experiment .brand span {
+            color: #a4b300 !important; /* Verde tenis */
         }
 
-        header h1 span {
-            color: var(--accent-color);
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 15px !important;
+            flex-wrap: wrap !important;
         }
 
-        header p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
+        #final-point-experiment .nav-link {
+            color: #475569 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 13px !important;
+            padding: 6px 12px !important;
+            border-radius: 8px !important;
+            transition: all 0.2s ease !important;
         }
 
-        /* Navegación rápida */
-        nav {
-            background-color: #111827;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            border-bottom: 1px solid #374151;
+        #final-point-experiment .nav-link:hover {
+            color: #0f2439 !important; 
+            background-color: rgba(164, 179, 0, 0.15) !important; /* Resalte suave en verde */
         }
 
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-            padding: 6px 12px;
-            border-radius: 20px;
-            background-color: var(--card-bg);
-            transition: all 0.3s ease;
+        /* --- HERO BANNER --- */
+        #final-point-experiment .hero-banner {
+            background-color: #0e2234 !important;
+            padding: 40px 20px !important;
+            text-align: center !important;
+            border-bottom: 4px solid #a4b300 !important;
         }
 
-        nav a:hover {
-            background-color: var(--accent-color);
-            color: #000;
-            font-weight: bold;
+        #final-point-experiment .hero-banner h1 {
+            color: #ffffff !important;
+            font-size: 2.2rem !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            margin-bottom: 5px !important;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
+        #final-point-experiment .hero-banner h1 span {
+            color: #a4b300 !important;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
+        #final-point-experiment .hero-banner p {
+            color: #94a3b8 !important;
+            font-size: 1.1rem !important;
+            font-weight: 600 !important;
+        }
+
+        /* --- CONTENEDOR DE CONTENIDO (ESTILO SECCIONES) --- */
+        #final-point-experiment .container {
+            max-width: 1100px !important;
+            margin: 30px auto !important;
+            padding: 0 20px !important;
+        }
+
+        #final-point-experiment .grid {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 25px !important;
         }
 
         @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
+            #final-point-experiment .grid {
+                grid-template-columns: repeat(2, 1fr) !important;
             }
-            .full-width {
-                grid-column: span 2;
+            #final-point-experiment .full-width {
+                grid-column: span 2 !important;
             }
         }
 
-        section {
-            background-color: var(--card-bg);
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-            border-left: 4px solid var(--accent-color);
-            scroll-margin-top: 70px; /* Para que el menú no tape el título al hacer clic */
+        /* --- SECCIONES COMO TARJETAS DINÁMICAS --- */
+        #final-point-experiment section {
+            background-color: #ffffff !important;
+            border-radius: 14px !important;
+            padding: 25px !important;
+            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.05) !important;
+            border: 1px solid rgba(15, 36, 57, 0.05) !important;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+            scroll-margin-top: 90px !important; /* Ajuste para que la barra sticky no tape los títulos */
         }
 
-        section h2 {
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            color: var(--text-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        #final-point-experiment section:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 15px 30px rgba(15, 36, 57, 0.12) !important;
+            border-color: #a4b300 !important;
         }
 
-        section h2 span {
-            color: var(--accent-color);
-            font-size: 1.1rem;
+        #final-point-experiment section h2 {
+            margin-top: 0 !important;
+            color: #0f2439 !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            border-bottom: 3px solid #a4b300 !important;
+            padding-bottom: 8px !important;
+            margin-bottom: 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
         }
 
-        ul {
-            list-style: none;
+        #final-point-experiment section h2 span {
+            color: #a4b300 !important;
+            font-weight: 800 !important;
         }
 
-        li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 20px;
-            color: #e2e8f0;
+        /* --- LISTAS Y DETALLES --- */
+        #final-point-experiment ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
         }
 
-        li::before {
-            content: "•";
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.3rem;
-            position: absolute;
-            left: 0;
-            top: -2px;
+        #final-point-experiment li {
+            margin-bottom: 12px !important;
+            position: relative !important;
+            padding-left: 20px !important;
+            color: #475569 !important;
+            font-size: 14px !important;
+            line-height: 1.6 !important;
         }
 
-        .nested-list {
-            margin-top: 8px;
-            margin-left: 15px;
+        #final-point-experiment li::before {
+            content: "•" !important;
+            color: #a4b300 !important;
+            font-weight: bold !important;
+            font-size: 1.4rem !important;
+            position: absolute !important;
+            left: 0 !important;
+            top: -3px !important;
         }
 
-        .nested-list li::before {
-            content: "-";
+        #final-point-experiment .nested-list {
+            margin-top: 8px !important;
+            margin-left: 15px !important;
         }
 
-        /* Estilos destacados para Precios y Destacados */
-        .price-box {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background: #111827;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 15px;
+        #final-point-experiment .nested-list li::before {
+            content: "-" !important;
+            font-size: 1rem !important;
+            top: 0 !important;
         }
 
-        .price-item {
-            text-align: center;
+        /* --- CAJAS ESPECIALES (EQUIPOS, PRECIOS, NOTAS) --- */
+        #final-point-experiment .important-note {
+            background-color: rgba(15, 36, 57, 0.02) !important;
+            border: 1px solid rgba(15, 36, 57, 0.08) !important;
+            border-left: 4px solid #a4b300 !important;
+            padding: 15px 20px !important;
+            border-radius: 8px !important;
+            margin: 15px 0 !important;
         }
 
-        .price-item .label {
-            font-size: 1rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
+        #final-point-experiment .teams-container {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 12px !important;
+            margin-top: 15px !important;
         }
 
-        .price-item .val {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--accent-color);
+        @media (min-width: 576px) {
+            #final-point-experiment .teams-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
         }
 
-        .important-note {
-            background-color: rgba(204, 255, 0, 0.1);
-            border: 1px dashed var(--accent-color);
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
-            font-size: 0.95rem;
+        #final-point-experiment .team-box {
+            background: #f8f9fa !important;
+            border: 1px solid rgba(15, 36, 57, 0.06) !important;
+            border-radius: 8px !important;
+            padding: 12px 15px !important;
         }
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
-            margin-top: 50px;
+        #final-point-experiment .team-box strong {
+            color: #0f2439 !important;
+            display: block !important;
+            margin-bottom: 6px !important;
+            border-bottom: 1px solid rgba(15, 36, 57, 0.1) !important;
+            padding-bottom: 4px !important;
+        }
+
+        #final-point-experiment .team-box ul li {
+            font-size: 13px !important;
+            margin-bottom: 4px !important;
+        }
+
+        #final-point-experiment .price-box {
+            display: flex !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            background: #0f2439 !important;
+            padding: 25px !important;
+            border-radius: 12px !important;
+            margin-top: 15px !important;
+        }
+
+        #final-point-experiment .price-item {
+            text-align: center !important;
+        }
+
+        #final-point-experiment .price-item .label {
+            font-size: 12px !important;
+            color: #94a3b8 !important;
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
+            letter-spacing: 1px !important;
+        }
+
+        #final-point-experiment .price-item .val {
+            font-size: 2rem !important;
+            font-weight: 800 !important;
+            color: #a4b300 !important;
+        }
+
+        /* --- FOOTER --- */
+        #final-point-experiment footer {
+            text-align: center !important;
+            padding: 30px !important;
+            color: #64748b !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            border-top: 1px solid rgba(15, 36, 57, 0.08) !important;
+            margin-top: 50px !important;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Torneo 12 Horas <span>Nocturnas</span>2026</h1>
-        <p>Club de tenis Cervelló</p>
-    </header>
+    <div id="final-point-experiment">
 
-    <nav>
-        <a href="#sistema">1. Equipos</a>
-        <a href="#general">2. Info General</a>
-        <a href="#formato">3. Formato</a>
-        <a href="#clasificacion">4. Clasificación</a>
-        <a href="#puntualidad">5. Puntualidad</a>
-        <a href="#pistas">6. Pistas y Arbitraje</a>
-        <a href="#camisetas">8. Camisetas</a>
-        <a href="#descanso">9. Descanso</a>
-        <a href="#precios">10. Precios</a>
-    </nav>
-
-    <div class="container">
-        <div class="grid">
-
-            <!-- 1. SISTEMA DE EQUIPOS -->
-            <section id="sistema" class="full-width">
-                <h2><span>01.</span> Sistema de Equipos</h2>
-                <ul>
-                    <li>El torneo se disputará por equipos, identificados cada uno por un color.</li>
-                      <div class="important-note">
-                   <strong>📋 Equipos participantes:</strong>
-<li>🟡 Amarillo: 1. Santi 2. Cristina Fernandez 3. Alex 4. Ana 5. Cristina Ger</li>
-<li>🔴 Rojo: 1. Dani Álvarez 2. Manel  3. Marc 4. Adrián 5. Adriana</li>
-<li>🔵 Azul. 1. Esther 2. Jose Antonio 3. Sole 4. Axel 5. Montse</li>
-<li>🟢 Verde: 1. Javier 2. Oscar 3. Dani Cejas 4. Pol 5. Natalia</li>
-                </div>
-                    <li>Cada participante formará parte de un equipo y contribuirá con los juegos que consiga ganar tanto en sus partidos individuales como de dobles.</li>
-                    <li>Aunque los partidos se jueguen de forma individual o por parejas, el objetivo final es sumar el mayor número posible de juegos para tu equipo.</li>
-                    <li>Todos los juegos obtenidos durante la noche se acumularán en la clasificación general de cada color.</li>
-                    <li>El equipo que finalice el torneo con más juegos acumulados será proclamado <strong>CAMPEÓN de las 12 Horas Nocturnas</strong>.</li>
-                    <li>La composición de los equipos será confeccionada por la organización, intentando equilibrar el nivel general de los grupos.</li>
-                    <li>Antes del inicio del torneo se entregará a cada participante una camiseta del color de su equipo para facilitar la identificación y fomentar el espíritu de grupo.</li>
+        <!-- Barra de Navegación Coherente -->
+        <nav class="main-navbar">
+            <div class="navbar-container">
+                <a href="#" class="brand">Final<span>Point</span></a>
+                <ul class="nav-menu">
+                    <li><a href="#sistema" class="nav-link">Equipos</a></li>
+                    <li><a href="#general" class="nav-link">General</a></li>
+                    <li><a href="#formato" class="nav-link">Formato</a></li>
+                    <li><a href="#clasificacion" class="nav-link">Clasificación</a></li>
+                    <li><a href="#puntualidad" class="nav-link">Puntualidad</a></li>
+                    <li><a href="#pistas" class="nav-link">Reglas</a></li>
+                    <li><a href="#camisetas" class="nav-link">Camisetas</a></li>
+                    <li><a href="#descanso" class="nav-link">Descanso</a></li>
+                    <li><a href="#precios" class="nav-link">Precios</a></li>
                 </ul>
-            </section>
+            </div>
+        </nav>
 
-            <!-- 2. INFORMACIÓN GENERAL -->
-            <section id="general">
-                <h2><span>02.</span> Información General</h2>
-                <ul>
-                    <li>Cada jugador/a disputará 3 partidos individuales y 2 partidos de dobles, como mínimo.</li>
-                    <li>Es imprescindible revisar el cuadro de horarios y cruces antes del torneo.</li>
-                    <li>Aunque algún participante tenga partidos consecutivos, la duración reducida de los encuentros permitirá mantener el ritmo de competición.</li>
-                </ul>
-                <div class="important-note">
-                    La organización podrá modificar cualquiera de los aspectos de esta normativa en función del número de inscritos para garantizar el mejor funcionamiento del torneo.
-                </div>
-            </section>
+        <!-- Banner Principal -->
+        <section class="hero-banner">
+            <h1>Torneo 12 Horas <span>Nocturnas</span> 2026</h1>
+            <p>Club de Tenis Cervelló</p>
+        </section>
 
-            <!-- 3. FORMATO DE COMPETICIÓN -->
-            <section id="formato">
-                <h2><span>03.</span> Formato de Competición</h2>
-                <ul>
-                    <li>Todos los partidos tendrán una duración máxima de <strong>35 minutos</strong>.</li>
-                    <li>Se jugará por sistema de juegos acumulados.</li>
-                    <li>Se aplicará la norma de <strong>punto de oro</strong> en todos los juegos que lleguen a 40 iguales.</li>
-                    <li>Una vez finalizado el tiempo de juego, se dará por terminado el partido inmediatamente.</li>
-                    <li>Si al finalizar el tiempo el marcador está empatado, se tendrá en cuenta únicamente el total de juegos completos finalizados. No habrá juego de desempate adicional.</li>
-                </ul>
-            </section>
+        <!-- Contenedor Principal de Reglas -->
+        <div class="container">
+            <div class="grid">
 
-            <!-- 4. CLASIFICACIÓN -->
-            <section id="clasificacion">
-                <h2><span>04.</span> Clasificación y Desempates</h2>
-                <ul>
-                    <li>Todos los juegos obtenidos se sumarán a la clasificación general de su color.</li>
-                    <li>El equipo campeón será aquel que consiga el mayor número de juegos acumulados.</li>
-                    <li>En caso de empate final, los criterios serán:
-                        <ul class="nested-list">
-                            <li>Diferencia total de juegos.</li>
-                            <li>Mayor número de partidos ganados.</li>
-                            <li>Sorteo, si fuese necesario.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+                <!-- 1. SISTEMA DE EQUIPOS -->
+                <section id="sistema" class="full-width">
+                    <h2><span>01.</span> Sistema de Equipos</h2>
+                    <ul>
+                        <li>El torneo se disputará por equipos, identificados cada uno por un color.</li>
+                        
+                        <div class="important-note">
+                            <strong style="color:#0f2439; display:block; margin-bottom:10px;">📋 Equipos Participantes Confirmados:</strong>
+                            <div class="teams-container">
+                                <div class="team-box">
+                                    <strong>🟡 Equipo Amarillo</strong>
+                                    <ul>
+                                        <li>1. Santi</li>
+                                        <li>2. Cristina Fernandez</li>
+                                        <li>3. Alex</li>
+                                        <li>4. Ana</li>
+                                        <li>5. Cristina Ger</li>
+                                    </ul>
+                                </div>
+                                <div class="team-box">
+                                    <strong>🔴 Equipo Rojo</strong>
+                                    <ul>
+                                        <li>1. Dani Álvarez</li>
+                                        <li>2. Manel</li>
+                                        <li>3. Marc</li>
+                                        <li>4. Adrián</li>
+                                        <li>5. Adriana</li>
+                                    </ul>
+                                </div>
+                                <div class="team-box">
+                                    <strong>🔵 Equipo Azul</strong>
+                                    <ul>
+                                        <li>1. Esther</li>
+                                        <li>2. Jose Antonio</li>
+                                        <li>3. Sole</li>
+                                        <li>4. Axel</li>
+                                        <li>5. Montse</li>
+                                    </ul>
+                                </div>
+                                <div class="team-box">
+                                    <strong>🟢 Equipo Verde</strong>
+                                    <ul>
+                                        <li>1. Javier</li>
+                                        <li>2. Oscar</li>
+                                        <li>3. Dani Cejas</li>
+                                        <li>4. Pol</li>
+                                        <li>5. Natalia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- 5. PUNTUALIDAD -->
-            <section id="puntualidad">
-                <h2><span>05.</span> Puntualidad y Penalizaciones</h2>
-                <ul>
-                    <li>Todos los jugadores deberán estar preparados en su pista a la hora exacta.</li>
-                    <li>Se recomienda llegar al club con suficiente antelación.</li>
-                    <li>Los retrasos serán penalizados con <strong>1 juego por cada 5 minutos</strong> de demora.</li>
-                    <li>Si el retraso supera los 15 minutos, se podrá dar el partido por perdido (otorgando 6 juegos al rival). Si se avisa con antelación, se intentará sustituir por un jugador del mismo grupo y nivel inferior.</li>
-                </ul>
-            </section>
+                        <li>Cada participante formará parte de un equipo y contribuirá con los juegos que consiga ganar tanto en sus partidos individuales como de dobles.</li>
+                        <li>Aunque los partidos se jueguen de forma individual o por parejas, el objetivo final es sumar el mayor número posible de juegos para tu equipo.</li>
+                        <li>Todos los juegos obtenidos durante la noche se acumularán en la clasificación general de cada color.</li>
+                        <li>El equipo que finalice el torneo con más juegos acumulados será proclamado <strong>CAMPEÓN de las 12 Horas Nocturnas</strong>.</li>
+                        <li>La composición de los equipos será confeccionada por la organización, intentando equilibrar el nivel general de los grupos.</li>
+                        <li>Antes del inicio del torneo se entregará a cada participante una camiseta del color de su equipo para facilitar la identificación y fomentar el espíritu de grupo.</li>
+                    </ul>
+                </section>
 
-            <!-- 6 y 7. CAMBIOS DE PISTA Y ARBITRAJE -->
-            <section id="pistas">
-                <h2><span>06-07.</span> Pistas y Arbitraje</h2>
-                <ul>
-                    <li>Entre partidos habrá un margen de <strong>5 minutos</strong> para cambios de pista. Se ruega rapidez al abandonar la pista.</li>
-                    <li>Los propios jugadores serán responsables de arbitrar sus partidos de forma honesta y deportiva.</li>
-                    <li>La organización ayudará especialmente a los jugadores más pequeños. Cuando no sea posible, se solicitará la colaboración de dos padres/madres (uno por cada parte).</li>
-                    <li>Ante cualquier desacuerdo, la decisión final corresponderá a la organización.</li>
-                </ul>
-            </section>
-
-            <!-- 8. CAMISETAS DE EQUIPO -->
-            <section id="camisetas">
-                <h2><span>08.</span> Camisetas de Equipo</h2>
-                <ul>
-                    <li>El club entregará una camiseta identificativa del color de cada equipo antes de empezar.</li>
-                    <li>Se recomienda traer una <strong>segunda camiseta personal</strong> del mismo color o similar.</li>
-                    <li>Los participantes que lleguen primero tendrán mayor disponibilidad de tallas.</li>
-                    <li>A quienes avisen que llegan tarde, se les reservará una camiseta según talla estimada.</li>
-                </ul>
-            </section>
-
-            <!-- 9. DESCANSO Y ZONA FAMILIAR -->
-            <section id="descanso">
-                <h2><span>09.</span> Descanso y Zona Familiar</h2>
-                <ul>
-                    <li>La actividad se desarrollará durante toda la noche.</li>
-                    <li>Los más pequeños podrán descansar en la <strong>zona habilitada junto a la pista 3</strong>.</li>
-                    <li><strong>Se permite montar tiendas de campaña</strong> para facilitar el descanso entre partidos.</li>
-                    <li>Los menores permanecerán bajo la responsabilidad de sus padres o tutores durante todo el evento.</li>
-                </ul>
-            </section>
-
-            <!-- 10. PRECIOS -->
-            <section id="precios" class="full-width">
-                <h2><span>10.</span> Precios de Inscripción</h2>
-                <div class="price-box">
-                    <div class="price-item">
-                        <div class="label">Socios</div>
-                        <div class="val">GRATIS</div>
+                <!-- 2. INFORMACIÓN GENERAL -->
+                <section id="general">
+                    <h2><span>02.</span> Información General</h2>
+                    <ul>
+                        <li>Cada jugador/a disputará 3 partidos individuales y 2 partidos de dobles, como mínimo.</li>
+                        <li>Es imprescindible revisar el cuadro de horarios y cruces antes del torneo.</li>
+                        <li>Aunque algún participante tenga partidos consecutivos, la duración reducida de los encuentros permitirá mantener el ritmo de competición.</li>
+                    </ul>
+                    <div class="important-note" style="margin-bottom: 0;">
+                        La organización podrá modificar cualquiera de los aspectos de esta normativa en función del número de inscritos para garantizar el mejor funcionamiento del torneo.
                     </div>
-                    <div class="price-item">
-                        <div class="label">No Socios</div>
-                        <div class="val">15 €</div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
+                <!-- 3. FORMATO DE COMPETICIÓN -->
+                <section id="formato">
+                    <h2><span>03.</span> Formato de Competición</h2>
+                    <ul>
+                        <li>Todos los partidos tendrán una duración máxima de <strong>35 minutos</strong>.</li>
+                        <li>Se jugará por sistema de juegos acumulados.</li>
+                        <li>Se aplicará la norma de <strong>punto de oro</strong> en todos los juegos que lleguen a 40 iguales.</li>
+                        <li>Una vez finalizado el tiempo de juego, se dará por terminado el partido inmediatamente.</li>
+                        <li>Si al finalizar el tiempo el marcador está empatado, se tendrá en cuenta únicamente el total de juegos completos finalizados. No habrá juego de desempate adicional.</li>
+                    </ul>
+                </section>
+
+                <!-- 4. CLASIFICACIÓN -->
+                <section id="clasificacion">
+                    <h2><span>04.</span> Clasificación y Desempates</h2>
+                    <ul>
+                        <li>Todos los juegos obtenidos se sumarán a la clasificación general de su color.</li>
+                        <li>El equipo campeón será aquel que consiga el mayor número de juegos acumulados.</li>
+                        <li>En caso de empate final, los criterios serán:
+                            <ul class="nested-list">
+                                <li>Diferencia total de juegos.</li>
+                                <li>Mayor número de partidos ganados.</li>
+                                <li>Sorteo, si fuese necesario.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 5. PUNTUALIDAD -->
+                <section id="puntualidad">
+                    <h2><span>05.</span> Puntualidad y Penalizaciones</h2>
+                    <ul>
+                        <li>Todos los jugadores deberán estar preparados en su pista a la hora exacta.</li>
+                        <li>Se recomienda llegar al club con suficiente antelación.</li>
+                        <li>Los retrasos serán penalizados con <strong>1 juego por cada 5 minutos</strong> de demora.</li>
+                        <li>Si el retraso supera los 15 minutos, se podrá dar el partido por perdido (otorgando 6 juegos al rival). Si se avisa con antelación, se intentará sustituir por un jugador del mismo grupo y nivel inferior.</li>
+                    </ul>
+                </section>
+
+                <!-- 6 y 7. CAMBIOS DE PISTA Y ARBITRAJE -->
+                <section id="pistas">
+                    <h2><span>06-07.</span> Pistas y Arbitraje</h2>
+                    <ul>
+                        <li>Entre partidos habrá un margen de <strong>5 minutos</strong> para cambios de pista. Se ruega rapidez al abandonar la pista.</li>
+                        <li>Los propios jugadores serán responsables de arbitrar sus partidos de forma honesta y deportiva.</li>
+                        <li>La organización ayudará especialmente a los jugadores más pequeños. Cuando no sea posible, se solicitará la colaboración de dos padres/madres (uno por cada parte).</li>
+                        <li>Ante cualquier desacuerdo, la decisión final corresponderá a la organización.</li>
+                    </ul>
+                </section>
+
+                <!-- 8. CAMISETAS DE EQUIPO -->
+                <section id="camisetas">
+                    <h2><span>08.</span> Camisetas de Equipo</h2>
+                    <ul>
+                        <li>El club entregará una camiseta identificativa del color de cada equipo antes de empezar.</li>
+                        <li>Se recomienda traer una <strong>segunda camiseta personal</strong> del mismo color o similar.</li>
+                        <li>Los participantes que lleguen primero tendrán mayor disponibilidad de tallas.</li>
+                        <li>A quienes avisen que llegan tarde, se les reservará una camiseta según talla estimada.</li>
+                    </ul>
+                </section>
+
+                <!-- 9. DESCANSO Y ZONA FAMILIAR -->
+                <section id="descanso">
+                    <h2><span>09.</span> Descanso y Zona Familiar</h2>
+                    <ul>
+                        <li>La actividad se desarrollará durante toda la noche.</li>
+                        <li>Los más pequeños podrán descansar en la <strong>zona habilitada junto a la pista 3</strong>.</li>
+                        <li><strong>Se permite montar tiendas de campaña</strong> para facilitar el descanso entre partidos.</li>
+                        <li>Los menores permanecerán bajo la responsabilidad de sus padres o tutores durante todo el evento.</li>
+                    </ul>
+                </section>
+
+                <!-- 10. PRECIOS -->
+                <section id="precios" class="full-width">
+                    <h2><span>10.</span> Precios de Inscripción</h2>
+                    <div class="price-box">
+                        <div class="price-item">
+                            <div class="label">Socios</div>
+                            <div class="val">GRATIS</div>
+                        </div>
+                        <div class="price-item">
+                            <div class="label">No Socios</div>
+                            <div class="val">15 €</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2026 Torneo de Tenis 12 Horas Nocturnas. ¡Disfruta del tenis bajo las estrellas!</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Torneo de Tenis 12 Horas Nocturnas - Club de Tenis Cervelló. Powered by Final Point</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
