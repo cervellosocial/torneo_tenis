@@ -1,11 +1,23 @@
+¡Entendido perfectamente! He unificado las dos páginas para que la sección de las **12 Horas Nocturnas** comparta exactamente la misma identidad visual, colores, tipografía y estructura que tu página de inicio (`Final Point`), pero manteniendo su contenido y la navegación interna específica de las reglas.
+
+### 🛠️ ¿Qué mejoras y cambios he aplicado?
+
+1. **Navegación Unificada:** Se ha integrado la barra de navegación superior blanca de la web principal con tu menú (`Home`, `Torneos`, `Ranking`, etc.).
+2. **Submenú de Reglas:** Tal como me pediste, el menú de las secciones del torneo (`1. Equipos`, `2. Info General`...) se ha trasladado justo debajo del banner principal (`hero-banner`). Además, se ha estilizado para que use el verde tenis original (`#a4b300`).
+3. **Esquema de Colores Coherente:** Se eliminó el fondo oscuro masivo de la propuesta anterior y se adaptó al fondo limpio (`#f8f9fa`) y tarjetas blancas con sombras suaves de la web corporativa.
+4. **Listados de Equipos Mejorados:** La caja de equipos ahora tiene un diseño mucho más limpio y visualmente integrado.
+
+Aquí tienes el código completo, blindado y listo para guardar como tu nueva página del torneo:
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12 Horas Nocturnas - Torneo de Tenis</title>
+    <title>12 Horas Nocturnas - Final Point</title>
     <style>
-        /* Integración y Coherencia Estética con Final Point */
+        /* --- ESTILOS BASE UNIFICADOS (FINAL POINT) --- */
         #final-point-experiment {
             font-family: 'Segoe UI', Arial, sans-serif !important;
             background-color: #f8f9fa !important;
@@ -13,9 +25,10 @@
             padding: 0 !important;
             min-height: 100vh;
             color: #475569 !important;
+            line-height: 1.6 !important;
         }
 
-        /* --- BARRA DE NAVEGACIÓN --- */
+        /* --- BARRA DE NAVEGACIÓN PRINCIPAL --- */
         #final-point-experiment .main-navbar {
             background-color: #ffffff !important;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
@@ -23,7 +36,6 @@
             top: 0 !important;
             z-index: 1000 !important;
             padding: 15px 20px !important;
-            border-bottom: 1px solid rgba(15, 36, 57, 0.05) !important;
         }
 
         #final-point-experiment .navbar-container {
@@ -44,7 +56,7 @@
         }
 
         #final-point-experiment .brand span {
-            color: #a4b300 !important; /* Verde tenis */
+            color: #a4b300 !important; /* Verde tenis original */
         }
 
         #final-point-experiment .nav-menu {
@@ -52,23 +64,20 @@
             display: flex !important;
             margin: 0 !important;
             padding: 0 !important;
-            gap: 15px !important;
-            flex-wrap: wrap !important;
+            gap: 20px !important;
         }
 
         #final-point-experiment .nav-link {
             color: #475569 !important;
             text-decoration: none !important;
             font-weight: 600 !important;
-            font-size: 13px !important;
-            padding: 6px 12px !important;
-            border-radius: 8px !important;
-            transition: all 0.2s ease !important;
+            font-size: 14px !important;
+            transition: color 0.2s ease !important;
+            text-transform: capitalize !important;
         }
 
         #final-point-experiment .nav-link:hover {
-            color: #0f2439 !important; 
-            background-color: rgba(164, 179, 0, 0.15) !important; /* Resalte suave en verde */
+            color: #a4b300 !important;
         }
 
         /* --- HERO BANNER --- */
@@ -82,10 +91,10 @@
         #final-point-experiment .hero-banner h1 {
             color: #ffffff !important;
             font-size: 2.2rem !important;
-            font-weight: 800 !important;
             text-transform: uppercase !important;
             letter-spacing: 1px !important;
             margin-bottom: 5px !important;
+            font-weight: 800 !important;
         }
 
         #final-point-experiment .hero-banner h1 span {
@@ -95,20 +104,53 @@
         #final-point-experiment .hero-banner p {
             color: #94a3b8 !important;
             font-size: 1.1rem !important;
-            font-weight: 600 !important;
+            margin: 0 !important;
         }
 
-        /* --- CONTENEDOR DE CONTENIDO (ESTILO SECCIONES) --- */
+        /* --- SUBMENÚ DE REGLAS (DEBAJO DEL HERO) --- */
+        #final-point-experiment .rules-nav {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+            padding: 12px 10px !important;
+            display: flex !important;
+            justify-content: center !important;
+            flex-wrap: wrap !important;
+            gap: 8px !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+            position: sticky !important;
+            top: 67px !important; /* Se posiciona justo debajo de la navbar principal */
+            z-index: 999 !important;
+        }
+
+        #final-point-experiment .rules-nav a {
+            color: #475569 !important;
+            text-decoration: none !important;
+            font-size: 0.85rem !important;
+            font-weight: 600 !important;
+            padding: 6px 14px !important;
+            border-radius: 20px !important;
+            background-color: #f1f5f9 !important;
+            transition: all 0.2s ease !important;
+            border: 1px solid #e2e8f0 !important;
+        }
+
+        #final-point-experiment .rules-nav a:hover {
+            background-color: #a4b300 !important;
+            color: #0f2439 !important;
+            border-color: #a4b300 !important;
+        }
+
+        /* --- CONTENEDOR Y REJILLA --- */
         #final-point-experiment .container {
-            max-width: 1100px !important;
-            margin: 30px auto !important;
+            max-width: 1000px !important;
+            margin: 40px auto !important;
             padding: 0 20px !important;
         }
 
         #final-point-experiment .grid {
             display: grid !important;
             grid-template-columns: 1fr !important;
-            gap: 25px !important;
+            gap: 30px !important;
         }
 
         @media (min-width: 768px) {
@@ -120,59 +162,52 @@
             }
         }
 
-        /* --- SECCIONES COMO TARJETAS DINÁMICAS --- */
-        #final-point-experiment section {
+        /* --- SECCIONES / TARJETAS DE CONTENIDO --- */
+        #final-point-experiment section.content-card {
             background-color: #ffffff !important;
+            padding: 30px !important;
             border-radius: 14px !important;
-            padding: 25px !important;
             box-shadow: 0 10px 25px rgba(15, 36, 57, 0.05) !important;
             border: 1px solid rgba(15, 36, 57, 0.05) !important;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-            scroll-margin-top: 90px !important; /* Ajuste para que la barra sticky no tape los títulos */
+            border-left: 4px solid #a4b300 !important; /* Detalle verde tenis lateral */
+            scroll-margin-top: 130px !important; /* Margen para que no tape el submenú fijo */
         }
 
-        #final-point-experiment section:hover {
-            transform: translateY(-4px) !important;
-            box-shadow: 0 15px 30px rgba(15, 36, 57, 0.12) !important;
-            border-color: #a4b300 !important;
-        }
-
-        #final-point-experiment section h2 {
+        #final-point-experiment section.content-card h2 {
             margin-top: 0 !important;
             color: #0f2439 !important;
             font-size: 18px !important;
             font-weight: 700 !important;
             text-transform: uppercase !important;
-            border-bottom: 3px solid #a4b300 !important;
-            padding-bottom: 8px !important;
+            letter-spacing: 0.5px !important;
+            border-bottom: 2px solid #f1f5f9 !important;
+            padding-bottom: 10px !important;
             margin-bottom: 20px !important;
             display: flex !important;
             align-items: center !important;
             gap: 8px !important;
         }
 
-        #final-point-experiment section h2 span {
+        #final-point-experiment section.content-card h2 span {
             color: #a4b300 !important;
-            font-weight: 800 !important;
         }
 
-        /* --- LISTAS Y DETALLES --- */
-        #final-point-experiment ul {
+        /* --- LISTAS --- */
+        #final-point-experiment .content-card ul {
             list-style: none !important;
-            padding: 0 !important;
             margin: 0 !important;
+            padding: 0 !important;
         }
 
-        #final-point-experiment li {
-            margin-bottom: 12px !important;
+        #final-point-experiment .content-card li {
+            margin-bottom: 14px !important;
             position: relative !important;
-            padding-left: 20px !important;
+            padding-left: 22px !important;
             color: #475569 !important;
-            font-size: 14px !important;
-            line-height: 1.6 !important;
+            font-size: 14.5px !important;
         }
 
-        #final-point-experiment li::before {
+        #final-point-experiment .content-card li::before {
             content: "•" !important;
             color: #a4b300 !important;
             font-weight: bold !important;
@@ -183,27 +218,27 @@
         }
 
         #final-point-experiment .nested-list {
-            margin-top: 8px !important;
+            margin-top: 10px !important;
             margin-left: 15px !important;
         }
 
         #final-point-experiment .nested-list li::before {
             content: "-" !important;
-            font-size: 1rem !important;
-            top: 0 !important;
+            font-size: 1.1rem !important;
+            top: -1px !important;
         }
 
-        /* --- CAJAS ESPECIALES (EQUIPOS, PRECIOS, NOTAS) --- */
+        /* --- BLOQUES DE NOTAS E INFORMACIÓN --- */
         #final-point-experiment .important-note {
-            background-color: rgba(15, 36, 57, 0.02) !important;
-            border: 1px solid rgba(15, 36, 57, 0.08) !important;
-            border-left: 4px solid #a4b300 !important;
-            padding: 15px 20px !important;
-            border-radius: 8px !important;
-            margin: 15px 0 !important;
+            background-color: #f8fafc !important;
+            border: 1px solid #e2e8f0 !important;
+            padding: 20px !important;
+            border-radius: 10px !important;
+            margin: 20px 0 !important;
+            font-size: 14px !important;
         }
 
-        #final-point-experiment .teams-container {
+        #final-point-experiment .teams-box {
             display: grid !important;
             grid-template-columns: 1fr !important;
             gap: 12px !important;
@@ -211,36 +246,36 @@
         }
 
         @media (min-width: 576px) {
-            #final-point-experiment .teams-container {
+            #final-point-experiment .teams-box {
                 grid-template-columns: repeat(2, 1fr) !important;
             }
         }
 
-        #final-point-experiment .team-box {
-            background: #f8f9fa !important;
-            border: 1px solid rgba(15, 36, 57, 0.06) !important;
+        #final-point-experiment .team-badge {
+            padding: 12px !important;
             border-radius: 8px !important;
-            padding: 12px 15px !important;
+            font-weight: 600 !important;
+            font-size: 13.5px !important;
+            border-left: 5px solid transparent !important;
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02) !important;
         }
 
-        #final-point-experiment .team-box strong {
-            color: #0f2439 !important;
-            display: block !important;
-            margin-bottom: 6px !important;
-            border-bottom: 1px solid rgba(15, 36, 57, 0.1) !important;
-            padding-bottom: 4px !important;
-        }
+        #final-point-experiment .team-badge ul { margin-top: 5px !important; }
+        #final-point-experiment .team-badge li { margin-bottom: 4px !important; font-size: 13px !important; padding-left: 15px !important;}
+        #final-point-experiment .team-badge li::before { color: inherit !important; font-size: 1.1rem !important; }
 
-        #final-point-experiment .team-box ul li {
-            font-size: 13px !important;
-            margin-bottom: 4px !important;
-        }
+        #final-point-experiment .team-yellow { border-left-color: #eab308 !important; background-color: #fef9c3 !important; color: #713f12 !important;}
+        #final-point-experiment .team-red { border-left-color: #ef4444 !important; background-color: #fee2e2 !important; color: #991b1b !important;}
+        #final-point-experiment .team-blue { border-left-color: #3b82f6 !important; background-color: #dbeafe !important; color: #1e40af !important;}
+        #final-point-experiment .team-green { border-left-color: #22c55e !important; background-color: #dcfce7 !important; color: #166534 !important;}
 
+        /* --- PRECIOS --- */
         #final-point-experiment .price-box {
             display: flex !important;
             justify-content: space-around !important;
             align-items: center !important;
-            background: #0f2439 !important;
+            background-color: #0e2234 !important;
             padding: 25px !important;
             border-radius: 12px !important;
             margin-top: 15px !important;
@@ -259,7 +294,7 @@
         }
 
         #final-point-experiment .price-item .val {
-            font-size: 2rem !important;
+            font-size: 1.8rem !important;
             font-weight: 800 !important;
             color: #a4b300 !important;
         }
@@ -270,9 +305,25 @@
             padding: 30px !important;
             color: #64748b !important;
             font-size: 13px !important;
-            font-weight: 600 !important;
-            border-top: 1px solid rgba(15, 36, 57, 0.08) !important;
-            margin-top: 50px !important;
+            border-top: 1px solid #e2e8f0 !important;
+            background-color: #ffffff !important;
+            margin-top: 60px !important;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            #final-point-experiment .navbar-container {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            #final-point-experiment .nav-menu {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 12px 15px !important;
+            }
+            #final-point-experiment .rules-nav {
+                top: 104px !important;
+            }
         }
     </style>
 </head>
@@ -280,81 +331,76 @@
 
     <div id="final-point-experiment">
 
-        <!-- Barra de Navegación Coherente -->
+        <!-- Barra de Navegación Principal Unificada -->
         <nav class="main-navbar">
             <div class="navbar-container">
                 <a href="#" class="brand">Final<span>Point</span></a>
                 <ul class="nav-menu">
-                    <li><a href="#sistema" class="nav-link">Equipos</a></li>
-                    <li><a href="#general" class="nav-link">General</a></li>
-                    <li><a href="#formato" class="nav-link">Formato</a></li>
-                    <li><a href="#clasificacion" class="nav-link">Clasificación</a></li>
-                    <li><a href="#puntualidad" class="nav-link">Puntualidad</a></li>
-                    <li><a href="#pistas" class="nav-link">Reglas</a></li>
-                    <li><a href="#camisetas" class="nav-link">Camisetas</a></li>
-                    <li><a href="#descanso" class="nav-link">Descanso</a></li>
-                    <li><a href="#precios" class="nav-link">Precios</a></li>
+                    <li><a href="https://finalpoint.es/prueba.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">torneos</a></li>
+                    <li><a href="https://finalpoint.es/ranking.html" class="nav-link">ranking</a></li>
+                    <li><a href="#" class="nav-link">inscripciones</a></li>
+                    <li><a href="https://finalpoint.es/galeria.html" class="nav-link">galería</a></li>
+                    <li><a href="contacto.html" class="nav-link">contacto</a></li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Banner Principal -->
-        <section class="hero-banner">
+        <!-- Banner Principal del Torneo -->
+        <header class="hero-banner">
             <h1>Torneo 12 Horas <span>Nocturnas</span> 2026</h1>
             <p>Club de Tenis Cervelló</p>
-        </section>
+        </header>
+
+        <!-- Submenú de Navegación Interna de Reglas (Debajo del Hero) -->
+        <nav class="rules-nav">
+            <a href="#sistema">1. Equipos</a>
+            <a href="#general">2. Info General</a>
+            <a href="#formato">3. Formato</a>
+            <a href="#clasificacion">4. Clasificación</a>
+            <a href="#puntualidad">5. Puntualidad</a>
+            <a href="#pistas">6. Pistas y Arbitraje</a>
+            <a href="#camisetas">7. Camisetas</a>
+            <a href="#descanso">8. Descanso</a>
+            <a href="#precios">9. Precios</a>
+        </nav>
 
         <!-- Contenedor Principal de Reglas -->
         <div class="container">
             <div class="grid">
 
                 <!-- 1. SISTEMA DE EQUIPOS -->
-                <section id="sistema" class="full-width">
+                <section id="sistema" class="content-card full-width">
                     <h2><span>01.</span> Sistema de Equipos</h2>
                     <ul>
                         <li>El torneo se disputará por equipos, identificados cada uno por un color.</li>
                         
-                        <div class="important-note">
-                            <strong style="color:#0f2439; display:block; margin-bottom:10px;">📋 Equipos Participantes Confirmados:</strong>
-                            <div class="teams-container">
-                                <div class="team-box">
-                                    <strong>🟡 Equipo Amarillo</strong>
+                        <!-- Caja Estilizada de Equipos -->
+                        <div class="important-note" style="margin-bottom: 20px;">
+                            <strong style="color: #0f2439; display: block; margin-bottom: 10px;">📋 Equipos participantes:</strong>
+                            <div class="teams-box">
+                                <div class="team-badge team-yellow">
+                                    🟡 Amarillo
                                     <ul>
-                                        <li>1. Santi</li>
-                                        <li>2. Cristina Fernandez</li>
-                                        <li>3. Alex</li>
-                                        <li>4. Ana</li>
-                                        <li>5. Cristina Ger</li>
+                                        <li>1. Santi</li><li>2. Cristina Fernandez</li><li>3. Alex</li><li>4. Ana</li><li>5. Cristina Ger</li>
                                     </ul>
                                 </div>
-                                <div class="team-box">
-                                    <strong>🔴 Equipo Rojo</strong>
+                                <div class="team-badge team-red">
+                                    🔴 Rojo
                                     <ul>
-                                        <li>1. Dani Álvarez</li>
-                                        <li>2. Manel</li>
-                                        <li>3. Marc</li>
-                                        <li>4. Adrián</li>
-                                        <li>5. Adriana</li>
+                                        <li>1. Dani Álvarez</li><li>2. Manel</li><li>3. Marc</li><li>4. Adrián</li><li>5. Adriana</li>
                                     </ul>
                                 </div>
-                                <div class="team-box">
-                                    <strong>🔵 Equipo Azul</strong>
+                                <div class="team-badge team-blue">
+                                    🔵 Azul
                                     <ul>
-                                        <li>1. Esther</li>
-                                        <li>2. Jose Antonio</li>
-                                        <li>3. Sole</li>
-                                        <li>4. Axel</li>
-                                        <li>5. Montse</li>
+                                        <li>1. Esther</li><li>2. Jose Antonio</li><li>3. Sole</li><li>4. Axel</li><li>5. Montse</li>
                                     </ul>
                                 </div>
-                                <div class="team-box">
-                                    <strong>🟢 Equipo Verde</strong>
+                                <div class="team-badge team-green">
+                                    🟢 Verde
                                     <ul>
-                                        <li>1. Javier</li>
-                                        <li>2. Oscar</li>
-                                        <li>3. Dani Cejas</li>
-                                        <li>4. Pol</li>
-                                        <li>5. Natalia</li>
+                                        <li>1. Javier</li><li>2. Oscar</li><li>3. Dani Cejas</li><li>4. Pol</li><li>5. Natalia</li>
                                     </ul>
                                 </div>
                             </div>
@@ -370,7 +416,7 @@
                 </section>
 
                 <!-- 2. INFORMACIÓN GENERAL -->
-                <section id="general">
+                <section id="general" class="content-card">
                     <h2><span>02.</span> Información General</h2>
                     <ul>
                         <li>Cada jugador/a disputará 3 partidos individuales y 2 partidos de dobles, como mínimo.</li>
@@ -383,7 +429,7 @@
                 </section>
 
                 <!-- 3. FORMATO DE COMPETICIÓN -->
-                <section id="formato">
+                <section id="formato" class="content-card">
                     <h2><span>03.</span> Formato de Competición</h2>
                     <ul>
                         <li>Todos los partidos tendrán una duración máxima de <strong>35 minutos</strong>.</li>
@@ -395,7 +441,7 @@
                 </section>
 
                 <!-- 4. CLASIFICACIÓN -->
-                <section id="clasificacion">
+                <section id="clasificacion" class="content-card">
                     <h2><span>04.</span> Clasificación y Desempates</h2>
                     <ul>
                         <li>Todos los juegos obtenidos se sumarán a la clasificación general de su color.</li>
@@ -411,7 +457,7 @@
                 </section>
 
                 <!-- 5. PUNTUALIDAD -->
-                <section id="puntualidad">
+                <section id="puntualidad" class="content-card">
                     <h2><span>05.</span> Puntualidad y Penalizaciones</h2>
                     <ul>
                         <li>Todos los jugadores deberán estar preparados en su pista a la hora exacta.</li>
@@ -421,9 +467,9 @@
                     </ul>
                 </section>
 
-                <!-- 6 y 7. CAMBIOS DE PISTA Y ARBITRAJE -->
-                <section id="pistas">
-                    <h2><span>06-07.</span> Pistas y Arbitraje</h2>
+                <!-- 6 y 7. PISTAS Y ARBITRAJE -->
+                <section id="pistas" class="content-card">
+                    <h2><span>06.</span> Pistas y Arbitraje</h2>
                     <ul>
                         <li>Entre partidos habrá un margen de <strong>5 minutos</strong> para cambios de pista. Se ruega rapidez al abandonar la pista.</li>
                         <li>Los propios jugadores serán responsables de arbitrar sus partidos de forma honesta y deportiva.</li>
@@ -433,8 +479,8 @@
                 </section>
 
                 <!-- 8. CAMISETAS DE EQUIPO -->
-                <section id="camisetas">
-                    <h2><span>08.</span> Camisetas de Equipo</h2>
+                <section id="camisetas" class="content-card">
+                    <h2><span>07.</span> Camisetas de Equipo</h2>
                     <ul>
                         <li>El club entregará una camiseta identificativa del color de cada equipo antes de empezar.</li>
                         <li>Se recomienda traer una <strong>segunda camiseta personal</strong> del mismo color o similar.</li>
@@ -444,8 +490,8 @@
                 </section>
 
                 <!-- 9. DESCANSO Y ZONA FAMILIAR -->
-                <section id="descanso">
-                    <h2><span>09.</span> Descanso y Zona Familiar</h2>
+                <section id="descanso" class="content-card">
+                    <h2><span>08.</span> Descanso y Zona Familiar</h2>
                     <ul>
                         <li>La actividad se desarrollará durante toda la noche.</li>
                         <li>Los más pequeños podrán descansar en la <strong>zona habilitada junto a la pista 3</strong>.</li>
@@ -455,8 +501,8 @@
                 </section>
 
                 <!-- 10. PRECIOS -->
-                <section id="precios" class="full-width">
-                    <h2><span>10.</span> Precios de Inscripción</h2>
+                <section id="precios" class="content-card full-width">
+                    <h2><span>09.</span> Precios de Inscripción</h2>
                     <div class="price-box">
                         <div class="price-item">
                             <div class="label">Socios</div>
@@ -472,11 +518,14 @@
             </div>
         </div>
 
+        <!-- Footer Unificado -->
         <footer>
-            <p>&copy; 2026 Torneo de Tenis 12 Horas Nocturnas - Club de Tenis Cervelló. Powered by Final Point</p>
+            <p>&copy; 2026 Torneo de Tenis 12 Horas Nocturnas - Final Point. ¡Disfruta del tenis bajo las estrellas!</p>
         </footer>
 
     </div>
 
 </body>
 </html>
+
+```
