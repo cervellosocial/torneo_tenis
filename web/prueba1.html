@@ -3,443 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Point - Tu punto final (Hero Estrecho)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Final Point - Test</title>
     <style>
-        /* --- VARIABLES Y REGLAS GENERALES --- */
-        :root {
-            --lime: #ccdf13;
-            --bg-dark: #001e3d;
-            --bg-light: #f4f7f6;
-            --text-dark: #1e293b;
-            --text-light: #ffffff;
-            --card-bg: #ffffff;
-            --gray-text: #64748b;
+        /* Base */
+        #final-point-experiment {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f8f9fa !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+        /* --- BARRA DE NAVEGACIÓN --- */
+        #final-point-experiment .main-navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            padding: 18px 40px !important;
         }
 
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            overflow-x: hidden;
+        #final-point-experiment .navbar-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
+        #final-point-experiment .brand {
+            color: #0d1e2d !important;
+            font-size: 24px !important;
+            font-weight: 900 !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
         }
 
-        /* --- NAVBAR --- */
-        .navbar {
-            background-color: var(--card-bg);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 8%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: relative;
-            z-index: 100;
+        #final-point-experiment .brand span {
+            color: #c0d800 !important; /* Verde tenis vibrante */
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--bg-dark);
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 24px !important;
         }
 
-        .logo span {
-            color: var(--lime);
+        #final-point-experiment .nav-link {
+            color: #334155 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            transition: color 0.2s ease !important;
+            text-transform: capitalize !important;
         }
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 25px;
+        #final-point-experiment .nav-link:hover {
+            color: #c0d800 !important;
         }
 
-        .nav-links a {
-            font-weight: 600;
-            color: var(--bg-dark);
-            font-size: 15px;
-            transition: color 0.3s;
-            padding-bottom: 5px;
-            border-bottom: 2px solid transparent;
+        /* --- HERO BANNER CON DEGRADADO Y LOGO --- */
+        #final-point-experiment .hero-banner {
+            background: radial-gradient(circle at center, #132a3e 0%, #091522 100%) !important;
+            padding: 50px 20px 90px 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
         }
 
-        .nav-links a.active, .nav-links a:hover {
-            color: var(--lime);
-            border-bottom: 2px solid var(--lime);
+        #final-point-experiment .hero-content {
+            max-width: 700px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
         }
 
-        /* --- HERO SECTION MODIFICADA --- */
-        .hero {
-            background-color: var(--bg-dark);
-            background-image: url('hero2.png'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            color: var(--text-light);
-            
-            min-height: 50vh; 
-            padding: 60px 8% 140px 8%; 
-            
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            position: relative;
+        #final-point-experiment .logo-box {
+            width: 100% !important;
+            max-width: 220px !important;
+            height: auto !important;
+            margin-bottom: 15px !important;
         }
 
-        .hero-content {
-            max-width: 540px;
-            position: relative;
-            z-index: 10;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        #final-point-experiment .hero-title {
+            color: #ffffff !important;
+            font-size: 38px !important;
+            font-weight: 800 !important;
+            margin: 0 !important;
+            line-height: 1.1 !important;
+            letter-spacing: -0.5px !important;
         }
 
-        /* NUEVO: Estilos para integrar el logo encima del título */
-        .hero-logo {
-            max-width: 160px; /* Ajusta el tamaño de tu logo desde aquí */
-            height: auto;
-            margin-bottom: 5px;
-            object-fit: contain;
+        #final-point-experiment .hero-subtitle {
+            color: #c0d800 !important;
+            font-size: 34px !important;
+            font-weight: 800 !important;
+            margin: 4px 0 0 0 !important;
+            line-height: 1.1 !important;
         }
 
-        .hero-content h1 {
-            font-size: 38px; 
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 5px;
+        /* --- CONTENEDOR DE TARJETAS --- */
+        #final-point-experiment .cards-container {
+            max-width: 960px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+            display: flex !important;
+            justify-content: center !important;
+            gap: 20px !important;
+            position: relative !important;
+            top: -50px !important; 
         }
 
-        .hero-content h1 span {
-            color: var(--lime);
+        #final-point-experiment .card-link {
+            flex: 1 !important;
+            max-width: 300px !important;
+            text-decoration: none !important;
+            display: flex !important;
         }
 
-        .hero-content p {
-            color: #cbd5e1;
-            font-size: 15px;
-            margin-bottom: 15px;
-            line-height: 1.5;
+        /* --- TARJETAS ESTILO BORRADOR --- */
+        #final-point-experiment .card {
+            background-color: #ffffff !important;
+            flex: 1 !important;
+            min-height: 200px !important;
+            border-radius: 16px !important;
+            padding: 24px 22px !important;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08) !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            transition: all 0.3s ease !important;
         }
 
-        .hero-buttons {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        #final-point-experiment .card-link:hover .card {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12) !important;
         }
 
-        .btn-primary {
-            background-color: var(--lime);
-            color: var(--bg-dark);
-            padding: 12px 24px; 
-            border-radius: 8px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: transform 0.2s, background 0.3s;
-            font-size: 14px;
+        #final-point-experiment .card-header-icon {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            border-bottom: 3px solid #c0d800 !important;
+            padding-bottom: 8px !important;
+            margin-bottom: 12px !important;
         }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background-color: #b3c410;
+        #final-point-experiment .card-icon {
+            background-color: #0d1e2d !important;
+            color: #ffffff !important;
+            width: 28px !important;
+            height: 28px !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 13px !important;
         }
 
-        .btn-secondary {
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-bottom: 1px solid transparent;
-            transition: border 0.3s;
-            font-size: 14px;
+        #final-point-experiment .card h3 {
+            margin: 0 !important;
+            color: #0d1e2d !important;
+            font-size: 16px !important;
+            font-weight: 800 !important;
         }
 
-        .btn-secondary:hover {
-            border-bottom: 1px solid var(--text-light);
+        #final-point-experiment .card p {
+            color: #64748b !important;
+            font-size: 13px !important;
+            line-height: 1.5 !important;
+            margin: 0 0 15px 0 !important;
         }
 
-        /* --- MAIN CONTAINER (CARDS SOLAPADAS) --- */
-        .main-container {
-            padding: 0 8% 60px 8%;
-            margin-top: -80px; 
-            position: relative;
-            z-index: 20;
+        /* Botón estilo píldora verde */
+        #final-point-experiment .ver-mas-btn {
+            background-color: #c0d800 !important;
+            color: #0d1e2d !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            padding: 8px 16px !important;
+            border-radius: 4px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            width: fit-content !important;
+            gap: 8px !important;
+            transition: background-color 0.2s ease !important;
         }
 
-        .grid-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+        #final-point-experiment .card-link:hover .ver-mas-btn {
+            background-color: #adc200 !important;
         }
 
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            position: relative;
-            border-left: 4px solid var(--lime);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
-        }
-
-        .card-number {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--lime);
-            opacity: 0.8;
-        }
-
-        .card-header-box {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 25px;
-            margin-top: 15px;
-        }
-
-        .card-icon {
-            background-color: var(--bg-dark);
-            color: var(--lime);
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 28px;
-            flex-shrink: 0;
-        }
-
-        .card-header-box h3 {
-            font-size: 24px;
-            color: var(--bg-dark);
-            font-weight: 700;
-        }
-
-        .card p {
-            color: var(--gray-text);
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-        }
-
-        .card-link {
-            font-weight: 600;
-            color: var(--bg-dark);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 15px;
-            margin-top: auto;
-        }
-
-        .card-link:hover {
-            color: var(--lime);
-        }
-
-        /* --- FEATURES ROW (BARRA INFERIOR) --- */
-        .features-bar {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 10px;
-        }
-
-        .feature-icon {
-            background-color: #f1f5f9;
-            color: #84cc16;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 22px;
-            flex-shrink: 0;
-        }
-
-        .feature-info h4 {
-            font-size: 16px;
-            color: var(--bg-dark);
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        .feature-info p {
-            font-size: 13px;
-            color: var(--gray-text);
-            line-height: 1.4;
-        }
-
-        /* --- RESPONSIVIDAD SUTIL --- */
-        @media (max-width: 1024px) {
-            .hero {
-                padding: 50px 5% 120px 5%;
-                min-height: 40vh;
-            }
-        }
-
+        /* RESPONSIVE */
         @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                gap: 15px;
-                padding: 15px 5%;
+            #final-point-experiment .navbar-container {
+                flex-direction: column !important;
+                gap: 12px !important;
             }
-            .nav-links {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
+            #final-point-experiment .nav-menu {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 10px 15px !important;
             }
-            .hero {
-                min-height: auto;
-                padding: 40px 5% 110px 5%;
+            #final-point-experiment .hero-title {
+                font-size: 28px !important;
             }
-            .hero-content {
-                align-items: center;
-                text-align: center;
+            #final-point-experiment .hero-subtitle {
+                font-size: 24px !important;
             }
-            .hero-content h1 {
-                font-size: 32px;
+            #final-point-experiment .cards-container { 
+                flex-direction: column !important; 
+                align-items: center !important;
+                top: -20px !important; 
             }
-            .hero-buttons {
-                justify-content: center;
-            }
-            .grid-cards {
-                grid-template-columns: 1fr;
+            #final-point-experiment .card-link {
+                width: 100% !important;
+                max-width: 320px !important;
             }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">FINAL <span>POINT</span></div>
-        <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="nocturno.html">Torneos</a></li>
-            <li><a href="ranking.html">Ranking</a></li>
-            <li><a href="#">Inscripciones</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <div id="final-point-experiment">
+
+        <nav class="main-navbar">
+            <div class="navbar-container">
+                <a href="#" class="brand">Final<span>Point</span></a>
+                <ul class="nav-menu">
+                    <li><a href="https://finalpoint.es/prueba.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Torneos</a></li>
+                    <li><a href="https://finalpoint.es/ranking.html" class="nav-link">Ranking</a></li>
+                    <li><a href="#" class="nav-link">Inscripciones</a></li>
+                    <li><a href="https://finalpoint.es/galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-           
+        <section class="hero-banner">
+            <div class="hero-content">
+                <img src="./static/img/logo123.jpg" alt="Final Point Logo" class="logo-box">
+                <h1 class="hero-title">Gestión</h1>
+                <h2 class="hero-subtitle">de torneos de tenis.</h2>
+            </div>
+        </section>
+
+        <section class="cards-container">
             
-            <h1>Gestión<br><span>de torneos de tenis.</span></h1>
-            <p>Competiciones dinámicas, familiares, lúdicas y competitivas</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">
-                    <i class="fa-regular fa-calendar-days"></i> Ver próximos torneos
-                </a>
-                <a href="#" class="btn-secondary">
-                    Cómo funciona &rarr;
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="main-container">
-        
-        <section class="grid-cards">
-            
-            <div class="card">
-                <span class="card-number">01</span>
-                <div class="card-header-box">
-                    <div class="card-icon"><i class="fa-regular fa-calendar"></i></div>
-                    <h3>Galeria</h3>
+            <a href="notas.html" class="card-link">
+                <div class="card">
+                    <div>
+                        <div class="card-header-icon">
+                            <span class="card-icon">📅</span>
+                            <h3>Historial - Galería</h3>
+                        </div>
+                        <p>Consultar torneos anteriores y resultados históricos.</p>
+                    </div>
+                    <span class="ver-mas-btn">Ver historial y galería</span>
                 </div>
-                <p>Mira los momentos destacados.</p>
-                <a href="https://finalpoint.es/galeria.html" class="card-link">Ver fotos &rarr;</a>
-            </div>
+            </a>
 
-            <div class="card">
-                <span class="card-number">02</span>
-                <div class="card-header-box">
-                    <div class="card-icon"><i class="fa-solid fa-baseball"></i></div>
-                    <h3>Torneos</h3>
+            <a href="#" class="card-link">
+                <div class="card">
+                    <div>
+                        <div class="card-header-icon">
+                            <h3>Torneos</h3>
+                        </div>
+                        <p>Calendario y cuadro de torneos de la temporada 2026/27.</p>
+                    </div>
+                    <span class="ver-mas-btn">Ver torneos →</span>
                 </div>
-                <p>Calendario y cuadro de torneos de la temporada 2026/27.</p>
-                <a href="https://finalpoint.es/nocturno.html" class="card-link">Ver torneos &rarr;</a>
-            </div>
+            </a>
 
-            <div class="card">
-                <span class="card-number">03</span>
-                <div class="card-header-box">
-                    <div class="card-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                    <h3>Ranking</h3>
+            <a href="ranking.html" class="card-link">
+                <div class="card">
+                    <div>
+                        <div class="card-header-icon">
+                            <h3>Ranking</h3>
+                        </div>
+                        <p>Consultar la clasificación actualizada de los jugadores.</p>
+                    </div>
+                    <span class="ver-mas-btn">Ver ranking →</span>
                 </div>
-                <p>Consulta la clasificación actualizada de los jugadores.</p>
-                <a href="https://finalpoint.es/ranking.html" class="card-link">Ver ranking &rarr;</a>
-            </div>
+            </a>
 
         </section>
 
-        <section class="features-bar">
-            
-            <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <div class="feature-info">
-                    <h4>Transparencia</h4>
-                    <p>Gestión clara y resultados verificados.</p>
-                </div>
-            </div>
-
-            <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-trophy"></i></div>
-                <div class="feature-info">
-                    <h4>Competitividad</h4>
-                    <p>Torneos para todos los niveles y categorías.</p>
-                </div>
-            </div>
-
-            <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
-                <div class="feature-info">
-                    <h4>Comunidad</h4>
-                    <p>Conectamos jugadores y clubes.</p>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
+    </div>
 
 </body>
 </html>
