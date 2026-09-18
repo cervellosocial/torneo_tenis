@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Alex Vila",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Jan",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Axel",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jordi Garrido",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alex Vila",
+            "visitante": "Jan",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alex Vila",
+            "visitante": "Axel",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alex Vila",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jan",
+            "visitante": "Axel",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jan",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Axel",
+            "visitante": "Hugo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

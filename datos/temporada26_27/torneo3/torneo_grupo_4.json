@@ -1,0 +1,87 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Roberto",
+            "visitante": "Jordi Mundet",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Roberto",
+            "visitante": "Ingrid",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Roberto",
+            "visitante": "Laura",
+            "set_1": "6-2",
+            "set_2": "2-6",
+            "tie": "10-8"
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Roberto",
+            "visitante": "Óscar",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+           {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Jordi Mundet",
+            "visitante": "Ingrid",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Jordi Mundet",
+            "visitante": "Laura",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Jordi Mundet",
+            "visitante": "Óscar",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Ingrid",
+            "visitante": "Laura",
+            "set_1": "6-7",
+            "set_2": "7-5",
+            "tie": "4-10"
+        },
+           {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Ingrid",
+            "visitante": "Óscar",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "Laura",
+            "visitante": "Óscar",
+            "set_1": "7-5",
+            "set_2": "2-6",
+            "tie": "5-10"
+        }
+    ]
+}
+
+
+

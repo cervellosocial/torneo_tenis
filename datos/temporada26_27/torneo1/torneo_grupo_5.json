@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Pol Cejas",
+            "visitante": "Marc",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Pol Cejas",
+            "visitante": "Guillermo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Pol Cejas",
+            "visitante": "Jesus",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Pol Cejas",
+            "visitante": "Pol Gil",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Marc",
+            "visitante": "Guillermo",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Marc",
+            "visitante": "Jesus",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Marc",
+            "visitante": "Pol Gil",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Guillermo",
+            "visitante": "Jesus",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Guillermo",
+            "visitante": "Pol Gil",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jesus",
+            "visitante": "Pol Gil",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

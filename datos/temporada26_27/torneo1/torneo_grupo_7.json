@@ -1,0 +1,124 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Miguel",
+            "visitante": "Mario",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Miguel",
+            "visitante": "Alvaro",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Miguel",
+            "visitante": "Adam (lesión)",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Miguel",
+            "visitante": "Jose Maria",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Miguel",
+            "visitante": "Carlos",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Alvaro",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Adam (lesión)",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Jose Maria",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Mario",
+            "visitante": "Carlos",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alvaro",
+            "visitante": "Adam (lesión)",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alvaro",
+            "visitante": "Jose Maria",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alvaro",
+            "visitante": "Carlos",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Adam (lesión)",
+            "visitante": "Jose Maria",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Adam (lesión)",
+            "visitante": "Carlos",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jose Maria",
+            "visitante": "Carlos",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

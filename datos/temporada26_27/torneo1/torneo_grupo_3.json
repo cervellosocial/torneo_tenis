@@ -1,0 +1,84 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Roberto",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Aurelio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Laura",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Roberto",
+            "visitante": "Aurelio",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Roberto",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Roberto",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Aurelio",
+            "visitante": "Sole",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Aurelio",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Sole",
+            "visitante": "Aldara",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}

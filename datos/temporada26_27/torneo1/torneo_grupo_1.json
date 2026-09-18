@@ -1,0 +1,124 @@
+{
+    "datos_partidos": [
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Esther",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Javier",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Jose Luis",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Alejo",
+            "visitante": "Fran Morales",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Javier",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Jose Luis",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Esther",
+            "visitante": "Fran Morales",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Javier",
+            "visitante": "Jose Luis",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Javier",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Javier",
+            "visitante": "Fran Morales",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jose Luis",
+            "visitante": "Sergi Déu",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Jose Luis",
+            "visitante": "Fran Morales",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 23/09 a 23/11",
+            "local": "Sergi Déu",
+            "visitante": "Fran Morales",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        }
+    ]
+}
