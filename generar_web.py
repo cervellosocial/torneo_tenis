@@ -11,20 +11,20 @@ if __name__ == '__main__':
   # delay para que la accion se ejecute la ultima
   sleep(60)
 
-  datos_torneo1 = sorted(glob('datos/temporada25_26/torneo1/*.json'))
+  datos_torneo1 = sorted(glob('datos/temporada26_27/torneo1/*.json'))
   torneo_grupos.generar_web('ronda1.html',datos_torneo1)
 
-  datos_torneo2 = sorted(glob('datos/temporada25_26/torneo2/*.json'))
+  datos_torneo2 = sorted(glob('datos/temporada26_27/torneo2/*.json'))
   torneo_grupos.generar_web('ronda2.html', datos_torneo2)
 
-  datos_torneo3 = sorted(glob('datos/temporada25_26/torneo3/*.json'))
+  datos_torneo3 = sorted(glob('datos/temporada26_27/torneo3/*.json'))
   torneo_grupos.generar_web('ronda3.html', datos_torneo3)
 
-  datos_torneo4 = sorted(glob('datos/temporada25_26/torneo4/*.json'))
+  datos_torneo4 = sorted(glob('datos/temporada26_27/torneo4/*.json'))
   torneo_grupos.generar_web('ronda4.html', datos_torneo4)
 
-  datos_infantil = ['datos/temporada25_26/division_infantil.json']
-  torneo_clasico.generar_web('infantil.html', datos_infantil,)
+  # datos_infantil = ['datos/temporada26_27/division_infantil.json']
+  # torneo_clasico.generar_web('infantil.html', datos_infantil,)
 
-  datos_playoffs = 'datos/temporada25_26/playoffs.json'
+  datos_playoffs = 'datos/temporada26_27/playoffs.json'
   playoffs.generar_web('playoffs.html', datos_playoffs)
