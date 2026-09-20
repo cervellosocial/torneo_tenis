@@ -2,15 +2,7 @@
     "datos_partidos": [
         {
             "fecha": "Del 23/09 a 23/11",
-            "local": "Dani",
-            "visitante": "Álvarez",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 23/09 a 23/11",
-            "local": "Dani",
+            "local": "Dani Álvarez",
             "visitante": "Sergio",
             "set_1": "",
             "set_2": "",
@@ -18,7 +10,7 @@
         },
         {
             "fecha": "Del 23/09 a 23/11",
-            "local": "Dani",
+            "local": "Dani Álvarez",
             "visitante": "Joan Agudo",
             "set_1": "",
             "set_2": "",
@@ -26,7 +18,7 @@
         },
         {
             "fecha": "Del 23/09 a 23/11",
-            "local": "Dani",
+            "local": "Dani Álvarez",
             "visitante": "Jose Antonio",
             "set_1": "",
             "set_2": "",
@@ -34,39 +26,7 @@
         },
         {
             "fecha": "Del 23/09 a 23/11",
-            "local": "Dani",
-            "visitante": "Elena",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 23/09 a 23/11",
-            "local": "Álvarez",
-            "visitante": "Sergio",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 23/09 a 23/11",
-            "local": "Álvarez",
-            "visitante": "Joan Agudo",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 23/09 a 23/11",
-            "local": "Álvarez",
-            "visitante": "Jose Antonio",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 23/09 a 23/11",
-            "local": "Álvarez",
+            "local": "Dani Álvarez",
             "visitante": "Elena",
             "set_1": "",
             "set_2": "",
