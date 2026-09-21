@@ -1,107 +1,124 @@
-{
+[cite: 7]{
     "datos_partidos": [
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
-            "visitante": "Alejo",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
-            "visitante": "Domenech",
-            "set_1": "3-6",
-            "set_2": "1-6",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
-            "visitante": "Mario",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Esther",
-            "visitante": "Jose Luis",
-            "set_1": "4-6",
-            "set_2": "4-6",
-            "tie": ""
-        },
-           {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "Alejo",
-            "visitante": "Domenech",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Alejo",
-            "visitante": "Mario",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Alejo",
-            "visitante": "Jose Luis",
-            "set_1": "6-1",
-            "set_2": "6-4",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "Domenech",
-            "visitante": "Mario",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         },
-           {
+        {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Domenech",
-            "visitante": "Jose Luis",
-            "set_1": "6-3",
-            "set_2": "6-0",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
             "tie": ""
         },
         {
             "fecha": "Del 26/11 a 26/01",
-            "local": "Mario",
-            "visitante": "Jose Luis",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
+            "set_1": "",
+            "set_2": "",
+            "tie": ""
+        },
+        {
+            "fecha": "Del 26/11 a 26/01",
+            "local": "",
+            "visitante": "",
             "set_1": "",
             "set_2": "",
             "tie": ""
         }
     ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
