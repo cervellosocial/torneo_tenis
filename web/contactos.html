@@ -106,9 +106,13 @@
             font-weight: 600 !important;
         }
 
-        /* --- CONTENIDO PRINCIPAL (Oculto inicialmente) --- */
+        /* --- CONTENIDO PRINCIPAL (Oculto inicialmente sin !important) --- */
         #main-content {
-            display: none !important;
+            display: none;
+        }
+
+        #main-content.visible {
+            display: block !important;
         }
 
         /* --- BARRA DE NAVEGACIÓN --- */
@@ -423,7 +427,7 @@
 
     </div>
 
-    <!-- Script de autenticación -->
+    <!-- Script de autenticación corregido -->
     <script>
         function checkPassword() {
             const passwordInput = document.getElementById('passwordInput').value;
@@ -435,7 +439,7 @@
                 authOverlay.style.opacity = '0';
                 setTimeout(() => {
                     authOverlay.style.display = 'none';
-                    mainContent.style.display = 'block';
+                    mainContent.classList.add('visible');
                 }, 400);
             } else {
                 authError.style.display = 'block';
