@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Point - Lista de Jugadores</title>
+    <!-- Aquí añades tu favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <style>
+        /* Versión blindada y optimizada basada en tu estética */
+        #final-point-experiment {
+            font-family: 'Segoe UI', Arial, sans-serif !important;
+            background-color: #f8f9fa !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+        /* --- PANTALLA DE CONTRASEÑA --- */
+        #final-point-experiment .auth-overlay {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #0e2234 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            z-index: 9999 !important;
+            transition: opacity 0.4s ease !important;
+        }
+
+        #final-point-experiment .auth-box {
+            background-color: #ffffff !important;
+            padding: 35px 30px !important;
+            border-radius: 14px !important;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+            width: 100% !important;
+            max-width: 380px !important;
+            text-align: center !important;
+            box-sizing: border-box !important;
+        }
+
+        #final-point-experiment .auth-box h2 {
+            color: #0f2439 !important;
+            margin-top: 0 !important;
+            font-size: 20px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            margin-bottom: 8px !important;
+        }
+
+        #final-point-experiment .auth-box h2 span {
+            color: #a4b300 !important;
+        }
+
+        #final-point-experiment .auth-box p {
+            color: #64748b !important;
+            font-size: 13px !important;
+            margin-bottom: 20px !important;
+        }
+
+        #final-point-experiment .auth-input {
+            width: 100% !important;
+            padding: 12px 15px !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 8px !important;
+            font-size: 14px !important;
+            box-sizing: border-box !important;
+            margin-bottom: 15px !important;
+            outline: none !important;
+            transition: border-color 0.2s ease !important;
+        }
+
+        #final-point-experiment .auth-input:focus {
+            border-color: #a4b300 !important;
+        }
+
+        #final-point-experiment .auth-btn {
+            background-color: #ccdf13 !important;
+            color: #0f2439 !important;
+            font-weight: 700 !important;
+            font-size: 14px !important;
+            padding: 12px !important;
+            border: none !important;
+            border-radius: 8px !important;
+            width: 100% !important;
+            cursor: pointer !important;
+            transition: filter 0.2s ease !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        #final-point-experiment .auth-btn:hover {
+            filter: brightness(0.95) !important;
+        }
+
+        #final-point-experiment .auth-error {
+            color: #dc2626 !important;
+            font-size: 12px !important;
+            margin-top: 10px !important;
+            display: none !important;
+            font-weight: 600 !important;
+        }
+
+        /* --- CONTENIDO PRINCIPAL (Oculto inicialmente) --- */
+        #main-content {
+            display: none !important;
+        }
+
+        /* --- BARRA DE NAVEGACIÓN --- */
+        #final-point-experiment .main-navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+            padding: 15px 20px !important;
+        }
+
+        #final-point-experiment .navbar-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+
+        #final-point-experiment .brand {
+            color: #0f2439 !important;
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            text-decoration: none !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+        }
+
+        #final-point-experiment .brand span {
+            color: #a4b300 !important;
+        }
+
+        #final-point-experiment .nav-menu {
+            list-style: none !important;
+            display: flex !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 20px !important;
+        }
+
+        #final-point-experiment .nav-link {
+            color: #475569 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            transition: color 0.2s ease !important;
+            text-transform: capitalize !important;
+        }
+
+        #final-point-experiment .nav-link:hover {
+            color: #a4b300 !important;
+        }
+
+        /* --- HERO BANNER --- */
+        #final-point-experiment .hero-banner {
+            background-color: #0e2234 !important;
+            height: 160px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            padding: 0 20px !important;
+            margin-bottom: 30px !important;
+        }
+
+        #final-point-experiment .hero-title {
+            color: #ffffff !important;
+            font-size: 28px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            margin: 0 !important;
+        }
+
+        #final-point-experiment .hero-title span {
+            color: #ccdf13 !important;
+        }
+
+        /* --- CONTENEDOR DE GRUPOS --- */
+        #final-point-experiment .groups-container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            gap: 25px !important;
+        }
+
+        /* --- TARJETAS DE GRUPO --- */
+        #final-point-experiment .group-card {
+            background-color: #ffffff !important;
+            border-radius: 14px !important;
+            padding: 22px !important;
+            box-shadow: 0 10px 25px rgba(15, 36, 57, 0.08) !important;
+            box-sizing: border-box !important;
+            border: 1px solid rgba(15, 36, 57, 0.05) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        }
+
+        #final-point-experiment .group-card:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 15px 30px rgba(15, 36, 57, 0.12) !important;
+        }
+
+        /* Colores de Títulos de los 7 Grupos */
+        #final-point-experiment .group-card h3 {
+            margin-top: 0 !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            padding-bottom: 8px !important;
+            margin-bottom: 15px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        #final-point-experiment .group-1 h3 { color: #2563eb !important; border-bottom: 3px solid #2563eb !important; }
+        #final-point-experiment .group-2 h3 { color: #dc2626 !important; border-bottom: 3px solid #dc2626 !important; }
+        #final-point-experiment .group-3 h3 { color: #16a34a !important; border-bottom: 3px solid #16a34a !important; }
+        #final-point-experiment .group-4 h3 { color: #9333ea !important; border-bottom: 3px solid #9333ea !important; }
+        #final-point-experiment .group-5 h3 { color: #ea580c !important; border-bottom: 3px solid #ea580c !important; }
+        #final-point-experiment .group-6 h3 { color: #0d9488 !important; border-bottom: 3px solid #0d9488 !important; }
+        #final-point-experiment .group-7 h3 { color: #ca8a04 !important; border-bottom: 3px solid #ca8a04 !important; }
+
+        /* --- LISTA DE JUGADORES --- */
+        #final-point-experiment .player-list {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 10px !important;
+        }
+
+        #final-point-experiment .player-item {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            background-color: #f8f9fa !important;
+            padding: 10px 12px !important;
+            border-radius: 8px !important;
+            font-size: 13px !important;
+        }
+
+        #final-point-experiment .player-name {
+            font-weight: 600 !important;
+            color: #0f2439 !important;
+        }
+
+        #final-point-experiment .player-phone {
+            color: #64748b !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
+            background: #ffffff !important;
+            padding: 4px 8px !important;
+            border-radius: 4px !important;
+            border: 1px solid #e2e8f0 !important;
+            transition: all 0.2s ease !important;
+        }
+
+        #final-point-experiment .player-phone:hover {
+            color: #a4b300 !important;
+            border-color: #a4b300 !important;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            #final-point-experiment .navbar-container {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            #final-point-experiment .nav-menu {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 12px 15px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="final-point-experiment">
+
+        <!-- PANTALLA DE ACCESO CON CONTRASEÑA -->
+        <div id="authOverlay" class="auth-overlay">
+            <div class="auth-box">
+                <h2>Final<span>Point</span></h2>
+                <p>Introduce la contraseña de acceso para ver la lista de jugadores.</p>
+                <input type="password" id="passwordInput" class="auth-input" placeholder="Contraseña..." autofocus>
+                <button onclick="checkPassword()" class="auth-btn">Acceder</button>
+                <div id="authError" class="auth-error">Contraseña incorrecta</div>
+            </div>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div id="main-content">
+
+            <!-- Barra de Navegación -->
+            <nav class="main-navbar">
+                <div class="navbar-container">
+                    <a href="#" class="brand">Final<span>Point</span></a>
+                    <ul class="nav-menu">
+                        <li><a href="https://finalpoint.es/ronda1.html" class="nav-link">Home</a></li>
+                        <li><a href="https://finalpoint.es/ronda1.html" class="nav-link">torneos</a></li>
+                        <li><a href="https://finalpoint.es/ranking.html" class="nav-link">ranking</a></li>
+                        <li><a href="#" class="nav-link">inscripciones</a></li>
+                        <li><a href="https://finalpoint.es/galeria.html" class="nav-link">galería</a></li>
+                        <li><a href="contacto.html" class="nav-link">contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Banner Principal -->
+            <section class="hero-banner">
+                <h1 class="hero-title">Directorio de <span>Jugadores</span></h1>
+            </section>
+
+            <!-- Contenedor de los 7 Grupos -->
+            <div class="groups-container">
+                
+                <!-- GRUPO 1 -->
+                <div class="group-card group-1">
+                    <h3>Grupo 1</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Alejo Zeballo Rey</span><a href="tel:644466933" class="player-phone">644 466 933</a></li>
+                        <li class="player-item"><span class="player-name">Esther Garrós</span><a href="tel:636571476" class="player-phone">636 571 476</a></li>
+                        <li class="player-item"><span class="player-name">Jose Luis Caro Oleas</span><a href="tel:625352397" class="player-phone">625 352 397</a></li>
+                        <li class="player-item"><span class="player-name">Sergi Deu</span><a href="tel:625040322" class="player-phone">625 040 322</a></li>
+                        <li class="player-item"><span class="player-name">Fran Morales Alcudia</span><a href="tel:645963435" class="player-phone">645 963 435</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 2 -->
+                <div class="group-card group-2">
+                    <h3>Grupo 2</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Daniel Álvarez Deiros</span><a href="tel:619289991" class="player-phone">619 289 991</a></li>
+                        <li class="player-item"><span class="player-name">Sergio Sabater Martin</span><a href="tel:606991174" class="player-phone">606 991 174</a></li>
+                        <li class="player-item"><span class="player-name">Joan agudo</span><a href="tel:619781400" class="player-phone">619 781 400</a></li>
+                        <li class="player-item"><span class="player-name">Jose Antonio Lopez</span><a href="tel:651875498" class="player-phone">651 875 498</a></li>
+                        <li class="player-item"><span class="player-name">Elena Martinez</span><a href="tel:622809408" class="player-phone">622 809 408</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 3 -->
+                <div class="group-card group-3">
+                    <h3>Grupo 3</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Laura Nasta</span><a href="tel:654083386" class="player-phone">654 083 386</a></li>
+                        <li class="player-item"><span class="player-name">Roberto Cerquetani</span><a href="tel:684295470" class="player-phone">684 295 470</a></li>
+                        <li class="player-item"><span class="player-name">Aurelio Calvo</span><a href="tel:619042826" class="player-phone">619 042 826</a></li>
+                        <li class="player-item"><span class="player-name">Sole Manes</span><a href="tel:644593656" class="player-phone">644 593 656</a></li>
+                        <li class="player-item"><span class="player-name">Aldara Sanchez</span><a href="tel:608238679" class="player-phone">608 238 679</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 4 -->
+                <div class="group-card group-4">
+                    <h3>Grupo 4</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Jordi Garrido Galbas</span><a href="tel:627783324" class="player-phone">627 783 324</a></li>
+                        <li class="player-item"><span class="player-name">Alex Vila</span><a href="tel:658381975" class="player-phone">658 381 975</a></li>
+                        <li class="player-item"><span class="player-name">Jan Mundet</span><a href="tel:717160096" class="player-phone">717 160 096</a></li>
+                        <li class="player-item"><span class="player-name">Axel Villar</span><a href="tel:640626893" class="player-phone">640 626 893</a></li>
+                        <li class="player-item"><span class="player-name">Hugo Ramadan</span><a href="tel:660209742" class="player-phone">660 209 742</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 5 -->
+                <div class="group-card group-5">
+                    <h3>Grupo 5</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Pol Cejas Perez</span><a href="tel:616364874" class="player-phone">616 364 874</a></li>
+                        <li class="player-item"><span class="player-name">Marc Cano Luque</span><a href="tel:644141003" class="player-phone">644 141 003</a></li>
+                        <li class="player-item"><span class="player-name">Guillermo Mendoza Marcos</span><a href="tel:672356610" class="player-phone">672 356 610</a></li>
+                        <li class="player-item"><span class="player-name">Jesús García Flores</span><a href="tel:658715856" class="player-phone">658 715 856</a></li>
+                        <li class="player-item"><span class="player-name">Pol Gil Tarazona</span><a href="tel:646233688" class="player-phone">646 233 688</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 6 -->
+                <div class="group-card group-6">
+                    <h3>Grupo 6</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Fran Falcon</span><a href="tel:650041905" class="player-phone">650 041 905</a></li>
+                        <li class="player-item"><span class="player-name">Jennifer García Esteban</span><a href="tel:665585310" class="player-phone">665 585 310</a></li>
+                        <li class="player-item"><span class="player-name">ARMAND EGEA ÁLVAREZ</span><a href="tel:663859144" class="player-phone">663 859 144</a></li>
+                        <li class="player-item"><span class="player-name">Daniel Cejas Gomariz</span><a href="tel:646074124" class="player-phone">646 074 124</a></li>
+                        <li class="player-item"><span class="player-name">Inmaculada espinola sanchez</span><a href="tel:661280017" class="player-phone">661 280 017</a></li>
+                        <li class="player-item"><span class="player-name">Adriana Orozco</span><a href="tel:618920046" class="player-phone">618 920 046</a></li>
+                    </ul>
+                </div>
+
+                <!-- GRUPO 7 -->
+                <div class="group-card group-7">
+                    <h3>Grupo 7</h3>
+                    <ul class="player-list">
+                        <li class="player-item"><span class="player-name">Miguel Angel Gutierrez Villalba</span><a href="tel:687867286" class="player-phone">687 867 286</a></li>
+                        <li class="player-item"><span class="player-name">Mario Flo Partagas</span><a href="tel:636227129" class="player-phone">636 227 129</a></li>
+                        <li class="player-item"><span class="player-name">Adam Moreno Gil</span><a href="tel:672242447" class="player-phone">672 242 447</a></li>
+                        <li class="player-item"><span class="player-name">Alvaro Vazquez</span><a href="tel:600386186" class="player-phone">600 386 186</a></li>
+                        <li class="player-item"><span class="player-name">Jose María Cano Serrano</span><a href="tel:638330421" class="player-phone">638 330 421</a></li>
+                        <li class="player-item"><span class="player-name">Carlos Granados Rodríguez</span><a href="tel:687733503" class="player-phone">687 733 503</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script de autenticación -->
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('passwordInput').value;
+            const authOverlay = document.getElementById('authOverlay');
+            const mainContent = document.getElementById('main-content');
+            const authError = document.getElementById('authError');
+
+            if (passwordInput === 'social26') {
+                authOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    authOverlay.style.display = 'none';
+                    mainContent.style.display = 'block';
+                }, 400);
+            } else {
+                authError.style.display = 'block';
+                document.getElementById('passwordInput').style.borderColor = '#dc2626';
+            }
+        }
+
+        document.getElementById('passwordInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</body>
+</html>
