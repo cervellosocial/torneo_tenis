@@ -3,19 +3,23 @@
     "categoria":"Primera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
-        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
-        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
-        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
-        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
-        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
-        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
@@ -45,19 +49,23 @@
     "categoria":"Segunda Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
-        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
-        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
-        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
-        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
-        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
-        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
@@ -87,19 +95,23 @@
     "categoria":"Tercera Division",
     "ronda1":{
       "partidos":[
-        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
-        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
-        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
-        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
     "ronda2":{
       "partidos":[
-        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
-        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
-        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
-        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
@@ -129,21 +141,14 @@
     "categoria":"Division Infantil",
     "ronda1":{
       "partidos":[
-        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
-        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
       "fecha":""
     },
     "ronda2":{
-      "partidos":[
-        {"jugador1":"1.º","jugador2":"Ganador Partido B","resultado":"()"},
-        {"jugador1":"2.º","jugador2":"Ganador Partido A","resultado":"()"},
-        {"jugador1":"3.º","jugador2":"6.º","resultado":"()"},
-        {"jugador1":"4.º","jugador2":"5.º","resultado":"()"}
-      ],
-      "fecha":""
-    },
-    "ronda3":{
       "partidos":[
         {"jugador1":"","jugador2":"","resultado":"()"},
         {"jugador1":"","jugador2":"","resultado":"()"}
