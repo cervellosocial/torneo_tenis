@@ -1,168 +1,168 @@
 [
   {
-    "categoria": "Primera Division",
-    "ronda_preliminar": {
-      "partidos": [
-        {"jugador1": "5.º", "jugador2": "12.º", "resultado": ""},
-        {"jugador1": "6.º", "jugador2": "11.º", "resultado": ""},
-        {"jugador1": "7.º", "jugador2": "10.º", "resultado": ""},
-        {"jugador1": "8.º", "jugador2": "9.º", "resultado": ""}
+    "categoria":"Primera Division",
+    "ronda1":{
+      "partidos":[
+        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
+        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
+        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
+        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "cuartos": {
-      "partidos": [
-        {"jugador1": "1.º", "jugador2": "Ganador Partido D", "resultado": ""},
-        {"jugador1": "2.º", "jugador2": "Ganador Partido C", "resultado": ""},
-        {"jugador1": "3.º", "jugador2": "Ganador Partido B", "resultado": ""},
-        {"jugador1": "4.º", "jugador2": "Ganador Partido A", "resultado": ""}
+    "ronda2":{
+      "partidos":[
+        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
+        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
+        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
+        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "semifinales": {
-      "partidos": [
-        {"jugador1": "Ganador Cuartos 1", "jugador2": "Ganador Cuartos 4", "resultado": ""},
-        {"jugador1": "Ganador Cuartos 2", "jugador2": "Ganador Cuartos 3", "resultado": ""}
+    "ronda3":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "final": {
-      "partidos": [
-        {"jugador1": "Vencedor Semifinal 1", "jugador2": "Vencedor Semifinal 2", "resultado": ""}
+    "final":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador": "",
-    "final34": {
-      "partidos": [
-        {"jugador1": "Perdedor Semifinal 1", "jugador2": "Perdedor Semifinal 2", "resultado": ""}
+    "ganador":"",
+    "final34":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador34": ""
+    "ganador34":""
   },
   {
-    "categoria": "Segunda Division",
-    "ronda_preliminar": {
-      "partidos": [
-        {"jugador1": "5.º", "jugador2": "12.º", "resultado": ""},
-        {"jugador1": "6.º", "jugador2": "11.º", "resultado": ""},
-        {"jugador1": "7.º", "jugador2": "10.º", "resultado": ""},
-        {"jugador1": "8.º", "jugador2": "9.º", "resultado": ""}
+    "categoria":"Segunda Division",
+    "ronda1":{
+      "partidos":[
+        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
+        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
+        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
+        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "cuartos": {
-      "partidos": [
-        {"jugador1": "1.º", "jugador2": "Ganador Partido D", "resultado": ""},
-        {"jugador1": "2.º", "jugador2": "Ganador Partido C", "resultado": ""},
-        {"jugador1": "3.º", "jugador2": "Ganador Partido B", "resultado": ""},
-        {"jugador1": "4.º", "jugador2": "Ganador Partido A", "resultado": ""}
+    "ronda2":{
+      "partidos":[
+        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
+        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
+        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
+        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "semifinales": {
-      "partidos": [
-        {"jugador1": "Ganador Cuartos 1", "jugador2": "Ganador Cuartos 4", "resultado": ""},
-        {"jugador1": "Ganador Cuartos 2", "jugador2": "Ganador Cuartos 3", "resultado": ""}
+    "ronda3":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "final": {
-      "partidos": [
-        {"jugador1": "Vencedor Semifinal 1", "jugador2": "Vencedor Semifinal 2", "resultado": ""}
+    "final":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador": "",
-    "final34": {
-      "partidos": [
-        {"jugador1": "Perdedor Semifinal 1", "jugador2": "Perdedor Semifinal 2", "resultado": ""}
+    "ganador":"",
+    "final34":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador34": ""
+    "ganador34":""
   },
   {
-    "categoria": "Tercera Division",
-    "ronda_preliminar": {
-      "partidos": [
-        {"jugador1": "5.º", "jugador2": "12.º", "resultado": ""},
-        {"jugador1": "6.º", "jugador2": "11.º", "resultado": ""},
-        {"jugador1": "7.º", "jugador2": "10.º", "resultado": ""},
-        {"jugador1": "8.º", "jugador2": "9.º", "resultado": ""}
+    "categoria":"Tercera Division",
+    "ronda1":{
+      "partidos":[
+        {"jugador1":"5.º","jugador2":"12.º","resultado":"()"},
+        {"jugador1":"6.º","jugador2":"11.º","resultado":"()"},
+        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
+        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "cuartos": {
-      "partidos": [
-        {"jugador1": "1.º", "jugador2": "Ganador Partido D", "resultado": ""},
-        {"jugador1": "2.º", "jugador2": "Ganador Partido C", "resultado": ""},
-        {"jugador1": "3.º", "jugador2": "Ganador Partido B", "resultado": ""},
-        {"jugador1": "4.º", "jugador2": "Ganador Partido A", "resultado": ""}
+    "ronda2":{
+      "partidos":[
+        {"jugador1":"1.º","jugador2":"Ganador Partido D","resultado":"()"},
+        {"jugador1":"2.º","jugador2":"Ganador Partido C","resultado":"()"},
+        {"jugador1":"3.º","jugador2":"Ganador Partido B","resultado":"()"},
+        {"jugador1":"4.º","jugador2":"Ganador Partido A","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "semifinales": {
-      "partidos": [
-        {"jugador1": "Ganador Cuartos 1", "jugador2": "Ganador Cuartos 4", "resultado": ""},
-        {"jugador1": "Ganador Cuartos 2", "jugador2": "Ganador Cuartos 3", "resultado": ""}
+    "ronda3":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "final": {
-      "partidos": [
-        {"jugador1": "Vencedor Semifinal 1", "jugador2": "Vencedor Semifinal 2", "resultado": ""}
+    "final":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador": "",
-    "final34": {
-      "partidos": [
-        {"jugador1": "Perdedor Semifinal 1", "jugador2": "Perdedor Semifinal 2", "resultado": ""}
+    "ganador":"",
+    "final34":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador34": ""
+    "ganador34":""
   },
   {
-    "categoria": "Division Infantil",
-    "ronda_preliminar": {
-      "partidos": [
-        {"jugador1": "7.º", "jugador2": "10.º", "resultado": ""},
-        {"jugador1": "8.º", "jugador2": "9.º", "resultado": ""}
+    "categoria":"Division Infantil",
+    "ronda1":{
+      "partidos":[
+        {"jugador1":"7.º","jugador2":"10.º","resultado":"()"},
+        {"jugador1":"8.º","jugador2":"9.º","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "cuartos": {
-      "partidos": [
-        {"jugador1": "1.º", "jugador2": "Ganador Partido B", "resultado": ""},
-        {"jugador1": "2.º", "jugador2": "Ganador Partido A", "resultado": ""},
-        {"jugador1": "3.º", "jugador2": "6.º", "resultado": ""},
-        {"jugador1": "4.º", "jugador2": "5.º", "resultado": ""}
+    "ronda2":{
+      "partidos":[
+        {"jugador1":"1.º","jugador2":"Ganador Partido B","resultado":"()"},
+        {"jugador1":"2.º","jugador2":"Ganador Partido A","resultado":"()"},
+        {"jugador1":"3.º","jugador2":"6.º","resultado":"()"},
+        {"jugador1":"4.º","jugador2":"5.º","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "semifinales": {
-      "partidos": [
-        {"jugador1": "Ganador Cuartos 1", "jugador2": "Ganador Cuartos 4", "resultado": ""},
-        {"jugador1": "Ganador Cuartos 2", "jugador2": "Ganador Cuartos 3", "resultado": ""}
+    "ronda3":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"},
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "final": {
-      "partidos": [
-        {"jugador1": "Vencedor Semifinal 1", "jugador2": "Vencedor Semifinal 2", "resultado": ""}
+    "final":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador": "",
-    "final34": {
-      "partidos": [
-        {"jugador1": "Perdedor Semifinal 1", "jugador2": "Perdedor Semifinal 2", "resultado": ""}
+    "ganador":"",
+    "final34":{
+      "partidos":[
+        {"jugador1":"","jugador2":"","resultado":"()"}
       ],
-      "fecha": ""
+      "fecha":""
     },
-    "ganador34": ""
+    "ganador34":""
   }
 ]
