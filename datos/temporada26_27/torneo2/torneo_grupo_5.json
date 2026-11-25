@@ -2,18 +2,18 @@
     "datos_partidos": [
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Dani Cejas", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Armand", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Jose Maria", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Ernest", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Axel", "visitante": "Guille", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Dani Cejas", "visitante": "Armand", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Dani Cejas", "visitante": "Jose Maria", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Dani Cejas", "visitante": "Ernest", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Dani Cejas", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Armand", "visitante": "Jose Maria", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Dani Cejas", "visitante": "Guille", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Armand", "visitante": "Ernest", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Armand", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jose Maria", "visitante": "Ernest", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jose Maria", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Ernest", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""}
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Armand", "visitante": "Guille", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Ernest", "visitante": "Fede", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Ernest", "visitante": "Guille", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fede", "visitante": "Guille", "set_1": "", "set_2": "", "tie": ""}
     ]
 }
