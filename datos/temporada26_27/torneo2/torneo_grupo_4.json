@@ -1,124 +1,14 @@
 {
     "datos_partidos": [
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        },
-        {
-            "fecha": "Del 26/11 a 26/01",
-            "local": "",
-            "visitante": "",
-            "set_1": "",
-            "set_2": "",
-            "tie": ""
-        }
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jordi G", "visitante": "Laura", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jordi G", "visitante": "Guillermo", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jordi G", "visitante": "Pol Gil", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Jordi G", "visitante": "Jesús", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Laura", "visitante": "Guillermo", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Laura", "visitante": "Pol Gil", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Laura", "visitante": "Jesús", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Guillermo", "visitante": "Pol Gil", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Guillermo", "visitante": "Jesús", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Pol Gil", "visitante": "Jesús", "set_1": "", "set_2": "", "tie": ""}
     ]
 }
