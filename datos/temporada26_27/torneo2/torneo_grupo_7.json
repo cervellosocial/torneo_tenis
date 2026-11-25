@@ -1,10 +1,10 @@
 {
     "datos_partidos": [
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Fran F", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Sergio V", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inma", "visitante": "Fran F", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inma", "visitante": "Sergio V", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inma", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inma", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inma", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Sergio V", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
