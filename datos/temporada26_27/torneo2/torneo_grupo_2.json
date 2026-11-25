@@ -4,11 +4,16 @@
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergi Dèu", "visitante": "Aurelio", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergi Dèu", "visitante": "Sole", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergi Dèu", "visitante": "Sergio", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergi Dèu", "visitante": "Jose Luis", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Joan Agudo", "visitante": "Aurelio", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Joan Agudo", "visitante": "Sole", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Joan Agudo", "visitante": "Sergio", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Joan Agudo", "visitante": "Jose Luis", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Aurelio", "visitante": "Sole", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Aurelio", "visitante": "Sergio", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sole", "visitante": "Sergio", "set_1": "", "set_2": "", "tie": ""}
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Aurelio", "visitante": "Jose Luis", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sole", "visitante": "Sergio", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sole", "visitante": "Jose Luis", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergio", "visitante": "Jose Luis", "set_1": "", "set_2": "", "tie": ""}
     ]
 }
