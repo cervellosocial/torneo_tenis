@@ -1,17 +1,17 @@
 {
     "datos_partidos": [
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Fran F", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Álvaro", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Sergio V", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Inmma", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Álvaro", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Sergio V", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Fran F", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Álvaro", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Álvaro", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
-        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Álvaro", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergio V", "visitante": "Mario", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergio V", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
+        {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Sergio V", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Mario", "visitante": "Carlos", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Mario", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""},
         {"fecha": "Del 26/11/2026 a 26/01/2027", "local": "Carlos", "visitante": "Adam", "set_1": "", "set_2": "", "tie": ""}
